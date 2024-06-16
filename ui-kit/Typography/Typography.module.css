@@ -1,0 +1,22 @@
+.h2 {
+  margin: 0;
+  margin-bottom: 25px;
+  user-select: none;
+
+  .item {
+    display: inline-block;
+    padding: 2px 15px;
+    font-size: 17px;
+    font-family: var(--font-roboto-thin);
+  }
+}
+
+.h2 .item--light {
+}
+.h2 .item--dark {
+}
+.h2 .item--dark-filled {
+  border-radius: var(--border-radius-chip);
+  background-color: var(--color-black-lighter);
+  color: #fff;
+}

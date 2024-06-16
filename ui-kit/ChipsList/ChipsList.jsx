@@ -5,19 +5,30 @@ import Chip from "../Chip"
 
 import styles from "./ChipsList.module.css"
 
-// theme:
-// - "default-light"
+// TODO:
+// import { ChipsList } from "@/sawyer-react-lib/ui-kit"
+const PROPS = {
+  className: "",
+  theme: {
+    mode: ["light", "dark"],
+  },
+  items: ["Item-1", "Item-2", "Item-3"],
+}
 
 const ChipsList = (props) => {
-  const { theme, items, className } = props
+  const { className, theme, items } = props
 
-  const itemStyle = theme ? styles["item--" + theme] : ""
+  const itemMode = theme?.mode
+    ? styles["item--" + theme.mode]
+    : styles["item--light"]
 
   return (
     <>
       {items.map((element, index) => (
         <Fragment key={index}>
-          <Chip className={cn(itemStyle, className)}>{element}</Chip>
+          <Chip className={cn(styles.item, itemMode, className)}>
+            {element}
+          </Chip>
         </Fragment>
       ))}
     </>
