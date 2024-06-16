@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "test": ""
+    "commit": "git add . && git commit -m \"Bash Script Commit\" && git push origin head"
   },
   "dependencies": {
     "@emotion/react": "^11.11.4",
