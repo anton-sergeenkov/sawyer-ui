@@ -1,0 +1,9 @@
+.item {
+  display: inline-block;
+  border-radius: var(--border-radius-chip);
+  font-family: var(--font-roboto-light);
+  user-select: none;
+
+  padding: 2px 12px;
+  font-size: 14px;
+}

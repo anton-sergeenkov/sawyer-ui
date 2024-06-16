@@ -1,0 +1,7 @@
+.chip {
+    margin-right: 5px;
+    background-color: var(--color-gray-light);
+}
+.chip:last-child {
+    margin-right: 0;
+}
