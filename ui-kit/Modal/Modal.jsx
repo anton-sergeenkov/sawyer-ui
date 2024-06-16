@@ -1,9 +1,9 @@
-import MUIModal from "@mui/material/Modal";
+import MUIModal from "@mui/material/Modal"
 
 // import styles from "./Button.module.css"
 
 const Modal = (props) => {
-  return <MUIModal {...props}>{props.children}</MUIModal>;
-};
+  return <MUIModal {...props}>{props.children}</MUIModal>
+}
 
-export default Modal;
+export default Modal

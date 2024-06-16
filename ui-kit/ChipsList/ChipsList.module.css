@@ -1,7 +1,7 @@
 .item--default-light {
-    margin-right: 5px;
-    background-color: var(--color-gray-light);
+  margin-right: 5px;
+  background-color: var(--color-gray-light);
 }
 .item:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }

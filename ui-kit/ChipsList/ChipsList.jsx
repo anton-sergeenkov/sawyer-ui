@@ -1,17 +1,17 @@
-import { Fragment } from "react";
-import cn from "classnames";
+import { Fragment } from "react"
+import cn from "classnames"
 
-import Chip from "../Chip";
+import Chip from "../Chip"
 
-import styles from "./ChipsList.module.css";
+import styles from "./ChipsList.module.css"
 
 // theme:
 // - "default-light"
 
 const ChipsList = (props) => {
-  const { theme, items, className } = props;
+  const { theme, items, className } = props
 
-  const itemStyle = theme ? styles["item--" + theme] : "";
+  const itemStyle = theme ? styles["item--" + theme] : ""
 
   return (
     <>
@@ -21,7 +21,7 @@ const ChipsList = (props) => {
         </Fragment>
       ))}
     </>
-  );
-};
+  )
+}
 
-export default ChipsList;
+export default ChipsList
