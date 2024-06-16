@@ -11,5 +11,4 @@ import { TypographyH2 } from "@/sawyer-react-lib/ui-kit"
 ```js
 import { Chip } from "@/sawyer-react-lib/ui-kit"
 import { ChipsList } from "@/sawyer-react-lib/ui-kit"
-import { ChipsListDefault } from "@/sawyer-react-lib/ui-kit"
 ```
