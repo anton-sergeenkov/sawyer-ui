@@ -1,0 +1,28 @@
+/* ***************************************** */
+/* MAIN */
+/* ***************************************** */
+.item {
+  display: inline-block;
+  border-radius: var(--border-radius-chip);
+  font-family: var(--font-roboto-light);
+  user-select: none;
+
+  padding: 2px 12px;
+  font-size: 14px;
+
+  margin-right: 5px;
+}
+.item:last-child {
+  margin-right: 0;
+}
+
+/* ***************************************** */
+/* THEME */
+/* ***************************************** */
+.item--light {
+  background-color: var(--color-gray-light);
+}
+.item--dark {
+  background-color: var(--color-black-opacity-7);
+  color: var(--color-gray-light);
+}
