@@ -7,7 +7,7 @@ import styles from "./Typography.module.css"
 const PROPS = {
   className: "",
   theme: {
-    mode: ["light", "dark", "dark-filled"],
+    mode: ["light", "dark", "dark-filled", "light-outline"],
   },
   tag: ["h1", "h2", "h3", "p"],
   children: <></>,
