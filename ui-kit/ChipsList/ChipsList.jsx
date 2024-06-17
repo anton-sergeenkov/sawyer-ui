@@ -1,7 +1,7 @@
 import { Fragment } from "react"
 import cn from "classnames"
 
-import Chip from "../Chip"
+import Chip from "./Chip"
 
 import styles from "./ChipsList.module.css"
 
@@ -15,6 +15,7 @@ const PROPS = {
   items: ["Item-1", "Item-2", "Item-3"],
 }
 
+// FIXME: Chips
 const ChipsList = (props) => {
   const { className, theme, items } = props
 
