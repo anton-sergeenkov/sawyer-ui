@@ -1,7 +1,7 @@
-import Button from "./Button"
-import Chips from "./Chips"
-import Modal from "./Modal"
-import Typography from "./Typography"
+import ButtonElement from "./ButtonElement"
+import ChipsElement from "./ChipsElement"
+import ModalElement from "./ModalElement"
+import TypographyElement from "./TypographyElement"
 import LinkElement from "./LinkElement"
 
-export { Button, Chips, Modal, Typography, LinkElement }
+export { ButtonElement, ChipsElement, ModalElement, TypographyElement, LinkElement }

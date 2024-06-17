@@ -1,10 +1,10 @@
 import { Fragment } from "react"
 import cn from "classnames"
 
-import styles from "./Chips.module.css"
+import styles from "./ChipsElement.module.css"
 
 // TODO:
-// import { Chips } from "@/sawyer-react-lib/ui-kit"
+// import { ChipsElement } from "@/sawyer-react-lib/ui-kit"
 const PROPS = {
   className: "",
   theme: {
@@ -13,7 +13,7 @@ const PROPS = {
   items: ["Item-1", "Item-2", "Item-3"],
 }
 
-const Chips = (props) => {
+const ChipsElement = (props) => {
   const { className, theme, items } = props
 
   const itemMode = theme?.mode
@@ -33,4 +33,4 @@ const Chips = (props) => {
   )
 }
 
-export default Chips
+export default ChipsElement

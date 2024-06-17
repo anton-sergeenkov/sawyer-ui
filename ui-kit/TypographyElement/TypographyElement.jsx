@@ -1,9 +1,9 @@
 import cn from "classnames"
 
-import styles from "./Typography.module.css"
+import styles from "./TypographyElement.module.css"
 
 // TODO:
-// import { Typography } from "@/sawyer-react-lib/ui-kit"
+// import { TypographyElement } from "@/sawyer-react-lib/ui-kit"
 const PROPS = {
   className: "",
   theme: {
@@ -13,7 +13,7 @@ const PROPS = {
   children: <></>,
 }
 
-const Typography = (props) => {
+const TypographyElement = (props) => {
   const { className, theme, tag, children } = props
 
   const itemMode = theme?.mode
@@ -40,8 +40,6 @@ const Typography = (props) => {
     default:
       return <>{children}</>
   }
-
-  return <>{children}</>
 }
 
-export default Typography
+export default TypographyElement
