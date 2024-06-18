@@ -8,6 +8,9 @@ import LinkElement from "./basic/LinkElement"
 // Navigation
 import MenuButtonElement from "./navigation/MenuButtonElement"
 
+// Menu Items
+import MenuItemRoutesElement from "./menu-items/MenuItemRoutesElement"
+
 export {
   ButtonElement,
   ChipsElement,
@@ -15,6 +18,7 @@ export {
   TypographyElement,
   LinkElement,
   MenuButtonElement,
+  MenuItemRoutesElement,
 }
 
 // layout
