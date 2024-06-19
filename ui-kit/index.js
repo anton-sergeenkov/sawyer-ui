@@ -6,7 +6,8 @@ import TypographyElement from "./basic/TypographyElement"
 import LinkElement from "./basic/LinkElement"
 
 // Navigation
-import MenuButtonElement from "./navigation/MenuButtonElement"
+import MenuButtonElement from "./menu-navigation/MenuButtonElement"
+import MenuToggleElement from "./menu-navigation/MenuToggleElement"
 
 // Menu Items
 import MenuItemRoutesElement from "./menu-items/MenuItemRoutesElement"
@@ -18,6 +19,7 @@ export {
   TypographyElement,
   LinkElement,
   MenuButtonElement,
+  MenuToggleElement,
   MenuItemRoutesElement,
 }
 
