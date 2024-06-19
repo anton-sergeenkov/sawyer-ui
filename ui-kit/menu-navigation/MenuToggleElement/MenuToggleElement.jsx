@@ -50,7 +50,7 @@ const MenuToggleElement = (props) => {
       </MenuButtonElement>
 
       <Menu anchorEl={anchorEl} open={open} onClose={handleClose}>
-        <Component list={list} handleClose={handleClose} />
+        <Component theme={theme} list={list} handleClose={handleClose} />
       </Menu>
     </div>
   )
