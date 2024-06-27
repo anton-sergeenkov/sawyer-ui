@@ -1,4 +1,4 @@
-### ui-kit
+### Ui-Kit
 
 ```js
 import { ChipsElement } from "@/sawyer-react-lib/ui-kit"
@@ -19,8 +19,15 @@ import { MenuToggleElement } from "@/sawyer-react-lib/ui-kit"
 import { MenuItemHashElement } from "@/sawyer-react-lib/ui-kit"
 ```
 
-### app
+### App
 
 ```js
 import FontClasses from "@/sawyer-react-lib/app/fonts"
+import "@/sawyer-react-lib/app/globals.css"
+```
+
+Not Imported
+
+```js
+import { useMobile } from "@/sawyer-react-lib/ui-kit/hooks/useMobile"
 ```
