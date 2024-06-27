@@ -11,10 +11,11 @@ const PROPS = {
     mode: ["light", "dark"],
   },
   items: ["Item-1", "Item-2", "Item-3"],
+  isUserSelect: true,
 }
 
 const ChipsElement = (props) => {
-  const { className, theme, items } = props
+  const { className, theme, items, isUserSelect = false } = props
 
   const itemMode = theme?.mode
     ? styles["item--" + theme.mode]
@@ -24,7 +25,10 @@ const ChipsElement = (props) => {
     <>
       {items.map((element, index) => (
         <Fragment key={index}>
-          <span className={cn(styles.item, itemMode, className)}>
+          <span
+            className={cn(styles.item, itemMode, className)}
+            style={{ userSelect: isUserSelect ? "auto" : "none" }}
+          >
             {element}
           </span>
         </Fragment>
