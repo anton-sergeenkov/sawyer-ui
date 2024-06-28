@@ -28,7 +28,7 @@ const MenuItemRoutesElement = (props) => {
   return (
     <Link href={item.path}>
       <MenuButtonElement
-        theme={{ mode: theme.mode }}
+        theme={theme}
         isAccent={isAccent}
         isActive={pathname === item.path}
       >
