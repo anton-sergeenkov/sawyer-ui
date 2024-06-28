@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-// import cn from "classnames"
+import cn from "classnames"
 
 import { IconButton, Menu, MenuItem } from "@mui/material"
 import MoreVertIcon from "@mui/icons-material/MoreVert"
@@ -17,11 +17,23 @@ const PROPS = {
     { name: "Website", link: "https://letscode-dev.github.io/" },
     { name: "YouTube", link: "https://www.youtube.com/c/letscode-dev" },
   ],
-  className: "",
+  classes: {
+    container: "",
+    icon: "",
+    link: "",
+  },
 }
 
 const OptionsElement = (props) => {
-  const { options, className } = props
+  const {
+    options,
+    classes = {
+      container: "",
+      button: "",
+      icon: "",
+      link: "",
+    },
+  } = props
 
   const [anchorEl, setAnchorEl] = useState(null)
   const open = Boolean(anchorEl)
@@ -35,9 +47,9 @@ const OptionsElement = (props) => {
   }
 
   return (
-    <div>
+    <div className={cn(styles.container, classes.container)}>
       <IconButton onClick={handleClick} className={styles.button}>
-        <MoreVertIcon className={styles.icon} />
+        <MoreVertIcon className={cn(styles.icon, classes.icon)} />
       </IconButton>
 
       <Menu anchorEl={anchorEl} open={open} onClose={handleClose}>
@@ -52,7 +64,7 @@ const OptionsElement = (props) => {
               theme={{
                 mode: "dark-underlined",
               }}
-              className={styles.link}
+              className={cn(styles.link, classes.link)}
             >
               {item.name}
             </LinkElement>
