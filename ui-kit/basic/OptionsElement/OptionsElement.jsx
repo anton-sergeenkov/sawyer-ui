@@ -10,8 +10,18 @@ import { LinkElement } from "@/sawyer-react-lib/ui-kit"
 
 import styles from "./OptionsElement.module.css"
 
+// TODO:
+// import { OptionsElement } from "@/sawyer-react-lib/ui-kit"
+const PROPS = {
+  options: [
+    { name: "Website", link: "https://letscode-dev.github.io/" },
+    { name: "YouTube", link: "https://www.youtube.com/c/letscode-dev" },
+  ],
+  className: "",
+}
+
 const OptionsElement = (props) => {
-  const { options } = props
+  const { options, className } = props
 
   const [anchorEl, setAnchorEl] = useState(null)
   const open = Boolean(anchorEl)
