@@ -6,6 +6,9 @@ import TypographyElement from "./basic/TypographyElement"
 import LinkElement from "./basic/LinkElement"
 import OptionsElement from "./basic/OptionsElement"
 
+// Layout
+import LayoutCardElement from "./layout/LayoutCardElement"
+
 // Navigation
 import MenuButtonElement from "./menu-navigation/MenuButtonElement"
 import MenuToggleElement from "./menu-navigation/MenuToggleElement"
@@ -29,7 +32,7 @@ export {
   MenuItemGroupLinksElement,
   MenuItemGroupRoutesElement,
   MenuItemHashElement,
+  LayoutCardElement,
 }
 
-// layout
 // surfaces

@@ -8,7 +8,7 @@ const PROPS = {
   // Common
   className: "",
   theme: {
-    mode: ['blue-underlined-thin', 'dark-underlined'],
+    mode: ["blue-underlined-thin", "dark-underlined"],
   },
   children: <></>,
   // Native
@@ -19,9 +19,7 @@ const PROPS = {
 const LinkElement = (props) => {
   const { className, theme, href, target = "_blank", children } = props
 
-  const itemMode = theme?.mode
-    ? styles["item--" + theme.mode]
-    : ''
+  const itemMode = theme?.mode ? styles["item--" + theme.mode] : ""
 
   return (
     <a
