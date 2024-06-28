@@ -1,0 +1,12 @@
+.button {
+  background-color: var(--color-gray-normal);
+}
+
+.icon {
+  color: var(--color-gray-medium);
+}
+
+.link {
+  font-size: 13px;
+  font-family: var(--font-roboto-light);
+}

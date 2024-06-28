@@ -4,6 +4,7 @@ import ChipsElement from "./basic/ChipsElement"
 import ModalElement from "./basic/ModalElement"
 import TypographyElement from "./basic/TypographyElement"
 import LinkElement from "./basic/LinkElement"
+import OptionsElement from "./basic/OptionsElement"
 
 // Navigation
 import MenuButtonElement from "./menu-navigation/MenuButtonElement"
@@ -21,6 +22,7 @@ export {
   ModalElement,
   TypographyElement,
   LinkElement,
+  OptionsElement,
   MenuButtonElement,
   MenuToggleElement,
   MenuItemRoutesElement,
