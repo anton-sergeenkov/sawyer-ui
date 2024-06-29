@@ -54,6 +54,8 @@ body {
   font-family: var(--font-roboto-regular);
   color: var(--color-black-lighter);
   background-color: var(--color-gray-light);
+  overflow: auto !important;
+  padding-right: 0 !important;
 }
 *,
 :after,
