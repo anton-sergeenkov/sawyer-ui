@@ -1,7 +1,6 @@
 import cn from "classnames"
 
-import { LinkElement } from "@/sawyer-react-lib/ui-kit"
-import { OptionsElement } from "@/sawyer-react-lib/ui-kit"
+import { LinkElement, OptionsElement } from "@/sawyer-react-lib/ui-kit"
 
 import styles from "./LayoutCardsElement.module.css"
 
