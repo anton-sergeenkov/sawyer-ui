@@ -53,20 +53,20 @@ const OptionsElement = (props) => {
       </IconButton>
 
       <Menu anchorEl={anchorEl} open={open} onClose={handleClose}>
-        {options.map((item, index) => (
+        {options.map((element, index) => (
           <MenuItem
             key={index}
             onClick={handleClose}
             sx={{ minHeight: "auto" }}
           >
             <LinkElement
-              href={item.link}
+              href={element.link}
               theme={{
                 mode: "dark-underlined",
               }}
               className={cn(styles.link, classes.link)}
             >
-              {item.name}
+              {element.name}
             </LinkElement>
           </MenuItem>
         ))}

@@ -4,10 +4,13 @@ import ChipsElement from "./basic/ChipsElement"
 import ModalElement from "./basic/ModalElement"
 import TypographyElement from "./basic/TypographyElement"
 import LinkElement from "./basic/LinkElement"
-import OptionsElement from "./basic/OptionsElement"
 
 // Layout
-import LayoutCardElement from "./layout/LayoutCardElement"
+import LayoutCardsElement from "./layout/LayoutCardsElement"
+
+// Surfaces
+import OptionsElement from "./surfaces/OptionsElement"
+import SocialLinksElement from "./surfaces/SocialLinksElement"
 
 // Navigation
 import MenuButtonElement from "./menu-navigation/MenuButtonElement"
@@ -32,7 +35,8 @@ export {
   MenuItemGroupLinksElement,
   MenuItemGroupRoutesElement,
   MenuItemHashElement,
-  LayoutCardElement,
+  LayoutCardsElement,
+  SocialLinksElement,
 }
 
 // surfaces

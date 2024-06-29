@@ -14,7 +14,7 @@ const ChildComponent = (props) => {
 
   return (
     <>
-      {list.map((item, index) => (
+      {list.map((element, index) => (
         <div className={styles.link} key={index}>
           <MenuItem
             onClick={handleClose}
@@ -25,7 +25,7 @@ const ChildComponent = (props) => {
               cursor: "default",
             }}
           >
-            <MenuItemRoutesElement theme={theme} item={item} />
+            <MenuItemRoutesElement theme={theme} item={element} />
           </MenuItem>
         </div>
       ))}

@@ -9,6 +9,8 @@ import { OptionsElement } from "@/sawyer-react-lib/ui-kit"
 import { MenuItemRoutesElement } from "@/sawyer-react-lib/ui-kit"
 import { MenuItemGroupLinksElement } from "@/sawyer-react-lib/ui-kit"
 import { MenuItemGroupRoutesElement } from "@/sawyer-react-lib/ui-kit"
+import { LayoutCardsElement } from "@/sawyer-react-lib/ui-kit"
+import { SocialLinksElement } from "@/sawyer-react-lib/ui-kit"
 ```
 
 Not Imported

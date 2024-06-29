@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+}
+
+.link {
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  /* background-image: url(./img/telegram.svg); */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 50%;
+  opacity: 0.9;
+  transition: 0.7s;
+  border: 1px solid var(--color-gray-light);
+  border: 1px solid var(--color-gray-normal);
+}
+.link:last-child {
+  margin-right: 0;
+}
+.link:hover {
+  border: 1px solid var(--color-gray-medium);
+  opacity: 0.8;
+}
