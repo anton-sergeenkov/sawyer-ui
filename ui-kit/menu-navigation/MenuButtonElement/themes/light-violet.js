@@ -3,7 +3,7 @@ const CONFIG_COLORS = {
     color: "#2b2b2b", // dark
   },
   active: {
-    color: "#3a3ae7", // blue
+    color: "#4267af", // blue
   },
   accent: {
     color: "#edeeef", // gray
