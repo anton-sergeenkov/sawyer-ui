@@ -2,7 +2,7 @@ import MUIButton from "@mui/material/Button"
 
 // import styles from "./ButtonElement.module.css"
 
-// TODO:
+// [UiKit]
 // import { ButtonElement } from "@/sawyer-react-lib/ui-kit"
 const PROPS = {
   // Material-UI Button props

@@ -2,7 +2,7 @@ import cn from "classnames"
 
 import styles from "./SocialLinksElement.module.css"
 
-// TODO:
+// [UiKit]
 // import { SocialLinksElement } from "@/sawyer-react-lib/ui-kit"
 const PROPS = {
   // Material-UI Button props

@@ -6,7 +6,7 @@ import { getStyles } from "./utils"
 
 // import styles from "./MenuButtonElement.module.css"
 
-// TODO:
+// [UiKit]
 // import { MenuButtonElement } from "@/sawyer-react-lib/ui-kit"
 const PROPS = {
   theme: {

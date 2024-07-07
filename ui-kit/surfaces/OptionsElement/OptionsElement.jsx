@@ -10,7 +10,7 @@ import { LinkElement } from "@/sawyer-react-lib/ui-kit"
 
 import styles from "./OptionsElement.module.css"
 
-// TODO:
+// [UiKit]
 // import { OptionsElement } from "@/sawyer-react-lib/ui-kit"
 const PROPS = {
   options: [

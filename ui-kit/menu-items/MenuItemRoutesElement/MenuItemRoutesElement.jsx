@@ -7,7 +7,7 @@ import { MenuButtonElement } from "@/sawyer-react-lib/ui-kit"
 
 // import styles from "./MenuItemRoutesElement.module.css"
 
-// TODO:
+// [UiKit]
 // import { MenuItemRoutesElement } from "@/sawyer-react-lib/ui-kit"
 const PROPS = {
   theme: {

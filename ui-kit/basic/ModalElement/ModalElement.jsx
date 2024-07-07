@@ -2,7 +2,7 @@ import MUIModal from "@mui/material/Modal"
 
 // import styles from "./ModalElement.module.css"
 
-// TODO:
+// [UiKit]
 // import { ModalElement } from "@/sawyer-react-lib/ui-kit"
 const PROPS = {
   // Material-UI Modal props

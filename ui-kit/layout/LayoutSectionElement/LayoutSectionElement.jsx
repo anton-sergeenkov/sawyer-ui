@@ -3,7 +3,7 @@ import { checkThemeMode } from "../../utils"
 
 import styles from "./LayoutSectionElement.module.css"
 
-// TODO:
+// [UiKit]
 // import { LayoutSectionElement } from "@/sawyer-react-lib/ui-kit"
 const PROPS = {
   className: "",

@@ -3,7 +3,7 @@ import { checkThemeMode } from "../../utils"
 
 import styles from "./TypographyElement.module.css"
 
-// TODO:
+// [UiKit]
 // import { TypographyElement } from "@/sawyer-react-lib/ui-kit"
 const PROPS = {
   className: "",

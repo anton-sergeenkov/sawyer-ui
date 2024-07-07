@@ -3,7 +3,7 @@ import { checkThemeMode } from "../../utils"
 
 import styles from "./LinkElement.module.css"
 
-// TODO:
+// [UiKit]
 // import { LinkElement } from "@/sawyer-react-lib/ui-kit"
 const PROPS = {
   // Common

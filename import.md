@@ -1,6 +1,15 @@
 ### Ui-Kit
 
 ```js
+const themeSettings = {
+  mode: ["light", "dark", "dark-filled"],
+  filled: true,
+  outlined: true,
+  notUnderlined: true,
+}
+```
+
+```js
 import { ChipsElement } from "@/sawyer-react-lib/ui-kit"
 import { ModalElement } from "@/sawyer-react-lib/ui-kit"
 import { TypographyElement } from "@/sawyer-react-lib/ui-kit"

@@ -5,7 +5,7 @@ import { LinkElement, OptionsElement } from "@/sawyer-react-lib/ui-kit"
 
 import styles from "./LayoutCardsElement.module.css"
 
-// TODO:
+// [UiKit]
 // import { LayoutCardsElement } from "@/sawyer-react-lib/ui-kit"
 const PROPS = {
   theme: {

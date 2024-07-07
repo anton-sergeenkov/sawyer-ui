@@ -3,7 +3,7 @@ import { checkThemeMode } from "../../utils"
 
 import styles from "./TypographyGradientElement.module.css"
 
-// TODO:
+// [UiKit]
 // import { TypographyGradientElement } from "@/sawyer-react-lib/ui-kit"
 const PROPS = {
   className: "",
