@@ -23,22 +23,18 @@ const ChildComponent = (props) => {
             cursor: "default",
           }}
         >
-          <MenuButtonElement
-            theme={theme}
-            isAccent={false}
-            isActive={false}
-            disabled={element.disabled}
-            isHoverTransparent={true}
-            isTextLeft={true}
-          >
-            {!element.disabled ? (
-              <a className={styles.link} href={element.path} target="_blank">
-                {element.title}
-              </a>
-            ) : (
-              <span>{element.title}</span>
-            )}
-          </MenuButtonElement>
+          <a className={styles.link} href={element.path} target="_blank">
+            <MenuButtonElement
+              theme={theme}
+              isAccent={false}
+              isActive={false}
+              disabled={element.disabled}
+              isHoverTransparent={true}
+              isTextLeft={true}
+            >
+              {element.title}
+            </MenuButtonElement>
+          </a>
         </MenuItem>
       ))}
     </>
