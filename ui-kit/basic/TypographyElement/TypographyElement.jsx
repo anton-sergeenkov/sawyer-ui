@@ -7,7 +7,12 @@ import styles from "./TypographyElement.module.css"
 const PROPS = {
   className: "",
   theme: {
-    mode: ["light", "dark", "dark-filled", "light-outline"],
+    mode: [
+      // "light",
+      // "dark",
+      "dark-filled",
+      "light-outline",
+    ],
   },
   tag: ["h1", "h2", "h3", "p"],
   children: <></>,
@@ -16,13 +21,11 @@ const PROPS = {
 const TypographyElement = (props) => {
   const { className, theme, tag, children } = props
 
-  const itemMode = theme?.mode
-    ? styles["item--" + theme.mode]
-    : styles["item--light"]
+  const itemMode = theme?.mode ? styles["item--" + theme.mode] : ""
 
   switch (tag) {
     case "h1":
-      return <h1>{children}</h1>
+      return <h1 className={cn(styles.h1, className)}>{children}</h1>
 
     case "h2":
       return (
@@ -32,10 +35,10 @@ const TypographyElement = (props) => {
       )
 
     case "h3":
-      return <h3>{children}</h3>
+      return <h3 className={cn(styles.h3, className)}>{children}</h3>
 
     case "p":
-      return <p>{children}</p>
+      return <p className={cn(styles.p, className)}>{children}</p>
 
     default:
       return <>{children}</>

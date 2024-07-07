@@ -1,3 +1,10 @@
+.h1 {
+  font-size: 25px;
+  margin: 0;
+  text-align: left;
+  font-family: var(--font-roboto-light);
+}
+
 .h2 {
   margin: 0;
   margin-bottom: 25px;
@@ -6,25 +13,37 @@
   .item {
     display: inline-block;
     padding: 2px 15px;
-    font-size: 17px;
-    font-family: var(--font-roboto-thin);
+    font-size: 22px;
+    font-family: var(--font-roboto-light);
   }
+}
+
+.h3 {
+  font-size: 18px;
+  margin: 0;
+  text-align: left;
+}
+
+.p {
+  padding: 6px 0;
+  margin: 0;
 }
 
 /***************************************************
 THEME
 /***************************************************/
-.h2 .item--light {
-}
-.h2 .item--dark {
-}
+
 .h2 .item--dark-filled {
   border-radius: var(--border-radius-chip);
   background-color: var(--color-black-lighter);
   color: #fff;
+  font-family: var(--font-roboto-thin);
+  font-size: 17px;
 }
 .h2 .item--light-outline {
   border: 1px solid var(--color-black-lighter);
   border-radius: var(--border-radius-chip);
   color: var(--color-black-lighter);
+  font-family: var(--font-roboto-thin);
+  font-size: 17px;
 }
