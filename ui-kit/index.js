@@ -7,6 +7,7 @@ import LinkElement from "./basic/LinkElement"
 
 // Layout
 import LayoutCardsElement from "./layout/LayoutCardsElement"
+import LayoutSection from "./layout/LayoutSection"
 
 // Surfaces
 import OptionsElement from "./surfaces/OptionsElement"
@@ -36,6 +37,7 @@ export {
   MenuItemGroupRoutesElement,
   MenuItemHashElement,
   LayoutCardsElement,
+  LayoutSection,
   SocialLinksElement,
 }
 
