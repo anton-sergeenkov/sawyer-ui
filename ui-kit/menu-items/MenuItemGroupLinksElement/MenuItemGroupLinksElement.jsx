@@ -3,22 +3,18 @@
 // import OpenInNewOutlinedIcon from '@mui/icons-material/OpenInNewOutlined'
 import MenuItem from "@mui/material/MenuItem"
 
-import { ButtonElement, MenuToggleElement } from "@/sawyer-react-lib/ui-kit"
+import { MenuButtonElement, MenuToggleElement } from "@/sawyer-react-lib/ui-kit"
 
 import styles from "./MenuItemGroupLinksElement.module.css"
 
 const ChildComponent = (props) => {
-  const {
-    // theme,
-    list,
-    handleClose,
-  } = props
+  const { theme, list, handleClose } = props
 
   return (
     <>
-      {list.items.map((itemMenu, indexMenu) => (
+      {list.items.map((element, index) => (
         <MenuItem
-          key={indexMenu}
+          key={index}
           onClick={handleClose}
           sx={{
             padding: 0,
@@ -27,28 +23,21 @@ const ChildComponent = (props) => {
             cursor: "default",
           }}
         >
-          <ButtonElement
-            size="small"
-            fullWidth
-            variant="text"
-            disabled={itemMenu.disabled}
-            // endIcon={<OpenInNewOutlinedIcon className={styles.icon} />}
-            sx={{
-              textTransform: "none",
-              color: "#2b2b2b",
-              justifyContent: "start",
-              padding: "5px 10px",
-              fontFamily: "var(--font-roboto-light)",
-            }}
+          <MenuButtonElement
+            theme={theme}
+            isAccent={false}
+            isActive={false}
+            disabled={element.disabled}
+            isHoverTransparent={true}
           >
-            {!itemMenu.disabled ? (
-              <a className={styles.link} href={itemMenu.path} target="_blank">
-                {itemMenu.title}
+            {!element.disabled ? (
+              <a className={styles.link} href={element.path} target="_blank">
+                {element.title}
               </a>
             ) : (
-              <span>{itemMenu.title}</span>
+              <span>{element.title}</span>
             )}
-          </ButtonElement>
+          </MenuButtonElement>
         </MenuItem>
       ))}
     </>

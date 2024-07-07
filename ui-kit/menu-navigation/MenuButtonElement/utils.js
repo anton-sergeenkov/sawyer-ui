@@ -12,7 +12,19 @@ export const getTheme = (theme) => {
   }
 }
 
-export const getStyles = (theme, isAccent, isActive) => {
+const stylesButtonHover = {
+  ":hover": {
+    background: "none",
+  },
+}
+
+const stylesTextDisabled = {
+  color: "var(--color-gray)",
+}
+
+export const getStyles = (props) => {
+  const { mode, isAccent, isActive, isHoverTransparent, isDisabled } = props
+
   const {
     // Button
     StylesButtonDefault,
@@ -22,18 +34,20 @@ export const getStyles = (theme, isAccent, isActive) => {
     StylesTextDefault,
     StylesTextAccent,
     StylesTextActive,
-  } = getTheme(theme)
+  } = getTheme(mode)
 
   const stylesButton = {
     ...StylesButtonDefault,
     ...(isAccent && StylesButtonAccent),
     ...(!isAccent && isActive && StylesButtonActive),
+    ...(isHoverTransparent && stylesButtonHover),
   }
 
   const stylesText = {
     ...StylesTextDefault,
     ...(isAccent && StylesTextAccent),
     ...(!isAccent && isActive && StylesTextActive),
+    ...(isDisabled && stylesTextDisabled),
   }
 
   return {

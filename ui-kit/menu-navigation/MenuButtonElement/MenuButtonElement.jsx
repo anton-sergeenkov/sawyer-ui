@@ -16,6 +16,8 @@ const PROPS = {
   isActive: true,
   className: "",
   children: <></>,
+  disabled: true,
+  isHoverTransparent: true,
   onClick: () => null,
   endIcon: () => null,
 }
@@ -29,9 +31,17 @@ const MenuButtonElement = (props) => {
     children,
     onClick = null,
     endIcon = null,
+    disabled = false,
+    isHoverTransparent = false,
   } = props
 
-  const { stylesButton, stylesText } = getStyles(theme.mode, isAccent, isActive)
+  const { stylesButton, stylesText } = getStyles({
+    mode: theme.mode,
+    isAccent,
+    isActive,
+    isHoverTransparent,
+    isDisabled: disabled,
+  })
 
   return (
     <ButtonElement
@@ -41,6 +51,7 @@ const MenuButtonElement = (props) => {
       sx={stylesButton}
       onClick={onClick}
       endIcon={endIcon}
+      disabled={disabled}
     >
       <span style={stylesText}>{children}</span>
     </ButtonElement>
