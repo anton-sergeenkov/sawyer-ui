@@ -1,4 +1,5 @@
 import cn from "classnames"
+import { checkThemeMode } from "../../utils"
 
 import styles from "./LinkElement.module.css"
 
@@ -19,11 +20,11 @@ const PROPS = {
 const LinkElement = (props) => {
   const { className, theme, href, target = "_blank", children } = props
 
-  const itemMode = theme?.mode ? styles["item--" + theme.mode] : ""
+  const stylesTheme = checkThemeMode(theme, styles)
 
   return (
     <a
-      className={cn(styles.item, itemMode, className)}
+      className={cn(styles.item, stylesTheme, className)}
       href={href}
       target={target}
     >

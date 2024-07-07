@@ -1,4 +1,5 @@
 import cn from "classnames"
+import { checkThemeMode } from "../../utils"
 
 import { LinkElement, OptionsElement } from "@/sawyer-react-lib/ui-kit"
 
@@ -31,10 +32,10 @@ const PROPS = {
 const LayoutCardsElement = (props) => {
   const { theme, themeLink, items, isOptions = false } = props
 
-  const itemMode = theme?.mode ? styles["item--" + theme.mode] : ""
+  const stylesTheme = checkThemeMode(theme, styles)
 
   return (
-    <div className={cn(styles.gridContainer, itemMode)}>
+    <div className={cn(styles.gridContainer, stylesTheme)}>
       {items.map((element, index) => (
         <div className={styles.gridItem} key={index}>
           <a

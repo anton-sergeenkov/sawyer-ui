@@ -1,4 +1,5 @@
 import cn from "classnames"
+import { checkThemeMode } from "../../utils"
 
 import styles from "./TypographyElement.module.css"
 
@@ -21,7 +22,7 @@ const PROPS = {
 const TypographyElement = (props) => {
   const { className, theme, tag, children } = props
 
-  const itemMode = theme?.mode ? styles["item--" + theme.mode] : ""
+  const stylesTheme = checkThemeMode(theme, styles)
 
   switch (tag) {
     case "h1":
@@ -30,7 +31,7 @@ const TypographyElement = (props) => {
     case "h2":
       return (
         <h2 className={cn(styles.h2, className)}>
-          <span className={cn(styles.item, itemMode)}>{children}</span>
+          <span className={cn(styles.item, stylesTheme)}>{children}</span>
         </h2>
       )
 

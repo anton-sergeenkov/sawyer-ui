@@ -1,4 +1,5 @@
 import cn from "classnames"
+import { checkThemeMode } from "../../utils"
 
 import styles from "./LayoutSectionElement.module.css"
 
@@ -15,10 +16,10 @@ const PROPS = {
 const LayoutSectionElement = (props) => {
   const { theme, className, children } = props
 
-  const itemMode = theme?.mode ? styles["item--" + theme.mode] : ""
+  const stylesTheme = checkThemeMode(theme, styles)
 
   return (
-    <div className={cn(styles.section, itemMode, className)}>{children}</div>
+    <div className={cn(styles.section, stylesTheme, className)}>{children}</div>
   )
 }
 
