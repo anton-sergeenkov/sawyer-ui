@@ -18,6 +18,7 @@ const PROPS = {
   children: <></>,
   disabled: true,
   isHoverTransparent: true,
+  isTextLeft: true,
   onClick: () => null,
   endIcon: () => null,
 }
@@ -33,6 +34,7 @@ const MenuButtonElement = (props) => {
     endIcon = null,
     disabled = false,
     isHoverTransparent = false,
+    isTextLeft = false,
   } = props
 
   const { stylesButton, stylesText } = getStyles({
@@ -41,6 +43,7 @@ const MenuButtonElement = (props) => {
     isActive,
     isHoverTransparent,
     isDisabled: disabled,
+    isTextLeft,
   })
 
   return (
@@ -53,7 +56,7 @@ const MenuButtonElement = (props) => {
       endIcon={endIcon}
       disabled={disabled}
     >
-      <span style={stylesText}>{children}</span>
+      <div style={stylesText}>{children}</div>
     </ButtonElement>
   )
 }

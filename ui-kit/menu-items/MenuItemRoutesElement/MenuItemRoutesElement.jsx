@@ -31,6 +31,7 @@ const MenuItemRoutesElement = (props) => {
         theme={theme}
         isAccent={isAccent}
         isActive={pathname === item.path}
+        isTextLeft={true}
       >
         {item.title}
       </MenuButtonElement>

@@ -23,7 +23,14 @@ const stylesTextDisabled = {
 }
 
 export const getStyles = (props) => {
-  const { mode, isAccent, isActive, isHoverTransparent, isDisabled } = props
+  const {
+    mode,
+    isAccent,
+    isActive,
+    isHoverTransparent,
+    isDisabled,
+    isTextLeft,
+  } = props
 
   const {
     // Button
@@ -41,6 +48,7 @@ export const getStyles = (props) => {
     ...(isAccent && StylesButtonAccent),
     ...(!isAccent && isActive && StylesButtonActive),
     ...(isHoverTransparent && stylesButtonHover),
+    ...{ width: "100%" },
   }
 
   const stylesText = {
@@ -48,6 +56,8 @@ export const getStyles = (props) => {
     ...(isAccent && StylesTextAccent),
     ...(!isAccent && isActive && StylesTextActive),
     ...(isDisabled && stylesTextDisabled),
+    ...(isTextLeft && { textAlign: "left" }),
+    ...{ width: "100%" },
   }
 
   return {

@@ -29,6 +29,7 @@ const ChildComponent = (props) => {
             isActive={false}
             disabled={element.disabled}
             isHoverTransparent={true}
+            isTextLeft={true}
           >
             {!element.disabled ? (
               <a className={styles.link} href={element.path} target="_blank">
