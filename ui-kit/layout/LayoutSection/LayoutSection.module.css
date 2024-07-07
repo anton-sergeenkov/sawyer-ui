@@ -3,12 +3,10 @@
   margin: auto;
   margin-bottom: 40px;
   padding: 0 40px;
-  border: 1px solid #000;
 }
 
 .item--header-footer {
   margin-bottom: 0;
-  border: 1px solid red;
 }
 
 /***************************************************
