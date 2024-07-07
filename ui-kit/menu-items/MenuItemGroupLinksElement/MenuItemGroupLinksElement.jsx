@@ -8,7 +8,11 @@ import { ButtonElement, MenuToggleElement } from "@/sawyer-react-lib/ui-kit"
 import styles from "./MenuItemGroupLinksElement.module.css"
 
 const ChildComponent = (props) => {
-  const { theme, list, handleClose } = props
+  const {
+    // theme,
+    list,
+    handleClose,
+  } = props
 
   return (
     <>
