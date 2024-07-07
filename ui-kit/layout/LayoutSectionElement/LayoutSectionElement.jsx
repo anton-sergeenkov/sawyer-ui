@@ -1,9 +1,9 @@
 import cn from "classnames"
 
-import styles from "./LayoutSection.module.css"
+import styles from "./LayoutSectionElement.module.css"
 
 // TODO:
-// import { LayoutSection } from "@/sawyer-react-lib/ui-kit"
+// import { LayoutSectionElement } from "@/sawyer-react-lib/ui-kit"
 const PROPS = {
   theme: {
     mode: ["header-footer"],
@@ -12,7 +12,7 @@ const PROPS = {
   children: <></>,
 }
 
-const LayoutSection = (props) => {
+const LayoutSectionElement = (props) => {
   const { theme, className, children } = props
 
   const itemMode = theme?.mode ? styles["item--" + theme.mode] : ""
@@ -22,4 +22,4 @@ const LayoutSection = (props) => {
   )
 }
 
-export default LayoutSection
+export default LayoutSectionElement
