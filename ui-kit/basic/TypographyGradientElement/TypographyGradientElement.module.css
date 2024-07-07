@@ -1,0 +1,16 @@
+.item--darkblue-blue {
+  /* background: -webkit-linear-gradient(right bottom, #162454, #533389, #0a9ed8, #7a359f); */
+  background: -webkit-linear-gradient(
+    right bottom,
+    #e2e9b3,
+    #533389,
+    #0a9ed8,
+    #162454
+  );
+}
+
+.item {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

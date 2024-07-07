@@ -5,10 +5,10 @@ import styles from "./LayoutSectionElement.module.css"
 // TODO:
 // import { LayoutSectionElement } from "@/sawyer-react-lib/ui-kit"
 const PROPS = {
+  className: "",
   theme: {
     mode: ["header-footer"],
   },
-  className: "",
   children: <></>,
 }
 
