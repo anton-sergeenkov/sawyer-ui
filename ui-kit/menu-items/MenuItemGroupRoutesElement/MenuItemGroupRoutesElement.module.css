@@ -2,6 +2,9 @@
   width: 100%;
   text-decoration: none;
   color: var(--color-black-lighter);
+  display: block;
+  width: 100%;
+  text-align: left;
 }
 .link button {
   width: 100%;
@@ -14,14 +17,3 @@
   width: 100%;
   text-align: left;
 }
-.link a {
-  display: block;
-  width: 100%;
-  text-align: left;
-}
-/* .icon {
-    width: 13px;
-    height: 13px;
-    opacity: .7;
-    color: var(--color-black-lighter);
-} */
