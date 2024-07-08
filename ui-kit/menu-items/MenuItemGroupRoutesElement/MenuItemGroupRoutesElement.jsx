@@ -25,7 +25,11 @@ const ChildComponent = (props) => {
               cursor: "default",
             }}
           >
-            <MenuItemRoutesElement theme={theme} item={element} />
+            <MenuItemRoutesElement
+              theme={theme}
+              item={element}
+              isTextLeft={true}
+            />
           </MenuItem>
         </div>
       ))}

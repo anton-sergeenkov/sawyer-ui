@@ -18,10 +18,11 @@ const PROPS = {
     path: "",
   },
   isAccent: true,
+  isTextLeft: true,
 }
 
 const MenuItemRoutesElement = (props) => {
-  const { theme, item, isAccent } = props
+  const { theme, item, isAccent, isTextLeft } = props
 
   const pathname = usePathname()
 
@@ -31,7 +32,7 @@ const MenuItemRoutesElement = (props) => {
         theme={theme}
         isAccent={isAccent}
         isActive={pathname === item.path}
-        isTextLeft={true}
+        isTextLeft={isTextLeft}
       >
         {item.title}
       </MenuButtonElement>
