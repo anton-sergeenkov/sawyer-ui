@@ -58,6 +58,12 @@ const MenuButtonElement = (props) => {
     isTextLeft,
   })
 
+  /* FIXME:
+  variant="filled" нет в API
+  Добавляется класс .MuiButton-filled. Класс ни на что не влияет
+  Eсли убрать, то сбиваются стили в Меню
+  */
+
   return (
     <ButtonElement
       className={className}
