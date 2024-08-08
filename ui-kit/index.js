@@ -24,6 +24,9 @@ import MenuItemGroupLinksElement from "./menu-items/MenuItemGroupLinksElement"
 import MenuItemGroupRoutesElement from "./menu-items/MenuItemGroupRoutesElement"
 import MenuItemHashElement from "./menu-items/MenuItemHashElement"
 
+// Types
+import { ISocialLinksElementList } from "./surfaces/SocialLinksElement/types"
+
 export {
   ButtonElement,
   ChipsElement,
@@ -41,6 +44,5 @@ export {
   LayoutCardsElement,
   LayoutSectionElement,
   SocialLinksElement,
+  ISocialLinksElementList,
 }
-
-// surfaces

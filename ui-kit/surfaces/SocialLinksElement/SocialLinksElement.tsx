@@ -1,22 +1,14 @@
 import cn from "classnames"
+import { ISocialLinksElementList } from "./types"
 
 import styles from "./SocialLinksElement.module.css"
 
-// [UiKit]
-// import { SocialLinksElement } from "@/sawyer-react-lib/ui-kit"
-const PROPS = {
-  // Material-UI Button props
-  list: [
-    {
-      img: "", // import coverLinkedin from "./img/linkedin.svg"
-      title: "Linkedin",
-      link: "https://www.linkedin.com/in/sergeenkov-anton",
-    },
-  ],
-  className: "",
+interface ISocialLinksElement {
+  list: ISocialLinksElementList[]
+  className?: string
 }
 
-const SocialLinksElement = (props) => {
+const SocialLinksElement: React.FC<ISocialLinksElement> = (props) => {
   const { list, className } = props
 
   return (
