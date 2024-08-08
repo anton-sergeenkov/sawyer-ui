@@ -1,13 +1,8 @@
 // import cn from 'classnames'
-
 import { ButtonElement } from "@/sawyer-react-lib/ui-kit"
-
 import { getStyles } from "./utils"
-
 // import styles from "./MenuButtonElement.module.css"
 
-// [UiKit]
-// import { MenuButtonElement } from "@/sawyer-react-lib/ui-kit"
 const PROPS = {
   theme: {
     mode: ["light-violet"],
@@ -22,6 +17,23 @@ const PROPS = {
   onClick: () => null,
   endIcon: () => null,
 }
+
+// interface ITheme {
+//   // mode: ["light-violet"],
+//   mode: string[]
+// }
+
+// interface IMenuButtonElementProps {
+//   theme: ITheme
+//   isAccent: boolean
+//   isActive: boolean
+//   className: string
+//   children: React.ReactNode
+//   disabled: boolean
+//   isHoverTransparent: boolean
+//   isTextLeft: boolean
+//   // Button Props
+// }
 
 const MenuButtonElement = (props) => {
   const {
