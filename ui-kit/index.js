@@ -11,7 +11,6 @@ import LayoutSectionElement from "./layout/LayoutSectionElement"
 
 // Surfaces
 import OptionsElement from "./surfaces/OptionsElement"
-import SocialLinksElement from "./surfaces/SocialLinksElement"
 
 // Navigation
 import MenuButtonElement from "./menu-navigation/MenuButtonElement"
@@ -22,9 +21,6 @@ import MenuItemRoutesElement from "./menu-items/MenuItemRoutesElement"
 import MenuItemGroupLinksElement from "./menu-items/MenuItemGroupLinksElement"
 import MenuItemGroupRoutesElement from "./menu-items/MenuItemGroupRoutesElement"
 import MenuItemHashElement from "./menu-items/MenuItemHashElement"
-
-// Types
-import { ISocialLinksElementList } from "./surfaces/SocialLinksElement/types"
 
 export {
   ButtonElement,
@@ -41,6 +37,4 @@ export {
   MenuItemHashElement,
   LayoutCardsElement,
   LayoutSectionElement,
-  SocialLinksElement,
-  ISocialLinksElementList,
 }

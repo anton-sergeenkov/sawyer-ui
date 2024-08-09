@@ -9,7 +9,7 @@ export enum ThemeMode {
   DARK = "dark",
 }
 
-interface ITheme<T> {
+export interface ITheme<T> {
   mode: T[]
 }
 
