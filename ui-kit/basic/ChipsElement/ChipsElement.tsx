@@ -4,21 +4,25 @@ import { checkThemeMode } from "../../utils"
 
 import styles from "./ChipsElement.module.css"
 
-// [UiKit]
-// import { ChipsElement } from "@/sawyer-react-lib/ui-kit"
-const PROPS = {
-  className: "",
-  theme: {
-    mode: [
-      // "light",
-      "dark",
-    ],
-  },
-  items: ["Item-1", "Item-2", "Item-3"],
-  isUserSelect: true,
+// - light
+// + dark
+enum ThemeMode {
+  LIGHT = "light",
+  DARK = "dark",
 }
 
-const ChipsElement = (props) => {
+interface ITheme<T> {
+  mode: T[]
+}
+
+interface IChipsElement {
+  className: string
+  theme?: ITheme<ThemeMode>
+  items: string[]
+  isUserSelect: boolean
+}
+
+const ChipsElement: React.FC<IChipsElement> = (props) => {
   const { className, theme, items, isUserSelect = false } = props
 
   const stylesTheme = checkThemeMode(theme, styles)

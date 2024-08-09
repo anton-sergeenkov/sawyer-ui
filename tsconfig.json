@@ -26,12 +26,11 @@
       "@/hooks/*": ["hooks/*"],
       "@/node.js/*": ["node.js/*"],
       "@/routes/*": ["routes/*"],
-      "@/constants/*": ["constants/*"],
-      "@/sawyer-react-lib/*": ["../-sawyer-react-lib-/*"]
+      "@/constants/*": ["constants/*"]
     }
   },
   "include": [
-    "../-sawyer-react-lib-/types/global.d.ts",
+    "./types/global.d.ts",
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
