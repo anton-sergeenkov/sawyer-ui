@@ -1,18 +1,22 @@
 # ⭐️ Ui-Kit
 
-**ChipsElement**
-
+**Basic**
 ```js
+// ChipsElement
 import ChipsElement from "@/sawyer-react-lib/ui-kit/basic/ChipsElement"
 import { ThemeMode as ThemeChipsElement } from "@/sawyer-react-lib/ui-kit/basic/ChipsElement"
 ```
 
-**SocialLinksElement**
-
+**Surfaces**
 ```js
+// SocialLinksElement
 import SocialLinksElement from "@/sawyer-react-lib/ui-kit/surfaces/SocialLinksElement"
 import type { ISocialLinksElementList } from "@/sawyer-react-lib/ui-kit/surfaces/SocialLinksElement"
 ```
+
+---
+
+# ⭐️ Check
 
 ```js
 // Imported
@@ -34,26 +38,15 @@ import type { ISocialLinksElementList } from "@/sawyer-react-lib/ui-kit/surfaces
 // import { MenuItemHashElement } from "@/sawyer-react-lib/ui-kit"
 ```
 
+---
+
 # ⭐️ App
 
 ```js
+// Imported
 import FontClasses from "@/sawyer-react-lib/app/fonts"
 import "@/sawyer-react-lib/app/globals.css"
-```
 
-Not Imported
-
-```js
+// Not imported
 import { useMobile } from "@/sawyer-react-lib/ui-kit/hooks/useMobile"
-```
-
-# ⭐️ Theme
-
-```js
-const themeSettings = {
-  mode: ["light", "dark", "dark-filled"],
-  filled: true,
-  outlined: true,
-  notUnderlined: true,
-}
 ```
