@@ -4,10 +4,8 @@ import { checkThemeMode } from "../../utils"
 
 import styles from "./ChipsElement.module.css"
 
-// - light
-// + dark
-enum ThemeMode {
-  LIGHT = "light",
+export enum ThemeMode {
+  LIGHT = "light", // Not Used
   DARK = "dark",
 }
 

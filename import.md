@@ -10,7 +10,6 @@ const themeSettings = {
 ```
 
 ```js
-import { ChipsElement } from "@/sawyer-react-lib/ui-kit"
 import { ModalElement } from "@/sawyer-react-lib/ui-kit"
 import { TypographyElement } from "@/sawyer-react-lib/ui-kit"
 import { TypographyGradientElement } from "@/sawyer-react-lib/ui-kit"

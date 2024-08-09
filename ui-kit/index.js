@@ -1,6 +1,5 @@
 // Basic
 import ButtonElement from "./basic/ButtonElement"
-import ChipsElement from "./basic/ChipsElement"
 import ModalElement from "./basic/ModalElement"
 import TypographyElement from "./basic/TypographyElement"
 import TypographyGradientElement from "./basic/TypographyGradientElement"
@@ -29,7 +28,6 @@ import { ISocialLinksElementList } from "./surfaces/SocialLinksElement/types"
 
 export {
   ButtonElement,
-  ChipsElement,
   ModalElement,
   TypographyElement,
   TypographyGradientElement,
