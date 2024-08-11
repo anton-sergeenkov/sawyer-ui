@@ -1,11 +1,11 @@
 import { theme as themeLightViolet } from "./themes/light-violet"
 import { theme as themeDefault } from "./themes/default"
+import { ThemeMode } from "./MenuButtonElement"
+import { CSSProperties } from "react"
 
-const themes = ["light-violet"]
-
-export const getTheme = (theme) => {
+export const getTheme = (theme: ThemeMode | undefined) => {
   switch (theme) {
-    case "light-violet":
+    case ThemeMode.LIGHT_VIOLET:
       return themeLightViolet
     default:
       return themeDefault
@@ -22,14 +22,28 @@ const stylesTextDisabled = {
   color: "var(--color-gray)",
 }
 
-export const getStyles = (props) => {
+interface IGetStyles {
+  mode: ThemeMode | undefined
+  isAccent?: boolean
+  isActive?: boolean
+  isHoverTransparent?: boolean
+  isDisabled?: boolean
+  isTextLeft?: boolean
+}
+
+interface IGetStylesReturn {
+  stylesButton: CSSProperties
+  stylesText: CSSProperties
+}
+
+export const getStyles = (props: IGetStyles): IGetStylesReturn => {
   const {
     mode,
-    isAccent,
-    isActive,
-    isHoverTransparent,
-    isDisabled,
-    isTextLeft,
+    isAccent = false,
+    isActive = false,
+    isHoverTransparent = false,
+    isDisabled = false,
+    isTextLeft = false,
   } = props
 
   const {
@@ -56,8 +70,11 @@ export const getStyles = (props) => {
     ...(isAccent && StylesTextAccent),
     ...(!isAccent && isActive && StylesTextActive),
     ...(isDisabled && stylesTextDisabled),
-    ...(isTextLeft && { textAlign: "left" }),
-    ...{ width: "100%" },
+    // ...(isTextLeft && { textAlign: "left" }),
+    ...{
+      width: "100%",
+      ["text-align"]: isTextLeft ? "left" : "center",
+    },
   }
 
   return {
