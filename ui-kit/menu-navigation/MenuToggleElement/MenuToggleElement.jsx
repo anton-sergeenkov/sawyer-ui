@@ -7,7 +7,9 @@ import { useState } from "react"
 import Menu from "@mui/material/Menu"
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown"
 
-import { MenuButtonElement } from "@/sawyer-react-lib/ui-kit"
+import MenuButtonElement from "@/sawyer-react-lib/ui-kit/menu-navigation/MenuButtonElement"
+
+// TODO: theme from MenuButtonElement
 
 // import styles from "./MenuToggleElement.module.css"
 
@@ -16,7 +18,7 @@ import { MenuButtonElement } from "@/sawyer-react-lib/ui-kit"
 const PROPS = {
   className: "",
   theme: {
-    mode: ["light-violet"],
+    mode: "",
   },
   list: [],
   title: "",

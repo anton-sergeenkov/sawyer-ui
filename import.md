@@ -46,9 +46,20 @@ import type { ISocialLinksElementList } from "@/sawyer-react-lib/ui-kit/surfaces
 ```
 
 ### Not Imported
+
+**ButtonElement**
+```ts
+import ButtonElement from "@/sawyer-react-lib/ui-kit/basic/ButtonElement"
+```
+
+**MenuButtonElement**
+```ts
+import MenuButtonElement from "@/sawyer-react-lib/ui-kit/menu-navigation/MenuButtonElement"
+import { ThemeMode as ThemeMenuButtonElement } from "@/sawyer-react-lib/ui-kit/menu-navigation/MenuButtonElement"
+```
+
 ```ts
 // import { ButtonElement } from "@/sawyer-react-lib/ui-kit"
-// import { MenuButtonElement } from "@/sawyer-react-lib/ui-kit"
 // import { MenuToggleElement } from "@/sawyer-react-lib/ui-kit"
 // import { MenuItemHashElement } from "@/sawyer-react-lib/ui-kit"
 ```

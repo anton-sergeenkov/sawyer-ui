@@ -3,15 +3,17 @@
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 
-import { MenuButtonElement } from "@/sawyer-react-lib/ui-kit"
+import MenuButtonElement from "@/sawyer-react-lib/ui-kit/menu-navigation/MenuButtonElement"
 
 // import styles from "./MenuItemRoutesElement.module.css"
+
+// TODO: theme from MenuButtonElement
 
 // [UiKit]
 // import { MenuItemRoutesElement } from "@/sawyer-react-lib/ui-kit"
 const PROPS = {
   theme: {
-    mode: ["light-violet"],
+    mode: "",
   },
   item: {
     title: "",

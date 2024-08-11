@@ -23,6 +23,10 @@ MuiButton-textPrimary
 MuiButton-textSizeSmall
 ```
 
+Исправить в файлах
+> ui-kit\menu-navigation\MenuButtonElement\MenuButtonElement.tsx
+> ui-kit\basic\ButtonElement\ButtonElement.tsx
+
 ## ⭐️ TODO
 - Storybook
 

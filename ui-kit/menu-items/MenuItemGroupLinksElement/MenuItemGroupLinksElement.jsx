@@ -3,9 +3,12 @@
 // import OpenInNewOutlinedIcon from '@mui/icons-material/OpenInNewOutlined'
 import MenuItem from "@mui/material/MenuItem"
 
-import { MenuButtonElement, MenuToggleElement } from "@/sawyer-react-lib/ui-kit"
+import { MenuToggleElement } from "@/sawyer-react-lib/ui-kit"
+import MenuButtonElement from "@/sawyer-react-lib/ui-kit/menu-navigation/MenuButtonElement"
 
 import styles from "./MenuItemGroupLinksElement.module.css"
+
+// TODO: theme from MenuButtonElement
 
 const ChildComponent = (props) => {
   const { theme, list, handleClose } = props
