@@ -27,7 +27,7 @@ const PROPS = {
 //   theme: ITheme
 //   isAccent: boolean
 //   isActive: boolean
-//   className: string
+//   className?: string
 //   children: React.ReactNode
 //   disabled: boolean
 //   isHoverTransparent: boolean

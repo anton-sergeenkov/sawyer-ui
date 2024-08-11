@@ -9,7 +9,7 @@ const PROPS = {
 // https://mui.com/material-ui/api/button/
 
 // interface IButtonElementProps {
-//   className: string
+//   className?: string
 //   size: "small" | "medium" | "large"
 //   // variant: "text" | "outlined" | "contained" | "filled" // "filled"
 //   sx?: SxProps<Theme>

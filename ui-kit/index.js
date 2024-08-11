@@ -2,7 +2,6 @@
 import ButtonElement from "./basic/ButtonElement"
 import ModalElement from "./basic/ModalElement"
 import TypographyElement from "./basic/TypographyElement"
-import TypographyGradientElement from "./basic/TypographyGradientElement"
 import LinkElement from "./basic/LinkElement"
 
 // Layout
@@ -26,7 +25,6 @@ export {
   ButtonElement,
   ModalElement,
   TypographyElement,
-  TypographyGradientElement,
   LinkElement,
   OptionsElement,
   MenuButtonElement,

@@ -10,7 +10,7 @@ export enum ThemeMode {
 }
 
 interface IChipsElement {
-  className: string
+  className?: string
   theme?: ITheme<ThemeMode>
   items: string[]
   isUserSelect: boolean
