@@ -57,7 +57,7 @@ export const getStyles = (props: IGetStyles): IGetStylesReturn => {
     StylesTextActive,
   } = getTheme(mode)
 
-  const stylesButton = {
+  const stylesButton: CSSProperties = {
     ...StylesButtonDefault,
     ...(isAccent && StylesButtonAccent),
     ...(!isAccent && isActive && StylesButtonActive),
@@ -65,7 +65,7 @@ export const getStyles = (props: IGetStyles): IGetStylesReturn => {
     ...{ width: "100%" },
   }
 
-  const stylesText = {
+  const stylesText: CSSProperties = {
     ...StylesTextDefault,
     ...(isAccent && StylesTextAccent),
     ...(!isAccent && isActive && StylesTextActive),
@@ -73,7 +73,7 @@ export const getStyles = (props: IGetStyles): IGetStylesReturn => {
     // ...(isTextLeft && { textAlign: "left" }),
     ...{
       width: "100%",
-      ["text-align"]: isTextLeft ? "left" : "center",
+      textAlign: isTextLeft ? "left" : "center",
     },
   }
 
