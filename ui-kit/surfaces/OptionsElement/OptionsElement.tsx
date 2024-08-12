@@ -2,29 +2,29 @@
 
 import { useState } from "react"
 import cn from "classnames"
-
 import { IconButton, Menu, MenuItem } from "@mui/material"
 import MoreVertIcon from "@mui/icons-material/MoreVert"
-
 import { LinkElement } from "@/sawyer-react-lib/ui-kit"
 
 import styles from "./OptionsElement.module.css"
 
-// [UiKit]
-// import { OptionsElement } from "@/sawyer-react-lib/ui-kit"
-const PROPS = {
-  options: [
-    { name: "Website", link: "https://letscode-dev.github.io/" },
-    { name: "YouTube", link: "https://www.youtube.com/c/letscode-dev" },
-  ],
-  classes: {
-    container: "",
-    icon: "",
-    link: "",
-  },
+interface IOptionsElementOptions {
+  name: string // Website
+  link: string // https://letscode-dev.github.io/
 }
 
-const OptionsElement = (props) => {
+interface IOptionsElementClasses {
+  container: string
+  icon: string
+  link: string
+}
+
+interface IOptionsElement {
+  options: IOptionsElementOptions[]
+  classes?: IOptionsElementClasses
+}
+
+const OptionsElement: React.FC<IOptionsElement> = (props) => {
   const {
     options,
     classes = {
@@ -35,14 +35,14 @@ const OptionsElement = (props) => {
     },
   } = props
 
-  const [anchorEl, setAnchorEl] = useState(null)
+  const [anchorEl, setAnchorEl] = useState<(EventTarget & Element) | null>(null)
   const open = Boolean(anchorEl)
 
-  const handleClick = (event) => {
+  const handleClick = (event: React.SyntheticEvent): void => {
     setAnchorEl(event.currentTarget)
   }
 
-  const handleClose = () => {
+  const handleClose = (): void => {
     setAnchorEl(null)
   }
 

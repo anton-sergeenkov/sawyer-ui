@@ -1,11 +1,4 @@
-interface IStaticImageData {
-  src: string
-  height: number
-  width: number
-  blurDataURL?: string
-  blurWidth?: number
-  blurHeight?: number
-}
+import type { IStaticImageData } from "@/sawyer-react-lib/types/common"
 
 export interface ISocialLinksElementList {
   img: IStaticImageData // import coverLinkedin from "./img/linkedin.svg"

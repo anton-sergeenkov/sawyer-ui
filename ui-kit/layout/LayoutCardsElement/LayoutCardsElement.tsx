@@ -1,35 +1,38 @@
 import cn from "classnames"
 import { checkThemeMode } from "../../utils"
-
-import { LinkElement, OptionsElement } from "@/sawyer-react-lib/ui-kit"
+import { LinkElement } from "@/sawyer-react-lib/ui-kit"
+import OptionsElement from "@/sawyer-react-lib/ui-kit/surfaces/OptionsElement"
+import { ITheme, IThemeElements } from "@/sawyer-react-lib/types/common"
+import type { IStaticImageData } from "@/sawyer-react-lib/types/common"
 
 import styles from "./LayoutCardsElement.module.css"
 
-// [UiKit]
-// import { LayoutCardsElement } from "@/sawyer-react-lib/ui-kit"
-const PROPS = {
-  theme: {
-    mode: ["light", "dark"],
-  },
-  themeLink: {
-    mode: "",
-  },
-  items: [
-    {
-      title: "Educational project",
-      link: "https://letscode-dev.github.io/",
-      img: null, // import coverLetscode from "./img/letscode.svg"
-      description: "School of Frontend Development",
-      links: [
-        { name: "Website", link: "https://letscode-dev.github.io/" },
-        { name: "YouTube", link: "https://www.youtube.com/c/letscode-dev" },
-      ],
-    },
-  ],
-  isOptions: true,
+export enum ThemeMode {
+  LIGHT = "light",
+  DARK = "dark",
 }
 
-const LayoutCardsElement = (props) => {
+interface ILayoutCardsElementItemsLinks {
+  name: string
+  link: string
+}
+
+interface ILayoutCardsElementItems {
+  title: string
+  link: string
+  img: IStaticImageData
+  description: string
+  links: ILayoutCardsElementItemsLinks[]
+}
+
+interface ILayoutCardsElement {
+  theme?: ITheme<ThemeMode>
+  themeLink?: IThemeElements<ThemeMode>
+  items: ILayoutCardsElementItems[]
+  isOptions?: boolean
+}
+
+const LayoutCardsElement: React.FC<ILayoutCardsElement> = (props) => {
   const { theme, themeLink, items, isOptions = false } = props
 
   const stylesTheme = checkThemeMode(theme, styles)

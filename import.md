@@ -21,8 +21,14 @@ import { ThemeMode as ThemeTypographyGradientElement } from "@/sawyer-react-lib/
 ```
 
 ### Layout
+
+**LayoutCardsElement**
 ```ts
-// import { LayoutCardsElement } from "@/sawyer-react-lib/ui-kit"
+import LayoutCardsElement from "@/sawyer-react-lib/ui-kit/layout/LayoutCardsElement"
+import { ThemeMode as ThemeLayoutCardsElement } from "@/sawyer-react-lib/ui-kit/layout/LayoutCardsElement"
+```
+
+```ts
 // import { LayoutSectionElement } from "@/sawyer-react-lib/ui-kit"
 ```
 
@@ -41,8 +47,9 @@ import SocialLinksElement from "@/sawyer-react-lib/ui-kit/surfaces/SocialLinksEl
 import type { ISocialLinksElementList } from "@/sawyer-react-lib/ui-kit/surfaces/SocialLinksElement"
 ```
 
+**OptionsElement**
 ```ts
-// import { OptionsElement } from "@/sawyer-react-lib/ui-kit"
+import OptionsElement from "@/sawyer-react-lib/ui-kit/surfaces/OptionsElement"
 ```
 
 ### Not Imported
