@@ -14,9 +14,13 @@ import TypographyGradientElement from "@/sawyer-react-lib/ui-kit/basic/Typograph
 import { ThemeMode as ThemeTypographyGradientElement } from "@/sawyer-react-lib/ui-kit/basic/TypographyGradientElement"
 ```
 
+**ModalElement**
+```ts
+import ModalElement from "@/sawyer-react-lib/ui-kit/basic/ModalElement"
+```
+
 ```ts
 // import { LinkElement } from "@/sawyer-react-lib/ui-kit"
-// import { ModalElement } from "@/sawyer-react-lib/ui-kit"
 // import { TypographyElement } from "@/sawyer-react-lib/ui-kit"
 ```
 
