@@ -28,8 +28,10 @@ import LayoutCardsElement from "@/sawyer-react-lib/ui-kit/layout/LayoutCardsElem
 import { ThemeMode as ThemeLayoutCardsElement } from "@/sawyer-react-lib/ui-kit/layout/LayoutCardsElement"
 ```
 
+**LayoutSectionElement**
 ```ts
-// import { LayoutSectionElement } from "@/sawyer-react-lib/ui-kit"
+import LayoutSectionElement from "@/sawyer-react-lib/ui-kit/layout/LayoutSectionElement"
+import { ThemeMode as ThemeLayoutSectionElement } from "@/sawyer-react-lib/ui-kit/layout/LayoutSectionElement"
 ```
 
 ### Menu Items

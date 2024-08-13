@@ -1,19 +1,22 @@
 import cn from "classnames"
 import { checkThemeMode } from "../../utils"
+import { ITheme } from "@/sawyer-react-lib/types/common"
 
 import styles from "./LayoutSectionElement.module.css"
 
-// [UiKit]
-// import { LayoutSectionElement } from "@/sawyer-react-lib/ui-kit"
-const PROPS = {
-  className: "",
-  theme: {
-    mode: ["header-footer"],
-  },
-  children: <></>,
+export enum ThemeMode {
+  HEADER_FOOTER = "header-footer",
 }
 
-const LayoutSectionElement = (props) => {
+interface ILayoutSectionElementElement {
+  theme?: ITheme<ThemeMode>
+  className?: string
+  children: React.ReactNode
+}
+
+const LayoutSectionElement: React.FC<ILayoutSectionElementElement> = (
+  props,
+) => {
   const { theme, className, children } = props
 
   const stylesTheme = checkThemeMode(theme, styles)

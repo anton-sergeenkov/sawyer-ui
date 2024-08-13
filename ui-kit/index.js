@@ -3,9 +3,6 @@ import ModalElement from "./basic/ModalElement"
 import TypographyElement from "./basic/TypographyElement"
 import LinkElement from "./basic/LinkElement"
 
-// Layout
-import LayoutSectionElement from "./layout/LayoutSectionElement"
-
 // Navigation
 import MenuToggleElement from "./menu-navigation/MenuToggleElement"
 
@@ -24,5 +21,4 @@ export {
   MenuItemGroupLinksElement,
   MenuItemGroupRoutesElement,
   MenuItemHashElement,
-  LayoutSectionElement,
 }
