@@ -1,6 +1,3 @@
-// Basic
-import LinkElement from "./basic/LinkElement"
-
 // Navigation
 import MenuToggleElement from "./menu-navigation/MenuToggleElement"
 
@@ -11,7 +8,6 @@ import MenuItemGroupRoutesElement from "./menu-items/MenuItemGroupRoutesElement"
 import MenuItemHashElement from "./menu-items/MenuItemHashElement"
 
 export {
-  LinkElement,
   MenuToggleElement,
   MenuItemRoutesElement,
   MenuItemGroupLinksElement,

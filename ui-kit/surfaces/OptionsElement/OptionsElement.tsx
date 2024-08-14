@@ -4,13 +4,15 @@ import { useState } from "react"
 import cn from "classnames"
 import { IconButton, Menu, MenuItem } from "@mui/material"
 import MoreVertIcon from "@mui/icons-material/MoreVert"
-import { LinkElement } from "@/sawyer-react-lib/ui-kit"
+import LinkElement, {
+  ThemeMode as ThemeLinkElement,
+} from "@/sawyer-react-lib/ui-kit/basic/LinkElement"
 
 import styles from "./OptionsElement.module.css"
 
 interface IOptionsElementOptions {
-  name: string // Website
-  link: string // https://letscode-dev.github.io/
+  name: string
+  link: string
 }
 
 interface IOptionsElementClasses {
@@ -62,7 +64,7 @@ const OptionsElement: React.FC<IOptionsElement> = (props) => {
             <LinkElement
               href={element.link}
               theme={{
-                mode: "dark-underlined",
+                mode: ThemeLinkElement.DARK_UNDERLINED,
               }}
               className={cn(styles.link, classes.link)}
             >

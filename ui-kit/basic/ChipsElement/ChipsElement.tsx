@@ -17,7 +17,7 @@ interface IChipsElement {
 }
 
 const ChipsElement: React.FC<IChipsElement> = (props) => {
-  const { className, theme, items, isUserSelect = false } = props
+  const { theme, className, items, isUserSelect = false } = props
 
   const stylesTheme = checkThemeMode(theme, styles)
 

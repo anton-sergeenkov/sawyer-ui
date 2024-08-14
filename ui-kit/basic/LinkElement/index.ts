@@ -1,4 +1,4 @@
-import { ThemeMode } from "./ThemeMode"
+import { ThemeMode } from "./LinkElement"
 
 export { default } from "./LinkElement"
 export { ThemeMode }

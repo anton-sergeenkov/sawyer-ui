@@ -70,7 +70,6 @@ export const getStyles = (props: IGetStyles): IGetStylesReturn => {
     ...(isAccent && StylesTextAccent),
     ...(!isAccent && isActive && StylesTextActive),
     ...(isDisabled && stylesTextDisabled),
-    // ...(isTextLeft && { textAlign: "left" }),
     ...{
       width: "100%",
       textAlign: isTextLeft ? "left" : "center",

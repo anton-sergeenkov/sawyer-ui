@@ -28,7 +28,7 @@ import { Tag as TagTypographyElement } from "@/sawyer-react-lib/ui-kit/basic/Typ
 
 **LinkElement**
 ```ts
-// import { LinkElement } from "@/sawyer-react-lib/ui-kit"
+import LinkElement from "@/sawyer-react-lib/ui-kit/basic/LinkElement"
 import { ThemeMode as ThemeLinkElement } from "@/sawyer-react-lib/ui-kit/basic/LinkElement"
 ```
 

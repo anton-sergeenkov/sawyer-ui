@@ -27,7 +27,7 @@ const PROPS = {
 }
 
 const MenuToggleElement = (props) => {
-  const { className, theme, list, title, isAccent, Component } = props
+  const { theme, className, list, title, isAccent, Component } = props
 
   const [anchorEl, setAnchorEl] = useState(null)
   const open = Boolean(anchorEl)

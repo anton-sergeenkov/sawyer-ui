@@ -1,10 +1,11 @@
 import cn from "classnames"
 import { checkThemeMode } from "../../utils"
-import { LinkElement } from "@/sawyer-react-lib/ui-kit"
+import LinkElement, {
+  ThemeMode as ThemeLinkElement,
+} from "@/sawyer-react-lib/ui-kit/basic/LinkElement"
 import OptionsElement from "@/sawyer-react-lib/ui-kit/surfaces/OptionsElement"
 import { ITheme, IThemeElements } from "@/sawyer-react-lib/types/common"
 import type { IStaticImageData } from "@/sawyer-react-lib/types/common"
-import { ThemeMode as ThemeLinkElement } from "@/sawyer-react-lib/ui-kit/basic/LinkElement"
 
 import styles from "./LayoutCardsElement.module.css"
 

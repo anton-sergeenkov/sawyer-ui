@@ -16,7 +16,7 @@ interface ITypographyGradientElement {
 const TypographyGradientElement: React.FC<ITypographyGradientElement> = (
   props,
 ) => {
-  const { className, theme, children } = props
+  const { theme, className, children } = props
 
   const stylesTheme = checkThemeMode(theme, styles)
 

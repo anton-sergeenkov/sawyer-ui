@@ -23,6 +23,8 @@ export enum ThemeMode {
 
 interface IUiElement {
   theme?: ITheme<ThemeMode>
+  className?: string
+  children: React.ReactNode
 }
 
 const UiElement: React.FC<IUiElement> = (props) => {
