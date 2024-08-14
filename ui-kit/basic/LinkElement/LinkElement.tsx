@@ -9,7 +9,7 @@ export enum ThemeMode {
   DARK_UNDERLINED = "dark-underlined",
 }
 
-interface ILinkElement {
+interface ILinkElementProps {
   theme?: ITheme<ThemeMode>
   className?: string
   children: React.ReactNode
@@ -17,7 +17,7 @@ interface ILinkElement {
   target?: string // "_blank"
 }
 
-const LinkElement: React.FC<ILinkElement> = (props) => {
+const LinkElement: React.FC<ILinkElementProps> = (props) => {
   const { theme, className, href, target = "_blank", children } = props
 
   const stylesTheme = checkThemeMode(theme, styles)

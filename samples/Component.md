@@ -1,12 +1,12 @@
 # ⭐️ Props
 
 ```ts
-interface IUiElement {
+interface IUiElementProps {
   className?: string
   children: React.ReactNode
 }
 
-const UiElement: React.FC<IUiElement> = (props) => {
+const UiElement: React.FC<IUiElementProps> = (props) => {
   //
 }
 ```
@@ -21,13 +21,13 @@ export enum ThemeMode {
   DARK = "dark",
 }
 
-interface IUiElement {
+interface IUiElementProps {
   theme?: ITheme<ThemeMode>
   className?: string
   children: React.ReactNode
 }
 
-const UiElement: React.FC<IUiElement> = (props) => {
+const UiElement: React.FC<IUiElementProps> = (props) => {
   //
 }
 ```

@@ -27,14 +27,14 @@ export interface ILayoutCardsElementItems {
   links: ILayoutCardsElementItemsLinks[]
 }
 
-interface ILayoutCardsElement {
+interface ILayoutCardsElementProps {
   theme?: ITheme<ThemeMode>
   themeLink?: IThemeElements<ThemeLinkElement>
   items: ILayoutCardsElementItems[]
   isOptions?: boolean
 }
 
-const LayoutCardsElement: React.FC<ILayoutCardsElement> = (props) => {
+const LayoutCardsElement: React.FC<ILayoutCardsElementProps> = (props) => {
   const { theme, themeLink, items, isOptions = false } = props
 
   const stylesTheme = checkThemeMode(theme, styles)

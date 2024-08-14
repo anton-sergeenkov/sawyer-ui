@@ -21,12 +21,12 @@ interface IOptionsElementClasses {
   link: string
 }
 
-interface IOptionsElement {
+interface IOptionsElementProps {
   options: IOptionsElementOptions[]
   classes?: IOptionsElementClasses
 }
 
-const OptionsElement: React.FC<IOptionsElement> = (props) => {
+const OptionsElement: React.FC<IOptionsElementProps> = (props) => {
   const {
     options,
     classes = {

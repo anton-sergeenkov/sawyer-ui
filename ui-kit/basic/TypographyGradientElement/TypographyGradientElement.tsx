@@ -7,13 +7,13 @@ export enum ThemeMode {
   DARKBLUE_BLUE = "darkblue-blue",
 }
 
-interface ITypographyGradientElement {
+interface ITypographyGradientElementProps {
   className?: string
   theme?: ITheme<ThemeMode>
   children: React.ReactNode
 }
 
-const TypographyGradientElement: React.FC<ITypographyGradientElement> = (
+const TypographyGradientElement: React.FC<ITypographyGradientElementProps> = (
   props,
 ) => {
   const { theme, className, children } = props

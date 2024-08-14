@@ -5,18 +5,18 @@ import MenuButtonElement, {
 
 // import styles from "./MenuItemHashElement.module.css"
 
-interface IItems {
+interface IMenuItemHashElementItems {
   title: string
   hash: string
 }
 
-interface IMenuItemHashElement {
+interface IMenuItemHashElementProps {
   theme?: ITheme<ThemeMenuButtonElement>
-  item: IItems
+  item: IMenuItemHashElementItems
 }
 
 // FIXME: not used, not styled link
-const MenuItemHashElement: React.FC<IMenuItemHashElement> = (props) => {
+const MenuItemHashElement: React.FC<IMenuItemHashElementProps> = (props) => {
   const { theme, item } = props
 
   return (

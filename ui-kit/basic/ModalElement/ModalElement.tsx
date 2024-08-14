@@ -10,12 +10,12 @@ interface IMUIModalProps {
   onClose: () => void
 }
 
-interface IModalElementElement {
+interface IModalElementProps {
   children: ReactElement<any, string | JSXElementConstructor<any>>
   modalProps: IMUIModalProps
 }
 
-const ModalElement: React.FC<IModalElementElement> = (props) => {
+const ModalElement: React.FC<IModalElementProps> = (props) => {
   const { children, modalProps } = props
 
   return <MUIModal {...modalProps}>{children}</MUIModal>
