@@ -16,15 +16,15 @@ const checkIsMobile = () => {
 export const useMobile = () => {
   const [isMobile, setIsMobile] = useState(checkIsMobile())
 
-  const handleResize = () => {
+  const onResize = () => {
     setIsMobile(checkIsMobile())
   }
 
   useEffect(() => {
-    window.addEventListener("resize", handleResize)
+    window.addEventListener("resize", onResize)
 
     return () => {
-      window.removeEventListener("resize", handleResize)
+      window.removeEventListener("resize", onResize)
     }
   }, [])
 

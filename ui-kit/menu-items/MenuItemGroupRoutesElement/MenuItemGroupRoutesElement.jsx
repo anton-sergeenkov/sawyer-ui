@@ -12,14 +12,14 @@ import {
 import styles from "./MenuItemGroupRoutesElement.module.css"
 
 const ChildComponent = (props) => {
-  const { theme, list, handleClose } = props
+  const { theme, list, onClose } = props
 
   return (
     <>
       {list.map((element, index) => (
         <div className={styles.link} key={index}>
           <MenuItem
-            onClick={handleClose}
+            onClick={onClose}
             sx={{
               padding: 0,
               margin: 0,

@@ -11,14 +11,14 @@ import styles from "./MenuItemGroupLinksElement.module.css"
 // TODO: theme from MenuButtonElement
 
 const ChildComponent = (props) => {
-  const { theme, list, handleClose } = props
+  const { theme, list, onClose } = props
 
   return (
     <>
       {list.items.map((element, index) => (
         <MenuItem
           key={index}
-          onClick={handleClose}
+          onClick={onClose}
           sx={{
             padding: 0,
             margin: 0,
