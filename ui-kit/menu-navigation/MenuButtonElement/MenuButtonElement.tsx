@@ -17,8 +17,8 @@ interface IMenuButtonElementProps {
   isHoverTransparent?: boolean
   isTextLeft?: boolean
   disabled?: boolean
-  endIcon: React.ReactNode
-  onClick: () => null
+  endIcon?: React.ReactNode
+  onClick?: () => null
 }
 
 const MenuButtonElement: React.FC<IMenuButtonElementProps> = (props) => {
@@ -31,7 +31,7 @@ const MenuButtonElement: React.FC<IMenuButtonElementProps> = (props) => {
     isHoverTransparent = false,
     isTextLeft = false,
     disabled = false,
-    endIcon,
+    endIcon = null,
     onClick = () => null,
   } = props
 
