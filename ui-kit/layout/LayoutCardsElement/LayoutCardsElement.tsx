@@ -18,7 +18,7 @@ interface ILayoutCardsElementItemsLinks {
   link: string
 }
 
-interface ILayoutCardsElementItems {
+export interface ILayoutCardsElementItems {
   title: string
   link: string
   img: IStaticImageData

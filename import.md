@@ -34,10 +34,12 @@ import { ThemeMode as ThemeLinkElement } from "@/sawyer-react-lib/ui-kit/basic/L
 
 ### Layout
 
+
 **LayoutCardsElement**
 ```ts
 import LayoutCardsElement from "@/sawyer-react-lib/ui-kit/layout/LayoutCardsElement"
 import { ThemeMode as ThemeLayoutCardsElement } from "@/sawyer-react-lib/ui-kit/layout/LayoutCardsElement"
+import type { ILayoutCardsElementItems } from "@/sawyer-react-lib/ui-kit/layout/LayoutCardsElement"
 ```
 
 **LayoutSectionElement**
