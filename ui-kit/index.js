@@ -1,5 +1,4 @@
 // Basic
-import TypographyElement from "./basic/TypographyElement"
 import LinkElement from "./basic/LinkElement"
 
 // Navigation
@@ -12,7 +11,6 @@ import MenuItemGroupRoutesElement from "./menu-items/MenuItemGroupRoutesElement"
 import MenuItemHashElement from "./menu-items/MenuItemHashElement"
 
 export {
-  TypographyElement,
   LinkElement,
   MenuToggleElement,
   MenuItemRoutesElement,

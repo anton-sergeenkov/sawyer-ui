@@ -1,6 +1,8 @@
 import cn from "classnames"
 import { checkThemeMode } from "../../utils"
 
+// FIXME: ThemeMode
+
 import styles from "./LinkElement.module.css"
 
 // [UiKit]

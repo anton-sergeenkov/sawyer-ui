@@ -4,6 +4,7 @@ import { LinkElement } from "@/sawyer-react-lib/ui-kit"
 import OptionsElement from "@/sawyer-react-lib/ui-kit/surfaces/OptionsElement"
 import { ITheme, IThemeElements } from "@/sawyer-react-lib/types/common"
 import type { IStaticImageData } from "@/sawyer-react-lib/types/common"
+import { ThemeMode as ThemeLinkElement } from "@/sawyer-react-lib/ui-kit/basic/LinkElement"
 
 import styles from "./LayoutCardsElement.module.css"
 
@@ -27,7 +28,7 @@ interface ILayoutCardsElementItems {
 
 interface ILayoutCardsElement {
   theme?: ITheme<ThemeMode>
-  themeLink?: IThemeElements<ThemeMode>
+  themeLink?: IThemeElements<ThemeLinkElement>
   items: ILayoutCardsElementItems[]
   isOptions?: boolean
 }
