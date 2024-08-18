@@ -52,8 +52,13 @@ import { ThemeMode as ThemeLayoutSectionElement } from "@/sawyer-react-lib/ui-ki
 ---
 
 ## 🔰 Menu Items
+
+#### `MenuItemRoutesElement`
 ```ts
-// import { MenuItemRoutesElement } from "@/sawyer-react-lib/ui-kit"
+import MenuItemRoutesElement from "@/sawyer-react-lib/ui-kit/menu-items/MenuItemRoutesElement"
+```
+
+```ts
 // import { MenuItemGroupLinksElement } from "@/sawyer-react-lib/ui-kit"
 // import { MenuItemGroupRoutesElement } from "@/sawyer-react-lib/ui-kit"
 ```

@@ -2,10 +2,8 @@
 
 import MenuItem from "@mui/material/MenuItem"
 
-import {
-  MenuItemRoutesElement,
-  MenuToggleElement,
-} from "@/sawyer-react-lib/ui-kit"
+import { MenuToggleElement } from "@/sawyer-react-lib/ui-kit"
+import MenuItemRoutesElement from "@/sawyer-react-lib/ui-kit/menu-items/MenuItemRoutesElement"
 
 // TODO: theme from MenuButtonElement
 
