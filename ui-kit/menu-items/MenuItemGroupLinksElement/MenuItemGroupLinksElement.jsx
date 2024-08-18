@@ -2,13 +2,21 @@
 
 // import OpenInNewOutlinedIcon from '@mui/icons-material/OpenInNewOutlined'
 import MenuItem from "@mui/material/MenuItem"
-
-import { MenuToggleElement } from "@/sawyer-react-lib/ui-kit"
+import MenuToggleElement from "@/sawyer-react-lib/ui-kit/menu-navigation/MenuToggleElement"
 import MenuButtonElement from "@/sawyer-react-lib/ui-kit/menu-navigation/MenuButtonElement"
+
+// import MenuButtonElement, {
+//   ThemeMode as ThemeMenuButtonElement,
+// } from "@/sawyer-react-lib/ui-kit/menu-navigation/MenuButtonElement"
+// import { ITheme } from "@/sawyer-react-lib/types/common"
 
 import styles from "./MenuItemGroupLinksElement.module.css"
 
-// TODO: theme from MenuButtonElement
+// TODO:
+// interface I {
+//   theme?: ITheme<ThemeMenuButtonElement>
+//   list: IMenuGroupItems
+// }
 
 const ChildComponent = (props) => {
   const { theme, list, onClose } = props

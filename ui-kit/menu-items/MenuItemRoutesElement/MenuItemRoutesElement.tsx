@@ -6,17 +6,13 @@ import { ITheme } from "@/sawyer-react-lib/types/common"
 import MenuButtonElement, {
   ThemeMode as ThemeMenuButtonElement,
 } from "@/sawyer-react-lib/ui-kit/menu-navigation/MenuButtonElement"
+import type { IMenuItem } from "@/sawyer-react-lib/types/common"
 
 // import styles from "./MenuItemRoutesElement.module.css"
 
-interface IMenuItemRoutesElementItems {
-  title: string
-  path: string
-}
-
 interface IMenuItemRoutesElementProps {
   theme?: ITheme<ThemeMenuButtonElement>
-  item: IMenuItemRoutesElementItems
+  item: IMenuItem
   isAccent?: boolean
   isTextLeft?: boolean
 }

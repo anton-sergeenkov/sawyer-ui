@@ -1,7 +1,7 @@
 // import cn from 'classnames'
 import ButtonElement from "@/sawyer-react-lib/ui-kit/basic/ButtonElement"
 import { getStyles } from "./utils"
-import { ITheme } from "@/sawyer-react-lib/types/common"
+import { ITheme, TOnClick } from "@/sawyer-react-lib/types/common"
 // import styles from "./MenuButtonElement.module.css"
 
 export enum ThemeMode {
@@ -18,7 +18,7 @@ interface IMenuButtonElementProps {
   isTextLeft?: boolean
   disabled?: boolean
   endIcon?: React.ReactNode
-  onClick?: () => null
+  onClick?: TOnClick
 }
 
 const MenuButtonElement: React.FC<IMenuButtonElementProps> = (props) => {

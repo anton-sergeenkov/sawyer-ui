@@ -1,5 +1,6 @@
 import { SxProps, Theme } from "@mui/material"
 import MUIButton from "@mui/material/Button"
+import { TOnClick } from "@/sawyer-react-lib/types/common"
 // import styles from "./ButtonElement.module.css"
 
 // https://mui.com/material-ui/api/button/
@@ -11,7 +12,7 @@ interface IMUIButtonProps {
   sx?: SxProps<Theme>
   endIcon?: React.ReactNode
   disabled?: boolean
-  onClick: () => void | null
+  onClick: TOnClick
 }
 
 interface IButtonElementProps {

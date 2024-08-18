@@ -18,3 +18,15 @@ export interface IStaticImageData {
   blurWidth?: number
   blurHeight?: number
 }
+
+export interface IMenuItem {
+  title: string
+  path: string
+}
+
+export interface IMenuGroupItems {
+  title: string
+  items: IMenuItem[]
+}
+
+export type TOnClick = (event: React.SyntheticEvent) => void | null

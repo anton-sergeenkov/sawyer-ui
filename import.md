@@ -93,8 +93,10 @@ import MenuButtonElement from "@/sawyer-react-lib/ui-kit/menu-navigation/MenuBut
 import { ThemeMode as ThemeMenuButtonElement } from "@/sawyer-react-lib/ui-kit/menu-navigation/MenuButtonElement"
 ```
 
+#### `MenuToggleElement`
+
 ```ts
-// import { MenuToggleElement } from "@/sawyer-react-lib/ui-kit"
+import MenuToggleElement from "@/sawyer-react-lib/ui-kit/menu-navigation/MenuToggleElement"
 ```
 
 ---
