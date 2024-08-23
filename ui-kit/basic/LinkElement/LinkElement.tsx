@@ -20,7 +20,7 @@ interface ILinkElementProps {
 const LinkElement: React.FC<ILinkElementProps> = (props) => {
   const { theme, className, href, target = "_blank", children } = props
 
-  const stylesTheme = checkThemeMode(theme, styles)
+  const stylesTheme = checkThemeMode<ThemeMode>(theme, styles)
 
   return (
     <a

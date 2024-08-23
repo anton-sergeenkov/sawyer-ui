@@ -17,7 +17,7 @@ interface ILayoutSectionElementProps {
 const LayoutSectionElement: React.FC<ILayoutSectionElementProps> = (props) => {
   const { theme, className, children } = props
 
-  const stylesTheme = checkThemeMode(theme, styles)
+  const stylesTheme = checkThemeMode<ThemeMode>(theme, styles)
 
   return (
     <div className={cn(styles.section, stylesTheme, className)}>{children}</div>

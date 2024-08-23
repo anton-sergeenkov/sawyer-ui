@@ -27,7 +27,7 @@ interface ITypographyElementProps {
 const TypographyElement: React.FC<ITypographyElementProps> = (props) => {
   const { theme, className, tag, children } = props
 
-  const stylesTheme = checkThemeMode(theme, styles)
+  const stylesTheme = checkThemeMode<ThemeMode>(theme, styles)
 
   switch (tag) {
     case Tag.H1:

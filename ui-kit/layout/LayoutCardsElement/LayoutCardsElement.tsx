@@ -37,7 +37,7 @@ interface ILayoutCardsElementProps {
 const LayoutCardsElement: React.FC<ILayoutCardsElementProps> = (props) => {
   const { theme, themeLink, items, isOptions = false } = props
 
-  const stylesTheme = checkThemeMode(theme, styles)
+  const stylesTheme = checkThemeMode<ThemeMode>(theme, styles)
 
   return (
     <div className={cn(styles.gridContainer, stylesTheme)}>
