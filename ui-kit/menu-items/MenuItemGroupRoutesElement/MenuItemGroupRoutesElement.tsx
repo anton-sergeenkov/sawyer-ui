@@ -1,27 +1,20 @@
 "use client"
 
 import MenuItem from "@mui/material/MenuItem"
-
 import MenuToggleElement from "@/sawyer-react-lib/ui-kit/menu-navigation/MenuToggleElement"
 import MenuItemRoutesElement from "@/sawyer-react-lib/ui-kit/menu-items/MenuItemRoutesElement"
-
-// import { ITheme } from "@/sawyer-react-lib/types/common"
-// import { ThemeMode as ThemeMenuButtonElement } from "@/sawyer-react-lib/ui-kit/menu-navigation/MenuButtonElement"
-
-// TODO:
-// interface I {
-//   theme?: ITheme<ThemeMenuButtonElement>
-//   list: IMenuItem[]
-// }
+import { IMenuItem, ITheme } from "@/sawyer-react-lib/types/common"
+import { ThemeMode as ThemeMenuButtonElement } from "@/sawyer-react-lib/ui-kit/menu-navigation/MenuButtonElement"
+import { IChildComponentProps } from "@/sawyer-react-lib/ui-kit/menu-navigation/MenuToggleElement/MenuToggleElement"
 
 import styles from "./MenuItemGroupRoutesElement.module.css"
 
-const ChildComponent = (props) => {
+const ChildComponent: React.FC<IChildComponentProps> = (props) => {
   const { theme, list, onClose } = props
 
   return (
     <>
-      {list.map((element, index) => (
+      {(list as IMenuItem[]).map((element, index) => (
         <div className={styles.link} key={index}>
           <MenuItem
             onClick={onClose}
@@ -44,7 +37,17 @@ const ChildComponent = (props) => {
   )
 }
 
-const MenuItemGroupRoutesElement = (props) => {
+interface IMenuItemGroupRoutesElementProps {
+  className?: string
+  theme?: ITheme<ThemeMenuButtonElement>
+  list: IMenuItem[]
+  title: string
+  isAccent: boolean
+}
+
+const MenuItemGroupRoutesElement: React.FC<IMenuItemGroupRoutesElementProps> = (
+  props,
+) => {
   const { theme, list, title, isAccent, className } = props
 
   return (

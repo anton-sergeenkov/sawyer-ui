@@ -58,9 +58,14 @@ import { ThemeMode as ThemeLayoutSectionElement } from "@/sawyer-react-lib/ui-ki
 import MenuItemRoutesElement from "@/sawyer-react-lib/ui-kit/menu-items/MenuItemRoutesElement"
 ```
 
+#### `MenuItemGroupLinksElement`
 ```ts
-// import { MenuItemGroupLinksElement } from "@/sawyer-react-lib/ui-kit"
-// import { MenuItemGroupRoutesElement } from "@/sawyer-react-lib/ui-kit"
+import MenuItemGroupLinksElement from "@/sawyer-react-lib/ui-kit/menu-items/MenuItemGroupLinksElement"
+```
+
+#### `MenuItemGroupRoutesElement`
+```ts
+import MenuItemGroupRoutesElement from "@/sawyer-react-lib/ui-kit/menu-items/MenuItemGroupRoutesElement"
 ```
 
 ---

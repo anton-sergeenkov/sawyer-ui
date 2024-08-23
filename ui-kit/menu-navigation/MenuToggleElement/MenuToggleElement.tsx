@@ -18,7 +18,8 @@ import type {
 
 type TList = IMenuItem[] | IMenuGroupItems
 
-interface IComponentProps {
+// FIXME:
+export interface IChildComponentProps {
   theme?: ITheme<ThemeMenuButtonElement>
   list: TList
   onClose: () => void
@@ -30,7 +31,7 @@ interface IMenuToggleElementProps {
   list: TList
   title: string
   isAccent?: boolean
-  Component: React.ComponentType<IComponentProps>
+  Component: React.ComponentType<IChildComponentProps>
 }
 
 const MenuToggleElement: React.FC<IMenuToggleElementProps> = (props) => {

@@ -3,27 +3,20 @@
 // import OpenInNewOutlinedIcon from '@mui/icons-material/OpenInNewOutlined'
 import MenuItem from "@mui/material/MenuItem"
 import MenuToggleElement from "@/sawyer-react-lib/ui-kit/menu-navigation/MenuToggleElement"
-import MenuButtonElement from "@/sawyer-react-lib/ui-kit/menu-navigation/MenuButtonElement"
-
-// import MenuButtonElement, {
-//   ThemeMode as ThemeMenuButtonElement,
-// } from "@/sawyer-react-lib/ui-kit/menu-navigation/MenuButtonElement"
-// import { ITheme } from "@/sawyer-react-lib/types/common"
+import MenuButtonElement, {
+  ThemeMode as ThemeMenuButtonElement,
+} from "@/sawyer-react-lib/ui-kit/menu-navigation/MenuButtonElement"
+import { IMenuGroupItems, ITheme } from "@/sawyer-react-lib/types/common"
+import { IChildComponentProps } from "@/sawyer-react-lib/ui-kit/menu-navigation/MenuToggleElement/MenuToggleElement"
 
 import styles from "./MenuItemGroupLinksElement.module.css"
 
-// TODO:
-// interface I {
-//   theme?: ITheme<ThemeMenuButtonElement>
-//   list: IMenuGroupItems
-// }
-
-const ChildComponent = (props) => {
+const ChildComponent: React.FC<IChildComponentProps> = (props) => {
   const { theme, list, onClose } = props
 
   return (
     <>
-      {list.items.map((element, index) => (
+      {(list as IMenuGroupItems).items.map((element, index) => (
         <MenuItem
           key={index}
           onClick={onClose}
@@ -39,7 +32,7 @@ const ChildComponent = (props) => {
               theme={theme}
               isAccent={false}
               isActive={false}
-              disabled={element.disabled}
+              disabled={!!element.disabled}
               isHoverTransparent={true}
               isTextLeft={true}
             >
@@ -52,7 +45,17 @@ const ChildComponent = (props) => {
   )
 }
 
-const MenuItemGroupLinksElement = (props) => {
+interface IMenuItemGroupLinksElementProps {
+  className?: string
+  theme?: ITheme<ThemeMenuButtonElement>
+  list: IMenuGroupItems
+  title: string
+  isAccent: boolean
+}
+
+const MenuItemGroupLinksElement: React.FC<IMenuItemGroupLinksElementProps> = (
+  props,
+) => {
   const { theme, list, title, isAccent, className } = props
 
   return (

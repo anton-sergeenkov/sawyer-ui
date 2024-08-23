@@ -22,6 +22,7 @@ export interface IStaticImageData {
 export interface IMenuItem {
   title: string
   path: string
+  disabled?: string
 }
 
 export interface IMenuGroupItems {
