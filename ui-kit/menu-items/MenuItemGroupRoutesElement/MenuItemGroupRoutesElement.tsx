@@ -42,7 +42,7 @@ interface IMenuItemGroupRoutesElementProps {
   theme?: ITheme<ThemeMenuButtonElement>
   list: IMenuItem[]
   title: string
-  isAccent: boolean
+  isAccent?: boolean
 }
 
 const MenuItemGroupRoutesElement: React.FC<IMenuItemGroupRoutesElementProps> = (
