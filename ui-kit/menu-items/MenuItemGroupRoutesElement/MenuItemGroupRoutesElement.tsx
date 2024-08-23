@@ -6,6 +6,7 @@ import MenuItemRoutesElement from "@/sawyer-react-lib/ui-kit/menu-items/MenuItem
 import { IMenuItem, ITheme } from "@/sawyer-react-lib/types/common"
 import { ThemeMode as ThemeMenuButtonElement } from "@/sawyer-react-lib/ui-kit/menu-navigation/MenuButtonElement"
 import { IChildComponentProps } from "@/sawyer-react-lib/ui-kit/menu-navigation/MenuToggleElement/MenuToggleElement"
+import { styleMenuItem } from "@/sawyer-react-lib/ui-kit/constants"
 
 import styles from "./MenuItemGroupRoutesElement.module.css"
 
@@ -16,15 +17,7 @@ const ChildComponent: React.FC<IChildComponentProps> = (props) => {
     <>
       {(list as IMenuItem[]).map((element, index) => (
         <div className={styles.link} key={index}>
-          <MenuItem
-            onClick={onClose}
-            sx={{
-              padding: 0,
-              margin: 0,
-              minHeight: "auto",
-              cursor: "default",
-            }}
-          >
+          <MenuItem onClick={onClose} sx={styleMenuItem}>
             <MenuItemRoutesElement
               theme={theme}
               item={element}

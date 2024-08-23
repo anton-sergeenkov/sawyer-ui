@@ -8,6 +8,7 @@ import MenuButtonElement, {
 } from "@/sawyer-react-lib/ui-kit/menu-navigation/MenuButtonElement"
 import { IMenuGroupItems, ITheme } from "@/sawyer-react-lib/types/common"
 import { IChildComponentProps } from "@/sawyer-react-lib/ui-kit/menu-navigation/MenuToggleElement/MenuToggleElement"
+import { styleMenuItem } from "@/sawyer-react-lib/ui-kit/constants"
 
 import styles from "./MenuItemGroupLinksElement.module.css"
 
@@ -17,16 +18,7 @@ const ChildComponent: React.FC<IChildComponentProps> = (props) => {
   return (
     <>
       {(list as IMenuGroupItems).items.map((element, index) => (
-        <MenuItem
-          key={index}
-          onClick={onClose}
-          sx={{
-            padding: 0,
-            margin: 0,
-            minHeight: "auto",
-            cursor: "default",
-          }}
-        >
+        <MenuItem key={index} onClick={onClose} sx={styleMenuItem}>
           <a className={styles.link} href={element.path} target="_blank">
             <MenuButtonElement
               theme={theme}

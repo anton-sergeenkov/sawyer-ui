@@ -18,7 +18,6 @@ import type {
 
 type TList = IMenuItem[] | IMenuGroupItems
 
-// FIXME:
 export interface IChildComponentProps {
   theme?: ITheme<ThemeMenuButtonElement>
   list: TList
