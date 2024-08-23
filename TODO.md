@@ -1,17 +1,5 @@
 ## ⭐️ FIXME
 
-**Формат импорта из Ui-Kit с полным путем**
-
-```js
-import { TypographyElement } from "@/sawyer-react-lib/ui-kit"
-
-import {
-    TypographyElement,
-    ITypographyElement,
-    constants
-} from "@/sawyer-react-lib/ui-kit/basic/TypographyElement"
-```
-
 **Button variant="filled"**
 
 > ui-kit\menu-navigation\MenuButtonElement\MenuButtonElement.jsx
@@ -35,8 +23,9 @@ MuiButton-textPrimary
 MuiButton-textSizeSmall
 ```
 
-Исправить в файлах
+FIXME: filled
 
+Исправить в файлах
 > ui-kit\menu-navigation\MenuButtonElement\MenuButtonElement.tsx
 > ui-kit\basic\ButtonElement\ButtonElement.tsx
 

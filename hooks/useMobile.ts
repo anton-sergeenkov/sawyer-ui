@@ -12,7 +12,7 @@ const checkIsMobile = () => {
   return false
 }
 
-// TODO: не используется
+// TODO: not used
 export const useMobile = () => {
   const [isMobile, setIsMobile] = useState(checkIsMobile())
 
