@@ -31,3 +31,8 @@ export interface IMenuGroupItems {
 }
 
 export type TOnClick = (event: React.SyntheticEvent) => void | null
+
+export interface IListCommon {
+  title: string
+  items: string[]
+}
