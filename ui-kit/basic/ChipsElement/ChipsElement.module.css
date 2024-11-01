@@ -5,7 +5,7 @@
   padding: 2px 12px;
   font-size: 14px;
   margin-right: 5px;
-  background-color: var(--color-gray-light);
+  background-color: var(--color-gray-10);
 }
 .item:last-child {
   margin-right: 0;
@@ -16,5 +16,5 @@ THEME
 /***************************************************/
 .item--dark {
   background-color: var(--color-black-opacity-7);
-  color: var(--color-gray-light);
+  color: var(--color-gray-10);
 }

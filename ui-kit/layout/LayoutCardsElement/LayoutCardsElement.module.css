@@ -19,7 +19,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
-    background-color: var(--color-gray-light);
+    background-color: var(--color-gray-10);
     transition: 1s;
   }
   .logo:hover {

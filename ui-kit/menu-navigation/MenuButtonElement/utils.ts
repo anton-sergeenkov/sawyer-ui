@@ -19,7 +19,7 @@ const stylesButtonHover = {
 }
 
 const stylesTextDisabled = {
-  color: "var(--color-gray)",
+  color: "var(--color-gray-50)",
 }
 
 interface IGetStyles {
