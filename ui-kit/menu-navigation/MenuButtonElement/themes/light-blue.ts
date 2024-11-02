@@ -1,6 +1,7 @@
 const CONFIG_COLORS = {
   default: {
     color: "#2b2b2b", // dark
+    bgHover: "#ececec", // gray
   },
   active: {
     color: "#6673ff", // blue
@@ -22,6 +23,9 @@ const StylesButtonDefault = {
   width: "auto",
   padding: "4px 10px",
   transition: ".4s",
+  ":hover": {
+    backgroundColor: CONFIG_COLORS.default.bgHover,
+  },
 }
 const StylesButtonAccent = {
   backgroundColor: CONFIG_COLORS.accent.bg,
