@@ -1,8 +1,12 @@
 .section {
   max-width: 1200px;
   margin: auto;
-  margin-bottom: 40px;
+  margin-bottom: var(--spacing-blocks);
   padding: 0 40px;
+}
+
+.sectionTopSpacing {
+  margin-top: var(--spacing-blocks);
 }
 
 .item--header-footer {

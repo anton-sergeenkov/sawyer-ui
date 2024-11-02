@@ -26,12 +26,14 @@
   --color-yellow-opacity-1: rgba(216, 228, 122, 0.1);
   --color-yellow-opacity-3: rgba(216, 228, 122, 0.3);
 
+  --spacing-blocks: 25px;
+
   --border-radius-chip: 16px;
   --border-radius-logo: 10px;
   --border-radius: 8px;
 
-  --height-header: 80px;
-  --height-footer: 80px;
+  --height-header: 70px;
+  --height-footer: 70px;
 
   --box-shadow-flat: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
   --box-shadow: 0 16px 24px 2px rgba(33, 37, 41, 0.02),
