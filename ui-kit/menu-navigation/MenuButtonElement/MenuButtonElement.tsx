@@ -44,18 +44,11 @@ const MenuButtonElement: React.FC<IMenuButtonElementProps> = (props) => {
     isTextLeft,
   })
 
-  /* FIXME: filled
-  variant="filled" нет в API
-  Добавляется класс .MuiButton-filled. Класс ни на что не влияет
-  Eсли убрать, то сбиваются стили в Меню
-  */
-
   return (
     <ButtonElement
       buttonProps={{
         className,
         size: "small",
-        // variant="filled"
         sx: stylesButton,
         endIcon,
         disabled,
