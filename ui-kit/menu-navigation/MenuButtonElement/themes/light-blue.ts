@@ -3,11 +3,11 @@ const CONFIG_COLORS = {
     color: "#2b2b2b", // dark
   },
   active: {
-    color: "#4267af", // blue
+    color: "#6673ff", // blue
   },
   accent: {
-    color: "#edeeef", // gray
-    bg: "#8167f7", // violet
+    color: "#edeeef", // light-gray
+    bg: "#6673ff", // blue
     bgHover: "#2b2b2b", // dark
   },
 }

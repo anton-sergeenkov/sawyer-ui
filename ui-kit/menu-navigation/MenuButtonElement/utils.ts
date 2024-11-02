@@ -1,12 +1,12 @@
-import { theme as themeLightViolet } from "./themes/light-violet"
+import { theme as themeLightBlue } from "./themes/light-blue"
 import { theme as themeDefault } from "./themes/default"
 import { ThemeMode } from "./MenuButtonElement"
 import { CSSProperties } from "react"
 
 export const getTheme = (theme: ThemeMode | undefined) => {
   switch (theme) {
-    case ThemeMode.LIGHT_VIOLET:
-      return themeLightViolet
+    case ThemeMode.LIGHT_BLUE:
+      return themeLightBlue
     default:
       return themeDefault
   }

@@ -5,7 +5,7 @@ import { ITheme, TOnClick } from "@/sawyer-react-lib/types/common"
 // import styles from "./MenuButtonElement.module.css"
 
 export enum ThemeMode {
-  LIGHT_VIOLET = "light-violet",
+  LIGHT_BLUE = "light-blue",
 }
 
 interface IMenuButtonElementProps {
