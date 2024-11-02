@@ -6,12 +6,12 @@
 }
 
 .h2 {
+  display: flex;
   margin: 0;
   margin-bottom: var(--spacing-blocks);
   user-select: none;
 
   .item {
-    display: inline-block;
     padding: 2px 15px;
     font-size: 22px;
     font-family: var(--font-roboto-light);
