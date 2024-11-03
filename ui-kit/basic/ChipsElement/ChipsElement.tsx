@@ -2,7 +2,8 @@ import { Fragment } from "react"
 import cn from "classnames"
 import { checkThemeMode } from "../../utils"
 import { ITheme } from "@/sawyer-react-lib/types/common"
-import styles from "./ChipsElement.module.css"
+
+import styles from "./styles.module.css"
 
 export enum ThemeMode {
   LIGHT = "light", // Not Used

@@ -1,7 +1,7 @@
 import cn from "classnames"
 import { checkThemeMode } from "../../utils"
 
-import styles from "./TypographyElement.module.css"
+import styles from "./styles.module.css"
 
 import { ITheme } from "@/sawyer-react-lib/types/common"
 

@@ -14,7 +14,7 @@ import type {
   IMenuGroupItems,
 } from "@/sawyer-react-lib/types/common"
 
-// import styles from "./MenuToggleElement.module.css"
+// import styles from "./styles.module.css"
 
 type TList = IMenuItem[] | IMenuGroupItems
 

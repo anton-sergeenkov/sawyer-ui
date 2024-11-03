@@ -2,7 +2,7 @@ import cn from "classnames"
 import { checkThemeMode } from "../../utils"
 import { ITheme } from "@/sawyer-react-lib/types/common"
 
-import styles from "./LinkElement.module.css"
+import styles from "./styles.module.css"
 
 export enum ThemeMode {
   BLUE_UNDERLINED_THIN = "blue-underlined-thin",

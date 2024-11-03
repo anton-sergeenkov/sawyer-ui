@@ -1,7 +1,7 @@
 import cn from "classnames"
 import type { IStaticImageData } from "@/sawyer-react-lib/types/common"
 
-import styles from "./SocialLinksElement.module.css"
+import styles from "./styles.module.css"
 
 export interface ISocialLinksElementList {
   img: IStaticImageData

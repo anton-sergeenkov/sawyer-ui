@@ -3,7 +3,7 @@ import MenuButtonElement, {
   ThemeMode as ThemeMenuButtonElement,
 } from "@/sawyer-react-lib/ui-kit/menu-navigation/MenuButtonElement"
 
-// import styles from "./MenuItemHashElement.module.css"
+// import styles from "./styles.module.css"
 
 interface IMenuItemHashElementItems {
   title: string

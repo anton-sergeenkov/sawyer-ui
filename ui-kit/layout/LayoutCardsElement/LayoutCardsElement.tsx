@@ -7,7 +7,7 @@ import OptionsElement from "@/sawyer-react-lib/ui-kit/surfaces/OptionsElement"
 import { ITheme, IThemeElements } from "@/sawyer-react-lib/types/common"
 import type { IStaticImageData } from "@/sawyer-react-lib/types/common"
 
-import styles from "./LayoutCardsElement.module.css"
+import styles from "./styles.module.css"
 
 export enum ThemeMode {
   LIGHT = "light",

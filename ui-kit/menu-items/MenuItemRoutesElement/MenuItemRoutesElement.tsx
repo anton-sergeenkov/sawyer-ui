@@ -8,7 +8,7 @@ import MenuButtonElement, {
 } from "@/sawyer-react-lib/ui-kit/menu-navigation/MenuButtonElement"
 import type { IMenuItem } from "@/sawyer-react-lib/types/common"
 
-// import styles from "./MenuItemRoutesElement.module.css"
+// import styles from "./styles.module.css"
 
 interface IMenuItemRoutesElementProps {
   theme?: ITheme<ThemeMenuButtonElement>

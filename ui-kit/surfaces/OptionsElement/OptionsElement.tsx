@@ -8,7 +8,7 @@ import LinkElement, {
   ThemeMode as ThemeLinkElement,
 } from "@/sawyer-react-lib/ui-kit/basic/LinkElement"
 
-import styles from "./OptionsElement.module.css"
+import styles from "./styles.module.css"
 
 interface IOptionsElementOptions {
   name: string

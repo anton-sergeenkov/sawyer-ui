@@ -1,7 +1,8 @@
 import cn from "classnames"
 import { checkThemeMode } from "../../utils"
 import { ITheme } from "@/sawyer-react-lib/types/common"
-import styles from "./TypographyGradientElement.module.css"
+
+import styles from "./styles.module.css"
 
 export enum ThemeMode {
   DARKBLUE_BLUE = "darkblue-blue",

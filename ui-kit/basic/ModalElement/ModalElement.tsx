@@ -1,7 +1,7 @@
 import MUIModal from "@mui/material/Modal"
 import { JSXElementConstructor, ReactElement } from "react"
 
-// import styles from "./ModalElement.module.css"
+// import styles from "./styles.module.css"
 
 interface IMUIModalProps {
   className?: string

@@ -8,7 +8,7 @@ import { ThemeMode as ThemeMenuButtonElement } from "@/sawyer-react-lib/ui-kit/m
 import { IChildComponentProps } from "@/sawyer-react-lib/ui-kit/menu-navigation/MenuToggleElement/MenuToggleElement"
 import { styleMenuItem } from "@/sawyer-react-lib/ui-kit/constants"
 
-import styles from "./MenuItemGroupRoutesElement.module.css"
+import styles from "./styles.module.css"
 
 const ChildComponent: React.FC<IChildComponentProps> = (props) => {
   const { theme, list, onClose } = props
