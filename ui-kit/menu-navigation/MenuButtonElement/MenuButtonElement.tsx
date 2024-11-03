@@ -9,7 +9,7 @@ export enum ThemeMode {
   LIGHT_BLUE = "light-blue",
 }
 
-interface IMenuButtonElementProps {
+interface IProps {
   className?: string
   children: React.ReactNode
   theme?: ITheme<ThemeMode>
@@ -22,7 +22,7 @@ interface IMenuButtonElementProps {
   onClick?: TOnClick
 }
 
-const MenuButtonElement: React.FC<IMenuButtonElementProps> = (props) => {
+const MenuButtonElement: React.FC<IProps> = (props) => {
   const {
     className,
     children,

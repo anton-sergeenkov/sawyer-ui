@@ -10,13 +10,13 @@ interface IMenuItemHashElementItems {
   hash: string
 }
 
-interface IMenuItemHashElementProps {
+interface IProps {
   theme?: ITheme<ThemeMenuButtonElement>
   item: IMenuItemHashElementItems
 }
 
 // FIXME: not used, not styled link
-const MenuItemHashElement: React.FC<IMenuItemHashElementProps> = (props) => {
+const MenuItemHashElement: React.FC<IProps> = (props) => {
   const { theme, item } = props
 
   return (

@@ -10,6 +10,7 @@ import { styleMenuItem } from "@/sawyer-react-lib/ui-kit/constants"
 
 import styles from "./styles.module.css"
 
+// TODO: Interface
 const ChildComponent: React.FC<IChildComponentProps> = (props) => {
   const { theme, list, onClose } = props
 
@@ -30,7 +31,7 @@ const ChildComponent: React.FC<IChildComponentProps> = (props) => {
   )
 }
 
-interface IMenuItemGroupRoutesElementProps {
+interface IProps {
   className?: string
   theme?: ITheme<ThemeMenuButtonElement>
   list: IMenuItem[]
@@ -38,9 +39,7 @@ interface IMenuItemGroupRoutesElementProps {
   isAccent?: boolean
 }
 
-const MenuItemGroupRoutesElement: React.FC<IMenuItemGroupRoutesElementProps> = (
-  props,
-) => {
+const MenuItemGroupRoutesElement: React.FC<IProps> = (props) => {
   const { theme, list, title, isAccent, className } = props
 
   return (

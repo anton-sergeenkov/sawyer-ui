@@ -17,14 +17,14 @@ export enum Tag {
   P = "p",
 }
 
-interface ITypographyElementProps {
+interface IProps {
   theme?: ITheme<ThemeMode>
   className?: string
   tag?: Tag
   children: React.ReactNode
 }
 
-const TypographyElement: React.FC<ITypographyElementProps> = (props) => {
+const TypographyElement: React.FC<IProps> = (props) => {
   const { theme, className, tag, children } = props
 
   const stylesTheme = checkThemeMode<ThemeMode>(theme, styles)

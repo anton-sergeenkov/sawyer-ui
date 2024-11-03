@@ -3,18 +3,19 @@ import type { IStaticImageData } from "@/sawyer-react-lib/types/common"
 
 import styles from "./styles.module.css"
 
+// TODO: Interface
 export interface ISocialLinksElementList {
   img: IStaticImageData
   title: string
   link: string
 }
 
-interface ISocialLinksElementProps {
+interface IProps {
   list: ISocialLinksElementList[]
   className?: string
 }
 
-const SocialLinksElement: React.FC<ISocialLinksElementProps> = (props) => {
+const SocialLinksElement: React.FC<IProps> = (props) => {
   const { list, className } = props
 
   return (

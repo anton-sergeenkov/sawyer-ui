@@ -10,16 +10,14 @@ import type { IMenuItem } from "@/sawyer-react-lib/types/common"
 
 // import styles from "./styles.module.css"
 
-interface IMenuItemRoutesElementProps {
+interface IProps {
   theme?: ITheme<ThemeMenuButtonElement>
   item: IMenuItem
   isAccent?: boolean
   isTextLeft?: boolean
 }
 
-const MenuItemRoutesElement: React.FC<IMenuItemRoutesElementProps> = (
-  props,
-) => {
+const MenuItemRoutesElement: React.FC<IProps> = (props) => {
   const { theme, item, isAccent = false, isTextLeft = false } = props
 
   const pathname = usePathname()

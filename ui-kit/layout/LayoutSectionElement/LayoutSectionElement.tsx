@@ -8,14 +8,14 @@ export enum ThemeMode {
   HEADER_FOOTER = "header-footer",
 }
 
-interface ILayoutSectionElementProps {
+interface IProps {
   theme?: ITheme<ThemeMode>
   className?: string
   children: React.ReactNode
   isTopSpacing?: boolean
 }
 
-const LayoutSectionElement: React.FC<ILayoutSectionElementProps> = (props) => {
+const LayoutSectionElement: React.FC<IProps> = (props) => {
   const { theme, className, isTopSpacing, children } = props
 
   const stylesTheme = checkThemeMode<ThemeMode>(theme, styles)

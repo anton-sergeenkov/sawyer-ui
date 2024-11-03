@@ -10,23 +10,25 @@ import LinkElement, {
 
 import styles from "./styles.module.css"
 
+// TODO: Interface
 interface IOptionsElementOptions {
   name: string
   link: string
 }
 
+// TODO: Interface
 interface IOptionsElementClasses {
   container: string
   icon: string
   link: string
 }
 
-interface IOptionsElementProps {
+interface IProps {
   options: IOptionsElementOptions[]
   classes?: IOptionsElementClasses
 }
 
-const OptionsElement: React.FC<IOptionsElementProps> = (props) => {
+const OptionsElement: React.FC<IProps> = (props) => {
   const {
     options,
     classes = {

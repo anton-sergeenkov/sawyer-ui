@@ -14,11 +14,13 @@ export enum ThemeMode {
   DARK = "dark",
 }
 
+// TODO: Interface
 interface ILayoutCardsElementItemsLinks {
   name: string
   link: string
 }
 
+// TODO: Interface
 export interface ILayoutCardsElementItems {
   title: string
   link: string
@@ -27,14 +29,14 @@ export interface ILayoutCardsElementItems {
   links: ILayoutCardsElementItemsLinks[]
 }
 
-interface ILayoutCardsElementProps {
+interface IProps {
   theme?: ITheme<ThemeMode>
   themeLink?: IThemeElements<ThemeLinkElement>
   items: ILayoutCardsElementItems[]
   isOptions?: boolean
 }
 
-const LayoutCardsElement: React.FC<ILayoutCardsElementProps> = (props) => {
+const LayoutCardsElement: React.FC<IProps> = (props) => {
   const { theme, themeLink, items, isOptions = false } = props
 
   const stylesTheme = checkThemeMode<ThemeMode>(theme, styles)

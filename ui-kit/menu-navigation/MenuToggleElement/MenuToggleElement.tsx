@@ -18,13 +18,14 @@ import type {
 
 type TList = IMenuItem[] | IMenuGroupItems
 
+// TODO: Interface
 export interface IChildComponentProps {
   theme?: ITheme<ThemeMenuButtonElement>
   list: TList
   onClose: () => void
 }
 
-interface IMenuToggleElementProps {
+interface IProps {
   theme?: ITheme<ThemeMenuButtonElement>
   className?: string
   list: TList
@@ -33,7 +34,7 @@ interface IMenuToggleElementProps {
   Component: React.ComponentType<IChildComponentProps>
 }
 
-const MenuToggleElement: React.FC<IMenuToggleElementProps> = (props) => {
+const MenuToggleElement: React.FC<IProps> = (props) => {
   const { theme, className, list, title, isAccent = false, Component } = props
 
   const [anchorEl, setAnchorEl] = useState<(EventTarget & Element) | null>(null)

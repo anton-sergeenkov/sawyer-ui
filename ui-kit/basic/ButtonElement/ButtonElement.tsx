@@ -16,12 +16,12 @@ interface IMUIButtonProps {
   onClick: TOnClick
 }
 
-interface IButtonElementProps {
+interface IProps {
   children: React.ReactNode
   buttonProps: IMUIButtonProps
 }
 
-const ButtonElement: React.FC<IButtonElementProps> = (props) => {
+const ButtonElement: React.FC<IProps> = (props) => {
   const { children, buttonProps } = props
 
   return (

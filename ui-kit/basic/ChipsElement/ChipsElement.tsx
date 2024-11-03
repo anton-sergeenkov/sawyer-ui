@@ -10,14 +10,14 @@ export enum ThemeMode {
   DARK = "dark",
 }
 
-interface IChipsElementProps {
+interface IProps {
   className?: string
   theme?: ITheme<ThemeMode>
   items: string[]
   isUserSelect: boolean
 }
 
-const ChipsElement: React.FC<IChipsElementProps> = (props) => {
+const ChipsElement: React.FC<IProps> = (props) => {
   const { theme, className, items, isUserSelect = false } = props
 
   const stylesTheme = checkThemeMode<ThemeMode>(theme, styles)
