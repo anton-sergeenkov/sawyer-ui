@@ -1,6 +1,6 @@
 ## ⭐️ FIXME
 
-None
+- Именить название компонентов. ComponentElement -> UiComponent
 
 ## ⭐️ FEATURES
 
