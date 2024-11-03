@@ -1,9 +1,8 @@
 import cn from "classnames"
 import { checkThemeMode } from "../../utils"
+import { ITheme } from "@/sawyer-react-lib/types/common"
 
 import styles from "./styles.module.css"
-
-import { ITheme } from "@/sawyer-react-lib/types/common"
 
 export enum ThemeMode {
   DARK_FILLED = "dark-filled",
