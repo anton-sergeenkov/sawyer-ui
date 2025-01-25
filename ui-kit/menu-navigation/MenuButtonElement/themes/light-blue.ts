@@ -17,7 +17,6 @@ const CONFIG_COLORS = {
 const StylesButtonDefault = {
   color: CONFIG_COLORS.default.color,
   textTransform: "none",
-  fontFamily: "var(--font-roboto-regular)",
   borderRadius: "20px",
   backgroundColor: "transparent",
   width: "auto",
