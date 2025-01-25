@@ -9,6 +9,7 @@ import {
   IThemeElements,
   IStaticImageData,
 } from "@/sawyer-react-lib/types/common"
+import { robotoLight } from "@/sawyer-react-lib/app/fonts"
 
 import styles from "./styles.module.css"
 
@@ -59,7 +60,9 @@ const LayoutCardsElement: React.FC<IProps> = (props) => {
 
           <div className={styles.gridContent}>
             <h3 className={styles.header}>{element.title}</h3>
-            <div className={styles.description}>{element.description}</div>
+            <div className={cn(robotoLight.className, styles.description)}>
+              {element.description}
+            </div>
 
             {element.links.map((itemLink, indexLink) => (
               <div key={indexLink}>
