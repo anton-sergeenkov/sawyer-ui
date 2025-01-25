@@ -3,13 +3,11 @@ THEME
 /***************************************************/
 .item--blue-underlined-thin {
   --color: var(--color-blue);
-  font-family: var(--font-roboto-light);
   color: var(--color);
   background: linear-gradient(to bottom, var(--color) 50%, var(--color) 50%);
 }
 .item--dark-underlined {
   --color: var(--color-black-lighter);
-  font-family: var(--font-roboto-regular);
   color: var(--color);
   background: linear-gradient(to bottom, var(--color) 50%, var(--color) 50%);
 }
