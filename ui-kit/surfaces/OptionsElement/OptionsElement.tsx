@@ -7,6 +7,7 @@ import MoreVertIcon from "@mui/icons-material/MoreVert"
 import LinkElement, {
   ThemeMode as ThemeLinkElement,
 } from "@/sawyer-react-lib/ui-kit/basic/LinkElement"
+import { robotoLight } from "@/sawyer-react-lib/app/fonts"
 
 import styles from "./styles.module.css"
 
@@ -68,7 +69,7 @@ const OptionsElement: React.FC<IProps> = (props) => {
               theme={{
                 mode: ThemeLinkElement.DARK_UNDERLINED,
               }}
-              className={cn(styles.link, classes.link)}
+              className={cn(styles.link, robotoLight.className, classes.link)}
             >
               {element.name}
             </LinkElement>
