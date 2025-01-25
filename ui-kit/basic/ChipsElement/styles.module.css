@@ -1,7 +1,6 @@
 .item {
   display: inline-block;
   border-radius: var(--border-radius-chip);
-  font-family: var(--font-roboto-light);
   padding: 2px 12px;
   font-size: 14px;
   margin-right: 5px;
