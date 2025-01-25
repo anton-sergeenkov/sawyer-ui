@@ -2,7 +2,6 @@
   font-size: 25px;
   margin: 0;
   text-align: left;
-  font-family: var(--font-roboto-light);
 }
 
 .h2 {
@@ -14,7 +13,6 @@
   .item {
     padding: 2px 15px;
     font-size: 22px;
-    font-family: var(--font-roboto-light);
   }
 }
 

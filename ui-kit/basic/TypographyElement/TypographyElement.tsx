@@ -1,7 +1,7 @@
 import cn from "classnames"
 import { checkThemeMode } from "../../utils"
 import { ITheme } from "@/sawyer-react-lib/types/common"
-import { robotoRegular } from "@/sawyer-react-lib/app/fonts"
+import { robotoLight } from "@/sawyer-react-lib/app/fonts"
 
 import styles from "./styles.module.css"
 
@@ -31,11 +31,15 @@ const TypographyElement: React.FC<IProps> = (props) => {
 
   switch (tag) {
     case Tag.H1:
-      return <h1 className={cn(styles.h1, className)}>{children}</h1>
+      return (
+        <h1 className={cn(styles.h1, robotoLight.className, className)}>
+          {children}
+        </h1>
+      )
 
     case Tag.H2:
       return (
-        <h2 className={cn(styles.h2, robotoRegular.className, className)}>
+        <h2 className={cn(styles.h2, robotoLight.className, className)}>
           <span className={cn(styles.item, stylesTheme)}>{children}</span>
         </h2>
       )

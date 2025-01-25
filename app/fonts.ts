@@ -6,7 +6,6 @@ export const robotoThin = Roboto({
   display: "swap",
 })
 
-// FIXME: --font-roboto-light
 export const robotoLight = Roboto({
   weight: "300",
   subsets: ["latin", "cyrillic"],
