@@ -37,13 +37,11 @@ THEME
   border-radius: var(--border-radius-chip);
   background-color: var(--color-black-lighter);
   color: #fff;
-  font-family: var(--font-roboto-thin);
   font-size: 17px;
 }
 .h2 .item--light-outline {
   border: 1px solid var(--color-black-lighter);
   border-radius: var(--border-radius-chip);
   color: var(--color-black-lighter);
-  font-family: var(--font-roboto-thin);
   font-size: 17px;
 }

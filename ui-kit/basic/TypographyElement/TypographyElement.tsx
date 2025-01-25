@@ -1,6 +1,7 @@
 import cn from "classnames"
 import { checkThemeMode } from "../../utils"
 import { ITheme } from "@/sawyer-react-lib/types/common"
+import { robotoRegular } from "@/sawyer-react-lib/app/fonts"
 
 import styles from "./styles.module.css"
 
@@ -34,7 +35,7 @@ const TypographyElement: React.FC<IProps> = (props) => {
 
     case Tag.H2:
       return (
-        <h2 className={cn(styles.h2, className)}>
+        <h2 className={cn(styles.h2, robotoRegular.className, className)}>
           <span className={cn(styles.item, stylesTheme)}>{children}</span>
         </h2>
       )

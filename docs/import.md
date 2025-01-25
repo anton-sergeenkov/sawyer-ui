@@ -120,8 +120,15 @@ import MenuItemHashElement from "@/sawyer-react-lib/ui-kit/menu-items/MenuItemHa
 ## 🔰 Imported
 
 ```ts
-import FontClasses from "@/sawyer-react-lib/app/fonts"
 import "@/sawyer-react-lib/app/globals.css"
+```
+
+```ts
+import {
+  robotoThin,
+  robotoLight,
+  robotoRegular,
+} from "@/sawyer-react-lib/app/fonts"
 ```
 
 ---
