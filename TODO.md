@@ -1,6 +1,11 @@
 # ⭐️ FIXME
 
-- Именить название компонентов. `ComponentElement` -> `UiComponent`
+Именить название компонентов. `ComponentElement` -> `UiComponent`:
+- basic (button+)
+- layout
+- menu-items
+- menu-navigation
+- surfaces
 
 # ⭐️ COMPONENTS
 

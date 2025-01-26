@@ -92,9 +92,9 @@ import OptionsElement from "@/sawyer-react-lib/ui-kit/surfaces/OptionsElement"
 
 ## 🔰 Internal Usage
 
-#### `ButtonElement`
+#### `UiButton`
 ```ts
-import ButtonElement from "@/sawyer-react-lib/ui-kit/basic/ButtonElement"
+import UiButton from "@/sawyer-react-lib/ui-kit/basic/UiButton"
 ```
 
 #### `MenuButtonElement`

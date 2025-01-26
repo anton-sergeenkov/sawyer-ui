@@ -22,7 +22,7 @@ interface IProps {
   buttonProps: IMUIButtonProps
 }
 
-const ButtonElement: React.FC<IProps> = (props) => {
+const UiButton: React.FC<IProps> = (props) => {
   const { children, buttonProps } = props
 
   return (
@@ -32,4 +32,4 @@ const ButtonElement: React.FC<IProps> = (props) => {
   )
 }
 
-export default ButtonElement
+export default UiButton

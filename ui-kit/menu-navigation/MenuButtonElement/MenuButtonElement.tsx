@@ -1,5 +1,5 @@
 // import cn from 'classnames'
-import ButtonElement from "@/sawyer-react-lib/ui-kit/basic/ButtonElement"
+import UiButton from "@/sawyer-react-lib/ui-kit/basic/UiButton"
 import { getStyles } from "./utils"
 import { ITheme, TOnClick } from "@/sawyer-react-lib/types/common"
 
@@ -46,7 +46,7 @@ const MenuButtonElement: React.FC<IProps> = (props) => {
   })
 
   return (
-    <ButtonElement
+    <UiButton
       buttonProps={{
         className,
         size: "small",
@@ -57,7 +57,7 @@ const MenuButtonElement: React.FC<IProps> = (props) => {
       }}
     >
       <div style={stylesText}>{children}</div>
-    </ButtonElement>
+    </UiButton>
   )
 }
 
