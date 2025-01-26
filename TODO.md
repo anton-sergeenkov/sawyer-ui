@@ -5,4 +5,4 @@
 
 ## ⭐️ FEATURES
 
-- Storybook
+- Storybook. Сейчас описание ui-kit в anton-sergeenkov.github.io\app\uikit
