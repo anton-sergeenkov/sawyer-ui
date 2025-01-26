@@ -49,6 +49,11 @@ import LayoutSectionElement from "@/sawyer-react-lib/ui-kit/layout/LayoutSection
 import { ThemeMode as ThemeLayoutSectionElement } from "@/sawyer-react-lib/ui-kit/layout/LayoutSectionElement"
 ```
 
+#### `LayoutSectionContainerElement`
+```ts
+import LayoutSectionContainerElement from "@/sawyer-react-lib/ui-kit/layout/LayoutSectionContainerElement"
+```
+
 ---
 
 ## 🔰 Menu Items

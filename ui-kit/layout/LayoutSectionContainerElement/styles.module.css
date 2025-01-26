@@ -1,0 +1,9 @@
+.container {
+  overflow: auto;
+  border-radius: var(--border-radius);
+  background-color: var(--color-white);
+}
+
+.containerPadding {
+  padding: var(--spacing);
+}
