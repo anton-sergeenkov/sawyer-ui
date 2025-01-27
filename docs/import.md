@@ -2,10 +2,10 @@
 
 ## 🔰 Basic
 
-#### `ChipsElement`
+#### `UiChips`
 ```ts
-import ChipsElement from "@/sawyer-react-lib/ui-kit/basic/ChipsElement"
-import { ThemeMode as ThemeChipsElement } from "@/sawyer-react-lib/ui-kit/basic/ChipsElement"
+import UiChips from "@/sawyer-react-lib/ui-kit/basic/UiChips"
+import { ThemeMode as ThemeChipsElement } from "@/sawyer-react-lib/ui-kit/basic/UiChips"
 ```
 
 #### `TypographyGradientElement`

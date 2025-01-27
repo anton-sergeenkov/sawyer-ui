@@ -1,7 +1,7 @@
 # ⭐️ FIXME
 
 Именить название компонентов. `ComponentElement` -> `UiComponent`:
-- basic (button+)
+- basic (button, chips)
 - layout
 - menu-items
 - menu-navigation

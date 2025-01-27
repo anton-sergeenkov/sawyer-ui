@@ -18,7 +18,7 @@ interface IProps {
   isUserSelect: boolean
 }
 
-const ChipsElement: React.FC<IProps> = (props) => {
+const UiChips: React.FC<IProps> = (props) => {
   const { theme, className, items, isUserSelect = false } = props
 
   const stylesTheme = checkThemeMode<ThemeMode>(theme, styles)
@@ -44,4 +44,4 @@ const ChipsElement: React.FC<IProps> = (props) => {
   )
 }
 
-export default ChipsElement
+export default UiChips
