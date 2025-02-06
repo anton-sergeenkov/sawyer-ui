@@ -47,15 +47,13 @@ const MenuButtonElement: React.FC<IProps> = (props) => {
 
   return (
     <UiButton
-      buttonProps={{
-        className,
-        sx: stylesButton,
-        endIcon,
-        disabled,
-        onClick,
-      }}
       variant="text"
       size="small"
+      className={className}
+      sx={stylesButton}
+      endIcon={endIcon}
+      disabled={disabled}
+      onClick={onClick}
     >
       <div style={stylesText}>{children}</div>
     </UiButton>

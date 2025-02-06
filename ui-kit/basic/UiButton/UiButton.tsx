@@ -1,4 +1,4 @@
-// import cn from "classnames"
+import cn from "classnames"
 import { SxProps, Theme } from "@mui/material"
 import MUIButton from "@mui/material/Button"
 import { TOnClick } from "@/sawyer-react-lib/types/common"
@@ -7,7 +7,10 @@ import styles from "./styles.module.css"
 
 // https://mui.com/material-ui/api/button/
 
-interface IMUIButtonProps {
+interface IProps {
+  children: React.ReactNode
+  variant?: "text" | "outlined" | "contained"
+  size?: "small" | "medium" | "large"
   className?: string
   sx?: SxProps<Theme>
   endIcon?: React.ReactNode
@@ -15,22 +18,27 @@ interface IMUIButtonProps {
   onClick: TOnClick
 }
 
-interface IProps {
-  children: React.ReactNode
-  buttonProps: IMUIButtonProps
-  size?: "small" | "medium" | "large"
-  variant?: "text" | "outlined" | "contained"
-}
-
 const UiButton: React.FC<IProps> = (props) => {
-  const { children, buttonProps, size = "small", variant = "contained" } = props
+  const {
+    children,
+    variant = "contained",
+    size = "small",
+    className,
+    sx = {},
+    endIcon = null,
+    disabled = false,
+    onClick,
+  } = props
 
   return (
     <MUIButton
-      {...buttonProps}
-      size={size}
       variant={variant}
-      className={styles.button}
+      size={size}
+      className={cn(className, styles.button)}
+      sx={sx}
+      endIcon={endIcon}
+      disabled={disabled}
+      onClick={onClick}
     >
       {children}
     </MUIButton>
