@@ -1,7 +1,7 @@
 // import cn from "classnames"
 import { ITheme } from "@/sawyer-react-lib/types/common"
 import MenuButtonElement, {
-  ThemeMode as ThemeMenuButtonElement,
+  ThemeMode as ThemeUiMenuButton,
 } from "@/sawyer-react-lib/ui-kit/menu-navigation/MenuButtonElement"
 
 // import styles from "./styles.module.css"
@@ -12,7 +12,7 @@ interface IMenuItemHashElementItems {
 }
 
 interface IProps {
-  theme?: ITheme<ThemeMenuButtonElement>
+  theme?: ITheme<ThemeUiMenuButton>
   item: IMenuItemHashElementItems
 }
 

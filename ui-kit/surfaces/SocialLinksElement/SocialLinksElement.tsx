@@ -4,14 +4,14 @@ import type { IStaticImageData } from "@/sawyer-react-lib/types/common"
 import styles from "./styles.module.css"
 
 // TODO: Interface
-export interface ISocialLinksElementList {
+export interface IUiSocialLinksList {
   img: IStaticImageData
   title: string
   link: string
 }
 
 interface IProps {
-  list: ISocialLinksElementList[]
+  list: IUiSocialLinksList[]
   className?: string
 }
 

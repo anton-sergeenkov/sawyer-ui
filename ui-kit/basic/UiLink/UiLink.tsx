@@ -17,7 +17,7 @@ interface IProps {
   target?: string // "_blank"
 }
 
-const LinkElement: React.FC<IProps> = (props) => {
+const UiLink: React.FC<IProps> = (props) => {
   const { theme, className, href, target = "_blank", children } = props
 
   const stylesTheme = checkThemeMode<ThemeMode>(theme, styles)
@@ -33,4 +33,4 @@ const LinkElement: React.FC<IProps> = (props) => {
   )
 }
 
-export default LinkElement
+export default UiLink

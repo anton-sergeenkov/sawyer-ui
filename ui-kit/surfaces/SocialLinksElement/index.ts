@@ -1,4 +1,4 @@
-import { ISocialLinksElementList } from "./SocialLinksElement"
+import { IUiSocialLinksList } from "./SocialLinksElement"
 
 export { default } from "./SocialLinksElement"
-export type { ISocialLinksElementList }
+export type { IUiSocialLinksList }

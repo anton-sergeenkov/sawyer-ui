@@ -4,9 +4,9 @@ import cn from "classnames"
 import { useState } from "react"
 import { IconButton, Menu, MenuItem } from "@mui/material"
 import MoreVertIcon from "@mui/icons-material/MoreVert"
-import LinkElement, {
-  ThemeMode as ThemeLinkElement,
-} from "@/sawyer-react-lib/ui-kit/basic/LinkElement"
+import UiLink, {
+  ThemeMode as ThemeUiLink,
+} from "@/sawyer-react-lib/ui-kit/basic/UiLink"
 import { robotoLight } from "@/sawyer-react-lib/app/fonts"
 
 import styles from "./styles.module.css"
@@ -64,15 +64,15 @@ const OptionsElement: React.FC<IProps> = (props) => {
             onClick={handleClose}
             sx={{ minHeight: "auto" }}
           >
-            <LinkElement
+            <UiLink
               href={element.link}
               theme={{
-                mode: ThemeLinkElement.DARK_UNDERLINED,
+                mode: ThemeUiLink.DARK_UNDERLINED,
               }}
               className={cn(styles.link, robotoLight.className, classes.link)}
             >
               {element.name}
-            </LinkElement>
+            </UiLink>
           </MenuItem>
         ))}
       </Menu>

@@ -5,13 +5,13 @@
 #### `UiChips`
 ```ts
 import UiChips from "@/sawyer-react-lib/ui-kit/basic/UiChips"
-import { ThemeMode as ThemeChipsElement } from "@/sawyer-react-lib/ui-kit/basic/UiChips"
+import { ThemeMode as ThemeUiChips } from "@/sawyer-react-lib/ui-kit/basic/UiChips"
 ```
 
 #### `TypographyGradientElement`
 ```ts
 import TypographyGradientElement from "@/sawyer-react-lib/ui-kit/basic/TypographyGradientElement"
-import { ThemeMode as ThemeTypographyGradientElement } from "@/sawyer-react-lib/ui-kit/basic/TypographyGradientElement"
+import { ThemeMode as ThemeUiTypographyGradient } from "@/sawyer-react-lib/ui-kit/basic/TypographyGradientElement"
 ```
 
 #### `ModalElement`
@@ -22,14 +22,14 @@ import ModalElement from "@/sawyer-react-lib/ui-kit/basic/ModalElement"
 #### `TypographyElement`
 ```ts
 import TypographyElement from "@/sawyer-react-lib/ui-kit/basic/TypographyElement"
-import { ThemeMode as ThemeTypographyElement } from "@/sawyer-react-lib/ui-kit/basic/TypographyElement"
+import { ThemeMode as ThemeUiTypography } from "@/sawyer-react-lib/ui-kit/basic/TypographyElement"
 import { Tag as TagTypographyElement } from "@/sawyer-react-lib/ui-kit/basic/TypographyElement"
 ```
 
-#### `LinkElement`
+#### `UiLink`
 ```ts
-import LinkElement from "@/sawyer-react-lib/ui-kit/basic/LinkElement"
-import { ThemeMode as ThemeLinkElement } from "@/sawyer-react-lib/ui-kit/basic/LinkElement"
+import UiLink from "@/sawyer-react-lib/ui-kit/basic/UiLink"
+import { ThemeMode as ThemeUiLink } from "@/sawyer-react-lib/ui-kit/basic/UiLink"
 ```
 
 ---
@@ -39,14 +39,14 @@ import { ThemeMode as ThemeLinkElement } from "@/sawyer-react-lib/ui-kit/basic/L
 #### `LayoutCardsElement`
 ```ts
 import LayoutCardsElement from "@/sawyer-react-lib/ui-kit/layout/LayoutCardsElement"
-import { ThemeMode as ThemeLayoutCardsElement } from "@/sawyer-react-lib/ui-kit/layout/LayoutCardsElement"
-import type { ILayoutCardsElementItems } from "@/sawyer-react-lib/ui-kit/layout/LayoutCardsElement"
+import { ThemeMode as ThemeUiLayoutCards } from "@/sawyer-react-lib/ui-kit/layout/LayoutCardsElement"
+import type { UiLayoutCardsItems } from "@/sawyer-react-lib/ui-kit/layout/LayoutCardsElement"
 ```
 
 #### `LayoutSectionElement`
 ```ts
 import LayoutSectionElement from "@/sawyer-react-lib/ui-kit/layout/LayoutSectionElement"
-import { ThemeMode as ThemeLayoutSectionElement } from "@/sawyer-react-lib/ui-kit/layout/LayoutSectionElement"
+import { ThemeMode as ThemeUiLayoutSection } from "@/sawyer-react-lib/ui-kit/layout/LayoutSectionElement"
 ```
 
 #### `LayoutSectionContainerElement`
@@ -80,7 +80,7 @@ import MenuItemGroupRoutesElement from "@/sawyer-react-lib/ui-kit/menu-items/Men
 #### `SocialLinksElement`
 ```js
 import SocialLinksElement from "@/sawyer-react-lib/ui-kit/surfaces/SocialLinksElement"
-import type { ISocialLinksElementList } from "@/sawyer-react-lib/ui-kit/surfaces/SocialLinksElement"
+import type { IUiSocialLinksList } from "@/sawyer-react-lib/ui-kit/surfaces/SocialLinksElement"
 ```
 
 #### `OptionsElement`
@@ -100,7 +100,7 @@ import UiButton from "@/sawyer-react-lib/ui-kit/basic/UiButton"
 #### `MenuButtonElement`
 ```ts
 import MenuButtonElement from "@/sawyer-react-lib/ui-kit/menu-navigation/MenuButtonElement"
-import { ThemeMode as ThemeMenuButtonElement } from "@/sawyer-react-lib/ui-kit/menu-navigation/MenuButtonElement"
+import { ThemeMode as ThemeUiMenuButton } from "@/sawyer-react-lib/ui-kit/menu-navigation/MenuButtonElement"
 ```
 
 #### `MenuToggleElement`

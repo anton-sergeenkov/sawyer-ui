@@ -5,14 +5,14 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { ITheme } from "@/sawyer-react-lib/types/common"
 import MenuButtonElement, {
-  ThemeMode as ThemeMenuButtonElement,
+  ThemeMode as ThemeUiMenuButton,
 } from "@/sawyer-react-lib/ui-kit/menu-navigation/MenuButtonElement"
 import type { IMenuItem } from "@/sawyer-react-lib/types/common"
 
 // import styles from "./styles.module.css"
 
 interface IProps {
-  theme?: ITheme<ThemeMenuButtonElement>
+  theme?: ITheme<ThemeUiMenuButton>
   item: IMenuItem
   isAccent?: boolean
   isTextLeft?: boolean

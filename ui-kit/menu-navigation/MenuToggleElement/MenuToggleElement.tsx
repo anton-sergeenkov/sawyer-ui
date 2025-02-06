@@ -6,7 +6,7 @@ import Menu from "@mui/material/Menu"
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown"
 import { ITheme } from "@/sawyer-react-lib/types/common"
 import MenuButtonElement, {
-  ThemeMode as ThemeMenuButtonElement,
+  ThemeMode as ThemeUiMenuButton,
 } from "@/sawyer-react-lib/ui-kit/menu-navigation/MenuButtonElement"
 import type {
   IMenuItem,
@@ -19,13 +19,13 @@ type TList = IMenuItem[] | IMenuGroupItems
 
 // TODO: Interface
 export interface IChildComponentProps {
-  theme?: ITheme<ThemeMenuButtonElement>
+  theme?: ITheme<ThemeUiMenuButton>
   list: TList
   onClose: () => void
 }
 
 interface IProps {
-  theme?: ITheme<ThemeMenuButtonElement>
+  theme?: ITheme<ThemeUiMenuButton>
   className?: string
   list: TList
   title: string

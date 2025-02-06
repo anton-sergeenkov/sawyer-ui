@@ -1,8 +1,8 @@
 import cn from "classnames"
 import { checkThemeMode } from "../../utils"
-import LinkElement, {
-  ThemeMode as ThemeLinkElement,
-} from "@/sawyer-react-lib/ui-kit/basic/LinkElement"
+import UiLink, {
+  ThemeMode as ThemeUiLink,
+} from "@/sawyer-react-lib/ui-kit/basic/UiLink"
 import OptionsElement from "@/sawyer-react-lib/ui-kit/surfaces/OptionsElement"
 import {
   ITheme,
@@ -19,24 +19,24 @@ export enum ThemeMode {
 }
 
 // TODO: Interface
-interface ILayoutCardsElementItemsLinks {
+interface UiLayoutCardsItemsLinks {
   name: string
   link: string
 }
 
 // TODO: Interface
-export interface ILayoutCardsElementItems {
+export interface UiLayoutCardsItems {
   title: string
   link: string
   img: IStaticImageData
   description: string
-  links: ILayoutCardsElementItemsLinks[]
+  links: UiLayoutCardsItemsLinks[]
 }
 
 interface IProps {
   theme?: ITheme<ThemeMode>
-  themeLink?: IThemeElements<ThemeLinkElement>
-  items: ILayoutCardsElementItems[]
+  themeLink?: IThemeElements<ThemeUiLink>
+  items: UiLayoutCardsItems[]
   isOptions?: boolean
 }
 
@@ -66,9 +66,9 @@ const LayoutCardsElement: React.FC<IProps> = (props) => {
 
             {element.links.map((itemLink, indexLink) => (
               <div key={indexLink}>
-                <LinkElement href={itemLink.link} theme={themeLink}>
+                <UiLink href={itemLink.link} theme={themeLink}>
                   {itemLink.name}
-                </LinkElement>
+                </UiLink>
               </div>
             ))}
 

@@ -5,7 +5,7 @@ import MenuItem from "@mui/material/MenuItem"
 import MenuToggleElement from "@/sawyer-react-lib/ui-kit/menu-navigation/MenuToggleElement"
 import MenuItemRoutesElement from "@/sawyer-react-lib/ui-kit/menu-items/MenuItemRoutesElement"
 import { IMenuItem, ITheme } from "@/sawyer-react-lib/types/common"
-import { ThemeMode as ThemeMenuButtonElement } from "@/sawyer-react-lib/ui-kit/menu-navigation/MenuButtonElement"
+import { ThemeMode as ThemeUiMenuButton } from "@/sawyer-react-lib/ui-kit/menu-navigation/MenuButtonElement"
 import { IChildComponentProps } from "@/sawyer-react-lib/ui-kit/menu-navigation/MenuToggleElement/MenuToggleElement"
 import { styleMenuItem } from "@/sawyer-react-lib/ui-kit/constants"
 
@@ -34,7 +34,7 @@ const ChildComponent: React.FC<IChildComponentProps> = (props) => {
 
 interface IProps {
   className?: string
-  theme?: ITheme<ThemeMenuButtonElement>
+  theme?: ITheme<ThemeUiMenuButton>
   list: IMenuItem[]
   title: string
   isAccent?: boolean
