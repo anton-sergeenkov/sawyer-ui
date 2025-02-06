@@ -49,12 +49,13 @@ const MenuButtonElement: React.FC<IProps> = (props) => {
     <UiButton
       buttonProps={{
         className,
-        size: "small",
         sx: stylesButton,
         endIcon,
         disabled,
         onClick,
       }}
+      variant="text"
+      size="small"
     >
       <div style={stylesText}>{children}</div>
     </UiButton>

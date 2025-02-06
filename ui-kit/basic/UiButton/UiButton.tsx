@@ -9,8 +9,6 @@ import styles from "./styles.module.css"
 
 interface IMUIButtonProps {
   className?: string
-  size: "small" | "medium" | "large"
-  variant?: "text" | "outlined" | "contained"
   sx?: SxProps<Theme>
   endIcon?: React.ReactNode
   disabled?: boolean
@@ -20,13 +18,20 @@ interface IMUIButtonProps {
 interface IProps {
   children: React.ReactNode
   buttonProps: IMUIButtonProps
+  size?: "small" | "medium" | "large"
+  variant?: "text" | "outlined" | "contained"
 }
 
 const UiButton: React.FC<IProps> = (props) => {
-  const { children, buttonProps } = props
+  const { children, buttonProps, size = "small", variant = "contained" } = props
 
   return (
-    <MUIButton {...buttonProps} className={styles.button}>
+    <MUIButton
+      {...buttonProps}
+      size={size}
+      variant={variant}
+      className={styles.button}
+    >
       {children}
     </MUIButton>
   )
