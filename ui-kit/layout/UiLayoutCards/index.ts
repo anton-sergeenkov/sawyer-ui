@@ -1,5 +1,5 @@
-import { options, UiLayoutCardsItems } from "./UiLayoutCards"
+import { options, IUiLayoutCardsItems } from "./UiLayoutCards"
 
 export { default } from "./UiLayoutCards"
 export { options }
-export type { UiLayoutCardsItems }
+export type { IUiLayoutCardsItems }

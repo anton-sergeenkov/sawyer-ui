@@ -15,24 +15,24 @@ export const options = {
 }
 
 // TODO: Interface
-interface UiLayoutCardsItemsLinks {
+interface IUiLayoutCardsItemsLinks {
   name: string
   link: string
 }
 
 // TODO: Interface
-export interface UiLayoutCardsItems {
+export interface IUiLayoutCardsItems {
   title: string
   link: string
   img: IStaticImageData
   description: string
-  links: UiLayoutCardsItemsLinks[]
+  links: IUiLayoutCardsItemsLinks[]
 }
 
 interface IProps {
   theme?: "light" | "dark"
   themeLink?: TThemeUiLink
-  items: UiLayoutCardsItems[]
+  items: IUiLayoutCardsItems[]
   isOptions?: boolean
 }
 
