@@ -1,7 +1,7 @@
 import { CSSProperties } from "react"
 import { theme as themeLightBlue } from "./themes/light-blue"
 import { theme as themeDefault } from "./themes/default"
-import { ThemeMode } from "./MenuButtonElement"
+import { ThemeMode } from "./UiMenuNavButton"
 
 export const getTheme = (theme: ThemeMode | undefined) => {
   switch (theme) {

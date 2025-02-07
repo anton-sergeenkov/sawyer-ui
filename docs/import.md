@@ -40,19 +40,19 @@ import LayoutSectionContainerElement from "@/sawyer-react-lib/ui-kit/layout/Layo
 
 ## 🔰 Menu Items
 
-#### `MenuItemRoutesElement`
+#### `UiMenuItemRoutes`
 ```ts
-import MenuItemRoutesElement from "@/sawyer-react-lib/ui-kit/menu-items/MenuItemRoutesElement"
+import UiMenuItemRoutes from "@/sawyer-react-lib/ui-kit/menu/UiMenuItemRoutes"
 ```
 
-#### `MenuItemGroupLinksElement`
+#### `UiMenuItemGroupLinks`
 ```ts
-import MenuItemGroupLinksElement from "@/sawyer-react-lib/ui-kit/menu-items/MenuItemGroupLinksElement"
+import UiMenuItemGroupLinks from "@/sawyer-react-lib/ui-kit/menu/UiMenuItemGroupLinks"
 ```
 
-#### `MenuItemGroupRoutesElement`
+#### `UiMenuItemGroupRoutes`
 ```ts
-import MenuItemGroupRoutesElement from "@/sawyer-react-lib/ui-kit/menu-items/MenuItemGroupRoutesElement"
+import UiMenuItemGroupRoutes from "@/sawyer-react-lib/ui-kit/menu/UiMenuItemGroupRoutes"
 ```
 
 ---
@@ -74,25 +74,25 @@ import OptionsElement from "@/sawyer-react-lib/ui-kit/surfaces/OptionsElement"
 
 ## 🔰 Internal Usage
 
-#### `MenuButtonElement`
+#### `UiMenuNavButton`
 ```ts
-import MenuButtonElement from "@/sawyer-react-lib/ui-kit/menu-navigation/MenuButtonElement"
-import { ThemeMode as ThemeUiMenuButton } from "@/sawyer-react-lib/ui-kit/menu-navigation/MenuButtonElement"
+import UiMenuNavButton from "@/sawyer-react-lib/ui-kit/menu/UiMenuNavButton"
+import { ThemeMode as ThemeUiMenuButton } from "@/sawyer-react-lib/ui-kit/menu/UiMenuNavButton"
 ```
 
-#### `MenuToggleElement`
+#### `UiMenuNavToggle`
 
 ```ts
-import MenuToggleElement from "@/sawyer-react-lib/ui-kit/menu-navigation/MenuToggleElement"
+import UiMenuNavToggle from "@/sawyer-react-lib/ui-kit/menu/UiMenuNavToggle"
 ```
 
 ---
 
 ## 🔰 Not Used
 
-#### `MenuItemHashElement`
+#### `UiMenuItemHash`
 ```ts
-import MenuItemHashElement from "@/sawyer-react-lib/ui-kit/menu-items/MenuItemHashElement"
+import UiMenuItemHash from "@/sawyer-react-lib/ui-kit/menu/UiMenuItemHash"
 ```
 
 ---

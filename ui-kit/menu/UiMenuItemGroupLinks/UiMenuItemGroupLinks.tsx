@@ -3,12 +3,12 @@
 // import cn from "classnames"
 // import OpenInNewOutlinedIcon from '@mui/icons-material/OpenInNewOutlined'
 import MenuItem from "@mui/material/MenuItem"
-import MenuToggleElement from "@/sawyer-react-lib/ui-kit/menu-navigation/MenuToggleElement"
-import MenuButtonElement, {
+import UiMenuNavToggle from "@/sawyer-react-lib/ui-kit/menu/UiMenuNavToggle"
+import UiMenuNavButton, {
   ThemeMode as ThemeUiMenuButton,
-} from "@/sawyer-react-lib/ui-kit/menu-navigation/MenuButtonElement"
+} from "@/sawyer-react-lib/ui-kit/menu/UiMenuNavButton"
 import { IMenuGroupItems, ITheme } from "@/sawyer-react-lib/types/common"
-import { IChildComponentProps } from "@/sawyer-react-lib/ui-kit/menu-navigation/MenuToggleElement/MenuToggleElement"
+import { IChildComponentProps } from "@/sawyer-react-lib/ui-kit/menu/UiMenuNavToggle/UiMenuNavToggle"
 import { styleMenuItem } from "@/sawyer-react-lib/ui-kit/constants"
 
 import styles from "./styles.module.css"
@@ -22,7 +22,7 @@ const ChildComponent: React.FC<IChildComponentProps> = (props) => {
       {(list as IMenuGroupItems).items.map((element, index) => (
         <MenuItem key={index} onClick={onClose} sx={styleMenuItem}>
           <a className={styles.link} href={element.path} target="_blank">
-            <MenuButtonElement
+            <UiMenuNavButton
               theme={theme}
               isAccent={false}
               isActive={false}
@@ -31,7 +31,7 @@ const ChildComponent: React.FC<IChildComponentProps> = (props) => {
               isTextLeft={true}
             >
               {element.title}
-            </MenuButtonElement>
+            </UiMenuNavButton>
           </a>
         </MenuItem>
       ))}
@@ -47,11 +47,11 @@ interface IProps {
   isAccent: boolean
 }
 
-const MenuItemGroupLinksElement: React.FC<IProps> = (props) => {
+const UiMenuItemGroupLinks: React.FC<IProps> = (props) => {
   const { theme, list, title, isAccent, className } = props
 
   return (
-    <MenuToggleElement
+    <UiMenuNavToggle
       className={className}
       theme={theme}
       list={list}
@@ -62,4 +62,4 @@ const MenuItemGroupLinksElement: React.FC<IProps> = (props) => {
   )
 }
 
-export default MenuItemGroupLinksElement
+export default UiMenuItemGroupLinks

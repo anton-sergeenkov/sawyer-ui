@@ -1,8 +1,8 @@
 // import cn from "classnames"
 import { ITheme } from "@/sawyer-react-lib/types/common"
-import MenuButtonElement, {
+import UiMenuNavButton, {
   ThemeMode as ThemeUiMenuButton,
-} from "@/sawyer-react-lib/ui-kit/menu-navigation/MenuButtonElement"
+} from "@/sawyer-react-lib/ui-kit/menu/UiMenuNavButton"
 
 // import styles from "./styles.module.css"
 
@@ -17,14 +17,14 @@ interface IProps {
 }
 
 // FIXME: not used, not styled link
-const MenuItemHashElement: React.FC<IProps> = (props) => {
+const UiMenuItemHash: React.FC<IProps> = (props) => {
   const { theme, item } = props
 
   return (
-    <MenuButtonElement theme={theme}>
+    <UiMenuNavButton theme={theme}>
       <a href={`#${item.hash}`}>{item.title}</a>
-    </MenuButtonElement>
+    </UiMenuNavButton>
   )
 }
 
-export default MenuItemHashElement
+export default UiMenuItemHash

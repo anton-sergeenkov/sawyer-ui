@@ -22,7 +22,7 @@ interface IProps {
   onClick?: TOnClick
 }
 
-const MenuButtonElement: React.FC<IProps> = (props) => {
+const UiMenuNavButton: React.FC<IProps> = (props) => {
   const {
     className,
     children,
@@ -60,4 +60,4 @@ const MenuButtonElement: React.FC<IProps> = (props) => {
   )
 }
 
-export default MenuButtonElement
+export default UiMenuNavButton

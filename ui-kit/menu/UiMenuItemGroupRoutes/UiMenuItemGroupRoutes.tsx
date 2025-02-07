@@ -2,11 +2,11 @@
 
 // import cn from "classnames"
 import MenuItem from "@mui/material/MenuItem"
-import MenuToggleElement from "@/sawyer-react-lib/ui-kit/menu-navigation/MenuToggleElement"
-import MenuItemRoutesElement from "@/sawyer-react-lib/ui-kit/menu-items/MenuItemRoutesElement"
+import UiMenuNavToggle from "@/sawyer-react-lib/ui-kit/menu/UiMenuNavToggle"
+import UiMenuItemRoutes from "@/sawyer-react-lib/ui-kit/menu/UiMenuItemRoutes"
 import { IMenuItem, ITheme } from "@/sawyer-react-lib/types/common"
-import { ThemeMode as ThemeUiMenuButton } from "@/sawyer-react-lib/ui-kit/menu-navigation/MenuButtonElement"
-import { IChildComponentProps } from "@/sawyer-react-lib/ui-kit/menu-navigation/MenuToggleElement/MenuToggleElement"
+import { ThemeMode as ThemeUiMenuButton } from "@/sawyer-react-lib/ui-kit/menu/UiMenuNavButton"
+import { IChildComponentProps } from "@/sawyer-react-lib/ui-kit/menu/UiMenuNavToggle/UiMenuNavToggle"
 import { styleMenuItem } from "@/sawyer-react-lib/ui-kit/constants"
 
 import styles from "./styles.module.css"
@@ -20,11 +20,7 @@ const ChildComponent: React.FC<IChildComponentProps> = (props) => {
       {(list as IMenuItem[]).map((element, index) => (
         <div className={styles.link} key={index}>
           <MenuItem onClick={onClose} sx={styleMenuItem}>
-            <MenuItemRoutesElement
-              theme={theme}
-              item={element}
-              isTextLeft={true}
-            />
+            <UiMenuItemRoutes theme={theme} item={element} isTextLeft={true} />
           </MenuItem>
         </div>
       ))}
@@ -40,11 +36,11 @@ interface IProps {
   isAccent?: boolean
 }
 
-const MenuItemGroupRoutesElement: React.FC<IProps> = (props) => {
+const UiMenuItemGroupRoutes: React.FC<IProps> = (props) => {
   const { theme, list, title, isAccent, className } = props
 
   return (
-    <MenuToggleElement
+    <UiMenuNavToggle
       className={className}
       theme={theme}
       list={list}
@@ -55,4 +51,4 @@ const MenuItemGroupRoutesElement: React.FC<IProps> = (props) => {
   )
 }
 
-export default MenuItemGroupRoutesElement
+export default UiMenuItemGroupRoutes

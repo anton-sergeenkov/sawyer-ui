@@ -5,9 +5,9 @@ import { useState } from "react"
 import Menu from "@mui/material/Menu"
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown"
 import { ITheme } from "@/sawyer-react-lib/types/common"
-import MenuButtonElement, {
+import UiMenuNavButton, {
   ThemeMode as ThemeUiMenuButton,
-} from "@/sawyer-react-lib/ui-kit/menu-navigation/MenuButtonElement"
+} from "@/sawyer-react-lib/ui-kit/menu/UiMenuNavButton"
 import type {
   IMenuItem,
   IMenuGroupItems,
@@ -33,7 +33,7 @@ interface IProps {
   Component: React.ComponentType<IChildComponentProps>
 }
 
-const MenuToggleElement: React.FC<IProps> = (props) => {
+const UiMenuNavToggle: React.FC<IProps> = (props) => {
   const { theme, className, list, title, isAccent = false, Component } = props
 
   const [anchorEl, setAnchorEl] = useState<(EventTarget & Element) | null>(null)
@@ -50,14 +50,14 @@ const MenuToggleElement: React.FC<IProps> = (props) => {
 
   return (
     <div className={className}>
-      <MenuButtonElement
+      <UiMenuNavButton
         theme={theme}
         isAccent={isAccent}
         onClick={handleClick}
         endIcon={<KeyboardArrowDownIcon />}
       >
         {title}
-      </MenuButtonElement>
+      </UiMenuNavButton>
 
       <Menu anchorEl={anchorEl} open={open} onClose={handleClose}>
         <Component theme={theme} list={list} onClose={handleClose} />
@@ -66,4 +66,4 @@ const MenuToggleElement: React.FC<IProps> = (props) => {
   )
 }
 
-export default MenuToggleElement
+export default UiMenuNavToggle

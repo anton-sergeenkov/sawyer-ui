@@ -27,17 +27,14 @@
 📂 layout
     📑 LayoutSectionContainerElement
     📑 LayoutSectionElement 💎
-📂 menu-items
-    📑 MenuItemGroupLinksElement
-    📑 MenuItemGroupRoutesElement
-    📑 MenuItemHashElement
-    📑 MenuItemRoutesElement
-📂 menu-navigation
-    📑 MenuButtonElement 💎
-    📑 MenuToggleElement
+📂 menu
+    - UiMenuItemGroupLinks
+    - UiMenuItemGroupRoutes
+    - UiMenuItemHash
+    - UiMenuItemRoutes
+    - UiMenuNavButton 💎
+    - UiMenuNavToggle
 📂 surfaces
     📑 OptionsElement
     📑 SocialLinksElement
 ```
-
-- Объединить категори "menu-items" и "menu-navigation"
