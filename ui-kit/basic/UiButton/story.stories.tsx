@@ -30,7 +30,10 @@ const meta: Meta<typeof UiButton> = {
   },
   decorators: [
     (Story) => (
-      <div className={robotoRegular.className}>
+      <div
+        className={robotoRegular.className}
+        style={{ backgroundColor: "#fff", padding: "10px" }}
+      >
         <Story />
       </div>
     ),
