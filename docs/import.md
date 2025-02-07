@@ -36,11 +36,11 @@ import { ThemeMode as ThemeUiLink } from "@/sawyer-react-lib/ui-kit/basic/UiLink
 
 ## 🔰 Layout
 
-#### `LayoutCardsElement`
+#### `UiLayoutCards`
 ```ts
-import LayoutCardsElement from "@/sawyer-react-lib/ui-kit/layout/LayoutCardsElement"
-import { ThemeMode as ThemeUiLayoutCards } from "@/sawyer-react-lib/ui-kit/layout/LayoutCardsElement"
-import type { UiLayoutCardsItems } from "@/sawyer-react-lib/ui-kit/layout/LayoutCardsElement"
+import UiLayoutCards from "@/sawyer-react-lib/ui-kit/layout/UiLayoutCards"
+import { ThemeMode as ThemeUiLayoutCards } from "@/sawyer-react-lib/ui-kit/layout/UiLayoutCards"
+import type { UiLayoutCardsItems } from "@/sawyer-react-lib/ui-kit/layout/UiLayoutCards"
 ```
 
 #### `LayoutSectionElement`

@@ -40,7 +40,7 @@ interface IProps {
   isOptions?: boolean
 }
 
-const LayoutCardsElement: React.FC<IProps> = (props) => {
+const UiLayoutCards: React.FC<IProps> = (props) => {
   const { theme, themeLink, items, isOptions = false } = props
 
   const stylesTheme = checkThemeMode<ThemeMode>(theme, styles)
@@ -80,4 +80,4 @@ const LayoutCardsElement: React.FC<IProps> = (props) => {
   )
 }
 
-export default LayoutCardsElement
+export default UiLayoutCards

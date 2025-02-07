@@ -1,11 +1,6 @@
 # ⭐️ FIXME
 
-Именить название компонентов. `ComponentElement` -> `UiComponent`:
-- basic (UiButton, UiChips, UiLink)
-- layout
-- menu-items
-- menu-navigation
-- surfaces
+- Рефакторинг компонентов из "stories\Components.md"
 
 # ⭐️ COMPONENTS
 

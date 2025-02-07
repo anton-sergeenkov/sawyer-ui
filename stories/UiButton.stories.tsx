@@ -1,13 +1,15 @@
 import type { Meta, StoryObj } from "@storybook/react"
 import { fn } from "@storybook/test"
 
+import { robotoRegular } from "@/sawyer-react-lib/app/fonts"
+import "@/sawyer-react-lib/app/globals.css"
+
 import UiButton from "@/sawyer-react-lib/ui-kit/basic/UiButton"
 import ArrowCircleDownIcon from "@mui/icons-material/ArrowCircleDown"
 
 const meta: Meta<typeof UiButton> = {
-  title: "Ui-Kit/UiButton",
+  title: "Basic/UiButton",
   component: UiButton,
-  tags: ["autodocs"],
   argTypes: {
     variant: {
       options: ["text", "outlined", "contained"],
@@ -26,6 +28,13 @@ const meta: Meta<typeof UiButton> = {
     disabled: false,
     children: "Button",
   },
+  decorators: [
+    (Story) => (
+      <div className={robotoRegular.className}>
+        <Story />
+      </div>
+    ),
+  ],
 } satisfies Meta<typeof UiButton>
 
 export default meta
