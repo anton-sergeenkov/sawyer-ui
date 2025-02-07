@@ -8,7 +8,7 @@ import UiLayoutCards, {
 } from "@/sawyer-react-lib/ui-kit/layout/UiLayoutCards"
 import { options as optionsUiLink } from "@/sawyer-react-lib/ui-kit/basic/UiLink"
 
-import coverImage from "./img/image.svg"
+import coverImage from "../img/image.svg"
 
 // TODO: code
 // import UiLayoutCards from "@/sawyer-react-lib/ui-kit/layout/UiLayoutCards"
