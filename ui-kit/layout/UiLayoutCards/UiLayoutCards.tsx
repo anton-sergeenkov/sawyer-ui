@@ -1,13 +1,11 @@
 import cn from "classnames"
 import { checkTheme } from "../../utils"
 import UiLink, {
-  ThemeMode as ThemeUiLink,
+  TTheme as TThemeUiLink,
 } from "@/sawyer-react-lib/ui-kit/basic/UiLink"
+
 import OptionsElement from "@/sawyer-react-lib/ui-kit/surfaces/OptionsElement"
-import {
-  IThemeElements,
-  IStaticImageData,
-} from "@/sawyer-react-lib/types/common"
+import { IStaticImageData } from "@/sawyer-react-lib/types/common"
 import { robotoLight } from "@/sawyer-react-lib/app/fonts"
 
 import styles from "./styles.module.css"
@@ -33,7 +31,7 @@ export interface UiLayoutCardsItems {
 
 interface IProps {
   theme?: "light" | "dark"
-  themeLink?: IThemeElements<ThemeUiLink>
+  themeLink?: TThemeUiLink
   items: UiLayoutCardsItems[]
   isOptions?: boolean
 }

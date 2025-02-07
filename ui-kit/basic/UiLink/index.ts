@@ -1,4 +1,5 @@
-import { ThemeMode } from "./UiLink"
+import { options, TTheme } from "./UiLink"
 
 export { default } from "./UiLink"
-export { ThemeMode }
+export { options }
+export type { TTheme }

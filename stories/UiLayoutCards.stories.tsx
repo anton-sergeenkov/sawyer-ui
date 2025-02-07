@@ -6,8 +6,7 @@ import "@/sawyer-react-lib/app/globals.css"
 import UiLayoutCards, {
   options,
 } from "@/sawyer-react-lib/ui-kit/layout/UiLayoutCards"
-
-import { ThemeMode as ThemeModeLink } from "@/sawyer-react-lib/ui-kit/basic/UiLink"
+import { options as optionsUiLink } from "@/sawyer-react-lib/ui-kit/basic/UiLink"
 
 import coverImage from "./img/image.svg"
 
@@ -36,6 +35,10 @@ const meta: Meta<typeof UiLayoutCards> = {
       options: options.theme,
       control: { type: "radio" },
     },
+    themeLink: {
+      options: optionsUiLink.theme,
+      control: { type: "radio" },
+    },
     isOptions: {
       control: { type: "boolean" },
     },
@@ -44,9 +47,7 @@ const meta: Meta<typeof UiLayoutCards> = {
     items,
     isOptions: false,
     theme: "light",
-    themeLink: {
-      mode: ThemeModeLink.DARK_UNDERLINED,
-    },
+    themeLink: "dark-underlined",
   },
   decorators: [
     (Story) => (

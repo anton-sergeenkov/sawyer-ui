@@ -1,26 +1,26 @@
 import cn from "classnames"
-import { checkThemeMode } from "../../utils"
-import { ITheme } from "@/sawyer-react-lib/types/common"
+import { checkTheme } from "../../utils"
 
 import styles from "./styles.module.css"
 
-export enum ThemeMode {
-  BLUE_UNDERLINED_THIN = "blue-underlined-thin",
-  DARK_UNDERLINED = "dark-underlined",
+export const options = {
+  theme: ["blue-underlined-thin", "dark-underlined"],
 }
 
+export type TTheme = "blue-underlined-thin" | "dark-underlined"
+
 interface IProps {
-  theme?: ITheme<ThemeMode>
+  theme?: TTheme
   className?: string
   children: React.ReactNode
   href: string
-  target?: string // "_blank"
+  target?: string
 }
 
 const UiLink: React.FC<IProps> = (props) => {
   const { theme, className, href, target = "_blank", children } = props
 
-  const stylesTheme = checkThemeMode<ThemeMode>(theme, styles)
+  const stylesTheme = checkTheme(theme, styles)
 
   return (
     <a

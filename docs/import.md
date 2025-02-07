@@ -2,7 +2,6 @@
 
 ## 🔰 Basic
 
-
 #### `TypographyGradientElement`
 ```ts
 import TypographyGradientElement from "@/sawyer-react-lib/ui-kit/basic/TypographyGradientElement"
@@ -21,11 +20,6 @@ import { ThemeMode as ThemeUiTypography } from "@/sawyer-react-lib/ui-kit/basic/
 import { Tag as TagTypographyElement } from "@/sawyer-react-lib/ui-kit/basic/TypographyElement"
 ```
 
-#### `UiLink`
-```ts
-import UiLink from "@/sawyer-react-lib/ui-kit/basic/UiLink"
-import { ThemeMode as ThemeUiLink } from "@/sawyer-react-lib/ui-kit/basic/UiLink"
-```
 
 ---
 

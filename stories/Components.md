@@ -2,8 +2,10 @@
 
 ## Рефакторинг
 
-- Изменить название компонентов с "element" на "ui"
-- Проверить поиском все "element"
+- Изменить название компонентов с "element" на "ui". Проверить поиском все "element"
+
+## Ui-Kit
+
 - Добавить все компоненты в ui-kit
 - Вынести код для подключения компонента в "stories\name.stories.tsx"
 
@@ -19,40 +21,23 @@
 
 ```
 📂 basic
-    ⚠️ UiLink
-    - ModalElement
-    - TypographyElement
-    - TypographyGradientElement
+    📑 ModalElement
+    📑 TypographyElement 💎
+    📑 TypographyGradientElement 💎
 📂 layout
-    - LayoutSectionContainerElement
-    - LayoutSectionElement
+    📑 LayoutSectionContainerElement
+    📑 LayoutSectionElement 💎
 📂 menu-items
-    - MenuItemGroupLinksElement
-    - MenuItemGroupRoutesElement
-    - MenuItemHashElement
-    - MenuItemRoutesElement
+    📑 MenuItemGroupLinksElement
+    📑 MenuItemGroupRoutesElement
+    📑 MenuItemHashElement
+    📑 MenuItemRoutesElement
 📂 menu-navigation
-    - MenuButtonElement
-    - MenuToggleElement
+    📑 MenuButtonElement 💎
+    📑 MenuToggleElement
 📂 surfaces
-    - OptionsElement
-    - SocialLinksElement
+    📑 OptionsElement
+    📑 SocialLinksElement
 ```
 
-### UiLink
-
-```jsx
-import UiLink, { ThemeMode } from "@/sawyer-react-lib/ui-kit/basic/UiLink"
-
-args: {
-  href: "https://fonts.google.com/",
-  children: "Link",
-  theme: {
-    mode: ThemeMode.BLUE_UNDERLINED_THIN,
-    mode: ThemeMode.DARK_UNDERLINED,
-  }
-}
-```
-
-> stories\UiLayoutCards.stories.tsx
-> Используется ThemeModeLink.DARK_UNDERLINED
+- Объединить категори "menu-items" и "menu-navigation"

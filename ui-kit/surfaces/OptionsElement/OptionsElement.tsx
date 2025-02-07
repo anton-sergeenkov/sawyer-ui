@@ -4,9 +4,7 @@ import cn from "classnames"
 import { useState } from "react"
 import { IconButton, Menu, MenuItem } from "@mui/material"
 import MoreVertIcon from "@mui/icons-material/MoreVert"
-import UiLink, {
-  ThemeMode as ThemeUiLink,
-} from "@/sawyer-react-lib/ui-kit/basic/UiLink"
+import UiLink from "@/sawyer-react-lib/ui-kit/basic/UiLink"
 import { robotoLight } from "@/sawyer-react-lib/app/fonts"
 
 import styles from "./styles.module.css"
@@ -66,9 +64,7 @@ const OptionsElement: React.FC<IProps> = (props) => {
           >
             <UiLink
               href={element.link}
-              theme={{
-                mode: ThemeUiLink.DARK_UNDERLINED,
-              }}
+              theme="dark-underlined"
               className={cn(styles.link, robotoLight.className, classes.link)}
             >
               {element.name}
