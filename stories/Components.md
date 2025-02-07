@@ -17,14 +17,12 @@
 
 ```
 📂 basic
-    ✅ UiButton
     ⚠️ UiChips
     ⚠️ UiLink
     - ModalElement
     - TypographyElement
     - TypographyGradientElement
 📂 layout
-    ✅ UiLayoutCards
     - LayoutSectionContainerElement
     - LayoutSectionElement
 📂 menu-items
