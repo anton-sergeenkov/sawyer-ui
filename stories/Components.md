@@ -5,6 +5,7 @@
 - Изменить название компонентов с "element" на "ui"
 - Проверить поиском все "element"
 - Добавить все компоненты в ui-kit
+- Вынести код для подключения компонента в "stories\name.stories.tsx"
 
 ## ThemeMode
 
@@ -18,7 +19,6 @@
 
 ```
 📂 basic
-    ⚠️ UiChips
     ⚠️ UiLink
     - ModalElement
     - TypographyElement
@@ -39,22 +39,6 @@
     - SocialLinksElement
 ```
 
-### UiChips
-
-```jsx
-import UiChips, { ThemeMode } from "@/sawyer-react-lib/ui-kit/basic/UiChips"
-
-args: {
-  items: ["One", "Two", "Three", "Four"],
-  children: "Link",
-  isUserSelect: true,
-  theme: {
-    mode: ThemeMode.DARK,
-    mode: ThemeMode.LIGHT,
-  }
-}
-```
-
 ### UiLink
 
 ```jsx
@@ -69,3 +53,6 @@ args: {
   }
 }
 ```
+
+> stories\UiLayoutCards.stories.tsx
+> Используется ThemeModeLink.DARK_UNDERLINED

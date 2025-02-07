@@ -1,27 +1,25 @@
 import cn from "classnames"
 import { Fragment } from "react"
-import { checkThemeMode } from "../../utils"
-import { ITheme } from "@/sawyer-react-lib/types/common"
+import { checkTheme } from "../../utils"
 import { robotoLight } from "@/sawyer-react-lib/app/fonts"
 
 import styles from "./styles.module.css"
 
-export enum ThemeMode {
-  LIGHT = "light", // Not Used
-  DARK = "dark",
+export const options = {
+  theme: ["light", "dark"],
 }
 
 interface IProps {
   className?: string
-  theme?: ITheme<ThemeMode>
+  theme?: "light" | "dark"
   items: string[]
-  isUserSelect: boolean
+  isUserSelect?: boolean
 }
 
 const UiChips: React.FC<IProps> = (props) => {
-  const { theme, className, items, isUserSelect = false } = props
+  const { theme = "light", className, items, isUserSelect = true } = props
 
-  const stylesTheme = checkThemeMode<ThemeMode>(theme, styles)
+  const stylesTheme = checkTheme(theme, styles)
 
   return (
     <>

@@ -11,6 +11,10 @@ import { ThemeMode as ThemeModeLink } from "@/sawyer-react-lib/ui-kit/basic/UiLi
 
 import coverImage from "./img/image.svg"
 
+// TODO: code
+// import UiLayoutCards from "@/sawyer-react-lib/ui-kit/layout/UiLayoutCards"
+// import type { UiLayoutCardsItems } from "@/sawyer-react-lib/ui-kit/layout/UiLayoutCards"
+
 const items = [
   {
     title: "Title",

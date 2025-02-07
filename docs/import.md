@@ -2,11 +2,6 @@
 
 ## 🔰 Basic
 
-#### `UiChips`
-```ts
-import UiChips from "@/sawyer-react-lib/ui-kit/basic/UiChips"
-import { ThemeMode as ThemeUiChips } from "@/sawyer-react-lib/ui-kit/basic/UiChips"
-```
 
 #### `TypographyGradientElement`
 ```ts
@@ -35,13 +30,6 @@ import { ThemeMode as ThemeUiLink } from "@/sawyer-react-lib/ui-kit/basic/UiLink
 ---
 
 ## 🔰 Layout
-
-#### `UiLayoutCards`
-```ts
-import UiLayoutCards from "@/sawyer-react-lib/ui-kit/layout/UiLayoutCards"
-import { ThemeMode as ThemeUiLayoutCards } from "@/sawyer-react-lib/ui-kit/layout/UiLayoutCards"
-import type { UiLayoutCardsItems } from "@/sawyer-react-lib/ui-kit/layout/UiLayoutCards"
-```
 
 #### `LayoutSectionElement`
 ```ts
@@ -91,11 +79,6 @@ import OptionsElement from "@/sawyer-react-lib/ui-kit/surfaces/OptionsElement"
 ---
 
 ## 🔰 Internal Usage
-
-#### `UiButton`
-```ts
-import UiButton from "@/sawyer-react-lib/ui-kit/basic/UiButton"
-```
 
 #### `MenuButtonElement`
 ```ts
