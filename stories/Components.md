@@ -44,7 +44,7 @@
 import UiChips, { ThemeMode } from "@/sawyer-react-lib/ui-kit/basic/UiChips"
 
 args: {
-  items: ["One", "Two"],
+  items: ["One", "Two", "Three", "Four"],
   children: "Link",
   isUserSelect: true,
   theme: {
