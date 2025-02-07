@@ -12,6 +12,7 @@
 
 - Темы перечислять в виде типа: "light" | "dark"
 - checkThemeMode -> checkTheme
+- Удалить "constants\theme.ts" из портфолио
 
 ## Структура
 
