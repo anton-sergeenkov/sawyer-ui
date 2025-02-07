@@ -7,9 +7,6 @@ import "@/sawyer-react-lib/app/globals.css"
 import UiButton, { options } from "@/sawyer-react-lib/ui-kit/basic/UiButton"
 import ArrowCircleDownIcon from "@mui/icons-material/ArrowCircleDown"
 
-// TODO: code
-// import UiButton from "@/sawyer-react-lib/ui-kit/basic/UiButton"
-
 const meta: Meta<typeof UiButton> = {
   title: "Basic/UiButton",
   component: UiButton,

@@ -3,25 +3,24 @@ import type { Meta, StoryObj } from "@storybook/react"
 import { robotoRegular } from "@/sawyer-react-lib/app/fonts"
 import "@/sawyer-react-lib/app/globals.css"
 
-import UiLink, { options } from "@/sawyer-react-lib/ui-kit/basic/UiLink"
+import UiChips, { options } from "@/sawyer-react-lib/ui-kit/basic/UiChips"
 
-// TODO: code
-// import UiLink from "@/sawyer-react-lib/ui-kit/basic/UiLink"
-// import type { TTheme } from "@/sawyer-react-lib/ui-kit/basic/UiLink"
-
-const meta: Meta<typeof UiLink> = {
-  title: "Basic/UiLink",
-  component: UiLink,
+const meta: Meta<typeof UiChips> = {
+  title: "Basic/UiChips",
+  component: UiChips,
   argTypes: {
     theme: {
       options: options.theme,
       control: { type: "radio" },
     },
+    isUserSelect: {
+      control: { type: "boolean" },
+    },
   },
   args: {
-    href: "https://fonts.google.com/",
-    children: "Link",
-    theme: "blue-underlined-thin",
+    theme: "light",
+    items: ["One", "Two", "Three", "Four"],
+    isUserSelect: true,
   },
   decorators: [
     (Story) => (
@@ -33,7 +32,7 @@ const meta: Meta<typeof UiLink> = {
       </div>
     ),
   ],
-} satisfies Meta<typeof UiLink>
+} satisfies Meta<typeof UiChips>
 
 export default meta
 
