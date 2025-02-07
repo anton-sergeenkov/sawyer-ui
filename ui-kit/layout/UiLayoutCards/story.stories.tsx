@@ -1,12 +1,10 @@
 import type { Meta, StoryObj } from "@storybook/react"
 
-import { robotoRegular } from "@/sawyer-react-lib/app/fonts"
-import "@/sawyer-react-lib/app/globals.css"
+import { robotoRegular } from "@/sawyer-ui/app/fonts"
+import "@/sawyer-ui/app/globals.css"
 
-import UiLayoutCards, {
-  options,
-} from "@/sawyer-react-lib/ui-kit/layout/UiLayoutCards"
-import { options as optionsUiLink } from "@/sawyer-react-lib/ui-kit/basic/UiLink"
+import UiLayoutCards, { options } from "@/sawyer-ui/ui-kit/layout/UiLayoutCards"
+import { options as optionsUiLink } from "@/sawyer-ui/ui-kit/basic/UiLink"
 
 import coverImage from "./img/image.svg"
 
@@ -26,6 +24,7 @@ const items = [
 const meta: Meta<typeof UiLayoutCards> = {
   title: "Layout/UiLayoutCards",
   component: UiLayoutCards,
+  tags: ["autodocs"],
   argTypes: {
     theme: {
       options: options.theme,
@@ -47,7 +46,10 @@ const meta: Meta<typeof UiLayoutCards> = {
   },
   decorators: [
     (Story) => (
-      <div className={robotoRegular.className}>
+      <div
+        className={robotoRegular.className}
+        style={{ backgroundColor: "#f5f8f7", padding: "10px" }}
+      >
         <Story />
       </div>
     ),

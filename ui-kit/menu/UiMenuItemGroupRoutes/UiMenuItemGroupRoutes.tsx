@@ -2,12 +2,12 @@
 
 // import cn from "classnames"
 import MenuItem from "@mui/material/MenuItem"
-import UiMenuNavToggle from "@/sawyer-react-lib/ui-kit/menu/UiMenuNavToggle"
-import UiMenuItemRoutes from "@/sawyer-react-lib/ui-kit/menu/UiMenuItemRoutes"
-import { IMenuItem, ITheme } from "@/sawyer-react-lib/types/common"
-import { ThemeMode as ThemeUiMenuButton } from "@/sawyer-react-lib/ui-kit/menu/UiMenuNavButton"
-import { IChildComponentProps } from "@/sawyer-react-lib/ui-kit/menu/UiMenuNavToggle/UiMenuNavToggle"
-import { styleMenuItem } from "@/sawyer-react-lib/ui-kit/constants"
+import UiMenuNavToggle from "@/sawyer-ui/ui-kit/menu/UiMenuNavToggle"
+import UiMenuItemRoutes from "@/sawyer-ui/ui-kit/menu/UiMenuItemRoutes"
+import { IMenuItem, ITheme } from "@/sawyer-ui/types/common"
+import { ThemeMode as ThemeUiMenuButton } from "@/sawyer-ui/ui-kit/menu/UiMenuNavButton"
+import { IChildComponentProps } from "@/sawyer-ui/ui-kit/menu/UiMenuNavToggle/UiMenuNavToggle"
+import { styleMenuItem } from "@/sawyer-ui/ui-kit/constants"
 
 import styles from "./styles.module.css"
 

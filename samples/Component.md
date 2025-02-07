@@ -14,7 +14,7 @@ const UiElement: React.FC<IUiElementProps> = (props) => {
 # ⭐️ Props Theme
 
 ```ts
-import { ITheme } from "@/sawyer-react-lib/types/common"
+import { ITheme } from "@/sawyer-ui/types/common"
 
 export enum ThemeMode {
   LIGHT = "light",

@@ -4,14 +4,14 @@
 import { useState } from "react"
 import Menu from "@mui/material/Menu"
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown"
-import { ITheme } from "@/sawyer-react-lib/types/common"
+import { ITheme } from "@/sawyer-ui/types/common"
 import UiMenuNavButton, {
   ThemeMode as ThemeUiMenuButton,
-} from "@/sawyer-react-lib/ui-kit/menu/UiMenuNavButton"
+} from "@/sawyer-ui/ui-kit/menu/UiMenuNavButton"
 import type {
   IMenuItem,
   IMenuGroupItems,
-} from "@/sawyer-react-lib/types/common"
+} from "@/sawyer-ui/types/common"
 
 // import styles from "./styles.module.css"
 

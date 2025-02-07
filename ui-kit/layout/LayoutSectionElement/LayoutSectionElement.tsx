@@ -1,6 +1,6 @@
 import cn from "classnames"
 import { checkThemeMode } from "../../utils"
-import { ITheme } from "@/sawyer-react-lib/types/common"
+import { ITheme } from "@/sawyer-ui/types/common"
 
 import styles from "./styles.module.css"
 

@@ -1,7 +1,7 @@
 import cn from "classnames"
 import { SxProps, Theme } from "@mui/material"
 import MUIButton from "@mui/material/Button"
-import { TOnClick } from "@/sawyer-react-lib/types/common"
+import { TOnClick } from "@/sawyer-ui/types/common"
 
 import styles from "./styles.module.css"
 

@@ -1,4 +1,4 @@
-import { ITheme } from "@/sawyer-react-lib/types/common"
+import { ITheme } from "@/sawyer-ui/types/common"
 
 export const checkThemeMode = <T>(
   theme: ITheme<T> | undefined,

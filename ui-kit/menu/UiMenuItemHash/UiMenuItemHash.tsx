@@ -1,8 +1,8 @@
 // import cn from "classnames"
-import { ITheme } from "@/sawyer-react-lib/types/common"
+import { ITheme } from "@/sawyer-ui/types/common"
 import UiMenuNavButton, {
   ThemeMode as ThemeUiMenuButton,
-} from "@/sawyer-react-lib/ui-kit/menu/UiMenuNavButton"
+} from "@/sawyer-ui/ui-kit/menu/UiMenuNavButton"
 
 // import styles from "./styles.module.css"
 

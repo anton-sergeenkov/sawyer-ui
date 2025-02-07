@@ -1,5 +1,5 @@
 import cn from "classnames"
-import type { IStaticImageData } from "@/sawyer-react-lib/types/common"
+import type { IStaticImageData } from "@/sawyer-ui/types/common"
 
 import styles from "./styles.module.css"
 

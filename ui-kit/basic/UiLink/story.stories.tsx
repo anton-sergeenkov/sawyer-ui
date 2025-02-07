@@ -1,13 +1,14 @@
 import type { Meta, StoryObj } from "@storybook/react"
 
-import { robotoRegular } from "@/sawyer-react-lib/app/fonts"
-import "@/sawyer-react-lib/app/globals.css"
+import { robotoRegular } from "@/sawyer-ui/app/fonts"
+import "@/sawyer-ui/app/globals.css"
 
-import UiLink, { options } from "@/sawyer-react-lib/ui-kit/basic/UiLink"
+import UiLink, { options } from "@/sawyer-ui/ui-kit/basic/UiLink"
 
 const meta: Meta<typeof UiLink> = {
   title: "Basic/UiLink",
   component: UiLink,
+  tags: ["autodocs"],
   argTypes: {
     theme: {
       options: options.theme,

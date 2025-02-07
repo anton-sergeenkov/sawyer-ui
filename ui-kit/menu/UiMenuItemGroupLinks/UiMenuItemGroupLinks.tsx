@@ -3,13 +3,13 @@
 // import cn from "classnames"
 // import OpenInNewOutlinedIcon from '@mui/icons-material/OpenInNewOutlined'
 import MenuItem from "@mui/material/MenuItem"
-import UiMenuNavToggle from "@/sawyer-react-lib/ui-kit/menu/UiMenuNavToggle"
+import UiMenuNavToggle from "@/sawyer-ui/ui-kit/menu/UiMenuNavToggle"
 import UiMenuNavButton, {
   ThemeMode as ThemeUiMenuButton,
-} from "@/sawyer-react-lib/ui-kit/menu/UiMenuNavButton"
-import { IMenuGroupItems, ITheme } from "@/sawyer-react-lib/types/common"
-import { IChildComponentProps } from "@/sawyer-react-lib/ui-kit/menu/UiMenuNavToggle/UiMenuNavToggle"
-import { styleMenuItem } from "@/sawyer-react-lib/ui-kit/constants"
+} from "@/sawyer-ui/ui-kit/menu/UiMenuNavButton"
+import { IMenuGroupItems, ITheme } from "@/sawyer-ui/types/common"
+import { IChildComponentProps } from "@/sawyer-ui/ui-kit/menu/UiMenuNavToggle/UiMenuNavToggle"
+import { styleMenuItem } from "@/sawyer-ui/ui-kit/constants"
 
 import styles from "./styles.module.css"
 

@@ -3,11 +3,11 @@
 // import cn from "classnames"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { ITheme } from "@/sawyer-react-lib/types/common"
+import { ITheme } from "@/sawyer-ui/types/common"
 import UiMenuNavButton, {
   ThemeMode as ThemeUiMenuButton,
-} from "@/sawyer-react-lib/ui-kit/menu/UiMenuNavButton"
-import type { IMenuItem } from "@/sawyer-react-lib/types/common"
+} from "@/sawyer-ui/ui-kit/menu/UiMenuNavButton"
+import type { IMenuItem } from "@/sawyer-ui/types/common"
 
 // import styles from "./styles.module.css"
 

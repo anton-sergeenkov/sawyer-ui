@@ -1,13 +1,14 @@
 import type { Meta, StoryObj } from "@storybook/react"
 
-import { robotoRegular } from "@/sawyer-react-lib/app/fonts"
-import "@/sawyer-react-lib/app/globals.css"
+import { robotoRegular } from "@/sawyer-ui/app/fonts"
+import "@/sawyer-ui/app/globals.css"
 
-import UiChips, { options } from "@/sawyer-react-lib/ui-kit/basic/UiChips"
+import UiChips, { options } from "@/sawyer-ui/ui-kit/basic/UiChips"
 
 const meta: Meta<typeof UiChips> = {
   title: "Basic/UiChips",
   component: UiChips,
+  tags: ["autodocs"],
   argTypes: {
     theme: {
       options: options.theme,

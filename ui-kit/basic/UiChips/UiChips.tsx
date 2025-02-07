@@ -1,7 +1,7 @@
 import cn from "classnames"
 import { Fragment } from "react"
 import { checkTheme } from "../../utils"
-import { robotoLight } from "@/sawyer-react-lib/app/fonts"
+import { robotoLight } from "@/sawyer-ui/app/fonts"
 
 import styles from "./styles.module.css"
 

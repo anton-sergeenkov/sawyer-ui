@@ -1,7 +1,7 @@
 import cn from "classnames"
 import { checkThemeMode } from "../../utils"
-import { ITheme } from "@/sawyer-react-lib/types/common"
-import { robotoLight } from "@/sawyer-react-lib/app/fonts"
+import { ITheme } from "@/sawyer-ui/types/common"
+import { robotoLight } from "@/sawyer-ui/app/fonts"
 
 import styles from "./styles.module.css"
 

@@ -1,2 +1,2 @@
-cd ../-sawyer-react-lib-/bash
+cd ../sawyer-ui/bash
 ./commit.bat
