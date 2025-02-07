@@ -4,7 +4,7 @@ import { robotoRegular } from "@/sawyer-react-lib/app/fonts"
 import "@/sawyer-react-lib/app/globals.css"
 
 import UiLayoutCards, {
-  ThemeMode as ThemeModeLayoutCards,
+  options,
 } from "@/sawyer-react-lib/ui-kit/layout/UiLayoutCards"
 
 import { ThemeMode as ThemeModeLink } from "@/sawyer-react-lib/ui-kit/basic/UiLink"
@@ -28,6 +28,10 @@ const meta: Meta<typeof UiLayoutCards> = {
   title: "Layout/UiLayoutCards",
   component: UiLayoutCards,
   argTypes: {
+    theme: {
+      options: options.theme,
+      control: { type: "radio" },
+    },
     isOptions: {
       control: { type: "boolean" },
     },
@@ -35,9 +39,7 @@ const meta: Meta<typeof UiLayoutCards> = {
   args: {
     items,
     isOptions: false,
-    theme: {
-      mode: ThemeModeLayoutCards.LIGHT,
-    },
+    theme: "light",
     themeLink: {
       mode: ThemeModeLink.DARK_UNDERLINED,
     },
@@ -58,5 +60,6 @@ type Story = StoryObj<typeof meta>
 export const Basic: Story = {
   args: {
     isOptions: true,
+    theme: "light",
   },
 }

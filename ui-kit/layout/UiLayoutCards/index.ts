@@ -1,5 +1,5 @@
-import { ThemeMode, UiLayoutCardsItems } from "./UiLayoutCards"
+import { options, UiLayoutCardsItems } from "./UiLayoutCards"
 
 export { default } from "./UiLayoutCards"
-export { ThemeMode }
+export { options }
 export type { UiLayoutCardsItems }

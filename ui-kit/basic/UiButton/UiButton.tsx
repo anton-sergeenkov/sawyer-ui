@@ -7,6 +7,11 @@ import styles from "./styles.module.css"
 
 // https://mui.com/material-ui/api/button/
 
+export const options = {
+  variant: ["text", "outlined", "contained"],
+  size: ["small", "medium", "large"],
+}
+
 interface IProps {
   children: React.ReactNode
   variant?: "text" | "outlined" | "contained"
