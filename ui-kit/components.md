@@ -3,6 +3,7 @@
 ## Рефакторинг
 
 - Изменить название компонентов с "element" на "ui". Проверить поиском все "element"
+- Добавить общий файл с импортами "import Slider from '@mui/material/Slider';"
 
 ## Ui-Kit
 
