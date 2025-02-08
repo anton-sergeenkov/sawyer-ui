@@ -6,7 +6,9 @@
     "commit": "git add . && git commit -m \"Bash Script Commit\" && git push origin head",
     "lint": "next lint",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "gh-pages": "gh-pages -d storybook-static",
+    "deploy": "npm run build-storybook && npm run gh-pages && npm run commit"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
