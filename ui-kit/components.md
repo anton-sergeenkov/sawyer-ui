@@ -9,6 +9,7 @@
 
 - Добавить все компоненты в ui-kit
 - Вынести код для подключения компонента в "stories\name.stories.tsx"
+- Деплой Ui-Kit
 
 ## ThemeMode
 

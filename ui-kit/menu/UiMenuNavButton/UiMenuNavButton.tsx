@@ -1,5 +1,5 @@
 // import cn from 'classnames'
-import UiButton from "@/sawyer-ui/ui-kit/basic/UiButton"
+import { UiButton } from "@/sawyer-ui/ui-kit"
 import { getStyles } from "./utils"
 import { ITheme, TOnClick } from "@/sawyer-ui/types/common"
 

@@ -1,9 +1,7 @@
 import cn from "classnames"
 import { checkTheme } from "../../utils"
-import UiLink, {
-  TTheme as TThemeUiLink,
-} from "@/sawyer-ui/ui-kit/basic/UiLink"
-
+import { UiLink } from "@/sawyer-ui/ui-kit"
+import { TTheme as TThemeUiLink } from "@/sawyer-ui/ui-kit/basic/UiLink"
 import OptionsElement from "@/sawyer-ui/ui-kit/surfaces/OptionsElement"
 import { IStaticImageData } from "@/sawyer-ui/types/common"
 import { robotoLight } from "@/sawyer-ui/app/fonts"
