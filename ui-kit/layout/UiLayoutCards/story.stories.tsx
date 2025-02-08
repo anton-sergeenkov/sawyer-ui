@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from "@storybook/react"
 import { robotoRegular } from "@/sawyer-ui/app/fonts"
 import "@/sawyer-ui/app/globals.css"
 
-import UiLayoutCards, { options } from "@/sawyer-ui/ui-kit/layout/UiLayoutCards"
+import UiLayoutCards, { options } from "./UiLayoutCards"
 import { options as optionsUiLink } from "@/sawyer-ui/ui-kit/basic/UiLink"
 
 import coverImage from "./img/image.svg"

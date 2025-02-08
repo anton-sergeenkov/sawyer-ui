@@ -1,24 +1,29 @@
+# Storybook
+
+```tsx
 import type { Meta, StoryObj } from "@storybook/react"
 
 import { robotoRegular } from "@/sawyer-ui/app/fonts"
 import "@/sawyer-ui/app/globals.css"
 
-import UiLink, { options } from "./UiLink"
+import UiComponent, { options } from "./UiComponent"
 
-const meta: Meta<typeof UiLink> = {
-  title: "Basic/UiLink",
-  component: UiLink,
+const meta: Meta<typeof UiComponent> = {
+  title: "Category/UiComponent",
+  component: UiComponent,
   tags: ["autodocs"],
   argTypes: {
     theme: {
       options: options.theme,
       control: { type: "radio" },
     },
+    isUserSelect: {
+      control: { type: "boolean" },
+    },
   },
   args: {
-    href: "https://fonts.google.com/",
-    children: "Link",
-    theme: "blue-underlined-thin",
+    theme: "light",
+    isUserSelect: true,
   },
   decorators: [
     (Story) => (
@@ -30,7 +35,7 @@ const meta: Meta<typeof UiLink> = {
       </div>
     ),
   ],
-} satisfies Meta<typeof UiLink>
+} satisfies Meta<typeof UiComponent>
 
 export default meta
 
@@ -39,3 +44,4 @@ type Story = StoryObj<typeof meta>
 export const Basic: Story = {
   args: {},
 }
+```

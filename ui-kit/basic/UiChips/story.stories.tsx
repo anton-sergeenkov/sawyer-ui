@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from "@storybook/react"
 import { robotoRegular } from "@/sawyer-ui/app/fonts"
 import "@/sawyer-ui/app/globals.css"
 
-import UiChips, { options } from "@/sawyer-ui/ui-kit/basic/UiChips"
+import UiChips, { options } from "./UiChips"
 
 const meta: Meta<typeof UiChips> = {
   title: "Basic/UiChips",

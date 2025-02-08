@@ -1,24 +1,15 @@
-import UiButton, { options as UiButtonOptions } from "./basic/UiButton"
-import UiChips, { options as UiChipsOptions } from "./basic/UiChips"
-import UiLink, {
-  options as UiLinkOptions,
-  TTheme as TUiLinkTheme,
-} from "./basic/UiLink"
+import UiButton from "./basic/UiButton"
+import UiChips from "./basic/UiChips"
+import UiLink from "./basic/UiLink"
+import UiLayoutCards, { IUiLayoutCardsItems } from "./layout/UiLayoutCards"
 
-import UiLayoutCards, {
-  options as UiLayoutCardsOptions,
-  IUiLayoutCardsItems,
-} from "./layout/UiLayoutCards"
+export {
+  // Basic
+  UiButton,
+  UiChips,
+  UiLink,
+  // Layout
+  UiLayoutCards,
+}
 
-// UiButton
-export { UiButton, UiButtonOptions }
-// UiChips
-export { UiChips, UiChipsOptions }
-// UiLink
-export { UiLink, UiLinkOptions }
-export type { TUiLinkTheme }
-// UiLayoutCards
-export { UiLayoutCards, UiLayoutCardsOptions }
 export type { IUiLayoutCardsItems }
-
-// import { UiChips } from "@/sawyer-ui/ui-kit"

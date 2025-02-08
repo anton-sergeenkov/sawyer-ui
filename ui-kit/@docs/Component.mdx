@@ -1,0 +1,43 @@
+# Component
+
+> components.ts
+
+**With Props**
+
+```tsx
+import cn from "classnames"
+
+import styles from "./styles.module.css"
+
+interface IProps {
+  className?: string
+  children: React.ReactNode
+}
+
+const UiElement: React.FC<IProps> = (props) => {
+  const { children, className } = props
+  return <div className={cn(className, styles.wrapper)}>Content</div>
+}
+```
+
+**Without Props**
+
+```tsx
+const UiElement: React.FC = () => {
+  return <></>
+}
+```
+
+> styles.module.css
+
+```css
+.wrapper {
+  background-color: #fff;
+}
+```
+
+> index.ts
+
+```ts
+export { default } from "./UiElement"
+```

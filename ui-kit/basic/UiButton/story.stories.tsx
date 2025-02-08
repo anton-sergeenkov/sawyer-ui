@@ -4,8 +4,8 @@ import { fn } from "@storybook/test"
 import { robotoRegular } from "@/sawyer-ui/app/fonts"
 import "@/sawyer-ui/app/globals.css"
 
-import UiButton, { options } from "@/sawyer-ui/ui-kit/basic/UiButton"
 import ArrowCircleDownIcon from "@mui/icons-material/ArrowCircleDown"
+import UiButton, { options } from "./UiButton"
 
 const meta: Meta<typeof UiButton> = {
   title: "Basic/UiButton",

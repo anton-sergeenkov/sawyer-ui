@@ -1,17 +1,17 @@
 import cn from "classnames"
 
-import styles from "./App.module.css"
+import styles from "./styles.module.css"
 
-interface IAppProps {
+interface IProps {
   className?: string
 }
 
-const App: React.FC<IAppProps> = (props) => {
+const App: React.FC<IProps> = (props) => {
   const { className } = props
 
   return (
     <div className={styles.wrapper}>
-      <div className={cn(styles.container, "section")}>Content</div>
+      <div className={cn(className, styles.container, "section")}>Content</div>
     </div>
   )
 }
