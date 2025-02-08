@@ -3,8 +3,8 @@ import type { StorybookConfig } from "@storybook/nextjs"
 const config: StorybookConfig = {
   stories: [
     "../ui-kit/**/*.mdx",
-    "../docs/**/*.mdx",
     "../ui-kit/**/*.stories.@(js|jsx|mjs|ts|tsx)",
+    "../docs/**/*.mdx",
   ],
   addons: [
     "@storybook/addon-onboarding",
