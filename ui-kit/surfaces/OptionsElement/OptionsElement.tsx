@@ -4,7 +4,7 @@ import cn from "classnames"
 import { useState } from "react"
 import { IconButton, Menu, MenuItem } from "@mui/material"
 import MoreVertIcon from "@mui/icons-material/MoreVert"
-import { UiLink } from "@/sawyer-ui/ui-kit"
+import UiLink from "@/sawyer-ui/ui-kit/basic/UiLink"
 import { robotoLight } from "@/sawyer-ui/app/fonts"
 
 import styles from "./styles.module.css"
