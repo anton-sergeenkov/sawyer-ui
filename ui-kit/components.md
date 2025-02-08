@@ -5,9 +5,6 @@
 ## Рефакторинг
 
 - Добавить импорты в общий файл "ui-kit\index.ts"
-
-## Ui-Kit
-
 - Добавить все компоненты в ui-kit
 - Вынести код для подключения компонента в "stories\name.stories.tsx"
 - Деплой Ui-Kit
@@ -24,7 +21,6 @@
 
 ```
 📂 basic
-    - UiModal
     - UiTypography 💎
     - UiTypographyGradient 💎
 📂 layout
@@ -41,3 +37,5 @@
     - UiOptions
     - UiSocialLinks
 ```
+
+- Вынести стилии в UiModal из "app\qr\components\SectionStarter\SectionStarter.tsx"

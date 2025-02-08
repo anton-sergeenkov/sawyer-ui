@@ -8,11 +8,6 @@ import UiTypographyGradient from "@/sawyer-ui/ui-kit/basic/UiTypographyGradient"
 import { ThemeMode as ThemeUiTypographyGradient } from "@/sawyer-ui/ui-kit/basic/UiTypographyGradient"
 ```
 
-#### `UiModal`
-```ts
-import UiModal from "@/sawyer-ui/ui-kit/basic/UiModal"
-```
-
 #### `UiTypography`
 ```ts
 import UiTypography from "@/sawyer-ui/ui-kit/basic/UiTypography"

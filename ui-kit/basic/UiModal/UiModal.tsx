@@ -4,22 +4,27 @@ import { JSXElementConstructor, ReactElement } from "react"
 
 // import styles from "./styles.module.css"
 
-interface IMUIModalProps {
+interface IProps {
+  children: ReactElement<any, string | JSXElementConstructor<any>>
   className?: string
   disableAutoFocus?: boolean
   open: boolean
   onClose: () => void
 }
 
-interface IProps {
-  children: ReactElement<any, string | JSXElementConstructor<any>>
-  modalProps: IMUIModalProps
-}
-
 const UiModal: React.FC<IProps> = (props) => {
-  const { children, modalProps } = props
+  const { children, className, disableAutoFocus = false, open, onClose } = props
 
-  return <MUIModal {...modalProps}>{children}</MUIModal>
+  return (
+    <MUIModal
+      className={className}
+      disableAutoFocus={disableAutoFocus}
+      open={open}
+      onClose={onClose}
+    >
+      {children}
+    </MUIModal>
+  )
 }
 
 export default UiModal
