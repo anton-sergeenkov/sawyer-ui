@@ -6,7 +6,7 @@ import "@/sawyer-ui/app/globals.css"
 import UiLayoutCards, { options } from "./UiLayoutCards"
 import { options as optionsUiLink } from "@/sawyer-ui/ui-kit/basic/UiLink"
 
-import coverImage from "./img/image.svg"
+import coverImage from "../../../resources/img/card.svg"
 
 const items = [
   {
