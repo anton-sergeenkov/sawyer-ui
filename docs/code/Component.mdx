@@ -14,7 +14,7 @@ interface IProps {
   children: React.ReactNode
 }
 
-const UiElement: React.FC<IProps> = (props) => {
+const UiComponent: React.FC<IProps> = (props) => {
   const { children, className } = props
   return <div className={cn(className, styles.wrapper)}>Content</div>
 }
@@ -23,7 +23,7 @@ const UiElement: React.FC<IProps> = (props) => {
 **Without Props**
 
 ```tsx
-const UiElement: React.FC = () => {
+const UiComponent: React.FC = () => {
   return <></>
 }
 ```
@@ -39,5 +39,5 @@ const UiElement: React.FC = () => {
 > index.ts
 
 ```ts
-export { default } from "./UiElement"
+export { default } from "./UiComponent"
 ```

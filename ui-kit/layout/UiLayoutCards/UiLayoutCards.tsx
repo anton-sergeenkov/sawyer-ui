@@ -1,7 +1,7 @@
 import cn from "classnames"
 import { checkTheme } from "../../utils"
 import UiLink, { TTheme as TThemeUiLink } from "@/sawyer-ui/ui-kit/basic/UiLink"
-import OptionsElement from "@/sawyer-ui/ui-kit/surfaces/OptionsElement"
+import UiOptions from "@/sawyer-ui/ui-kit/surfaces/UiOptions"
 import { IStaticImageData } from "@/sawyer-ui/types/common"
 import { robotoLight } from "@/sawyer-ui/app/fonts"
 
@@ -65,7 +65,7 @@ const UiLayoutCards: React.FC<IProps> = (props) => {
               </div>
             ))}
 
-            {isOptions && <OptionsElement options={element.links} />}
+            {isOptions && <UiOptions options={element.links} />}
           </div>
         </div>
       ))}

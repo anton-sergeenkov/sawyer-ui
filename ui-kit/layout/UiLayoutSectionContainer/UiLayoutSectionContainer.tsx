@@ -8,7 +8,7 @@ interface IProps {
   isNoPadding?: boolean
 }
 
-const LayoutSectionContainerElement: React.FC<IProps> = (props) => {
+const UiLayoutSectionContainer: React.FC<IProps> = (props) => {
   const { className, isNoPadding = false, children } = props
 
   return (
@@ -24,4 +24,4 @@ const LayoutSectionContainerElement: React.FC<IProps> = (props) => {
   )
 }
 
-export default LayoutSectionContainerElement
+export default UiLayoutSectionContainer

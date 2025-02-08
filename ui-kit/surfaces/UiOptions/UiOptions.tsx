@@ -10,24 +10,24 @@ import { robotoLight } from "@/sawyer-ui/app/fonts"
 import styles from "./styles.module.css"
 
 // TODO: Interface
-interface IOptionsElementOptions {
+interface IOptionsOptions {
   name: string
   link: string
 }
 
 // TODO: Interface
-interface IOptionsElementClasses {
+interface IOptionsClasses {
   container: string
   icon: string
   link: string
 }
 
 interface IProps {
-  options: IOptionsElementOptions[]
-  classes?: IOptionsElementClasses
+  options: IOptionsOptions[]
+  classes?: IOptionsClasses
 }
 
-const OptionsElement: React.FC<IProps> = (props) => {
+const UiOptions: React.FC<IProps> = (props) => {
   const {
     options,
     classes = {
@@ -76,4 +76,4 @@ const OptionsElement: React.FC<IProps> = (props) => {
   )
 }
 
-export default OptionsElement
+export default UiOptions

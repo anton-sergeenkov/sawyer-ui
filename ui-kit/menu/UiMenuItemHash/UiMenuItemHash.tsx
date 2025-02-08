@@ -6,14 +6,14 @@ import UiMenuNavButton, {
 
 // import styles from "./styles.module.css"
 
-interface IMenuItemHashElementItems {
+interface IUiMenuItemHashItems {
   title: string
   hash: string
 }
 
 interface IProps {
   theme?: ITheme<ThemeUiMenuButton>
-  item: IMenuItemHashElementItems
+  item: IUiMenuItemHashItems
 }
 
 // FIXME: not used, not styled link

@@ -15,7 +15,7 @@ interface IProps {
   className?: string
 }
 
-const SocialLinksElement: React.FC<IProps> = (props) => {
+const UiSocialLinks: React.FC<IProps> = (props) => {
   const { list, className } = props
 
   return (
@@ -36,4 +36,4 @@ const SocialLinksElement: React.FC<IProps> = (props) => {
   )
 }
 
-export default SocialLinksElement
+export default UiSocialLinks

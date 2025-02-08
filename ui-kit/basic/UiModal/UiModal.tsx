@@ -16,10 +16,10 @@ interface IProps {
   modalProps: IMUIModalProps
 }
 
-const ModalElement: React.FC<IProps> = (props) => {
+const UiModal: React.FC<IProps> = (props) => {
   const { children, modalProps } = props
 
   return <MUIModal {...modalProps}>{children}</MUIModal>
 }
 
-export default ModalElement
+export default UiModal

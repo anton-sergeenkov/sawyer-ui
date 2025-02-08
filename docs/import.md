@@ -2,38 +2,37 @@
 
 ## 🔰 Basic
 
-#### `TypographyGradientElement`
+#### `UiTypographyGradient`
 ```ts
-import TypographyGradientElement from "@/sawyer-ui/ui-kit/basic/TypographyGradientElement"
-import { ThemeMode as ThemeUiTypographyGradient } from "@/sawyer-ui/ui-kit/basic/TypographyGradientElement"
+import UiTypographyGradient from "@/sawyer-ui/ui-kit/basic/UiTypographyGradient"
+import { ThemeMode as ThemeUiTypographyGradient } from "@/sawyer-ui/ui-kit/basic/UiTypographyGradient"
 ```
 
-#### `ModalElement`
+#### `UiModal`
 ```ts
-import ModalElement from "@/sawyer-ui/ui-kit/basic/ModalElement"
+import UiModal from "@/sawyer-ui/ui-kit/basic/UiModal"
 ```
 
-#### `TypographyElement`
+#### `UiTypography`
 ```ts
-import TypographyElement from "@/sawyer-ui/ui-kit/basic/TypographyElement"
-import { ThemeMode as ThemeUiTypography } from "@/sawyer-ui/ui-kit/basic/TypographyElement"
-import { Tag as TagTypographyElement } from "@/sawyer-ui/ui-kit/basic/TypographyElement"
+import UiTypography from "@/sawyer-ui/ui-kit/basic/UiTypography"
+import { ThemeMode as ThemeUiTypography } from "@/sawyer-ui/ui-kit/basic/UiTypography"
+import { Tag as TagUiTypography } from "@/sawyer-ui/ui-kit/basic/UiTypography"
 ```
-
 
 ---
 
 ## 🔰 Layout
 
-#### `LayoutSectionElement`
+#### `UiLayoutSection`
 ```ts
-import LayoutSectionElement from "@/sawyer-ui/ui-kit/layout/LayoutSectionElement"
-import { ThemeMode as ThemeUiLayoutSection } from "@/sawyer-ui/ui-kit/layout/LayoutSectionElement"
+import UiLayoutSection from "@/sawyer-ui/ui-kit/layout/UiLayoutSection"
+import { ThemeMode as ThemeUiLayoutSection } from "@/sawyer-ui/ui-kit/layout/UiLayoutSection"
 ```
 
-#### `LayoutSectionContainerElement`
+#### `UiLayoutSectionContainer`
 ```ts
-import LayoutSectionContainerElement from "@/sawyer-ui/ui-kit/layout/LayoutSectionContainerElement"
+import UiLayoutSectionContainer from "@/sawyer-ui/ui-kit/layout/UiLayoutSectionContainer"
 ```
 
 ---
@@ -59,15 +58,15 @@ import UiMenuItemGroupRoutes from "@/sawyer-ui/ui-kit/menu/UiMenuItemGroupRoutes
 
 ## 🔰 Surfaces
 
-#### `SocialLinksElement`
+#### `UiSocialLinks`
 ```js
-import SocialLinksElement from "@/sawyer-ui/ui-kit/surfaces/SocialLinksElement"
-import type { IUiSocialLinksList } from "@/sawyer-ui/ui-kit/surfaces/SocialLinksElement"
+import UiSocialLinks from "@/sawyer-ui/ui-kit/surfaces/UiSocialLinks"
+import type { IUiSocialLinksList } from "@/sawyer-ui/ui-kit/surfaces/UiSocialLinks"
 ```
 
-#### `OptionsElement`
+#### `UiOptions`
 ```ts
-import OptionsElement from "@/sawyer-ui/ui-kit/surfaces/OptionsElement"
+import UiOptions from "@/sawyer-ui/ui-kit/surfaces/UiOptions"
 ```
 
 ---

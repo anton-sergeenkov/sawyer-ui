@@ -5,10 +5,6 @@ export interface ITheme<T> {
   notUnderlined?: boolean
 }
 
-export interface IThemeElements<T> {
-  mode: T // "light" | "dark"
-}
-
 // import image from "./image.svg"
 export interface IStaticImageData {
   src: string

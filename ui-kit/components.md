@@ -1,8 +1,9 @@
 # Components
 
+- Ui-Kit из Моби Трафик
+
 ## Рефакторинг
 
-- Изменить название компонентов с "element" на "ui". Проверить поиском все "element"
 - Добавить импорты в общий файл "ui-kit\index.ts"
 
 ## Ui-Kit
@@ -23,12 +24,12 @@
 
 ```
 📂 basic
-    📑 ModalElement
-    📑 TypographyElement 💎
-    📑 TypographyGradientElement 💎
+    - UiModal
+    - UiTypography 💎
+    - UiTypographyGradient 💎
 📂 layout
-    📑 LayoutSectionContainerElement
-    📑 LayoutSectionElement 💎
+    - UiLayoutSectionContainer
+    - UiLayoutSection 💎
 📂 menu
     - UiMenuItemGroupLinks
     - UiMenuItemGroupRoutes
@@ -37,6 +38,6 @@
     - UiMenuNavButton 💎
     - UiMenuNavToggle
 📂 surfaces
-    📑 OptionsElement
-    📑 SocialLinksElement
+    - UiOptions
+    - UiSocialLinks
 ```

@@ -15,7 +15,7 @@ interface IProps {
   isTopSpacing?: boolean
 }
 
-const LayoutSectionElement: React.FC<IProps> = (props) => {
+const UiLayoutSection: React.FC<IProps> = (props) => {
   const { theme, className, isTopSpacing, children } = props
 
   const stylesTheme = checkThemeMode<ThemeMode>(theme, styles)
@@ -34,4 +34,4 @@ const LayoutSectionElement: React.FC<IProps> = (props) => {
   )
 }
 
-export default LayoutSectionElement
+export default UiLayoutSection

@@ -24,7 +24,7 @@ interface IProps {
   children: React.ReactNode
 }
 
-const TypographyElement: React.FC<IProps> = (props) => {
+const UiTypography: React.FC<IProps> = (props) => {
   const { theme, className, tag, children } = props
 
   const stylesTheme = checkThemeMode<ThemeMode>(theme, styles)
@@ -55,4 +55,4 @@ const TypographyElement: React.FC<IProps> = (props) => {
   }
 }
 
-export default TypographyElement
+export default UiTypography
