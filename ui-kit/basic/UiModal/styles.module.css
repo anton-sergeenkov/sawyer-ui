@@ -1,3 +1,11 @@
-.item {
-  /*  */
+.modal {
+  display: flex;
+  /* backdrop-filter: blur(10px); */
+}
+.modalContent {
+  display: block;
+  margin: auto;
+  background-color: var(--color-white);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
 }

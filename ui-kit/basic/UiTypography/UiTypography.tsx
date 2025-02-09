@@ -10,6 +10,9 @@ export enum ThemeMode {
   LIGHT_OUTLINE = "light-outline",
 }
 
+// FIXME:
+// type TTag = "h1" | "h2" | "h3" | "p"
+
 export enum Tag {
   H1 = "h1",
   H2 = "h2",

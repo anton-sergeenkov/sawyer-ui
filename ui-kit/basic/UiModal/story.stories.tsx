@@ -17,18 +17,23 @@ const meta: Meta<typeof UiModal> = {
     disableAutoFocus: {
       control: { type: "boolean" },
     },
+    isContentClickClose: {
+      control: { type: "boolean" },
+    },
   },
   args: {
     open: true,
+    disableAutoFocus: true,
+    isContentClickClose: false,
     onClose: fn(),
     children: (
       <div
         style={{
-          border: "1px solid #000",
-          width: "200px",
-          height: "200px",
-          background: "#fff",
+          width: "350px",
+          height: "350px",
+          padding: "10px",
         }}
+        className={robotoRegular.className}
       >
         Content
       </div>

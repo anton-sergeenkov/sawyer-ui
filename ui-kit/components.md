@@ -37,5 +37,3 @@
     - UiOptions
     - UiSocialLinks
 ```
-
-- Вынести стилии в UiModal из "app\qr\components\SectionStarter\SectionStarter.tsx"
