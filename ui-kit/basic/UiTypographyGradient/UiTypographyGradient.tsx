@@ -1,23 +1,24 @@
 import cn from "classnames"
-import { checkThemeMode } from "../../utils"
-import { ITheme } from "@/sawyer-ui/types/common"
+import { checkTheme } from "../../utils"
 
 import styles from "./styles.module.css"
 
-export enum ThemeMode {
-  DARKBLUE_BLUE = "darkblue-blue",
+export const options = {
+  theme: ["darkblue-blue"],
 }
+
+type TTheme = "darkblue-blue"
 
 interface IProps {
   className?: string
-  theme?: ITheme<ThemeMode>
+  theme?: TTheme
   children: React.ReactNode
 }
 
 const UiTypographyGradient: React.FC<IProps> = (props) => {
   const { theme, className, children } = props
 
-  const stylesTheme = checkThemeMode<ThemeMode>(theme, styles)
+  const stylesTheme = checkTheme(theme, styles)
 
   return (
     <div className={cn(stylesTheme, styles.item, className)}>{children}</div>

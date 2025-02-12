@@ -1,10 +1,10 @@
 # Components
 
-1. Добавить импорты в общий файл "ui-kit\index.ts"
-2. Исправить импорты в index.ts
-3. Добавить story.stories.tsx
-4. Добавить Usage.mdx
-5. Тема. checkThemeMode -> checkTheme
+1. `ui-kit\index.ts` - добавить импорт
+2. `index.ts` - исправить импорты
+3. `UiComponent.tsx` - checkThemeMode -> checkTheme
+4. `story.stories.tsx`
+5. `Usage.mdx`
 
 ```ts
 export const options = {
@@ -23,12 +23,11 @@ type TTheme = "dark-filled" | "light-outline"
 
 - constants\theme.ts (portfolio)
 - docs\import.md (ui-kit)
+- import { ITheme } from "@/sawyer-ui/types/common"
 
 ## Структура
 
 ```
-📂 basic
-    - UiTypographyGradient 💎
 📂 layout
     - UiLayoutSectionContainer
     - UiLayoutSection 💎

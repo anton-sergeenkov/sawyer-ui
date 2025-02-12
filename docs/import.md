@@ -1,15 +1,5 @@
 # ⭐️ Ui-Kit
 
-## 🔰 Basic
-
-#### `UiTypographyGradient`
-```ts
-import UiTypographyGradient from "@/sawyer-ui/ui-kit/basic/UiTypographyGradient"
-import { ThemeMode as ThemeUiTypographyGradient } from "@/sawyer-ui/ui-kit/basic/UiTypographyGradient"
-```
-
-
----
 
 ## 🔰 Layout
 
