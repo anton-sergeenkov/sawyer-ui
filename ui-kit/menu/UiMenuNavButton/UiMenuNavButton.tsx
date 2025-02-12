@@ -2,18 +2,25 @@
 
 import UiButton from "@/sawyer-ui/ui-kit/basic/UiButton"
 import { getStyles } from "./utils"
-import { ITheme, TOnClick } from "@/sawyer-ui/types/common"
+import { TOnClick } from "@/sawyer-ui/types/common"
 
 // import styles from "./styles.module.css"
 
-export enum ThemeMode {
-  LIGHT_BLUE = "light-blue",
+/* FIXME: Import
+import UiMenuNavButton from "@/sawyer-ui/ui-kit/menu/UiMenuNavButton"
+import { ThemeMode as ThemeUiMenuButton } from "@/sawyer-ui/ui-kit/menu/UiMenuNavButton"
+*/
+
+export const options = {
+  theme: ["light-blue"],
 }
+
+export type TTheme = "light-blue"
 
 interface IProps {
   className?: string
   children: React.ReactNode
-  theme?: ITheme<ThemeMode>
+  theme?: TTheme
   isAccent?: boolean
   isActive?: boolean
   isHoverTransparent?: boolean
@@ -38,7 +45,7 @@ const UiMenuNavButton: React.FC<IProps> = (props) => {
   } = props
 
   const { stylesButton, stylesText } = getStyles({
-    mode: theme?.mode,
+    theme,
     isAccent,
     isActive,
     isHoverTransparent,

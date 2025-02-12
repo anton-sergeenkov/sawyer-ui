@@ -4,28 +4,28 @@
 import { useState } from "react"
 import Menu from "@mui/material/Menu"
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown"
-import { ITheme } from "@/sawyer-ui/types/common"
 import UiMenuNavButton, {
-  ThemeMode as ThemeUiMenuButton,
+  TTheme as TThemeMenuButton,
 } from "@/sawyer-ui/ui-kit/menu/UiMenuNavButton"
-import type {
-  IMenuItem,
-  IMenuGroupItems,
-} from "@/sawyer-ui/types/common"
+import type { IMenuItem, IMenuGroupItems } from "@/sawyer-ui/types/common"
 
 // import styles from "./styles.module.css"
+
+/* FIXME: Import
+import UiMenuNavToggle from "@/sawyer-ui/ui-kit/menu/UiMenuNavToggle"
+*/
 
 type TList = IMenuItem[] | IMenuGroupItems
 
 // TODO: Interface
 export interface IChildComponentProps {
-  theme?: ITheme<ThemeUiMenuButton>
+  theme?: TThemeMenuButton
   list: TList
   onClose: () => void
 }
 
 interface IProps {
-  theme?: ITheme<ThemeUiMenuButton>
+  theme?: TThemeMenuButton
   className?: string
   list: TList
   title: string

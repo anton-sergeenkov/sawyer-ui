@@ -1,10 +1,3 @@
-export interface ITheme<T> {
-  mode: T // "light" | "dark"
-  filled?: boolean
-  outlined?: boolean
-  notUnderlined?: boolean
-}
-
 // import image from "./image.svg"
 export interface IStaticImageData {
   src: string

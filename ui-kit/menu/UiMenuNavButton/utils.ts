@@ -1,11 +1,13 @@
 import { CSSProperties } from "react"
 import { theme as themeLightBlue } from "./themes/light-blue"
 import { theme as themeDefault } from "./themes/default"
-import { ThemeMode } from "./UiMenuNavButton"
+import { TTheme } from "./UiMenuNavButton"
 
-export const getTheme = (theme: ThemeMode | undefined) => {
+type TLocalTheme = TTheme | undefined
+
+export const getTheme = (theme: TLocalTheme) => {
   switch (theme) {
-    case ThemeMode.LIGHT_BLUE:
+    case "light-blue":
       return themeLightBlue
     default:
       return themeDefault
@@ -23,7 +25,7 @@ const stylesTextDisabled = {
 }
 
 interface IGetStyles {
-  mode: ThemeMode | undefined
+  theme: TLocalTheme
   isAccent?: boolean
   isActive?: boolean
   isHoverTransparent?: boolean
@@ -38,7 +40,7 @@ interface IGetStylesReturn {
 
 export const getStyles = (props: IGetStyles): IGetStylesReturn => {
   const {
-    mode,
+    theme,
     isAccent = false,
     isActive = false,
     isHoverTransparent = false,
@@ -55,7 +57,7 @@ export const getStyles = (props: IGetStyles): IGetStylesReturn => {
     StylesTextDefault,
     StylesTextAccent,
     StylesTextActive,
-  } = getTheme(mode)
+  } = getTheme(theme)
 
   const stylesButton: CSSProperties = {
     ...StylesButtonDefault,

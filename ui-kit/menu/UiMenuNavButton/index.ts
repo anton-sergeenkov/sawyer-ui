@@ -1,4 +1,5 @@
-import { ThemeMode } from "./UiMenuNavButton"
+import { options, TTheme } from "./UiMenuNavButton"
 
 export { default } from "./UiMenuNavButton"
-export { ThemeMode }
+export { options }
+export type { TTheme }

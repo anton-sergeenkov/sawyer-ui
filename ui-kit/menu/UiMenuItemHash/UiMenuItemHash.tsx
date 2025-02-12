@@ -1,10 +1,13 @@
 // import cn from "classnames"
-import { ITheme } from "@/sawyer-ui/types/common"
 import UiMenuNavButton, {
-  ThemeMode as ThemeUiMenuButton,
+  TTheme as TThemeMenuButton,
 } from "@/sawyer-ui/ui-kit/menu/UiMenuNavButton"
 
 // import styles from "./styles.module.css"
+
+/* FIXME: Import
+import UiMenuItemHash from "@/sawyer-ui/ui-kit/menu/UiMenuItemHash"
+*/
 
 interface IUiMenuItemHashItems {
   title: string
@@ -12,7 +15,7 @@ interface IUiMenuItemHashItems {
 }
 
 interface IProps {
-  theme?: ITheme<ThemeUiMenuButton>
+  theme?: TThemeMenuButton
   item: IUiMenuItemHashItems
 }
 

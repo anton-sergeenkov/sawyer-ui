@@ -5,13 +5,17 @@
 import MenuItem from "@mui/material/MenuItem"
 import UiMenuNavToggle from "@/sawyer-ui/ui-kit/menu/UiMenuNavToggle"
 import UiMenuNavButton, {
-  ThemeMode as ThemeUiMenuButton,
+  TTheme as TThemeMenuButton,
 } from "@/sawyer-ui/ui-kit/menu/UiMenuNavButton"
-import { IMenuGroupItems, ITheme } from "@/sawyer-ui/types/common"
+import { IMenuGroupItems } from "@/sawyer-ui/types/common"
 import { IChildComponentProps } from "@/sawyer-ui/ui-kit/menu/UiMenuNavToggle/UiMenuNavToggle"
 import { styleMenuItem } from "@/sawyer-ui/ui-kit/constants"
 
 import styles from "./styles.module.css"
+
+/* FIXME: Import
+import UiMenuItemGroupLinks from "@/sawyer-ui/ui-kit/menu/UiMenuItemGroupLinks"
+*/
 
 // TODO: Interface
 const ChildComponent: React.FC<IChildComponentProps> = (props) => {
@@ -41,7 +45,7 @@ const ChildComponent: React.FC<IChildComponentProps> = (props) => {
 
 interface IProps {
   className?: string
-  theme?: ITheme<ThemeUiMenuButton>
+  theme?: TThemeMenuButton
   list: IMenuGroupItems
   title: string
   isAccent: boolean

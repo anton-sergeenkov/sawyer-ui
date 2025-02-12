@@ -3,16 +3,19 @@
 // import cn from "classnames"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { ITheme } from "@/sawyer-ui/types/common"
 import UiMenuNavButton, {
-  ThemeMode as ThemeUiMenuButton,
+  TTheme as TThemeMenuButton,
 } from "@/sawyer-ui/ui-kit/menu/UiMenuNavButton"
 import type { IMenuItem } from "@/sawyer-ui/types/common"
 
 // import styles from "./styles.module.css"
 
+/* FIXME: Import
+import UiMenuItemRoutes from "@/sawyer-ui/ui-kit/menu/UiMenuItemRoutes"
+*/
+
 interface IProps {
-  theme?: ITheme<ThemeUiMenuButton>
+  theme?: TThemeMenuButton
   item: IMenuItem
   isAccent?: boolean
   isTextLeft?: boolean
