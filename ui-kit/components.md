@@ -8,7 +8,7 @@
 
 ## TODO
 
-- Ui-Kit из MT
+- Ui-Kit из mt-ui
 
 ## Структура
 
