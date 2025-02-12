@@ -1,0 +1,28 @@
+.details {
+  width: 100%;
+  overflow: auto;
+  border: 1px solid var(--color-gray-50);
+  border-radius: var(--border-radius);
+  background-color: var(--color-gray-10);
+}
+.details .summary {
+  padding: 10px 20px;
+  font-weight: 400;
+  color: var(--color-gray-80);
+  cursor: pointer;
+}
+.details .summary .title {
+  display: inline-block;
+  margin-left: 4px;
+  font-size: 16px;
+}
+
+.details .summary::marker {
+  color: var(--color-gray-50);
+  font-size: 16px;
+}
+
+.details .content {
+  padding: 20px;
+  background-color: var(--color-white);
+}
