@@ -16,8 +16,8 @@ const meta: Meta<typeof UiTypographyGradient> = {
     },
   },
   args: {
-    theme: "darkblue-blue",
-    children: "Typography",
+    theme: "blue-lightblue",
+    children: <h2>Typography Gradient Text Sample</h2>,
   },
   decorators: [
     (Story) => (

@@ -4,10 +4,10 @@ import { checkTheme } from "../../utils"
 import styles from "./styles.module.css"
 
 export const options = {
-  theme: ["darkblue-blue"],
+  theme: ["blue-lightblue", "darkblue-violet"],
 }
 
-type TTheme = "darkblue-blue"
+type TTheme = "blue-lightblue" | "darkblue-violet"
 
 interface IProps {
   className?: string
