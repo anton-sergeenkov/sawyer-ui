@@ -6,15 +6,6 @@
 4. `story.stories.tsx`
 5. `Usage.mdx`
 
-```ts
-export const options = {
-  theme: ["dark-filled", "light-outline"],
-  tag: ["h1", "h2", "h3", "p"],
-}
-
-type TTheme = "dark-filled" | "light-outline"
-```
-
 ## TODO
 
 - Ui-Kit из Моби Трафик
