@@ -13,7 +13,7 @@
 
 - UiMenuItemGroupLinks
 - UiMenuItemGroupRoutes
-- UiMenuItemHash
+- UiMenuItemHash (fix)
 - UiMenuItemRoutes
 - UiMenuNavButton 💎
 - UiMenuNavToggle
