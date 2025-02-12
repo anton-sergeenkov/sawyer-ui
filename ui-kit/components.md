@@ -4,7 +4,6 @@
 2. `index.ts` - исправить импорты
 3. `UiComponent.tsx` - исправить
 4. `story.stories.tsx`
-5. `Usage.mdx`
 
 ## TODO
 

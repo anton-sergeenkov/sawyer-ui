@@ -3,11 +3,11 @@
 ### Public
 
 ```ts
-import { ... } from "@/sawyer-ui/ui-kit"
+import { UiMenuItemGroupLinks } from "@/sawyer-ui/ui-kit"
 ```
 
 ### Internal
 
 ```ts
-import ... from "@/sawyer-ui/ui-kit/.../..."
+import UiMenuItemGroupLinks from "@/sawyer-ui/ui-kit/menu/UiMenuItemGroupLinks"
 ```

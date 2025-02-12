@@ -5,10 +5,6 @@ import UiMenuNavButton, {
 
 // import styles from "./styles.module.css"
 
-/* FIXME: Import
-import UiMenuItemHash from "@/sawyer-ui/ui-kit/menu/UiMenuItemHash"
-*/
-
 interface IUiMenuItemHashItems {
   title: string
   hash: string

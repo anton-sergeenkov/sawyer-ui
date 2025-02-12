@@ -3,11 +3,11 @@
 ### Public
 
 ```ts
-import { ... } from "@/sawyer-ui/ui-kit"
+import { UiMenuItemHash } from "@/sawyer-ui/ui-kit"
 ```
 
 ### Internal
 
 ```ts
-import ... from "@/sawyer-ui/ui-kit/.../..."
+import UiMenuItemHash from "@/sawyer-ui/ui-kit/menu/UiMenuItemHash"
 ```

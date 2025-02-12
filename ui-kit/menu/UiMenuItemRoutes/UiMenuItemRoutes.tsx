@@ -10,10 +10,6 @@ import type { IMenuItem } from "@/sawyer-ui/types/common"
 
 // import styles from "./styles.module.css"
 
-/* FIXME: Import
-import UiMenuItemRoutes from "@/sawyer-ui/ui-kit/menu/UiMenuItemRoutes"
-*/
-
 interface IProps {
   theme?: TThemeMenuButton
   item: IMenuItem

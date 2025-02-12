@@ -11,10 +11,6 @@ import type { IMenuItem, IMenuGroupItems } from "@/sawyer-ui/types/common"
 
 // import styles from "./styles.module.css"
 
-/* FIXME: Import
-import UiMenuNavToggle from "@/sawyer-ui/ui-kit/menu/UiMenuNavToggle"
-*/
-
 type TList = IMenuItem[] | IMenuGroupItems
 
 // TODO: Interface

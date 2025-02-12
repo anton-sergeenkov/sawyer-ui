@@ -3,11 +3,12 @@
 ### Public
 
 ```ts
-import { ... } from "@/sawyer-ui/ui-kit"
+import { UiMenuNavButton } from "@/sawyer-ui/ui-kit"
 ```
 
 ### Internal
 
 ```ts
-import ... from "@/sawyer-ui/ui-kit/.../..."
+import UiMenuNavButton from "@/sawyer-ui/ui-kit/menu/UiMenuNavButton"
+import { TTheme as TThemeMenuButton } from "@/sawyer-ui/ui-kit/menu/UiMenuNavButton"
 ```

@@ -11,10 +11,6 @@ import { styleMenuItem } from "@/sawyer-ui/ui-kit/constants"
 
 import styles from "./styles.module.css"
 
-/* FIXME: Import
-import UiMenuItemGroupRoutes from "@/sawyer-ui/ui-kit/menu/UiMenuItemGroupRoutes"
-*/
-
 // TODO: Interface
 const ChildComponent: React.FC<IChildComponentProps> = (props) => {
   const { theme, list, onClose } = props

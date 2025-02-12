@@ -6,11 +6,6 @@ import { TOnClick } from "@/sawyer-ui/types/common"
 
 // import styles from "./styles.module.css"
 
-/* FIXME: Import
-import UiMenuNavButton from "@/sawyer-ui/ui-kit/menu/UiMenuNavButton"
-import { ThemeMode as ThemeUiMenuButton } from "@/sawyer-ui/ui-kit/menu/UiMenuNavButton"
-*/
-
 export const options = {
   theme: ["light-blue"],
 }
