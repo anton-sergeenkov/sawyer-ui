@@ -10,17 +10,11 @@
 
 - Ui-Kit из mt-ui
 
-## Структура
+## Элементы
 
-```
-📂 menu
-    - UiMenuItemGroupLinks
-    - UiMenuItemGroupRoutes
-    - UiMenuItemHash
-    - UiMenuItemRoutes
-    - UiMenuNavButton 💎
-    - UiMenuNavToggle
-📂 surfaces
-    - UiOptions
-    - UiSocialLinks
-```
+- UiMenuItemGroupLinks
+- UiMenuItemGroupRoutes
+- UiMenuItemHash
+- UiMenuItemRoutes
+- UiMenuNavButton 💎
+- UiMenuNavToggle

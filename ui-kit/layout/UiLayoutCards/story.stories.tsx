@@ -11,12 +11,12 @@ import coverImage from "../../../resources/img/card.svg"
 const items = [
   {
     title: "Title",
-    link: "https://letscode-dev.github.io/",
+    link: "https://www.youtube.com/",
     img: coverImage,
     description: "School of Frontend Development, courses and mentoring",
     links: [
-      { name: "Website", link: "https://letscode-dev.github.io/" },
-      { name: "YouTube", link: "https://www.youtube.com/c/letscode-dev" },
+      { name: "Instagram", link: "https://www.instagram.com/" },
+      { name: "YouTube", link: "https://www.youtube.com/" },
     ],
   },
 ]

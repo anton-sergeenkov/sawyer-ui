@@ -10,6 +10,9 @@ import UiDetails from "./basic/UiDetails"
 import UiLayoutCards, { IUiLayoutCardsItems } from "./layout/UiLayoutCards"
 import UiLayoutSection from "./layout/UiLayoutSection"
 import UiLayoutSectionContainer from "./layout/UiLayoutSectionContainer"
+// Surfaces
+import UiOptions from "./surfaces/UiOptions"
+import UiSocialLinks, { IUiSocialLinksList } from "./surfaces/UiSocialLinks"
 
 export {
   // Basic
@@ -24,6 +27,9 @@ export {
   UiLayoutCards,
   UiLayoutSection,
   UiLayoutSectionContainer,
+  // Surfaces
+  UiOptions,
+  UiSocialLinks,
 }
 
-export type { IUiLayoutCardsItems }
+export type { IUiLayoutCardsItems, IUiSocialLinksList }

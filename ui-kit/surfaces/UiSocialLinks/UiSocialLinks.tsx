@@ -3,11 +3,6 @@ import type { IStaticImageData } from "@/sawyer-ui/types/common"
 
 import styles from "./styles.module.css"
 
-/* FIXME: Import
-import UiSocialLinks from "@/sawyer-ui/ui-kit/surfaces/UiSocialLinks"
-import type { IUiSocialLinksList } from "@/sawyer-ui/ui-kit/surfaces/UiSocialLinks"
-*/
-
 // TODO: Interface
 export interface IUiSocialLinksList {
   img: IStaticImageData
