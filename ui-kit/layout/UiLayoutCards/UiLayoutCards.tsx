@@ -11,6 +11,8 @@ export const options = {
   theme: ["light", "dark"],
 }
 
+type TTheme = "light" | "dark"
+
 // TODO: Interface
 interface IUiLayoutCardsItemsLinks {
   name: string
@@ -27,7 +29,7 @@ export interface IUiLayoutCardsItems {
 }
 
 interface IProps {
-  theme?: "light" | "dark"
+  theme?: TTheme
   themeLink?: TThemeUiLink
   items: IUiLayoutCardsItems[]
   isOptions?: boolean

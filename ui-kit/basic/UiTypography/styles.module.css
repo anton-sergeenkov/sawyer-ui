@@ -30,13 +30,13 @@
 /***************************************************
 THEME
 /***************************************************/
-
 .h2 .item--dark-filled {
   border-radius: var(--border-radius-chip);
   background-color: var(--color-black-lighter);
   color: #fff;
   font-size: 17px;
 }
+
 .h2 .item--light-outline {
   border: 1px solid var(--color-black-lighter);
   border-radius: var(--border-radius-chip);

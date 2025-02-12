@@ -1,30 +1,38 @@
 # Component
 
-> components.ts
+## Basic Component with Theme
 
-**With Props**
+> UiComponent.tsx
 
 ```tsx
 import cn from "classnames"
-
+import { checkTheme } from "../../utils"
 import styles from "./styles.module.css"
 
+export const options = {
+  theme: ["light", "dark"],
+}
+
+type TTheme = "light" | "dark"
+
 interface IProps {
+  theme?: TTheme
   className?: string
   children: React.ReactNode
 }
 
 const UiComponent: React.FC<IProps> = (props) => {
-  const { children, className } = props
-  return <div className={cn(className, styles.wrapper)}>Content</div>
-}
-```
+  const { theme, className, children } = props
 
-**Without Props**
+  const stylesTheme = checkTheme(theme, styles)
 
-```tsx
-const UiComponent: React.FC = () => {
-  return <></>
+  return (
+    <div
+      className={cn(className, styles.wrapper, stylesTheme)}
+    >
+      Content
+    </div>
+  )
 }
 ```
 
@@ -39,5 +47,18 @@ const UiComponent: React.FC = () => {
 > index.ts
 
 ```ts
+import { options } from "./UiComponent"
+
 export { default } from "./UiComponent"
+export { options }
+```
+
+---
+
+## Component without Props
+
+```tsx
+const UiComponent: React.FC = () => {
+  return <></>
+}
 ```

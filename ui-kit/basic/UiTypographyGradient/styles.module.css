@@ -4,12 +4,19 @@
   --v3: 180deg, #5530ff, #66a6ff;
   --v4: 315deg, #42d392 25%, #647eff;
 }
+
+/***************************************************
+THEME
+/***************************************************/
 .item--darkblue-blue {
   background: -webkit-linear-gradient(var(--v3));
   /* -webkit-background-clip: text; */
   /* -webkit-text-fill-color: transparent; */
 }
 
+/***************************************************
+STYLES
+/***************************************************/
 .item {
   background-clip: text;
   -webkit-background-clip: text;

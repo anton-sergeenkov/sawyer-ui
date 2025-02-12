@@ -12,10 +12,13 @@ export const options = {
   size: ["small", "medium", "large"],
 }
 
+type TVariant = "text" | "outlined" | "contained"
+type TSize = "small" | "medium" | "large"
+
 interface IProps {
   children: React.ReactNode
-  variant?: "text" | "outlined" | "contained"
-  size?: "small" | "medium" | "large"
+  variant?: TVariant
+  size?: TSize
   className?: string
   sx?: SxProps<Theme>
   endIcon?: React.ReactNode

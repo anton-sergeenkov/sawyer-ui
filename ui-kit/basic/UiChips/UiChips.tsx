@@ -9,9 +9,11 @@ export const options = {
   theme: ["light", "dark"],
 }
 
+type TTheme = "light" | "dark"
+
 interface IProps {
   className?: string
-  theme?: "light" | "dark"
+  theme?: TTheme
   items: string[]
   isUserSelect?: boolean
 }

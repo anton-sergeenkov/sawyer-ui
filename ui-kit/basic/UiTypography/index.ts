@@ -1,4 +1,4 @@
-import { ThemeMode, Tag } from "./UiTypography"
+import { options } from "./UiTypography"
 
 export { default } from "./UiTypography"
-export { ThemeMode, Tag }
+export { options }
