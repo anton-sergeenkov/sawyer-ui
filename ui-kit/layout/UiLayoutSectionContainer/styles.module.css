@@ -5,5 +5,5 @@
 }
 
 .containerPadding {
-  padding: var(--spacing);
+  padding: var(--spacing-section);
 }

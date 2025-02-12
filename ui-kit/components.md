@@ -19,9 +19,6 @@
 ## Структура
 
 ```
-📂 layout
-    - UiLayoutSectionContainer
-    - UiLayoutSection 💎
 📂 menu
     - UiMenuItemGroupLinks
     - UiMenuItemGroupRoutes

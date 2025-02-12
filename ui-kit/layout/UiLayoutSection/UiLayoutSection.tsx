@@ -1,15 +1,16 @@
 import cn from "classnames"
-import { checkThemeMode } from "../../utils"
-import { ITheme } from "@/sawyer-ui/types/common"
+import { checkTheme } from "../../utils"
 
 import styles from "./styles.module.css"
 
-export enum ThemeMode {
-  HEADER_FOOTER = "header-footer",
+export const options = {
+  theme: ["header-footer"],
 }
 
+type TTheme = "header-footer"
+
 interface IProps {
-  theme?: ITheme<ThemeMode>
+  theme?: TTheme
   className?: string
   children: React.ReactNode
   isTopSpacing?: boolean
@@ -18,7 +19,7 @@ interface IProps {
 const UiLayoutSection: React.FC<IProps> = (props) => {
   const { theme, className, isTopSpacing, children } = props
 
-  const stylesTheme = checkThemeMode<ThemeMode>(theme, styles)
+  const stylesTheme = checkTheme(theme, styles)
 
   return (
     <div

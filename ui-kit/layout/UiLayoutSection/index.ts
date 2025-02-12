@@ -1,4 +1,4 @@
-import { ThemeMode } from "./UiLayoutSection"
+import { options } from "./UiLayoutSection"
 
 export { default } from "./UiLayoutSection"
-export { ThemeMode }
+export { options }

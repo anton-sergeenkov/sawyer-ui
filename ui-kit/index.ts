@@ -7,6 +7,8 @@ import UiTypography from "./basic/UiTypography"
 import UiTypographyGradient from "./basic/UiTypographyGradient"
 // Layout
 import UiLayoutCards, { IUiLayoutCardsItems } from "./layout/UiLayoutCards"
+import UiLayoutSection from "./layout/UiLayoutSection"
+import UiLayoutSectionContainer from "./layout/UiLayoutSectionContainer"
 
 export {
   // Basic
@@ -18,6 +20,8 @@ export {
   UiTypographyGradient,
   // Layout
   UiLayoutCards,
+  UiLayoutSection,
+  UiLayoutSectionContainer,
 }
 
 export type { IUiLayoutCardsItems }

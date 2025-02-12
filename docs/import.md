@@ -1,21 +1,5 @@
 # ⭐️ Ui-Kit
 
-
-## 🔰 Layout
-
-#### `UiLayoutSection`
-```ts
-import UiLayoutSection from "@/sawyer-ui/ui-kit/layout/UiLayoutSection"
-import { ThemeMode as ThemeUiLayoutSection } from "@/sawyer-ui/ui-kit/layout/UiLayoutSection"
-```
-
-#### `UiLayoutSectionContainer`
-```ts
-import UiLayoutSectionContainer from "@/sawyer-ui/ui-kit/layout/UiLayoutSectionContainer"
-```
-
----
-
 ## 🔰 Menu Items
 
 #### `UiMenuItemRoutes`
