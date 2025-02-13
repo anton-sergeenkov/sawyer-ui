@@ -8,6 +8,5 @@
 
 - UiMenuItemGroupLinks
 - UiMenuItemGroupRoutes
-- UiMenuItemHash (fix)
 - UiMenuItemRoutes
 - UiMenuNavToggle

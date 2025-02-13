@@ -15,14 +15,13 @@ interface IProps {
   item: IUiMenuItemHashItems
 }
 
-// FIXME: not used, not styled link
 const UiMenuItemHash: React.FC<IProps> = (props) => {
   const { theme, item } = props
 
   return (
-    <UiMenuNavButton theme={theme}>
-      <a href={`#${item.hash}`}>{item.title}</a>
-    </UiMenuNavButton>
+    <a href={`#${item.hash}`}>
+      <UiMenuNavButton theme={theme}>{item.title}</UiMenuNavButton>
+    </a>
   )
 }
 
