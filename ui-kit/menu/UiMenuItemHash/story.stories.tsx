@@ -17,6 +17,7 @@ const meta: Meta<typeof UiMenuItemHash> = {
     },
   },
   args: {
+    theme: "light-blue",
     item: {
       title: "About",
       hash: "about",

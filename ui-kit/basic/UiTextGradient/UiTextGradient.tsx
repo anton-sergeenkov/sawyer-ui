@@ -15,7 +15,7 @@ interface IProps {
   children: React.ReactNode
 }
 
-const UiTypographyGradient: React.FC<IProps> = (props) => {
+const UiTextGradient: React.FC<IProps> = (props) => {
   const { theme, className, children } = props
 
   const stylesTheme = checkTheme(theme, styles)
@@ -25,4 +25,4 @@ const UiTypographyGradient: React.FC<IProps> = (props) => {
   )
 }
 
-export default UiTypographyGradient
+export default UiTextGradient

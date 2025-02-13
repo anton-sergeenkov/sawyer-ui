@@ -20,6 +20,7 @@
 //     },
 //   },
 //   args: {
+//     theme: "light-blue",
 //     children: "Content",
 //   },
 //   decorators: [

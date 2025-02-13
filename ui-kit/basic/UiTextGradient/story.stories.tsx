@@ -3,11 +3,11 @@ import type { Meta, StoryObj } from "@storybook/react"
 import { robotoRegular } from "@/sawyer-ui/app/fonts"
 import "@/sawyer-ui/app/globals.css"
 
-import UiTypographyGradient, { options } from "./UiTypographyGradient"
+import UiTextGradient, { options } from "./UiTextGradient"
 
-const meta: Meta<typeof UiTypographyGradient> = {
-  title: "Basic/UiTypographyGradient",
-  component: UiTypographyGradient,
+const meta: Meta<typeof UiTextGradient> = {
+  title: "Basic/UiTextGradient",
+  component: UiTextGradient,
   tags: ["autodocs"],
   argTypes: {
     theme: {
@@ -17,7 +17,12 @@ const meta: Meta<typeof UiTypographyGradient> = {
   },
   args: {
     theme: "blue-lightblue",
-    children: <h2>Typography Gradient Text Sample</h2>,
+    children: (
+      <h2>
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry
+      </h2>
+    ),
   },
   decorators: [
     (Story) => (
@@ -29,7 +34,7 @@ const meta: Meta<typeof UiTypographyGradient> = {
       </div>
     ),
   ],
-} satisfies Meta<typeof UiTypographyGradient>
+} satisfies Meta<typeof UiTextGradient>
 
 export default meta
 

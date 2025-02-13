@@ -1,9 +1,8 @@
 # TODO
 
 ## ⭐️ Элементы Ui-Kit
-- UiMenuItemGroupLinks
-- UiMenuItemGroupRoutes
-- UiMenuItemRoutes
+- UiMenuItemGroupLinks (ChildComponent)
+- UiMenuItemGroupRoutes (ChildComponent)
 - UiMenuNavToggle
 
 ----

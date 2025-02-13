@@ -1,14 +1,19 @@
 import type { Meta, StoryObj } from "@storybook/react"
-import ArrowCircleDownIcon from "@mui/icons-material/ArrowCircleDown"
 
 import { robotoRegular } from "@/sawyer-ui/app/fonts"
 import "@/sawyer-ui/app/globals.css"
 
-import UiMenuNavButton, { options } from "./UiMenuNavButton"
+import UiMenuItemRoutes from "./UiMenuItemRoutes"
+import { options } from "../UiMenuNavButton/UiMenuNavButton"
 
-const meta: Meta<typeof UiMenuNavButton> = {
-  title: "Menu/UiMenuNavButton",
-  component: UiMenuNavButton,
+const items = {
+  title: "Contacts",
+  path: "/contacts",
+}
+
+const meta: Meta<typeof UiMenuItemRoutes> = {
+  title: "Menu/UiMenuItemRoutes",
+  component: UiMenuItemRoutes,
   tags: ["autodocs"],
   argTypes: {
     theme: {
@@ -16,19 +21,13 @@ const meta: Meta<typeof UiMenuNavButton> = {
       control: { type: "radio" },
     },
     isAccent: { control: { type: "boolean" } },
-    isActive: { control: { type: "boolean" } },
-    isHoverTransparent: { control: { type: "boolean" } },
     isTextLeft: { control: { type: "boolean" } },
-    disabled: { control: { type: "boolean" } },
   },
   args: {
     theme: "light-blue",
-    children: "Content",
+    item: items,
     isAccent: false,
-    isActive: false,
-    isHoverTransparent: false,
     isTextLeft: false,
-    disabled: false,
   },
   decorators: [
     (Story) => (
@@ -40,20 +39,12 @@ const meta: Meta<typeof UiMenuNavButton> = {
       </div>
     ),
   ],
-} satisfies Meta<typeof UiMenuNavButton>
+} satisfies Meta<typeof UiMenuItemRoutes>
 
 export default meta
 
 type Story = StoryObj<typeof meta>
 
 export const Basic: Story = {
-  args: {
-    endIcon: null,
-  },
-}
-
-export const Icon: Story = {
-  args: {
-    endIcon: <ArrowCircleDownIcon />,
-  },
+  args: {},
 }
