@@ -1,12 +1,23 @@
-# ⭐️ FIXME
+# TODO
 
-- Рефакторинг компонентов из "ui-kit\components.md"
+## ⭐️ Элементы Ui-Kit
+- UiMenuItemGroupLinks
+- UiMenuItemGroupRoutes
+- UiMenuItemRoutes
+- UiMenuNavToggle
 
-# ⭐️ COMPONENTS
+----
+
+## ⭐️ Ui-Kit
+- Ui-Kit из mt-ui
+
+----
+
+## ⭐️ Components
 
 **Header**
 Вынести в Ui-Kit
-Источники:
+Примеры:
 - https://reactcosmos.org/
 - https://stenciljs.com/
 - https://vite.dev/
