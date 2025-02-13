@@ -3,11 +3,11 @@
 // import { robotoRegular } from "@/sawyer-ui/app/fonts"
 // import "@/sawyer-ui/app/globals.css"
 
-// import UiComponent, { options } from "./UiComponent"
+// import UiMenuNavToggle, { options } from "./UiMenuNavToggle"
 
-// const meta: Meta<typeof UiComponent> = {
-//   title: "Menu/UiComponent",
-//   component: UiComponent,
+// const meta: Meta<typeof UiMenuNavToggle> = {
+//   title: "Menu/UiMenuNavToggle",
+//   component: UiMenuNavToggle,
 //   tags: ["autodocs"],
 //   argTypes: {
 //     theme: {
@@ -31,7 +31,7 @@
 //       </div>
 //     ),
 //   ],
-// } satisfies Meta<typeof UiComponent>
+// } satisfies Meta<typeof UiMenuNavToggle>
 
 // export default meta
 

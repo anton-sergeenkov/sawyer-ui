@@ -3,11 +3,11 @@
 // import { robotoRegular } from "@/sawyer-ui/app/fonts"
 // import "@/sawyer-ui/app/globals.css"
 
-// import UiComponent, { options } from "./UiComponent"
+// import UiMenuItemRoutes, { options } from "./UiMenuItemRoutes"
 
-// const meta: Meta<typeof UiComponent> = {
-//   title: "Menu/UiComponent",
-//   component: UiComponent,
+// const meta: Meta<typeof UiMenuItemRoutes> = {
+//   title: "Menu/UiMenuItemRoutes",
+//   component: UiMenuItemRoutes,
 //   tags: ["autodocs"],
 //   argTypes: {
 //     theme: {
@@ -31,7 +31,7 @@
 //       </div>
 //     ),
 //   ],
-// } satisfies Meta<typeof UiComponent>
+// } satisfies Meta<typeof UiMenuItemRoutes>
 
 // export default meta
 

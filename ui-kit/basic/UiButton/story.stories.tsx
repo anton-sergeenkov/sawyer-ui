@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from "@storybook/react"
 import { fn } from "@storybook/test"
+import ArrowCircleDownIcon from "@mui/icons-material/ArrowCircleDown"
 
 import { robotoRegular } from "@/sawyer-ui/app/fonts"
 import "@/sawyer-ui/app/globals.css"
 
-import ArrowCircleDownIcon from "@mui/icons-material/ArrowCircleDown"
 import UiButton, { options } from "./UiButton"
 
 const meta: Meta<typeof UiButton> = {
