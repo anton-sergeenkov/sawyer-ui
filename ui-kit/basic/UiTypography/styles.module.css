@@ -33,7 +33,7 @@ THEME
 .h2 .item--dark-filled {
   border-radius: var(--border-radius-chip);
   background-color: var(--color-black-lighter);
-  color: #fff;
+  color: var(--color-white);
   font-size: 17px;
 }
 
