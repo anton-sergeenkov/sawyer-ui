@@ -13,8 +13,8 @@ interface IProps {
   theme?: TTheme
   className?: string
   children: React.ReactNode
-  isSpacingY?: boolean
   isSpacingX?: boolean
+  isSpacingY?: boolean
 }
 
 const UiLayoutSection: React.FC<IProps> = (props) => {
@@ -22,8 +22,8 @@ const UiLayoutSection: React.FC<IProps> = (props) => {
     theme,
     className,
     children,
-    isSpacingY = true,
     isSpacingX = true,
+    isSpacingY = true,
   } = props
 
   const stylesTheme = checkTheme(theme, styles)
@@ -33,8 +33,8 @@ const UiLayoutSection: React.FC<IProps> = (props) => {
       <div
         className={cn(
           styles.section,
-          isSpacingY && styles.sectionPaddingY,
           isSpacingX && styles.sectionPaddingX,
+          isSpacingY && styles.sectionPaddingY,
           stylesTheme,
         )}
       >
