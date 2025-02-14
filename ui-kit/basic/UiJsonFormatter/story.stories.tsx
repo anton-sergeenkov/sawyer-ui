@@ -3,11 +3,11 @@ import type { Meta, StoryObj } from "@storybook/react"
 import { robotoRegular } from "@/sawyer-ui/app/fonts"
 import "@/sawyer-ui/app/globals.css"
 
-import UiCodeFormat from "./UiCodeFormat"
+import UiJsonFormatter from "./UiJsonFormatter"
 
-const meta: Meta<typeof UiCodeFormat> = {
-  title: "Basic/UiCodeFormat",
-  component: UiCodeFormat,
+const meta: Meta<typeof UiJsonFormatter> = {
+  title: "Basic/UiJsonFormatter",
+  component: UiJsonFormatter,
   tags: ["autodocs"],
   args: {
     data: {
@@ -25,7 +25,7 @@ const meta: Meta<typeof UiCodeFormat> = {
       </div>
     ),
   ],
-} satisfies Meta<typeof UiCodeFormat>
+} satisfies Meta<typeof UiJsonFormatter>
 
 export default meta
 

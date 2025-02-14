@@ -3,11 +3,11 @@ import type { Meta, StoryObj } from "@storybook/react"
 import { robotoRegular } from "@/sawyer-ui/app/fonts"
 import "@/sawyer-ui/app/globals.css"
 
-import UiLayoutSectionContainer from "./UiLayoutSectionContainer"
+import UiLayoutPaper from "./UiLayoutPaper"
 
-const meta: Meta<typeof UiLayoutSectionContainer> = {
-  title: "Layout/UiLayoutSectionContainer",
-  component: UiLayoutSectionContainer,
+const meta: Meta<typeof UiLayoutPaper> = {
+  title: "Layout/UiLayoutPaper",
+  component: UiLayoutPaper,
   tags: ["autodocs"],
   argTypes: {
     isNoPadding: {
@@ -28,7 +28,7 @@ const meta: Meta<typeof UiLayoutSectionContainer> = {
       </div>
     ),
   ],
-} satisfies Meta<typeof UiLayoutSectionContainer>
+} satisfies Meta<typeof UiLayoutPaper>
 
 export default meta
 

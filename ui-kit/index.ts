@@ -6,11 +6,11 @@ import UiModal from "./basic/UiModal"
 import UiTypography from "./basic/UiTypography"
 import UiTextGradient from "./basic/UiTextGradient"
 import UiDetails from "./basic/UiDetails"
-import UiCodeFormat from "./basic/UiCodeFormat"
+import UiJsonFormatter from "./basic/UiJsonFormatter"
 // Layout
 import UiLayoutCards, { IUiLayoutCardsItems } from "./layout/UiLayoutCards"
 import UiLayoutSection from "./layout/UiLayoutSection"
-import UiLayoutSectionContainer from "./layout/UiLayoutSectionContainer"
+import UiLayoutPaper from "./layout/UiLayoutPaper"
 // Menu
 import UiMenuItemGroup from "./menu/UiMenuItemGroup"
 import UiMenuItemHash from "./menu/UiMenuItemHash"
@@ -29,11 +29,11 @@ export {
   UiTypography,
   UiTextGradient,
   UiDetails,
-  UiCodeFormat,
+  UiJsonFormatter,
   // Layout
   UiLayoutCards,
   UiLayoutSection,
-  UiLayoutSectionContainer,
+  UiLayoutPaper,
   // Menu
   UiMenuItemGroup,
   UiMenuItemHash,
