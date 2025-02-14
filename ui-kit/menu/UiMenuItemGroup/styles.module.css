@@ -1,4 +1,4 @@
-.link a {
+.linkRoutes a {
   width: 100%;
   text-decoration: none;
   color: var(--color-black-lighter);
@@ -6,14 +6,23 @@
   width: 100%;
   text-align: left;
 }
-.link button {
+.linkRoutes button {
   width: 100%;
   justify-content: flex-start;
 }
-.link button:hover {
+.linkRoutes button:hover {
   background-color: transparent;
 }
-.link button span {
+.linkRoutes button span {
   width: 100%;
   text-align: left;
+}
+
+/*  */
+
+.linkLinks {
+  width: 100%;
+  text-decoration: none;
+  color: var(--color-black-lighter);
+  display: block;
 }

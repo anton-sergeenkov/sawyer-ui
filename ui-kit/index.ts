@@ -11,12 +11,10 @@ import UiLayoutCards, { IUiLayoutCardsItems } from "./layout/UiLayoutCards"
 import UiLayoutSection from "./layout/UiLayoutSection"
 import UiLayoutSectionContainer from "./layout/UiLayoutSectionContainer"
 // Menu
-import UiMenuItemGroupLinks from "./menu/UiMenuItemGroupLinks"
-import UiMenuItemGroupRoutes from "./menu/UiMenuItemGroupRoutes"
+import UiMenuItemGroup from "./menu/UiMenuItemGroup"
 import UiMenuItemHash from "./menu/UiMenuItemHash"
 import UiMenuItemRoutes from "./menu/UiMenuItemRoutes"
 import UiMenuNavButton from "./menu/UiMenuNavButton"
-import UiMenuNavToggle from "./menu/UiMenuNavToggle"
 // Surfaces
 import UiOptions from "./surfaces/UiOptions"
 import UiSocialLinks, { IUiSocialLinksList } from "./surfaces/UiSocialLinks"
@@ -35,12 +33,10 @@ export {
   UiLayoutSection,
   UiLayoutSectionContainer,
   // Menu
-  UiMenuItemGroupLinks,
-  UiMenuItemGroupRoutes,
+  UiMenuItemGroup,
   UiMenuItemHash,
   UiMenuItemRoutes,
   UiMenuNavButton,
-  UiMenuNavToggle,
   // Surfaces
   UiOptions,
   UiSocialLinks,

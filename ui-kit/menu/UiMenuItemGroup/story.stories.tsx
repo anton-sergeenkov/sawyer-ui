@@ -3,8 +3,8 @@ import type { Meta, StoryObj } from "@storybook/react"
 import { robotoRegular } from "@/sawyer-ui/app/fonts"
 import "@/sawyer-ui/app/globals.css"
 
-import UiMenuItemGroupRoutes from "./UiMenuItemGroupRoutes"
-import { options } from "../UiMenuNavButton/UiMenuNavButton"
+import UiMenuItemGroup, { options } from "./UiMenuItemGroup"
+import { options as optionsMenuNavButton } from "../UiMenuNavButton/UiMenuNavButton"
 
 const items = [
   {
@@ -17,13 +17,17 @@ const items = [
   },
 ]
 
-const meta: Meta<typeof UiMenuItemGroupRoutes> = {
-  title: "Menu/UiMenuItemGroupRoutes",
-  component: UiMenuItemGroupRoutes,
+const meta: Meta<typeof UiMenuItemGroup> = {
+  title: "Menu/UiMenuItemGroup",
+  component: UiMenuItemGroup,
   tags: ["autodocs"],
   argTypes: {
     theme: {
-      options: options.theme,
+      options: optionsMenuNavButton.theme,
+      control: { type: "radio" },
+    },
+    type: {
+      options: options.type,
       control: { type: "radio" },
     },
     isAccent: {
@@ -32,6 +36,7 @@ const meta: Meta<typeof UiMenuItemGroupRoutes> = {
   },
   args: {
     theme: "light-blue",
+    type: "routes",
     list: items,
     title: "Menu",
     isAccent: false,
@@ -46,7 +51,7 @@ const meta: Meta<typeof UiMenuItemGroupRoutes> = {
       </div>
     ),
   ],
-} satisfies Meta<typeof UiMenuItemGroupRoutes>
+} satisfies Meta<typeof UiMenuItemGroup>
 
 export default meta
 
