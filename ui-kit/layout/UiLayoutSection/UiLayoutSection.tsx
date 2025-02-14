@@ -13,24 +13,33 @@ interface IProps {
   theme?: TTheme
   className?: string
   children: React.ReactNode
-  isTopSpacing?: boolean
+  isSpacingY?: boolean
+  isSpacingX?: boolean
 }
 
 const UiLayoutSection: React.FC<IProps> = (props) => {
-  const { theme, className, isTopSpacing, children } = props
+  const {
+    theme,
+    className,
+    children,
+    isSpacingY = true,
+    isSpacingX = true,
+  } = props
 
   const stylesTheme = checkTheme(theme, styles)
 
   return (
-    <div
-      className={cn(
-        styles.section,
-        isTopSpacing ? styles.sectionTopSpacing : {},
-        stylesTheme,
-        className,
-      )}
-    >
-      {children}
+    <div className={cn(styles.wrapper, className)}>
+      <div
+        className={cn(
+          styles.section,
+          isSpacingY && styles.sectionPaddingY,
+          isSpacingX && styles.sectionPaddingX,
+          stylesTheme,
+        )}
+      >
+        {children}
+      </div>
     </div>
   )
 }

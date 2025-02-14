@@ -14,9 +14,6 @@ const meta: Meta<typeof UiLayoutSection> = {
       options: options.theme,
       control: { type: "radio" },
     },
-    isTopSpacing: {
-      control: { type: "boolean" },
-    },
   },
   args: {
     children:
@@ -41,6 +38,5 @@ type Story = StoryObj<typeof meta>
 export const Basic: Story = {
   args: {
     theme: "header-footer",
-    isTopSpacing: false,
   },
 }

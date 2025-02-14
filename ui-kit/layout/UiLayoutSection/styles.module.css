@@ -1,23 +1,22 @@
+/***************************************************
+SECTION
+/***************************************************/
 .section {
   max-width: 1200px;
   margin: auto;
-  margin-bottom: var(--spacing-blocks);
-  padding: 0 40px;
 }
-
-.sectionTopSpacing {
-  margin-top: var(--spacing-blocks);
+.sectionPaddingY {
+  padding-top: var(--spacing-blocks);
+  padding-bottom: var(--spacing-blocks);
 }
-
-.item--header-footer {
-  margin-bottom: 0;
+.sectionPaddingX {
+  padding-left: var(--spacing-blocks);
+  padding-right: var(--spacing-blocks);
 }
 
 /***************************************************
-ADAPTIVE
+THEME
 /***************************************************/
-@media screen and (max-width: 600px) {
-  .section {
-    padding: 0 20px;
-  }
+.item--header-footer {
+  margin-bottom: 0;
 }

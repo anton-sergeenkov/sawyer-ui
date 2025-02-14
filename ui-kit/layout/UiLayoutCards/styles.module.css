@@ -10,6 +10,7 @@
   border-radius: var(--border-radius);
   /* background-image: var(--gradient-sea); */
   background-color: var(--color-white);
+  /* border: 1px solid var(--color-gray-30); */
 
   .logo {
     display: block;
