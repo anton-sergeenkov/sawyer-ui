@@ -6,6 +6,7 @@ import UiModal from "./basic/UiModal"
 import UiTypography from "./basic/UiTypography"
 import UiTextGradient from "./basic/UiTextGradient"
 import UiDetails from "./basic/UiDetails"
+import UiCodeFormat from "./basic/UiCodeFormat"
 // Layout
 import UiLayoutCards, { IUiLayoutCardsItems } from "./layout/UiLayoutCards"
 import UiLayoutSection from "./layout/UiLayoutSection"
@@ -28,6 +29,7 @@ export {
   UiTypography,
   UiTextGradient,
   UiDetails,
+  UiCodeFormat,
   // Layout
   UiLayoutCards,
   UiLayoutSection,
