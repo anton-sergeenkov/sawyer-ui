@@ -9,14 +9,9 @@ import UiMenuNavButton, {
 } from "@/sawyer-ui/ui-kit/menu/UiMenuNavButton"
 import type { IMenuItem } from "@/sawyer-ui/types/common"
 
-// import styles from "./styles.module.css"
+import { IChildComponentProps } from "../../types/types"
 
-// TODO: Interface
-export interface IChildComponentProps {
-  theme?: TThemeMenuButton
-  list: IMenuItem[]
-  onClose: () => void
-}
+// import styles from "./styles.module.css"
 
 interface IProps {
   theme?: TThemeMenuButton

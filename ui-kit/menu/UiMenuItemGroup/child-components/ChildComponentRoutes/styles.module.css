@@ -1,0 +1,19 @@
+.linkRoutes a {
+  width: 100%;
+  text-decoration: none;
+  color: var(--color-black-lighter);
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+.linkRoutes button {
+  width: 100%;
+  justify-content: flex-start;
+}
+.linkRoutes button:hover {
+  background-color: transparent;
+}
+.linkRoutes button span {
+  width: 100%;
+  text-align: left;
+}
