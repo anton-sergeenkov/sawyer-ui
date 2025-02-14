@@ -1,12 +1,7 @@
 # TODO
 
-## ⭐️ Элементы Ui-Kit
-- UiMenuItemGroupLinks
-- UiMenuItemGroupRoutes
-
-----
-
 ## ⭐️ Ui-Kit
+
 **Основное**
 - Ui-Kit из mt-ui
 

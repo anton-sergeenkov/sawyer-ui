@@ -14,11 +14,6 @@ export interface IMenuItem {
   disabled?: string
 }
 
-export interface IMenuGroupItems {
-  title: string
-  items: IMenuItem[]
-}
-
 export type TOnClick = (event: React.SyntheticEvent) => void | null
 
 export interface IListCommon {

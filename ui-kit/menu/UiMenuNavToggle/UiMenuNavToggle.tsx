@@ -7,23 +7,21 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown"
 import UiMenuNavButton, {
   TTheme as TThemeMenuButton,
 } from "@/sawyer-ui/ui-kit/menu/UiMenuNavButton"
-import type { IMenuItem, IMenuGroupItems } from "@/sawyer-ui/types/common"
+import type { IMenuItem } from "@/sawyer-ui/types/common"
 
 // import styles from "./styles.module.css"
-
-type TList = IMenuItem[] | IMenuGroupItems
 
 // TODO: Interface
 export interface IChildComponentProps {
   theme?: TThemeMenuButton
-  list: TList
+  list: IMenuItem[]
   onClose: () => void
 }
 
 interface IProps {
   theme?: TThemeMenuButton
   className?: string
-  list: TList
+  list: IMenuItem[]
   title: string
   isAccent?: boolean
   Component: React.ComponentType<IChildComponentProps>

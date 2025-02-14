@@ -17,7 +17,7 @@ const ChildComponent: React.FC<IChildComponentProps> = (props) => {
 
   return (
     <>
-      {(list as IMenuItem[]).map((element, index) => (
+      {list.map((element, index) => (
         <div className={styles.link} key={index}>
           <MenuItem onClick={onClose} sx={styleMenuItem}>
             <UiMenuItemRoutes theme={theme} item={element} isTextLeft={true} />
