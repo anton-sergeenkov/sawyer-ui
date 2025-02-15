@@ -18,7 +18,7 @@ const meta: Meta<typeof UiLink> = {
   args: {
     href: "https://fonts.google.com/",
     children: "Link",
-    theme: "blue-underlined-thin",
+    theme: "blue-underlined",
   },
   decorators: [
     (Story) => (

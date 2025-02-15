@@ -1,7 +1,7 @@
 /***************************************************
 THEME
 /***************************************************/
-.item--blue-underlined-thin {
+.item--blue-underlined {
   --color: var(--color-blue);
   color: var(--color);
   background: linear-gradient(to bottom, var(--color) 50%, var(--color) 50%);
@@ -12,6 +12,11 @@ THEME
   background: linear-gradient(to bottom, var(--color) 50%, var(--color) 50%);
 }
 
+/***************************************************
+ITEM
+/***************************************************/
+
+/* Should be after Theme */
 .item {
   justify-content: flex-start;
   align-items: flex-start;

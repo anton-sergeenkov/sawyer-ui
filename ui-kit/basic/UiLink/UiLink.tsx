@@ -4,10 +4,10 @@ import { checkTheme } from "../../utils"
 import styles from "./styles.module.css"
 
 export const options = {
-  theme: ["blue-underlined-thin", "dark-underlined"],
+  theme: ["blue-underlined", "dark-underlined"],
 }
 
-export type TTheme = "blue-underlined-thin" | "dark-underlined"
+export type TTheme = "blue-underlined" | "dark-underlined"
 
 interface IProps {
   theme?: TTheme
