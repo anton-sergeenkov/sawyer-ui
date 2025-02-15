@@ -7,6 +7,8 @@ type TLocalTheme = TTheme | undefined
 
 export const getTheme = (theme: TLocalTheme) => {
   switch (theme) {
+    case "basic":
+      return themeDefault
     case "light-blue":
       return themeLightBlue
     default:

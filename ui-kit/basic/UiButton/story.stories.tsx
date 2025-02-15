@@ -36,7 +36,6 @@ const meta: Meta<typeof UiButton> = {
     },
   },
   args: {
-    onClick: fn(),
     theme: "basic",
     children: "Button Content",
     variant: "contained",
@@ -44,6 +43,7 @@ const meta: Meta<typeof UiButton> = {
     size: "small",
     disabled: false,
     isMenuButton: false,
+    onClick: fn(),
   },
   decorators: [
     (Story) => (

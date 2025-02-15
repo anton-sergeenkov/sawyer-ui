@@ -13,13 +13,11 @@ export const options = {
 
 type TTheme = "light" | "dark"
 
-// TODO: Interface
 interface IUiLayoutCardsItemsLinks {
   name: string
   link: string
 }
 
-// TODO: Interface
 export interface IUiLayoutCardsItems {
   title: string
   link: string

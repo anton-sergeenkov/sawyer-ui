@@ -39,10 +39,10 @@ const meta: Meta<typeof UiLayoutCards> = {
     },
   },
   args: {
-    items,
-    isOptions: false,
     theme: "light",
     themeLink: "dark-underlined",
+    items,
+    isOptions: true,
   },
   decorators: [
     (Story) => (
@@ -61,8 +61,5 @@ export default meta
 type Story = StoryObj<typeof meta>
 
 export const Basic: Story = {
-  args: {
-    isOptions: true,
-    theme: "light",
-  },
+  args: {},
 }

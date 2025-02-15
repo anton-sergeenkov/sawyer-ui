@@ -4,10 +4,10 @@ import { checkTheme } from "../../utils"
 import styles from "./styles.module.css"
 
 export const options = {
-  theme: ["header-footer"],
+  theme: ["basic", "header-footer"],
 }
 
-type TTheme = "header-footer"
+type TTheme = "basic" | "header-footer"
 
 interface IProps {
   theme?: TTheme
@@ -20,7 +20,7 @@ interface IProps {
 
 const UiLayoutSection: React.FC<IProps> = (props) => {
   const {
-    theme,
+    theme = "basic",
     className,
     children,
     isSpacingX = true,

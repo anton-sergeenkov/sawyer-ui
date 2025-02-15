@@ -17,6 +17,8 @@
 /***************************************************
 THEME
 /***************************************************/
+.item--basic {
+}
 .item--black {
   background-color: #3f3f3f !important;
   color: #fff !important;

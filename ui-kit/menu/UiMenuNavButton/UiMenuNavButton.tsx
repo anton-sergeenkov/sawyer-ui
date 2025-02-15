@@ -7,10 +7,10 @@ import { TOnClick } from "@/sawyer-ui/types/common"
 // import styles from "./styles.module.css"
 
 export const options = {
-  theme: ["light-blue"],
+  theme: ["basic", "light-blue"],
 }
 
-export type TTheme = "light-blue"
+export type TTheme = "basic" | "light-blue"
 
 interface IProps {
   className?: string
@@ -29,7 +29,7 @@ const UiMenuNavButton: React.FC<IProps> = (props) => {
   const {
     className,
     children,
-    theme,
+    theme = "basic",
     isAccent,
     isActive,
     isHoverTransparent = false,

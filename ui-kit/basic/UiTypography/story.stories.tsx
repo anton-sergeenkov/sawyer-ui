@@ -20,8 +20,8 @@ const meta: Meta<typeof UiTypography> = {
     },
   },
   args: {
-    children: "Typography",
     theme: "dark-filled",
+    children: "Typography",
   },
   decorators: [
     (Story) => (
