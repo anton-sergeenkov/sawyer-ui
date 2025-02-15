@@ -1,8 +1,6 @@
 # TODO
 
-**UiButton**
-- Отдельная тема для menu элементов
-- Тема "item--black" и "item--white"
+- UiButton. Отдельная тема для menu элементов
 
 ## ⭐️ Ui-Kit
 

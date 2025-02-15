@@ -12,6 +12,10 @@ const meta: Meta<typeof UiButton> = {
   component: UiButton,
   tags: ["autodocs"],
   argTypes: {
+    theme: {
+      options: options.theme,
+      control: { type: "radio" },
+    },
     variant: {
       options: options.variant,
       control: { type: "radio" },
@@ -31,6 +35,7 @@ const meta: Meta<typeof UiButton> = {
   args: {
     onClick: fn(),
     disabled: false,
+    theme: "black",
     children: "Button Content",
     variant: "contained",
     color: "primary",
