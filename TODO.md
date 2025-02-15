@@ -11,14 +11,17 @@
 
 ----
 
-## ⭐️ Components
+## Редизайн
 
 **Header**
 Вынести в Ui-Kit
 Примеры:
-- https://reactcosmos.org/
-- https://stenciljs.com/
-- https://vite.dev/
+- https://reactcosmos.org/ - Light Theme
+- https://vite.dev/ - Dark Theme
+
+----
+
+## ⭐️ Components
 
 **Footer**
 - Вынести в Ui-Kit

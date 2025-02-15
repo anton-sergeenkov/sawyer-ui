@@ -15,6 +15,7 @@ interface IProps {
   children: React.ReactNode
   isSpacingX?: boolean
   isSpacingY?: boolean
+  fullWidth?: boolean
 }
 
 const UiLayoutSection: React.FC<IProps> = (props) => {
@@ -24,6 +25,7 @@ const UiLayoutSection: React.FC<IProps> = (props) => {
     children,
     isSpacingX = true,
     isSpacingY = true,
+    fullWidth = false,
   } = props
 
   const stylesTheme = checkTheme(theme, styles)
@@ -32,7 +34,7 @@ const UiLayoutSection: React.FC<IProps> = (props) => {
     <div className={cn(styles.wrapper, className)}>
       <div
         className={cn(
-          styles.section,
+          !fullWidth && styles.sectionMaxWidth,
           isSpacingX && styles.sectionPaddingX,
           isSpacingY && styles.sectionPaddingY,
           stylesTheme,

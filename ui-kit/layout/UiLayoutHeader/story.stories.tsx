@@ -11,9 +11,12 @@ const meta: Meta<typeof UiLayoutHeader> = {
   title: "Layout/UiLayoutHeader",
   component: UiLayoutHeader,
   tags: ["autodocs"],
-
+  argTypes: {
+    fullWidth: { control: { type: "boolean" } },
+  },
   args: {
     children: <Header />,
+    fullWidth: false,
   },
   decorators: [
     (Story) => (
