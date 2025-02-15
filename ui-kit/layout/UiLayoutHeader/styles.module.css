@@ -1,0 +1,29 @@
+.wrapper {
+  background-color: var(--color-white);
+  border-bottom: 1px solid var(--color-gray-30);
+}
+.container {
+  height: var(--height-header);
+  display: flex;
+  align-items: center;
+}
+
+/***************************************************
+COMMON
+/***************************************************/
+.container ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+.container ul li {
+  margin-right: 15px;
+  list-style-type: none;
+}
+.container ul li:last-child {
+  margin-right: 0;
+}
+.container ul li a {
+  text-decoration: none;
+}

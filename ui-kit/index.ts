@@ -11,6 +11,7 @@ import UiJsonFormatter from "./basic/UiJsonFormatter"
 import UiLayoutCards, { IUiLayoutCardsItems } from "./layout/UiLayoutCards"
 import UiLayoutSection from "./layout/UiLayoutSection"
 import UiLayoutPaper from "./layout/UiLayoutPaper"
+import UiLayoutHeader from "./layout/UiLayoutHeader"
 // Menu
 import UiMenuItemGroup from "./menu/UiMenuItemGroup"
 import UiMenuItemHash from "./menu/UiMenuItemHash"
@@ -34,6 +35,7 @@ export {
   UiLayoutCards,
   UiLayoutSection,
   UiLayoutPaper,
+  UiLayoutHeader,
   // Menu
   UiMenuItemGroup,
   UiMenuItemHash,
