@@ -14,10 +14,9 @@
 ## Редизайн
 
 **Header**
-Вынести в Ui-Kit
 Примеры:
 - https://reactcosmos.org/ - Light Theme
-- https://vite.dev/ - Dark Theme
+- https://vite.dev/ - Dark Theme (fixed menu, blur background)
 
 ----
 
