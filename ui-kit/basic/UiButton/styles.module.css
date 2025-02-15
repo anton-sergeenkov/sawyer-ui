@@ -2,6 +2,7 @@
   font-size: 14px !important;
   text-transform: none !important;
   border-radius: 20px !important;
+  transition: 0.4s !important;
 }
 
 .buttonBasic {

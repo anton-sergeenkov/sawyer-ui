@@ -16,12 +16,9 @@ const CONFIG_COLORS = {
 // Button
 const StylesButtonDefault = {
   color: CONFIG_COLORS.default.color,
-  textTransform: "none",
-  borderRadius: "20px",
   backgroundColor: "transparent",
   width: "auto",
   padding: "4px 10px",
-  transition: ".4s",
   ":hover": {
     backgroundColor: CONFIG_COLORS.default.bgHover,
   },
