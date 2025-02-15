@@ -2,7 +2,11 @@
   font-size: 14px !important;
   text-transform: none !important;
   border-radius: 20px !important;
+}
+
+.buttonBasic {
   /* padding: 6px 16px !important; */
+  border: 1px solid #000;
 }
 
 .button:disabled {
@@ -13,8 +17,6 @@
 /***************************************************
 THEME
 /***************************************************/
-.item--menu {
-}
 .item--black {
   background-color: #3f3f3f !important;
   color: #fff !important;

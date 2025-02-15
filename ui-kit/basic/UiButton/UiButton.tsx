@@ -15,7 +15,7 @@ export const options = {
   color: ["primary", "secondary", "success", "error", "info", "warning"],
 }
 
-type TTheme = "menu" | "black" | "white"
+type TTheme = "black" | "white"
 type TVariant = "text" | "outlined" | "contained"
 type TSize = "small" | "medium" | "large"
 type TColor = "primary" | "secondary" | "success" | "error" | "info" | "warning"
@@ -30,6 +30,7 @@ interface IProps {
   sx?: SxProps<Theme>
   endIcon?: React.ReactNode
   disabled?: boolean
+  isMenuButton?: boolean
   onClick: TOnClick
 }
 
@@ -44,6 +45,7 @@ const UiButton: React.FC<IProps> = (props) => {
     sx = {},
     endIcon = null,
     disabled = false,
+    isMenuButton = false,
     onClick,
   } = props
 
@@ -51,7 +53,12 @@ const UiButton: React.FC<IProps> = (props) => {
 
   return (
     <MUIButton
-      className={cn(styles.button, stylesTheme, className)}
+      className={cn(
+        !isMenuButton && styles.buttonBasic,
+        styles.button,
+        stylesTheme,
+        className,
+      )}
       variant={variant}
       size={size}
       color={color}

@@ -31,15 +31,19 @@ const meta: Meta<typeof UiButton> = {
     disabled: {
       control: { type: "boolean" },
     },
+    isMenuButton: {
+      control: { type: "boolean" },
+    },
   },
   args: {
     onClick: fn(),
-    disabled: false,
     theme: "black",
     children: "Button Content",
     variant: "contained",
     color: "primary",
     size: "small",
+    disabled: false,
+    isMenuButton: false,
   },
   decorators: [
     (Story) => (

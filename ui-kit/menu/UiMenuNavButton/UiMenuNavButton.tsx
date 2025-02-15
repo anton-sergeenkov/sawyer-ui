@@ -57,6 +57,7 @@ const UiMenuNavButton: React.FC<IProps> = (props) => {
       endIcon={endIcon}
       disabled={disabled}
       onClick={onClick}
+      isMenuButton
     >
       <div style={stylesText}>{children}</div>
     </UiButton>
