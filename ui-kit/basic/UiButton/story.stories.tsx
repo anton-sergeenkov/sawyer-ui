@@ -16,6 +16,10 @@ const meta: Meta<typeof UiButton> = {
       options: options.variant,
       control: { type: "radio" },
     },
+    color: {
+      options: options.color,
+      control: { type: "radio" },
+    },
     size: {
       options: options.size,
       control: { type: "radio" },
@@ -27,7 +31,10 @@ const meta: Meta<typeof UiButton> = {
   args: {
     onClick: fn(),
     disabled: false,
-    children: "Button",
+    children: "Button Content",
+    variant: "contained",
+    color: "primary",
+    size: "small",
   },
   decorators: [
     (Story) => (

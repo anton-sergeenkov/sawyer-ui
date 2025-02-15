@@ -1,3 +1,23 @@
 .button {
   font-size: 14px !important;
+  text-transform: none !important;
+  border-radius: 20px !important;
+  /* padding: 6px 16px !important; */
+}
+
+.button:disabled {
+  background-color: var(--color-gray-35) !important;
+  color: var(--color-gray-60) !important;
+}
+
+/***************************************************
+THEME
+/***************************************************/
+.item--black {
+  background-color: #3f3f3f !important;
+  color: #fff !important;
+}
+.item--white {
+  background-color: #fff !important;
+  color: #616161 !important;
 }

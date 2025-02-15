@@ -11,7 +11,8 @@ export interface IStaticImageData {
 export interface IMenuItem {
   title: string
   path: string
-  disabled?: string
+  // FIXME: not correct
+  disabled?: boolean
 }
 
 export type TOnClick = (event: React.SyntheticEvent) => void | null

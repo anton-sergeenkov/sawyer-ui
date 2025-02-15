@@ -10,15 +10,18 @@ import styles from "./styles.module.css"
 export const options = {
   variant: ["text", "outlined", "contained"],
   size: ["small", "medium", "large"],
+  color: ["primary", "secondary", "success", "error", "info", "warning"],
 }
 
 type TVariant = "text" | "outlined" | "contained"
 type TSize = "small" | "medium" | "large"
+type TColor = "primary" | "secondary" | "success" | "error" | "info" | "warning"
 
 interface IProps {
   children: React.ReactNode
   variant?: TVariant
   size?: TSize
+  color?: TColor
   className?: string
   sx?: SxProps<Theme>
   endIcon?: React.ReactNode
@@ -31,6 +34,7 @@ const UiButton: React.FC<IProps> = (props) => {
     children,
     variant = "contained",
     size = "small",
+    color = "primary",
     className,
     sx = {},
     endIcon = null,
@@ -42,6 +46,7 @@ const UiButton: React.FC<IProps> = (props) => {
     <MUIButton
       variant={variant}
       size={size}
+      color={color}
       className={cn(className, styles.button)}
       sx={sx}
       endIcon={endIcon}
