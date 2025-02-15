@@ -9,13 +9,13 @@ import styles from "./styles.module.css"
 // https://mui.com/material-ui/api/button/
 
 export const options = {
-  theme: ["menu", "black", "white"],
+  theme: ["basic", "black", "white"],
   variant: ["text", "outlined", "contained"],
   size: ["small", "medium", "large"],
   color: ["primary", "secondary", "success", "error", "info", "warning"],
 }
 
-type TTheme = "black" | "white"
+type TTheme = "basic" | "black" | "white"
 type TVariant = "text" | "outlined" | "contained"
 type TSize = "small" | "medium" | "large"
 type TColor = "primary" | "secondary" | "success" | "error" | "info" | "warning"
@@ -38,7 +38,7 @@ const UiButton: React.FC<IProps> = (props) => {
   const {
     children,
     className,
-    theme,
+    theme = "basic",
     variant = "contained",
     size = "small",
     color = "primary",

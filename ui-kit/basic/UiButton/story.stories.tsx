@@ -37,7 +37,7 @@ const meta: Meta<typeof UiButton> = {
   },
   args: {
     onClick: fn(),
-    theme: "black",
+    theme: "basic",
     children: "Button Content",
     variant: "contained",
     color: "primary",
