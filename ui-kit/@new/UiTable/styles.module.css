@@ -1,0 +1,19 @@
+.wrapper {
+  border: 1px solid #c4c4c4;
+  box-shadow: none !important;
+  min-width: 150px !important;
+}
+.table {
+  cursor: default;
+}
+.cellHeader {
+  background-color: #f4f5f6;
+}
+.cellHeader,
+.cell {
+  padding: 6px 10px !important;
+  font-size: 13px !important;
+}
+.cellAlignCenter {
+  text-align: center !important;
+}

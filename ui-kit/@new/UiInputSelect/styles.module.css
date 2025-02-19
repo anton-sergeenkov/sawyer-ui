@@ -1,0 +1,8 @@
+.input {
+  background-color: #fff !important;
+  min-width: 250px !important;
+}
+.title {
+  color: #7d7d7d;
+  margin-bottom: var(--gap-small);
+}

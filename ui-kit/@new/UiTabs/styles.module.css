@@ -1,0 +1,16 @@
+.wrapper {
+  /* border: 1px solid #d7d7d7; */
+  /* border-radius: 10px; */
+  /* overflow: hidden; */
+}
+.tab {
+  text-transform: none !important;
+}
+.tabs {
+  border-bottom: 1px solid #d7d7d7;
+  /* background: #fff; */
+}
+.panel {
+  padding: var(--gap-large) var(--gap-normal);
+  padding-bottom: 0;
+}

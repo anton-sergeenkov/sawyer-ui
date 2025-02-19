@@ -1,0 +1,17 @@
+.chip {
+  font-size: 10px !important;
+  height: auto !important;
+  padding: 2px 4px !important;
+  text-transform: uppercase;
+  border-radius: 10px !important;
+}
+.chip span {
+  padding: 0 !important;
+}
+
+.success {
+  background-color: #c3f0ce !important;
+}
+.error {
+  background-color: #efc3c3 !important;
+}
