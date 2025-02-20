@@ -1,14 +1,12 @@
-import { UiTypography } from "@/ui-kit/index";
-
-import styles from "./styles.module.css";
+import styles from "./styles.module.css"
 
 interface IProps {
-  items: string[] | React.ReactNode[];
-  title?: string;
+  items: string[] | React.ReactNode[]
+  title?: string
 }
 
 const UiList: React.FC<IProps> = (props) => {
-  const { items, title } = props;
+  const { items, title } = props
 
   const render = (
     <ul className={styles.list}>
@@ -16,22 +14,20 @@ const UiList: React.FC<IProps> = (props) => {
         <li key={index}>{element}</li>
       ))}
     </ul>
-  );
+  )
 
   if (title) {
     return (
       <div>
-        <UiTypography tag="comment" className={styles.header}>
-          {title}
-        </UiTypography>
+        <div className={styles.header}>{title}</div>
         {render}
       </div>
-    );
+    )
   }
 
-  return render;
-};
+  return render
+}
 
-export default UiList;
+export default UiList
 
 // <UiList items={list} />

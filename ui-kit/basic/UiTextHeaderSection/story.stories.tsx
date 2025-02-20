@@ -3,24 +3,20 @@ import type { Meta, StoryObj } from "@storybook/react"
 import { robotoRegular } from "@/sawyer-ui/app/fonts"
 import "@/sawyer-ui/app/globals.css"
 
-import UiTypography, { options } from "./UiTypography"
+import UiTextHeaderSection, { options } from "./UiTextHeaderSection"
 
-const meta: Meta<typeof UiTypography> = {
-  title: "Basic/UiTypography",
-  component: UiTypography,
+const meta: Meta<typeof UiTextHeaderSection> = {
+  title: "Basic/UiTextHeaderSection",
+  component: UiTextHeaderSection,
   tags: ["autodocs"],
   argTypes: {
-    tag: {
-      options: options.tag,
+    theme: {
+      options: options.theme,
       control: { type: "radio" },
-    },
-    noSpacing: {
-      control: { type: "boolean" },
     },
   },
   args: {
-    tag: "h1",
-    noSpacing: false,
+    theme: "dark-filled",
     children: "Typography",
   },
   decorators: [
@@ -29,6 +25,8 @@ const meta: Meta<typeof UiTypography> = {
         className={robotoRegular.className}
         style={{
           backgroundColor: "#f5f8f7",
+          // padding: "10px",
+          // border: "1px solid #000",
         }}
       >
         <div style={{ backgroundColor: "#fff" }}>
@@ -38,7 +36,7 @@ const meta: Meta<typeof UiTypography> = {
       </div>
     ),
   ],
-} satisfies Meta<typeof UiTypography>
+} satisfies Meta<typeof UiTextHeaderSection>
 
 export default meta
 

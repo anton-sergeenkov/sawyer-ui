@@ -1,45 +1,38 @@
+/***************************************************
+TAGS
+/***************************************************/
 .h1 {
   font-size: 25px;
-  margin: 0;
   text-align: left;
+  margin-top: 0;
+  margin-bottom: var(--spacing-headers);
 }
 
 .h2 {
-  display: flex;
-  margin: 0;
-  margin-bottom: var(--spacing-blocks);
-  user-select: none;
-
-  .item {
-    padding: 2px 15px;
-    font-size: 22px;
-  }
+  font-size: 22px;
+  margin-top: 0;
+  margin-bottom: var(--spacing-headers);
 }
 
 .h3 {
   font-size: 18px;
-  margin: 0;
   text-align: left;
+  margin-top: 0;
+  margin-bottom: var(--spacing-headers);
 }
 
 .p {
-  padding: 6px 0;
+  padding: var(--spacing-small) 0;
   margin: 0;
 }
 
-/***************************************************
-THEME
-/***************************************************/
-.h2 .item--dark-filled {
-  border-radius: var(--border-radius-chip);
-  background-color: var(--color-black-lighter);
-  color: var(--color-white);
-  font-size: 17px;
+.comment {
+  color: var(--color-gray-80);
 }
 
-.h2 .item--light-outline {
-  border: 1px solid var(--color-black-lighter);
-  border-radius: var(--border-radius-chip);
-  color: var(--color-black-lighter);
-  font-size: 17px;
+/***************************************************
+MAIN
+/***************************************************/
+.noSpacing {
+  margin: 0;
 }

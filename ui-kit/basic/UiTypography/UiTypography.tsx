@@ -1,49 +1,71 @@
 import cn from "classnames"
-import { checkTheme } from "../../utils"
 import { robotoLight } from "@/sawyer-ui/app/fonts"
 
 import styles from "./styles.module.css"
 
 export const options = {
-  theme: ["dark-filled", "light-outline"],
-  tag: ["h1", "h2", "h3", "p"],
+  tag: ["h1", "h2", "h3", "p", "comment"],
 }
 
-type TTheme = "dark-filled" | "light-outline"
-type TTag = "h1" | "h2" | "h3" | "p"
+type TTag = "h1" | "h2" | "h3" | "p" | "comment"
 
 interface IProps {
-  theme?: TTheme
   className?: string
   tag?: TTag
+  noSpacing?: boolean
   children: React.ReactNode
 }
 
 const UiTypography: React.FC<IProps> = (props) => {
-  const { theme, className, tag, children } = props
+  const { className, tag, noSpacing = true, children } = props
 
-  const stylesTheme = checkTheme(theme, styles)
+  const classNoSpacing = noSpacing ? styles.noSpacing : ""
 
   switch (tag) {
     case "h1":
       return (
-        <h1 className={cn(styles.h1, robotoLight.className, className)}>
+        <h1
+          className={cn(
+            styles.h1,
+            robotoLight.className,
+            classNoSpacing,
+            className,
+          )}
+        >
           {children}
         </h1>
       )
 
     case "h2":
       return (
-        <h2 className={cn(styles.h2, robotoLight.className, className)}>
-          <span className={cn(styles.item, stylesTheme)}>{children}</span>
+        <h2
+          className={cn(
+            styles.h2,
+            robotoLight.className,
+            classNoSpacing,
+            className,
+          )}
+        >
+          {children}
         </h2>
       )
 
     case "h3":
-      return <h3 className={cn(styles.h3, className)}>{children}</h3>
+      return (
+        <h3 className={cn(styles.h3, classNoSpacing, className)}>{children}</h3>
+      )
 
     case "p":
-      return <p className={cn(styles.p, className)}>{children}</p>
+      return (
+        <p className={cn(styles.p, classNoSpacing, className)}>{children}</p>
+      )
+
+    case "comment":
+      return (
+        <span className={cn(styles.comment, classNoSpacing, className)}>
+          {children}
+        </span>
+      )
 
     default:
       return <>{children}</>
