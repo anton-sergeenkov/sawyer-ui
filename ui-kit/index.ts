@@ -8,6 +8,7 @@ import UiTextGradient from "./basic/UiTextGradient"
 import UiHeaderSection from "./basic/UiHeaderSection"
 import UiDetails from "./basic/UiDetails"
 import UiJsonFormatter from "./basic/UiJsonFormatter"
+import UiNotification from "./basic/UiNotification"
 // Layout
 import UiLayoutCards, { IUiLayoutCardsItems } from "./layout/UiLayoutCards"
 import UiLayoutSection from "./layout/UiLayoutSection"
@@ -33,6 +34,7 @@ export {
   UiHeaderSection,
   UiDetails,
   UiJsonFormatter,
+  UiNotification,
   // Layout
   UiLayoutCards,
   UiLayoutSection,

@@ -1,11 +1,13 @@
 .item {
-  color: #292929;
+  color: var(--color-black-lighter);
   padding: 10px;
   border-radius: 5px;
-
-  margin-top: var(--gap-medium);
+  margin-top: var(--spacing-blocks);
 }
 
+/***************************************************
+THEME
+/***************************************************/
 .item--info {
   border-left: 4px solid #4a91e4;
   color: #0969da;
@@ -27,17 +29,9 @@
   background-color: #f1ebeb;
 }
 
-/* .item ul {
-  list-style: none;
-  padding: 0;
+/***************************************************
+MAIN
+/***************************************************/
+.noSpacing {
   margin: 0;
 }
-.item ul li {
-  margin: 0;
-  padding: 0;
-  line-height: 1.7;
-}
-.item ul li::before {
-  content: "›";
-  margin-right: 10px;
-} */
