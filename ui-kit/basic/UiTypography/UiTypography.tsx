@@ -17,7 +17,7 @@ interface IProps {
 }
 
 const UiTypography: React.FC<IProps> = (props) => {
-  const { className, tag, noSpacing = true, children } = props
+  const { className, tag, noSpacing = false, children } = props
 
   const classNoSpacing = noSpacing ? styles.noSpacing : ""
 
@@ -52,7 +52,16 @@ const UiTypography: React.FC<IProps> = (props) => {
 
     case "h3":
       return (
-        <h3 className={cn(styles.h3, classNoSpacing, className)}>{children}</h3>
+        <h3
+          className={cn(
+            styles.h3,
+            robotoLight.className,
+            classNoSpacing,
+            className,
+          )}
+        >
+          {children}
+        </h3>
       )
 
     case "p":

@@ -5,10 +5,10 @@ import { robotoLight } from "@/sawyer-ui/app/fonts"
 import styles from "./styles.module.css"
 
 export const options = {
-  theme: ["dark-filled", "light-outline"],
+  theme: ["basic", "dark-filled", "light-filled"],
 }
 
-type TTheme = "dark-filled" | "light-outline"
+type TTheme = "basic" | "dark-filled" | "light-filled"
 
 interface IProps {
   theme?: TTheme
@@ -17,13 +17,28 @@ interface IProps {
 }
 
 const UiTextHeaderSection: React.FC<IProps> = (props) => {
-  const { theme, className, children } = props
+  const { theme = "basic", className, children } = props
 
   const stylesTheme = checkTheme(theme, styles)
 
+  if (theme === "dark-filled" || theme === "light-filled") {
+    return (
+      <h2 className={cn(styles.headerFilled, robotoLight.className, className)}>
+        <span className={cn(styles.itemFilled, stylesTheme)}>{children}</span>
+      </h2>
+    )
+  }
+
   return (
-    <h2 className={cn(styles.h2, robotoLight.className, className)}>
-      <span className={cn(styles.item, stylesTheme)}>{children}</span>
+    <h2
+      className={cn(
+        styles.headerBasic,
+        robotoLight.className,
+        className,
+        stylesTheme,
+      )}
+    >
+      {children}
     </h2>
   )
 }

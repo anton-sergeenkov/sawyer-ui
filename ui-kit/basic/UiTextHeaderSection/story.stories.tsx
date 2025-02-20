@@ -16,8 +16,8 @@ const meta: Meta<typeof UiTextHeaderSection> = {
     },
   },
   args: {
-    theme: "dark-filled",
-    children: "Typography",
+    theme: "basic",
+    children: "Header Section",
   },
   decorators: [
     (Story) => (

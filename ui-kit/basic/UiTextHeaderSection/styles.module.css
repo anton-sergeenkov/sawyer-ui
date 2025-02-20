@@ -1,19 +1,27 @@
-.h2 {
+.headerFilled {
   display: flex;
   margin: 0;
   margin-bottom: var(--spacing-blocks);
   user-select: none;
 
-  .item {
+  .itemFilled {
     padding: 2px 15px;
     font-size: 22px;
   }
 }
 
+.headerBasic {
+  font-size: 18px;
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: var(--spacing-blocks);
+  font-weight: 500;
+}
+
 /***************************************************
 THEME
 /***************************************************/
-.h2 .item--dark-filled {
+.headerFilled .item--dark-filled {
   border: 1px solid transparent;
   border-radius: var(--border-radius-chip);
   background-color: var(--color-black-lighter);
@@ -21,9 +29,12 @@ THEME
   font-size: 17px;
 }
 
-.h2 .item--light-outline {
+.headerFilled .item--light-filled {
   border: 1px solid var(--color-black-lighter);
   border-radius: var(--border-radius-chip);
   color: var(--color-black-lighter);
   font-size: 17px;
+}
+
+.headerBasic.item--basic {
 }
