@@ -16,7 +16,7 @@ interface IProps {
   children: React.ReactNode
 }
 
-const UiTextHeaderSection: React.FC<IProps> = (props) => {
+const UiHeaderSection: React.FC<IProps> = (props) => {
   const { theme = "basic", className, children } = props
 
   const stylesTheme = checkTheme(theme, styles)
@@ -43,4 +43,4 @@ const UiTextHeaderSection: React.FC<IProps> = (props) => {
   )
 }
 
-export default UiTextHeaderSection
+export default UiHeaderSection

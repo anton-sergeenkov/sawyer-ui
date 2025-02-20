@@ -3,11 +3,11 @@ import type { Meta, StoryObj } from "@storybook/react"
 import { robotoRegular } from "@/sawyer-ui/app/fonts"
 import "@/sawyer-ui/app/globals.css"
 
-import UiTextHeaderSection, { options } from "./UiTextHeaderSection"
+import UiHeaderSection, { options } from "./UiHeaderSection"
 
-const meta: Meta<typeof UiTextHeaderSection> = {
-  title: "Basic/UiTextHeaderSection",
-  component: UiTextHeaderSection,
+const meta: Meta<typeof UiHeaderSection> = {
+  title: "Basic/UiHeaderSection",
+  component: UiHeaderSection,
   tags: ["autodocs"],
   argTypes: {
     theme: {
@@ -36,7 +36,7 @@ const meta: Meta<typeof UiTextHeaderSection> = {
       </div>
     ),
   ],
-} satisfies Meta<typeof UiTextHeaderSection>
+} satisfies Meta<typeof UiHeaderSection>
 
 export default meta
 

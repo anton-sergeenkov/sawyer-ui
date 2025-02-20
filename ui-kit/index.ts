@@ -5,7 +5,7 @@ import UiLink from "./basic/UiLink"
 import UiModal from "./basic/UiModal"
 import UiTypography from "./basic/UiTypography"
 import UiTextGradient from "./basic/UiTextGradient"
-import UiTextHeaderSection from "./basic/UiTextHeaderSection"
+import UiHeaderSection from "./basic/UiHeaderSection"
 import UiDetails from "./basic/UiDetails"
 import UiJsonFormatter from "./basic/UiJsonFormatter"
 // Layout
@@ -30,7 +30,7 @@ export {
   UiModal,
   UiTypography,
   UiTextGradient,
-  UiTextHeaderSection,
+  UiHeaderSection,
   UiDetails,
   UiJsonFormatter,
   // Layout
