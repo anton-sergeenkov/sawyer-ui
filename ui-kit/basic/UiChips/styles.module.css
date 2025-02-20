@@ -4,7 +4,6 @@
   padding: 2px 12px;
   font-size: 14px;
   margin-right: 5px;
-  background-color: var(--color-gray-10);
 }
 .item:last-child {
   margin-right: 0;
@@ -14,8 +13,17 @@
 THEME
 /***************************************************/
 .item--light {
+  background-color: var(--color-gray-10);
 }
 .item--dark {
   background-color: var(--color-black-opacity-7);
   color: var(--color-gray-10);
+}
+.item--success {
+  background-color: #c3f0ce;
+  color: #2b4131;
+}
+.item--error {
+  background-color: #efc3c3;
+  color: rgb(74, 49, 49);
 }

@@ -6,10 +6,10 @@ import { robotoLight } from "@/sawyer-ui/app/fonts"
 import styles from "./styles.module.css"
 
 export const options = {
-  theme: ["light", "dark"],
+  theme: ["light", "dark", "success", "error"],
 }
 
-type TTheme = "light" | "dark"
+type TTheme = "light" | "dark" | "success" | "error"
 
 interface IProps {
   className?: string
