@@ -1,27 +1,33 @@
 import type { Meta, StoryObj } from "@storybook/react"
+import { fn } from "@storybook/test"
 
 import { robotoRegular } from "@/sawyer-ui/app/fonts"
 import "@/sawyer-ui/app/globals.css"
 
-import UiAlertSimple, { options } from "./UiAlertSimple"
+import UiAlert, { options } from "./UiAlert"
 
-const meta: Meta<typeof UiAlertSimple> = {
-  title: "Alerts/UiAlertSimple",
-  component: UiAlertSimple,
+const meta: Meta<typeof UiAlert> = {
+  title: "Basic/UiAlert",
+  component: UiAlert,
   tags: ["autodocs"],
   argTypes: {
-    theme: {
-      options: options.theme,
+    type: {
+      options: options.type,
       control: { type: "radio" },
     },
-    noSpacing: {
-      control: { type: "boolean" },
+    variant: {
+      options: options.variant,
+      control: { type: "radio" },
     },
+    noSpacing: { control: { type: "boolean" } },
+    isShow: { control: { type: "boolean" } },
   },
   args: {
     children: "Text for Notification",
-    theme: "info",
+    type: "success",
+    variant: "standard",
     noSpacing: true,
+    isShow: true,
   },
   decorators: [
     (Story) => (
@@ -33,7 +39,7 @@ const meta: Meta<typeof UiAlertSimple> = {
       </div>
     ),
   ],
-} satisfies Meta<typeof UiAlertSimple>
+} satisfies Meta<typeof UiAlert>
 
 export default meta
 
@@ -41,4 +47,9 @@ type Story = StoryObj<typeof meta>
 
 export const Basic: Story = {
   args: {},
+}
+export const CloseButton: Story = {
+  args: {
+    setIsShow: fn(),
+  },
 }
