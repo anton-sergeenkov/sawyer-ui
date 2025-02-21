@@ -1,23 +1,24 @@
-import { useEffect, useState } from "react"
-import { Alert } from "@mui/material"
+"use client"
 
-// type TVariant = "outlined" | "standard" | "filled"
-type TType = "success" | "info" | "warning" | "error"
+import UiAlert from "../UiAlert/UiAlert"
+import type { IProps as IAlertProps } from "../UiAlert/UiAlert"
 
-interface IProps {
-  type: TType
+interface IProps extends IAlertProps {
   isShow: boolean
-  children: React.ReactNode
+  setIsShow?: React.Dispatch<React.SetStateAction<boolean>>
 }
 
 export const UiAlertContainer: React.FC<IProps> = (props) => {
-  const { type, isShow, children } = props
-
-  const [showAlert, setShowAlert] = useState<boolean>(false)
-
-  useEffect(() => {
-    setShowAlert(isShow)
-  }, [isShow])
+  const {
+    // Alert
+    type,
+    variant,
+    noSpacing,
+    children,
+    // Alert Container
+    isShow,
+    setIsShow,
+  } = props
 
   if (!isShow) {
     return null
@@ -25,24 +26,18 @@ export const UiAlertContainer: React.FC<IProps> = (props) => {
 
   return (
     <>
-      {showAlert && (
-        <Alert
-          severity={type}
-          onClose={() => setShowAlert(false)}
-          variant="outlined"
-          sx={{ width: "100%" }}
+      {isShow && (
+        <UiAlert
+          type={type}
+          variant={variant}
+          noSpacing={noSpacing}
+          setIsShow={setIsShow}
         >
           {children}
-        </Alert>
+        </UiAlert>
       )}
     </>
   )
 }
 
 export default UiAlertContainer
-
-// const [isSuccess, setIsSuccess] = useState<boolean>(false)
-
-// <UiAlertContainer type="success" isShow={isSuccess}>
-//   Data
-// </UiAlertContainer>

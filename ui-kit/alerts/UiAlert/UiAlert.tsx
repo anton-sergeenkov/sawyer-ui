@@ -11,25 +11,33 @@ export const options = {
 type TType = "success" | "info" | "warning" | "error"
 type TVariant = "outlined" | "standard" | "filled"
 
-interface IProps {
-  type: TType
+export interface IProps {
+  type?: TType
   variant?: TVariant
   noSpacing?: boolean
   children: React.ReactNode
-  onClose: () => void
+  setIsShow?: React.Dispatch<React.SetStateAction<boolean>>
 }
 
 export const UiAlert: React.FC<IProps> = (props) => {
-  const { type, variant = "outlined", noSpacing, children, onClose } = props
+  const {
+    type = "info",
+    variant = "outlined",
+    noSpacing,
+    children,
+    setIsShow,
+  } = props
 
   const classNoSpacing = noSpacing ? styles.noSpacing : ""
 
   return (
     <Alert
       severity={type}
-      onClose={onClose}
       variant={variant}
       className={cn(styles.item, classNoSpacing)}
+      {...(setIsShow && {
+        onClose: () => setIsShow(false),
+      })}
     >
       {children}
     </Alert>
