@@ -1,4 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react"
+import { fn } from "@storybook/test"
 
 import { robotoRegular } from "@/sawyer-ui/app/fonts"
 import "@/sawyer-ui/app/globals.css"
@@ -10,8 +11,12 @@ const meta: Meta<typeof UiAlert> = {
   component: UiAlert,
   tags: ["autodocs"],
   argTypes: {
-    theme: {
-      options: options.theme,
+    type: {
+      options: options.type,
+      control: { type: "radio" },
+    },
+    variant: {
+      options: options.variant,
       control: { type: "radio" },
     },
     noSpacing: {
@@ -20,7 +25,8 @@ const meta: Meta<typeof UiAlert> = {
   },
   args: {
     children: "Text for Notification",
-    theme: "info",
+    type: "info",
+    variant: "outlined",
     noSpacing: true,
   },
   decorators: [
@@ -41,4 +47,9 @@ type Story = StoryObj<typeof meta>
 
 export const Basic: Story = {
   args: {},
+}
+export const CloseButton: Story = {
+  args: {
+    onClose: fn(),
+  },
 }

@@ -1,0 +1,37 @@
+.item {
+  color: var(--color-black-lighter);
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: var(--spacing-blocks);
+}
+
+/***************************************************
+THEME
+/***************************************************/
+.item--info {
+  border-left: 4px solid #4a91e4;
+  color: #0969da;
+  background-color: #edf0f4;
+}
+.item--success {
+  border-left: 4px solid #63d259;
+  color: #276122;
+  background-color: #ecf1eb;
+}
+.item--warning {
+  border-left: 4px solid #e3b65c;
+  color: #8b6924;
+  background-color: #f0ede8;
+}
+.item--error {
+  border-left: 4px solid #e68585;
+  color: #ae4545;
+  background-color: #f1ebeb;
+}
+
+/***************************************************
+MAIN
+/***************************************************/
+.noSpacing {
+  margin: 0;
+}

@@ -1,31 +1,38 @@
 import cn from "classnames"
-import { checkTheme } from "../../utils"
+import { Alert } from "@mui/material"
 
 import styles from "./styles.module.css"
 
 export const options = {
-  theme: ["info", "success", "warning", "error"],
+  type: ["success", "info", "warning", "error"],
+  variant: ["outlined", "standard", "filled"],
 }
 
-type TTheme = "info" | "success" | "warning" | "error"
+type TType = "success" | "info" | "warning" | "error"
+type TVariant = "outlined" | "standard" | "filled"
 
 interface IProps {
-  theme?: TTheme
-  className?: string
+  type: TType
+  variant?: TVariant
   noSpacing?: boolean
   children: React.ReactNode
+  onClose: () => void
 }
 
-const UiAlert: React.FC<IProps> = (props) => {
-  const { className, theme = "info", noSpacing = false, children } = props
+export const UiAlert: React.FC<IProps> = (props) => {
+  const { type, variant = "outlined", noSpacing, children, onClose } = props
 
-  const stylesTheme = checkTheme(theme, styles)
   const classNoSpacing = noSpacing ? styles.noSpacing : ""
 
   return (
-    <div className={cn(styles.item, stylesTheme, classNoSpacing, className)}>
+    <Alert
+      severity={type}
+      onClose={onClose}
+      variant={variant}
+      className={cn(styles.item, classNoSpacing)}
+    >
       {children}
-    </div>
+    </Alert>
   )
 }
 
