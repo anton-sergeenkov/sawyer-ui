@@ -24,8 +24,8 @@ const meta: Meta<typeof UiAlert> = {
   },
   args: {
     children: "Text for Notification",
-    type: "info",
-    variant: "outlined",
+    type: "success",
+    variant: "standard",
     noSpacing: true,
     isShow: true,
   },

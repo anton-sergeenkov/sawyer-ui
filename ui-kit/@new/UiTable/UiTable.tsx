@@ -1,54 +1,54 @@
-import { useState } from "react";
-import cn from "classnames";
-import { Alert } from "@mui/material";
+import { useState } from "react"
+import cn from "classnames"
+import { Alert } from "@mui/material"
 
-import Table from "@mui/material/Table";
-import TableBody from "@mui/material/TableBody";
-import TableCell from "@mui/material/TableCell";
-import TableContainer from "@mui/material/TableContainer";
-import TableHead from "@mui/material/TableHead";
-import TableRow from "@mui/material/TableRow";
-import Paper from "@mui/material/Paper";
-import { AlertProps } from "@/ui-kit/constants";
+import Table from "@mui/material/Table"
+import TableBody from "@mui/material/TableBody"
+import TableCell from "@mui/material/TableCell"
+import TableContainer from "@mui/material/TableContainer"
+import TableHead from "@mui/material/TableHead"
+import TableRow from "@mui/material/TableRow"
+import Paper from "@mui/material/Paper"
+// import { AlertProps } from "@/ui-kit/constants"
 
-import { checkWidth } from "./utils";
+import { checkWidth } from "./utils"
 
-import styles from "./styles.module.css";
+import styles from "./styles.module.css"
 
 export interface IUiTableData {
-  headers: string[];
-  fields: Object[];
+  headers: string[]
+  fields: Object[]
 }
 
 interface IProps {
-  fullWidth?: boolean;
-  data: IUiTableData;
+  fullWidth?: boolean
+  data: IUiTableData
 }
 
 const UiTable: React.FC<IProps> = (props) => {
-  const { data, fullWidth = false } = props;
-  const { headers, fields } = data;
+  const { data, fullWidth = false } = props
+  const { headers, fields } = data
 
-  const [hideInfoAlert, setHideInfoAlert] = useState<boolean>(false);
+  const [hideInfoAlert, setHideInfoAlert] = useState<boolean>(false)
 
   const rows = fields.map((element) => {
-    return Object.values(element).flatMap((value) => value);
-  });
+    return Object.values(element).flatMap((value) => value)
+  })
 
   if (!fields.length && !hideInfoAlert) {
     return (
       <Alert
         severity="info"
         onClose={() => setHideInfoAlert(true)}
-        {...AlertProps}
+        // {...AlertProps}
       >
         No results
       </Alert>
-    );
+    )
   }
 
   if (!fields.length && hideInfoAlert) {
-    return null;
+    return null
   }
 
   return (
@@ -86,10 +86,10 @@ const UiTable: React.FC<IProps> = (props) => {
         </TableBody>
       </Table>
     </TableContainer>
-  );
-};
+  )
+}
 
-export default UiTable;
+export default UiTable
 
 // const Usage = () => {
 //   const users = [

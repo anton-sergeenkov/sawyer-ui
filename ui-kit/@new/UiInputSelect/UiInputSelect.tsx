@@ -1,23 +1,23 @@
-import { useState } from "react";
-import cn from "classnames";
-import { TextField, MenuItem } from "@mui/material";
+import { useState } from "react"
+import cn from "classnames"
+import { TextField, MenuItem } from "@mui/material"
 
-import styles from "./styles.module.css";
+import styles from "./styles.module.css"
 
 interface IItems {
-  value: string;
-  label: string;
+  value: string
+  label: string
 }
 
 interface IProps {
-  className?: string;
-  items: IItems[];
-  value: string;
-  setValue: (value: string) => void;
-  disabled?: boolean;
-  styleGrow?: boolean;
-  label?: string;
-  title?: string;
+  className?: string
+  items: IItems[]
+  value: string
+  setValue: (value: string) => void
+  disabled?: boolean
+  styleGrow?: boolean
+  label?: string
+  title?: string
 }
 
 const UiInputSelect: React.FC<IProps> = (props) => {
@@ -30,16 +30,16 @@ const UiInputSelect: React.FC<IProps> = (props) => {
     styleGrow,
     label,
     title,
-  } = props;
+  } = props
 
-  const [showLabel, setShowLabel] = useState<boolean>(true);
+  const [showLabel, setShowLabel] = useState<boolean>(true)
 
   const onChange = (event: React.ChangeEvent<HTMLInputElement>): void => {
-    const value = event.target.value;
-    setValue(event.target.value);
-    setValue(value);
-    setShowLabel(false);
-  };
+    const value = event.target.value
+    setValue(event.target.value)
+    setValue(value)
+    setShowLabel(false)
+  }
 
   const renderInput = (
     <TextField
@@ -66,10 +66,10 @@ const UiInputSelect: React.FC<IProps> = (props) => {
         </MenuItem>
       ))}
     </TextField>
-  );
+  )
 
   if (!title) {
-    return <>{renderInput}</>;
+    return <>{renderInput}</>
   }
 
   return (
@@ -77,10 +77,10 @@ const UiInputSelect: React.FC<IProps> = (props) => {
       <div className={styles.title}>{title}</div>
       {renderInput}
     </div>
-  );
-};
+  )
+}
 
-export default UiInputSelect;
+export default UiInputSelect
 
 // <UiInputSelect
 //   label="Select platform"

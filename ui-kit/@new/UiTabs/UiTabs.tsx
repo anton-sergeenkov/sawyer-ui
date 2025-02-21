@@ -1,19 +1,19 @@
-import { useState } from "react";
-import cn from "classnames";
+import { useState } from "react"
+import cn from "classnames"
 
-import { Tabs, Tab } from "@mui/material";
+import { Tabs, Tab } from "@mui/material"
 
-import styles from "./styles.module.css";
+import styles from "./styles.module.css"
 
 interface IProps {
-  children?: React.ReactNode;
-  index: number;
-  value: number;
-  classNamePanel?: string;
+  children?: React.ReactNode
+  index: number
+  value: number
+  classNamePanel?: string
 }
 
 const CustomTabPanel: React.FC<IProps> = (props) => {
-  const { children, value, index, classNamePanel, ...other } = props;
+  const { children, value, index, classNamePanel, ...other } = props
 
   return (
     <div
@@ -26,27 +26,27 @@ const CustomTabPanel: React.FC<IProps> = (props) => {
         <div className={cn(styles.panel, classNamePanel)}>{children}</div>
       )}
     </div>
-  );
-};
+  )
+}
 
 interface IUiTabsData {
-  tab: string;
-  content: React.FC;
+  tab: string
+  content: React.FC
 }
 
 interface IUiTabs {
-  data: IUiTabsData[];
-  classNamePanel?: string;
+  data: IUiTabsData[]
+  classNamePanel?: string
 }
 
 const UiTabs: React.FC<IUiTabs> = (props) => {
-  const { data, classNamePanel } = props;
+  const { data, classNamePanel } = props
 
-  const [value, setValue] = useState(0);
+  const [value, setValue] = useState(0)
 
   const handleChange = (_event: React.SyntheticEvent, newValue: number) => {
-    setValue(newValue);
-  };
+    setValue(newValue)
+  }
 
   return (
     <div className={styles.wrapper}>
@@ -67,10 +67,10 @@ const UiTabs: React.FC<IUiTabs> = (props) => {
         </CustomTabPanel>
       ))}
     </div>
-  );
-};
+  )
+}
 
-export default UiTabs;
+export default UiTabs
 
 // <UiTabs
 //   classNamePanel={styles.panel}

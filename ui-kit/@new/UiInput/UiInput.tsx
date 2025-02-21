@@ -1,21 +1,21 @@
-import cn from "classnames";
-import { TextField, InputAdornment, IconButton } from "@mui/material";
-import ClearIcon from "@mui/icons-material/Clear";
+import cn from "classnames"
+import { TextField, InputAdornment, IconButton } from "@mui/material"
+import ClearIcon from "@mui/icons-material/Clear"
 
-import styles from "./styles.module.css";
+import styles from "./styles.module.css"
 
 interface IProps {
-  label: string;
-  value: string;
-  disabled: boolean;
-  styleGrow?: boolean;
-  type?: string;
-  setValue: (value: string) => void;
-  className?: string;
-  fullWidth?: boolean;
-  title?: string;
-  multiline?: boolean;
-  isClearButton?: boolean;
+  label: string
+  value: string
+  disabled: boolean
+  styleGrow?: boolean
+  type?: string
+  setValue: (value: string) => void
+  className?: string
+  fullWidth?: boolean
+  title?: string
+  multiline?: boolean
+  isClearButton?: boolean
 }
 
 const UiInput: React.FC<IProps> = (props) => {
@@ -31,15 +31,15 @@ const UiInput: React.FC<IProps> = (props) => {
     title,
     multiline = false,
     isClearButton = true,
-  } = props;
+  } = props
   const onChange = (event: React.ChangeEvent<HTMLInputElement>): void => {
-    const value = event.target.value;
-    setValue(value);
-  };
+    const value = event.target.value
+    setValue(value)
+  }
 
   const onClear = () => {
-    setValue("");
-  };
+    setValue("")
+  }
 
   const renderInput = (
     <TextField
@@ -70,10 +70,10 @@ const UiInput: React.FC<IProps> = (props) => {
       hiddenLabel
       placeholder={label}
     />
-  );
+  )
 
   if (!title) {
-    return <>{renderInput}</>;
+    return <>{renderInput}</>
   }
 
   return (
@@ -81,10 +81,10 @@ const UiInput: React.FC<IProps> = (props) => {
       <div className={styles.title}>{title}</div>
       {renderInput}
     </div>
-  );
-};
+  )
+}
 
-export default UiInput;
+export default UiInput
 
 // <UiInput
 //   label="Insert your link here"
