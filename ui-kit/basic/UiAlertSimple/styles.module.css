@@ -10,23 +10,23 @@ THEME
 /***************************************************/
 .item--info {
   border-left: 4px solid #4a91e4;
-  color: #0969da;
-  background-color: #edf0f4;
+  color: #176ac9;
+  background-color: #e7effc;
 }
 .item--success {
   border-left: 4px solid #63d259;
   color: #276122;
-  background-color: #ecf1eb;
+  background-color: #ebf4e9;
 }
 .item--warning {
   border-left: 4px solid #e3b65c;
   color: #8b6924;
-  background-color: #f0ede8;
+  background-color: #f5f0e7;
 }
 .item--error {
   border-left: 4px solid #e68585;
   color: #ae4545;
-  background-color: #f1ebeb;
+  background-color: #faefef;
 }
 
 /***************************************************
