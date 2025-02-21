@@ -16,7 +16,7 @@ interface IProps {
   children: React.ReactNode
 }
 
-const UiNotification: React.FC<IProps> = (props) => {
+const UiAlert: React.FC<IProps> = (props) => {
   const { className, theme = "info", noSpacing = false, children } = props
 
   const stylesTheme = checkTheme(theme, styles)
@@ -29,4 +29,4 @@ const UiNotification: React.FC<IProps> = (props) => {
   )
 }
 
-export default UiNotification
+export default UiAlert

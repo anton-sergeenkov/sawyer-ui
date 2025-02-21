@@ -8,7 +8,6 @@ import UiTextGradient from "./basic/UiTextGradient"
 import UiHeaderSection from "./basic/UiHeaderSection"
 import UiDetails from "./basic/UiDetails"
 import UiJsonFormatter from "./basic/UiJsonFormatter"
-import UiNotification from "./basic/UiNotification"
 // Layout
 import UiLayoutCards, { IUiLayoutCardsItems } from "./layout/UiLayoutCards"
 import UiLayoutSection from "./layout/UiLayoutSection"
@@ -22,6 +21,8 @@ import UiMenuNavButton from "./menu/UiMenuNavButton"
 // Surfaces
 import UiOptions from "./surfaces/UiOptions"
 import UiSocialLinks, { IUiSocialLinksList } from "./surfaces/UiSocialLinks"
+// Alerts
+import UiAlert from "./alerts/UiAlert"
 
 export {
   // Basic
@@ -34,7 +35,6 @@ export {
   UiHeaderSection,
   UiDetails,
   UiJsonFormatter,
-  UiNotification,
   // Layout
   UiLayoutCards,
   UiLayoutSection,
@@ -48,6 +48,8 @@ export {
   // Surfaces
   UiOptions,
   UiSocialLinks,
+  // Alerts
+  UiAlert,
 }
 
 export type { IUiLayoutCardsItems, IUiSocialLinksList }
