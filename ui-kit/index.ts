@@ -23,7 +23,6 @@ import UiOptions from "./surfaces/UiOptions"
 import UiSocialLinks, { IUiSocialLinksList } from "./surfaces/UiSocialLinks"
 // Alerts
 import UiAlert from "./alerts/UiAlert"
-import UiAlertContainer from "./alerts/UiAlertContainer"
 import UiAlertSimple from "./alerts/UiAlertSimple"
 
 export {
@@ -52,7 +51,6 @@ export {
   UiSocialLinks,
   // Alerts
   UiAlert,
-  UiAlertContainer,
   UiAlertSimple,
 }
 

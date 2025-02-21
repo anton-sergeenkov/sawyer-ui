@@ -19,15 +19,15 @@ const meta: Meta<typeof UiAlert> = {
       options: options.variant,
       control: { type: "radio" },
     },
-    noSpacing: {
-      control: { type: "boolean" },
-    },
+    noSpacing: { control: { type: "boolean" } },
+    isShow: { control: { type: "boolean" } },
   },
   args: {
     children: "Text for Notification",
     type: "info",
     variant: "outlined",
     noSpacing: true,
+    isShow: true,
   },
   decorators: [
     (Story) => (
