@@ -29,5 +29,3 @@ const UiList: React.FC<IProps> = (props) => {
 }
 
 export default UiList
-
-// <UiList items={list} />

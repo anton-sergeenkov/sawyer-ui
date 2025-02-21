@@ -10,6 +10,7 @@ import UiDetails from "./basic/UiDetails"
 import UiJsonFormatter from "./basic/UiJsonFormatter"
 import UiAlert from "./basic/UiAlert"
 import UiAlertSimple from "./basic/UiAlertSimple"
+import UiList from "./basic/UiList"
 // Layout
 import UiLayoutCards, { IUiLayoutCardsItems } from "./layout/UiLayoutCards"
 import UiLayoutSection from "./layout/UiLayoutSection"
@@ -37,6 +38,7 @@ export {
   UiJsonFormatter,
   UiAlert,
   UiAlertSimple,
+  UiList,
   // Layout
   UiLayoutCards,
   UiLayoutSection,
