@@ -3,6 +3,7 @@
 ## ⭐️ Ui-Kit
 
 **Основное**
+- Обновить Storybook до версии 9
 - Ui-Kit из mt-ui
 
 **Smooth Scrolling**

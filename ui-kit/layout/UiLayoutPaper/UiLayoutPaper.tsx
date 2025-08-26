@@ -5,17 +5,19 @@ import styles from "./styles.module.css"
 interface IProps {
   className?: string
   children: React.ReactNode
-  isNoPadding?: boolean
+  withPadding?: boolean
+  withShadow?: boolean
 }
 
-const UiLayoutSectionContainer: React.FC<IProps> = (props) => {
-  const { className, isNoPadding = false, children } = props
+const UiLayoutPaper: React.FC<IProps> = (props) => {
+  const { className, withPadding = true, withShadow = false, children } = props
 
   return (
     <div
       className={cn(
         styles.container,
-        !isNoPadding ? styles.containerPadding : {},
+        withPadding ? styles.containerPadding : {},
+        withShadow ? styles.containerShadow : {},
         className,
       )}
     >
@@ -24,4 +26,4 @@ const UiLayoutSectionContainer: React.FC<IProps> = (props) => {
   )
 }
 
-export default UiLayoutSectionContainer
+export default UiLayoutPaper

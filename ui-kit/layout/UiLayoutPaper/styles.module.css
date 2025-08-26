@@ -7,3 +7,7 @@
 .containerPadding {
   padding: var(--spacing-section);
 }
+.containerShadow {
+  box-shadow: var(--box-shadow);
+  border-top: 1px solid var(--color-yellow-brown);
+}

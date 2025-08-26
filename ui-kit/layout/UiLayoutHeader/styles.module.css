@@ -1,6 +1,7 @@
 .wrapper {
   background-color: var(--color-white);
   border-bottom: 1px solid var(--color-gray-30);
+  background-color: var(--color-gray-10);
 }
 .container {
   height: var(--height-header);
