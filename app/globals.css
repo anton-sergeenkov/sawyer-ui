@@ -44,10 +44,15 @@
   --box-shadow: 0 16px 24px 2px rgba(33, 37, 41, 0.02),
     0 6px 30px 5px rgba(33, 37, 41, 0.04), 0 8px 10px -5px rgba(33, 37, 41, 0.1);
 
-  --gradient-sea: linear-gradient(
+  --bg-gradient-blue-violet: linear-gradient(#e0f2fb, #eae3f6);
+  --bg-gradient-blue-violet-darker: linear-gradient(#d5e7f1, #dcd2ee);
+  --bg-gradient-green-yellow: linear-gradient(
     to left bottom,
-    /* #e2e9b3, #d4ecc0, #c9eecf, #c5efdc, #c6eee6 */ #eee5fb,
-    #def2fa
+    #e2e9b3,
+    #d4ecc0,
+    #c9eecf,
+    #c5efdc,
+    #c6eee6
   );
 
   --scrollbar-thumb: rgb(137, 137, 137);
