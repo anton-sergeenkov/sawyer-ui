@@ -13,6 +13,10 @@ export const options = {
 
 type TTheme = "light" | "dark" | "blue-violet" | "green-yellow"
 
+interface ILayoutCardsClasses {
+  item: string
+}
+
 interface IUiLayoutCardsItemsLinks {
   name: string
   link: string
@@ -29,19 +33,28 @@ export interface IUiLayoutCardsItems {
 interface IProps {
   theme?: TTheme
   themeLink?: TThemeUiLink
+  classes?: ILayoutCardsClasses
   items: IUiLayoutCardsItems[]
   isOptions?: boolean
 }
 
 const UiLayoutCards: React.FC<IProps> = (props) => {
-  const { theme = "light", themeLink, items, isOptions = false } = props
+  const {
+    theme = "light",
+    classes = {
+      item: "",
+    },
+    themeLink,
+    items,
+    isOptions = false,
+  } = props
 
   const stylesTheme = checkTheme(theme, styles)
 
   return (
     <div className={cn(styles.gridContainer, stylesTheme)}>
       {items.map((element, index) => (
-        <div className={styles.gridItem} key={index}>
+        <div className={cn(styles.gridItem, classes.item)} key={index}>
           <a
             href={element.link}
             className={styles.logo}
