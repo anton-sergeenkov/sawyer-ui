@@ -40,11 +40,18 @@
   --height-header: 70px;
   --height-footer: 70px;
 
-  --box-shadow-flat: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  --box-shadow-flat: 0 2px 4px rgba(6, 4, 4, 0.075);
   --box-shadow: 0 16px 24px 2px rgba(33, 37, 41, 0.02),
     0 6px 30px 5px rgba(33, 37, 41, 0.04), 0 8px 10px -5px rgba(33, 37, 41, 0.1);
+  --box-shadow-bottom-blue: 0 6px 10px 0 #d5e7f1;
 
   --bg-gradient-blue-violet: linear-gradient(#e0f2fb, #eae3f6);
+  --bg-gradient-blue-blue-violet: linear-gradient(
+    #e5f2fa,
+    #e5f2fa,
+    #e5f2fa,
+    #f1eafd
+  );
   --bg-gradient-blue-violet-darker: linear-gradient(#d5e7f1, #dcd2ee);
   --bg-gradient-green-yellow: linear-gradient(
     to left bottom,

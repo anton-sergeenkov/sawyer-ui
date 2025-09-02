@@ -8,9 +8,6 @@
   position: relative;
   padding: 10px;
   border-radius: var(--border-radius);
-  /* background-image: var(--bg-gradient-green-yellow); */
-  background-color: var(--color-white);
-  /* border: 1px solid var(--color-gray-30); */
 
   .logo {
     display: block;
@@ -68,6 +65,27 @@ ADAPTIVE
 THEME
 /***************************************************/
 .item--light {
+  .gridItem {
+    background-color: var(--color-white);
+  }
 }
 .item--dark {
+  .gridItem {
+    background-color: var(--color-gray-80);
+  }
+  .header,
+  .description {
+    color: var(--color-white);
+  }
+}
+.item--blue-violet {
+  .gridItem {
+    background-image: var(--bg-gradient-blue-blue-violet);
+    border: 1px solid var(--color-gray-30);
+  }
+}
+.item--green-yellow {
+  .gridItem {
+    background-image: var(--bg-gradient-green-yellow);
+  }
 }

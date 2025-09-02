@@ -8,10 +8,10 @@ import { robotoLight } from "@/sawyer-ui/app/fonts"
 import styles from "./styles.module.css"
 
 export const options = {
-  theme: ["light", "dark"],
+  theme: ["light", "dark", "blue-violet", "green-yellow"],
 }
 
-type TTheme = "light" | "dark"
+type TTheme = "light" | "dark" | "blue-violet" | "green-yellow"
 
 interface IUiLayoutCardsItemsLinks {
   name: string
