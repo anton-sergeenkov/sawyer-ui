@@ -2,7 +2,7 @@
 THEME
 /***************************************************/
 .item--blue-underlined {
-  --color: var(--color-blue);
+  --color: var(--color-violet-blue);
   color: var(--color);
   background: linear-gradient(to bottom, var(--color) 50%, var(--color) 50%);
 }
