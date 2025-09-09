@@ -77,7 +77,7 @@ const UiTypography: React.FC<IProps> = (props) => {
       )
 
     default:
-      return <>{children}</>
+      return <span className={className}>{children}</span>
   }
 }
 

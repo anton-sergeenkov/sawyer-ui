@@ -11,7 +11,7 @@ export interface IStaticImageData {
 export interface IMenuItem {
   title: string
   path: string
-  // FIXME: not correct
+  // FIXME: Not correct
   disabled?: boolean
 }
 
