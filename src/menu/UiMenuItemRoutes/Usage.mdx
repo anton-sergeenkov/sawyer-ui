@@ -1,0 +1,24 @@
+# Usage
+
+### Public
+
+```ts
+import { UiMenuItemRoutes } from "sawyer-ui"
+```
+
+### Internal
+
+```ts
+import UiMenuItemRoutes from "../../menu/UiMenuItemRoutes"
+```
+
+### Usage
+
+- Ссылка — `Link` из `next/link`, активный пункт определяется по `usePathname()` из `next/navigation`
+
+```tsx
+<UiMenuItemRoutes
+  theme="light-blue"
+  item={{ title: "Contacts", path: "/contacts" }}
+/>
+```

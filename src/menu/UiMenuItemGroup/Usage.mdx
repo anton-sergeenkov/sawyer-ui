@@ -1,0 +1,30 @@
+# Usage
+
+### Public
+
+```ts
+import { UiMenuItemGroup } from "sawyer-ui"
+```
+
+### Internal
+
+```ts
+import UiMenuItemGroup from "../../menu/UiMenuItemGroup"
+```
+
+### Usage
+
+- `type="routes"` — пункты меню через `UiMenuItemRoutes` (`next/link`, активный пункт по `usePathname()`)
+- `type="links"` — внешние ссылки, открываются в новой вкладке
+
+```tsx
+<UiMenuItemGroup
+  type="routes"
+  theme="light-blue"
+  title="Menu"
+  list={[
+    { title: "About", path: "/about" },
+    { title: "Contacts", path: "/contacts" },
+  ]}
+/>
+```

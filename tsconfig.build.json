@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    // Целевая версия JS
+    "target": "ES2023",
+    // Набор встроенных lib-типов
+    "lib": ["ES2023", "DOM"],
+    // Тип модулей для анализа импорта/экспорта при генерации деклараций
+    "module": "ESNext",
+    // Подмешивает типы Vite (например, для импорта *.module.css и import.meta.env)
+    "types": ["vite/client"],
+    // Ускоряет сборку: не проверяет типы зависимостей в node_modules
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    // Резолвинг модулей в стиле бандлера
+    "moduleResolution": "bundler",
+    // JSX-трансформ React 17+ (автоматический runtime), чтобы TS корректно типизировал TSX
+    "jsx": "react-jsx",
+
+    /* Emit: only .d.ts files */
+    // Включает генерацию .d.ts для публикации типов пакета
+    "declaration": true,
+    // Генерирует только .d.ts (JS собирает Vite), чтобы не получать второй “JS билд” от tsc
+    "emitDeclarationOnly": true,
+    // Генерирует .d.ts.map для удобства навигации по типам в IDE
+    "declarationMap": true,
+    // Корневая папка исходников — фиксирует структуру путей в выходных .d.ts
+    "rootDir": "src",
+    // Куда складывать выходные .d.ts
+    "outDir": "dist",
+    // Удаляет из .d.ts символы, помеченные /** @internal */
+    "stripInternal": true
+  },
+  "include": ["src"],
+  // В типы пакета не попадают истории, вспомогательные компоненты историй
+  // и черновики компонентов из @new (они не входят в публичный API)
+  "exclude": [
+    "src/**/*.test.*",
+    "src/**/*.stories.*",
+    "src/**/story-component/**",
+    "src/@new/**"
+  ]
+}

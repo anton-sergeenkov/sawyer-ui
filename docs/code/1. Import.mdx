@@ -2,16 +2,34 @@
 
 ## Common
 
-```ts
-import "@/sawyer-ui/app/globals.css"
-```
+Шрифт и стили пакета подключаются один раз, в корневом layout приложения:
 
 ```ts
-import {
-  robotoThin,
-  robotoLight,
-  robotoRegular,
-} from "@/sawyer-ui/app/fonts"
+import { robotoRegular } from "sawyer-ui/fonts"
+import "sawyer-ui/styles.css"
+```
+
+```
+<html lang="en" className={robotoRegular.className}>
+```
+
+## Components
+
+```ts
+import { UiButton, UiLayoutSection } from "sawyer-ui"
+import type { IMenuItem, IStaticImageData } from "sawyer-ui"
+```
+
+## Fonts
+
+Шрифты Roboto (next/font) — отдельная точка входа `sawyer-ui/fonts` без "use client",
+поэтому их можно импортировать и в серверных компонентах (app/layout.tsx)
+
+```ts
+// Public
+import { robotoThin, robotoLight, robotoRegular } from "sawyer-ui/fonts"
+// Internal
+import { robotoLight } from "../../fonts"
 ```
 
 ```
@@ -24,7 +42,7 @@ import {
 
 ```ts
 // Public
-import { useMobile } from "@/sawyer-ui/hooks"
+import { useMobile } from "sawyer-ui"
 // Internal
-import { useMobile } from "@/sawyer-ui/ui-kit/hooks/useMobile"
+import { useMobile } from "../../hooks"
 ```

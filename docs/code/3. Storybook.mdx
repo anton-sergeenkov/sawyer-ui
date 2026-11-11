@@ -1,14 +1,17 @@
 # Storybook
 
 - Category: Basic | Layout | Menu | Sufaces
+- Storybook для Next.js (`@storybook/nextjs-vite`): в историях работают `next/font`, `next/link`, `next/navigation` и импорт картинок, как в Next.js
+- Глобальные стили подключены в `.storybook/preview.tsx`, в историях их импортировать не нужно
+- Текущий путь для `usePathname()` задаётся параметром истории: `parameters: { nextjs: { navigation: { pathname: "/contacts" } } }`
+- ✅ перед названием компонента в сайдбаре — компонент используется на сайте anton-sergeenkov.github.io: напрямую или внутри других компонентов. Список задаётся в `.storybook/manager.ts`
 
 > story.stories.tsx
 
 ```tsx
-import type { Meta, StoryObj } from "@storybook/react"
+import type { Meta, StoryObj } from "@storybook/nextjs-vite"
 
-import { robotoRegular } from "@/sawyer-ui/app/fonts"
-import "@/sawyer-ui/app/globals.css"
+import { robotoRegular } from "../../fonts"
 
 import UiComponent, { options } from "./UiComponent"
 

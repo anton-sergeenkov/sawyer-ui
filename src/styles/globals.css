@@ -1,0 +1,42 @@
+/*
+  Базовые глобальные стили для приложения на sawyer-ui.
+  Шрифт (font-family) здесь не задаётся: приложение подключает его из sawyer-ui/fonts
+  (например, robotoRegular.className на <html>), компоненты его наследуют.
+*/
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  line-height: 1.7;
+  font-size: 16px;
+  color: var(--color-black-lighter);
+  background-color: var(--color-gray-10);
+}
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+*::selection {
+  background: var(--color-black-opacity-1);
+}
+
+/***************************************************
+SCROLL
+/***************************************************/
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--scrollbar-track);
+}
+::-webkit-scrollbar-corner {
+  background-color: var(--scrollbar-corner);
+}

@@ -10,6 +10,8 @@
   📑 Проект на Next.js
 ```
 
+- Проект на Next.js подключает Ui-Kit как npm-пакет `sawyer-ui` и не зависит от расположения папки `sawyer-ui`
+
 ## 2. Проект `sawyer-ui`
 
 **Клонирование проекта**
@@ -21,3 +23,16 @@ git clone https://github.com/anton-sergeenkov/sawyer-ui.git
 ```bash
 npm i
 ```
+
+**Команды**
+```bash
+npm run storybook   # Storybook для Next.js (@storybook/nextjs-vite) на http://localhost:6006
+npm run build       # сборка npm-пакета в dist: index.js, fonts.js, styles.css и типы
+npm run lint        # ESLint
+npm run deploy      # сборка Storybook и публикация на GitHub Pages
+```
+
+## 3. Публикация npm-пакета
+1. Увеличить `version` в `package.json`
+2. Выполнить `npm publish` — перед публикацией автоматически запустится `npm run build`
+3. В проекте на Next.js обновить пакет: `npm i sawyer-ui@latest`

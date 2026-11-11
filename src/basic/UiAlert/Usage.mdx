@@ -1,0 +1,46 @@
+# Usage
+
+### Public
+
+```ts
+import { UiAlert } from "sawyer-ui"
+```
+
+### Internal
+
+```ts
+import UiAlert from "../../basic/UiAlert"
+```
+
+### Usage
+
+- Alert может показываться при успешном / неуспешном выполнении запроса на сервер
+
+```tsx
+import { useState } from "react"
+import { UiAlert } from "sawyer-ui"
+
+const SectionStarter: React.FC = () => {
+  const [isShow, setIsShow] = useState<boolean>(false)
+
+  return (
+    <>
+      <UiAlert type="info" variant="standard" isShow>
+        Alert, который нельзя закрыть
+      </UiAlert>
+
+      <UiAlert
+        type="success"
+        variant="standard"
+        isShow={isShow}
+        setIsShow={setIsShow}
+      >
+        Alert с useState()
+      </UiAlert>
+
+      <button onClick={() => setIsShow(true)}>Show</button>
+      <button onClick={() => setIsShow(false)}>Hide</button>
+    </>
+  )
+}
+```
