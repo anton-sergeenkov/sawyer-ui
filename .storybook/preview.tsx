@@ -1,12 +1,17 @@
 import type { Preview } from "@storybook/nextjs-vite"
 
 import UiProvider from "../src/provider/UiProvider"
+import { robotoRegular } from "../src/fonts"
 
 // Глобальные стили, стили Mantine и токены ui-kit. В приложении они подключаются
 // одной строкой: import "sawyer-ui/styles.css"
 import "../src/styles/mantine.css"
 import "../src/styles/tokens.css"
 import "../src/styles/globals.css"
+
+// Шрифт — на <html>, как в приложении (robotoRegular.className в app/layout.tsx).
+// Его наследует и содержимое порталов: выпадающие меню, модальные окна
+document.documentElement.classList.add(robotoRegular.className)
 
 const preview: Preview = {
   // Компоненты построены на Mantine: каждая история — внутри провайдера,

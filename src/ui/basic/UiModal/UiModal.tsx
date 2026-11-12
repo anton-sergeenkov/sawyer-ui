@@ -1,7 +1,4 @@
-import cn from "classnames"
 import { Modal } from "@mantine/core"
-
-import styles from "./styles.module.css"
 
 // https://mantine.dev/core/modal/
 
@@ -25,6 +22,8 @@ const UiModal: React.FC<IProps> = (props) => {
   } = props
 
   return (
+    // Модальное окно в стандартном виде Mantine: по центру экрана, размер
+    // по содержимому. Закрывается кликом мимо окна и Esc
     <Modal
       opened={open}
       onClose={onClose}
@@ -35,20 +34,12 @@ const UiModal: React.FC<IProps> = (props) => {
       // и не возвращается обратно при закрытии
       trapFocus={!disableAutoFocus}
       returnFocus={!disableAutoFocus}
-      transitionProps={{ transition: "fade", duration: 225 }}
-      classNames={{
-        overlay: styles.overlay,
-        inner: styles.inner,
-        content: styles.content,
-        body: styles.body,
-      }}
     >
-      {/* Видимое окно — этот div: на него же ставится className */}
       <div
         {...(isContentClickClose && {
           onClick: onClose,
         })}
-        className={cn(className, styles.modalContent)}
+        className={className}
       >
         {children}
       </div>

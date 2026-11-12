@@ -25,12 +25,14 @@
 @import "@mantine/core/styles/Overlay.layer.css";
 @import "@mantine/core/styles/Popover.layer.css";
 @import "@mantine/core/styles/ModalBase.layer.css";
+@import "@mantine/core/styles/ScrollArea.layer.css";
 
 /* Компоненты sawyer-ui:
    Button — UiButton, ActionIcon — UiOptions, Menu — UiMenuItemGroup и UiOptions,
    Modal — UiModal, Alert — UiAlert, Input — UiInput и UiSelect,
-   Combobox — UiSelect, Tabs и FloatingIndicator — UiTabs,
-   Table — UiTable и UiTableRecord */
+   Combobox — UiSelect, Tabs — UiTabs, Table — UiTable, Accordion — UiDetails.
+   ScrollArea — прокрутка пунктов в выпадающем списке UiSelect */
+@import "@mantine/core/styles/Accordion.layer.css";
 @import "@mantine/core/styles/Button.layer.css";
 @import "@mantine/core/styles/ActionIcon.layer.css";
 @import "@mantine/core/styles/Menu.layer.css";
@@ -39,5 +41,19 @@
 @import "@mantine/core/styles/Input.layer.css";
 @import "@mantine/core/styles/Combobox.layer.css";
 @import "@mantine/core/styles/Tabs.layer.css";
-@import "@mantine/core/styles/FloatingIndicator.layer.css";
 @import "@mantine/core/styles/Table.layer.css";
+
+/*
+  Из baseline.css нужно только наследование шрифта элементами форм. Без него кнопки
+  внутри компонентов Mantine (вкладки UiTabs, заголовок UiDetails) получают системный
+  шрифт браузера вместо шрифта приложения. Правило в том же слое, что и стили Mantine:
+  классы компонентов и стили приложения его перекрывают
+*/
+@layer mantine {
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+  }
+}

@@ -1,13 +1,11 @@
-import cn from "classnames"
 import { Alert } from "@mantine/core"
+import type { AlertProps } from "@mantine/core"
 import {
   CheckCircle,
   Info,
   Warning,
   WarningCircle,
 } from "@phosphor-icons/react"
-
-import styles from "./styles.module.css"
 
 // https://mantine.dev/core/alert/
 
@@ -19,12 +17,19 @@ export const options = {
 type TType = "success" | "info" | "warning" | "error"
 type TVariant = "outlined" | "standard" | "filled"
 
-// Иконка слева от текста — своя для каждого типа
-const ICONS: Record<TType, React.ReactNode> = {
-  success: <CheckCircle weight="bold" />,
-  info: <Info weight="bold" />,
-  warning: <Warning weight="bold" />,
-  error: <WarningCircle weight="bold" />,
+// Цвет темы Mantine и иконка для каждого типа уведомления
+const TYPES: Record<TType, { color: string; icon: React.ReactNode }> = {
+  success: { color: "green", icon: <CheckCircle size={20} /> },
+  info: { color: "blue", icon: <Info size={20} /> },
+  warning: { color: "orange", icon: <Warning size={20} /> },
+  error: { color: "red", icon: <WarningCircle size={20} /> },
+}
+
+// Варианты оформления Mantine
+const VARIANTS: Record<TVariant, AlertProps["variant"]> = {
+  standard: "light",
+  outlined: "outline",
+  filled: "filled",
 }
 
 export interface IProps {
@@ -48,29 +53,18 @@ export const UiAlert: React.FC<IProps> = (props) => {
     setIsShow,
   } = props
 
-  const classNoSpacing = noSpacing ? styles.noSpacing : ""
-
   if (!isShow) {
     return null
   }
 
   return (
+    // Уведомление в стандартном виде Mantine
     <Alert
-      icon={ICONS[type]}
-      className={cn(
-        styles.alert,
-        styles[type],
-        styles[variant],
-        styles.item,
-        classNoSpacing,
-      )}
-      classNames={{
-        wrapper: styles.wrapper,
-        icon: styles.icon,
-        body: styles.body,
-        message: styles.message,
-        closeButton: styles.closeButton,
-      }}
+      color={TYPES[type].color}
+      variant={VARIANTS[variant]}
+      icon={TYPES[type].icon}
+      // Отступ сверху между блоками; noSpacing — без отступа
+      mt={noSpacing ? undefined : "var(--spacing-blocks)"}
       // Кнопка закрытия — только если передан setIsShow
       withCloseButton={!!setIsShow}
       closeButtonLabel="Close"

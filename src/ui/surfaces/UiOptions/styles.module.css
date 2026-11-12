@@ -1,3 +1,4 @@
+/* Серый круг в правом верхнем углу карточки */
 .container {
   position: absolute;
   top: 20px;
@@ -8,7 +9,8 @@
   border-radius: 50%;
 }
 
-/* Круглая кнопка-иконка (Mantine ActionIcon) на весь контейнер */
+/* Круглая кнопка-иконка (Mantine ActionIcon) на весь круг. Стили Mantine
+   лежат в @layer mantine, поэтому правила ниже их перекрывают */
 .button {
   width: 100%;
   height: 100%;
@@ -34,9 +36,4 @@
 
 .icon {
   color: var(--color-gray-80);
-}
-
-.link {
-  font-size: 13px;
-  background: none;
 }

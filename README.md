@@ -1,16 +1,24 @@
 # sawyer-ui
 
-Ui-Kit для Next.js на React и [Mantine](https://mantine.dev/). Документация и примеры компонентов — в Storybook: [anton-sergeenkov.github.io/sawyer-ui](https://anton-sergeenkov.github.io/sawyer-ui/)
-
-## Установка
+## Публикация и установка пакета
 
 ```bash
-npm install sawyer-ui
+npm login
+npm publish
+npm install sawyer-ui@latest
 ```
 
-В приложении должны быть установлены `next` версии 15 и выше, `react` и `react-dom` версии 19.2 и выше (peerDependencies). Mantine (`@mantine/core`, `@mantine/hooks`), иконки [Phosphor](https://phosphoricons.com/) (`@phosphor-icons/react`) и `classnames` устанавливаются вместе с пакетом.
+## Ссылки
 
-Версия Mantine в пакете закреплена точно: CSS Mantine собран в `sawyer-ui/styles.css`, и имена классов в нём должны совпадать с установленным JS Mantine.
+- https://anton-sergeenkov.github.io/sawyer-ui/ - StoryBook для Ui-Kit
+- https://github.com/anton-sergeenkov/sawyer-ui - Репозиторий
+
+## Основные библиотеки
+
+- https://mantine.dev/ - Mantine UI
+- https://phosphoricons.com/ - Иконки Phosphor
+
+---
 
 ## Подключение
 

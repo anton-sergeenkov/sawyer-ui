@@ -25,5 +25,6 @@
     // Next.js не объявляет типы для import "*.css" (глобальные стили)
     "noUncheckedSideEffectImports": false
   },
-  "include": ["src"]
+  // Вместе с исходниками проверяются и конфиги Storybook
+  "include": ["src", ".storybook"]
 }

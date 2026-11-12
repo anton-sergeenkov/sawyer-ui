@@ -1,8 +1,4 @@
-import { useId } from "react"
-import cn from "classnames"
 import { CloseButton, TextInput, Textarea } from "@mantine/core"
-
-import styles from "./styles.module.css"
 
 // https://mantine.dev/core/text-input/
 // https://mantine.dev/core/textarea/
@@ -19,8 +15,9 @@ interface IProps {
   // Многострочное поле (10 строк)
   multiline?: boolean
   isClearButton?: boolean
+  // Поле на всю ширину контейнера
   fullWidth?: boolean
-  // Поле растягивается во flex-контейнере (flex-grow: 1)
+  // Поле растягивается во flex-контейнере (flex: 1)
   styleGrow?: boolean
   className?: string
 }
@@ -40,8 +37,6 @@ const UiInput: React.FC<IProps> = (props) => {
     className,
   } = props
 
-  const titleId = useId()
-
   const onChange = (
     event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ): void => {
@@ -52,68 +47,34 @@ const UiInput: React.FC<IProps> = (props) => {
     setValue("")
   }
 
-  const isClear = Boolean(value) && isClearButton
+  // Кнопка очистки — когда в поле есть текст.
+  // Иконка-крестик Phosphor задана в теме UiProvider (CloseButton)
+  const rightSection =
+    Boolean(value) && isClearButton ? (
+      <CloseButton aria-label="Clear" disabled={disabled} onClick={onClear} />
+    ) : null
 
-  // Кнопка очистки. Иконка-крестик Phosphor задана в теме UiProvider (CloseButton)
-  const rightSection = isClear ? (
-    <CloseButton
-      className={styles.clear}
-      aria-label="Clear"
-      disabled={disabled}
-      onClick={onClear}
-    />
-  ) : null
-
+  // Поле в стандартном виде Mantine: title — подпись над полем (label),
+  // label — подсказка (placeholder)
   const fieldProps = {
-    // С подписью растягивается обёртка, а поле занимает её ширину
-    className: cn(
-      styles.input,
-      (fullWidth || (title && styleGrow)) && styles.fullWidth,
-      !title && styleGrow && styles.grow,
-      className,
-    ),
-    classNames: {
-      wrapper: cn(
-        styles.wrapper,
-        isClear && styles.wrapperClear,
-        multiline && styles.wrapperMultiline,
-      ),
-      input: styles.field,
-      section: styles.section,
-    },
+    className,
+    label: title,
+    placeholder: label,
+    // Без подписи имя поля для скринридеров — подсказка
+    "aria-label": title ? undefined : label,
     value,
     onChange,
     disabled,
-    placeholder: label,
-    // Имя поля для скринридеров: подпись над полем или подсказка
-    ...(title ? { "aria-labelledby": titleId } : { "aria-label": label }),
+    w: fullWidth ? "100%" : undefined,
+    flex: styleGrow ? 1 : undefined,
     rightSection,
     rightSectionPointerEvents: "all" as const,
   }
 
-  const renderInput = multiline ? (
+  return multiline ? (
     <Textarea {...fieldProps} rows={10} />
   ) : (
     <TextInput {...fieldProps} type={type} />
-  )
-
-  if (!title) {
-    return renderInput
-  }
-
-  return (
-    <div
-      className={cn(
-        styles.container,
-        fullWidth && styles.fullWidth,
-        styleGrow && styles.grow,
-      )}
-    >
-      <div id={titleId} className={styles.title}>
-        {title}
-      </div>
-      {renderInput}
-    </div>
   )
 }
 

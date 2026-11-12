@@ -1,7 +1,7 @@
 {
   "name": "sawyer-ui",
   "private": false,
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Ui-Kit for Next.js: React components based on Mantine",
   "type": "module",
   "repository": {

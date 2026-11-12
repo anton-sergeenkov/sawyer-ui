@@ -14,8 +14,10 @@ import UiMenuItemGroup from "../../menu/UiMenuItemGroup"
 
 ### Usage
 
-- `type="routes"` — пункты меню через `UiMenuItemRoutes` (`next/link`, активный пункт по `usePathname()`)
+- Выпадающее меню — стандартный `Menu` Mantine, пункты — `Menu.Item`
+- `type="routes"` — пункты-ссылки `next/link`, текущая страница (по `usePathname()`) выделена основным цветом темы Mantine
 - `type="links"` — внешние ссылки, открываются в новой вкладке
+- `theme` и `isAccent` задают вид кнопки, открывающей меню
 
 ```tsx
 <UiMenuItemGroup

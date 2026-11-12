@@ -1,9 +1,5 @@
 import { useState } from "react"
-import cn from "classnames"
-import { Paper, Table } from "@mantine/core"
-import UiAlert from "../UiAlert"
-
-import styles from "./styles.module.css"
+import { Alert, Table } from "@mantine/core"
 
 // https://mantine.dev/core/table/
 
@@ -15,6 +11,7 @@ export interface IUiTableData {
 }
 
 interface IProps {
+  // Таблица на всю ширину контейнера, иначе — по содержимому
   fullWidth?: boolean
   data: IUiTableData
 }
@@ -27,56 +24,43 @@ const UiTable: React.FC<IProps> = (props) => {
 
   const rows = fields.map((element) => Object.values(element))
 
+  // Нет строк — вместо таблицы уведомление, которое можно закрыть
   if (!fields.length) {
+    if (!isShowInfoAlert) {
+      return null
+    }
+
     return (
-      <UiAlert
-        type="info"
-        variant="standard"
-        noSpacing
-        isShow={isShowInfoAlert}
-        setIsShow={setIsShowInfoAlert}
+      <Alert
+        withCloseButton
+        closeButtonLabel="Close"
+        onClose={() => setIsShowInfoAlert(false)}
       >
         No results
-      </UiAlert>
+      </Alert>
     )
   }
 
   return (
-    <Paper
-      className={cn(
-        styles.wrapper,
-        fullWidth ? styles.fullWidth : styles.autoWidth,
-      )}
-    >
-      <Table className={styles.table} withRowBorders={false}>
-        <Table.Thead>
-          <Table.Tr>
-            {headers.map((element, index) => (
-              <Table.Th
-                className={cn(styles.cellHeader, styles.cellAlignCenter)}
-                key={index}
-              >
-                {element}
-              </Table.Th>
+    // Таблица в стандартном виде Mantine, с рамкой
+    <Table withTableBorder w={fullWidth ? "100%" : "auto"}>
+      <Table.Thead>
+        <Table.Tr>
+          {headers.map((element, index) => (
+            <Table.Th key={index}>{element}</Table.Th>
+          ))}
+        </Table.Tr>
+      </Table.Thead>
+      <Table.Tbody>
+        {rows.map((elementData, indexData) => (
+          <Table.Tr key={indexData}>
+            {elementData.map((elementItem, indexItem) => (
+              <Table.Td key={indexItem}>{elementItem}</Table.Td>
             ))}
           </Table.Tr>
-        </Table.Thead>
-        <Table.Tbody>
-          {rows.map((elementData, indexData) => (
-            <Table.Tr key={indexData}>
-              {elementData.map((elementItem, indexItem) => (
-                <Table.Td
-                  key={indexItem}
-                  className={cn(styles.cell, styles.cellAlignCenter)}
-                >
-                  {elementItem}
-                </Table.Td>
-              ))}
-            </Table.Tr>
-          ))}
-        </Table.Tbody>
-      </Table>
-    </Paper>
+        ))}
+      </Table.Tbody>
+    </Table>
   )
 }
 

@@ -3,8 +3,6 @@ import { CaretDown } from "@phosphor-icons/react"
 import UiMenuNavButton from "../../../UiMenuNavButton"
 import type { TTheme as TThemeMenuButton } from "../../../UiMenuNavButton"
 import type { IMenuItem } from "../../../../../types/common"
-import { menuProps } from "../../../../../styles/menu"
-import menuStyles from "../../../../../styles/menu.module.css"
 
 import type { IChildComponentProps } from "../../types/types"
 
@@ -26,15 +24,9 @@ const UiMenuNavToggle: React.FC<IProps> = (props) => {
 
   return (
     <div className={className}>
-      {/* Меню закрывается само: по клику на пункт, клику мимо и Esc */}
-      <Menu
-        {...menuProps}
-        classNames={{
-          dropdown: menuStyles.dropdown,
-          item: menuStyles.itemNav,
-          itemLabel: menuStyles.itemLabel,
-        }}
-      >
+      {/* Выпадающее меню в стандартном виде Mantine, по левому краю кнопки.
+          Закрывается само: по клику на пункт, клику мимо и Esc */}
+      <Menu shadow="md" position="bottom-start">
         <Menu.Target>
           <UiMenuNavButton
             theme={theme}
@@ -46,7 +38,7 @@ const UiMenuNavToggle: React.FC<IProps> = (props) => {
         </Menu.Target>
 
         <Menu.Dropdown>
-          <Component theme={theme} list={list} />
+          <Component list={list} />
         </Menu.Dropdown>
       </Menu>
     </div>

@@ -3,14 +3,14 @@
 ### Public
 
 ```ts
-import { UiTable, UiTableRecord } from "sawyer-ui"
-import type { IUiTableData, IUiTableRecordRow } from "sawyer-ui"
+import { UiTable } from "sawyer-ui"
+import type { IUiTableData } from "sawyer-ui"
 ```
 
 ### Internal
 
 ```ts
-import UiTable, { UiTableRecord } from "../../basic/UiTable"
+import UiTable from "../../basic/UiTable"
 ```
 
 ### Usage
@@ -26,17 +26,4 @@ const users = [
 ]
 
 <UiTable data={{ headers: ["Name", "Age"], fields: users }} />
-```
-
-### UiTableRecord
-
-Таблица-запись из этой же папки: в каждой строке название поля и значение
-
-```tsx
-<UiTableRecord
-  rows={[
-    { title: "Name", data: "Tony" },
-    { title: "Age", data: 23 },
-  ]}
-/>
 ```

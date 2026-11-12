@@ -1,11 +1,7 @@
 import { useState } from "react"
-import cn from "classnames"
-import { FloatingIndicator, Tabs } from "@mantine/core"
-
-import styles from "./styles.module.css"
+import { Tabs } from "@mantine/core"
 
 // https://mantine.dev/core/tabs/
-// https://mantine.dev/core/floating-indicator/
 
 // Вкладка: название и компонент с её содержимым
 export interface IUiTabsData {
@@ -21,52 +17,27 @@ interface IUiTabs {
 const UiTabs: React.FC<IUiTabs> = (props) => {
   const { data, classNamePanel } = props
 
-  const [value, setValue] = useState<string>("0")
-  // Список вкладок и активная вкладка — для подчёркивания (FloatingIndicator)
-  const [listElement, setListElement] = useState<HTMLDivElement | null>(null)
-  const [activeTab, setActiveTab] = useState<HTMLButtonElement | null>(null)
-
-  const handleChange = (newValue: string | null) => {
-    if (newValue !== null) {
-      setValue(newValue)
-    }
-  }
+  const [value, setValue] = useState<string | null>("0")
 
   return (
-    // variant="none": без оформления вкладок Mantine, вид задаёт styles.module.css
-    <Tabs
-      className={styles.wrapper}
-      classNames={{ tab: styles.tab, tabLabel: styles.tabLabel }}
-      variant="none"
-      value={value}
-      onChange={handleChange}
-      keepMounted={false}
-    >
-      <Tabs.List className={styles.tabs} ref={setListElement}>
+    // Вкладки в стандартном виде Mantine
+    <Tabs value={value} onChange={setValue} keepMounted={false}>
+      <Tabs.List>
         {data.map((element, index) => (
-          <Tabs.Tab
-            key={index}
-            value={String(index)}
-            // ref есть только у активной вкладки: под ней подчёркивание
-            ref={String(index) === value ? setActiveTab : undefined}
-          >
+          <Tabs.Tab key={index} value={String(index)}>
             {element.tab}
           </Tabs.Tab>
         ))}
-
-        <FloatingIndicator
-          className={styles.indicator}
-          target={activeTab}
-          parent={listElement}
-          transitionDuration={300}
-        />
       </Tabs.List>
 
       {data.map((element, index) => (
-        <Tabs.Panel key={index} value={String(index)}>
-          <div className={cn(styles.panel, classNamePanel)}>
-            <element.content />
-          </div>
+        <Tabs.Panel
+          key={index}
+          value={String(index)}
+          pt="xs"
+          className={classNamePanel}
+        >
+          <element.content />
         </Tabs.Panel>
       ))}
     </Tabs>

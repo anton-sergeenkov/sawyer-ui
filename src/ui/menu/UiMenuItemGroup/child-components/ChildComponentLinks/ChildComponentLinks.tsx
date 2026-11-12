@@ -1,31 +1,23 @@
 import { Menu } from "@mantine/core"
 
-import UiMenuNavButton from "../../../UiMenuNavButton"
-
 import type { IChildComponentProps } from "../../types/types"
 
-import styles from "./styles.module.css"
-
+// Пункты — внешние ссылки, открываются в новой вкладке.
+// У отключённого пункта нет href, поэтому по нему нельзя перейти
 const ChildComponentLinks: React.FC<IChildComponentProps> = (props) => {
-  const { theme, list } = props
+  const { list } = props
 
   return (
     <>
       {list.map((element, index) => (
-        // Пункт — div: внутри уже есть ссылка с кнопкой
-        <Menu.Item key={index} component="div">
-          <a className={styles.linkLinks} href={element.path} target="_blank">
-            <UiMenuNavButton
-              theme={theme}
-              isAccent={false}
-              isActive={false}
-              disabled={!!element.disabled}
-              isHoverTransparent={true}
-              isTextLeft={true}
-            >
-              {element.title}
-            </UiMenuNavButton>
-          </a>
+        <Menu.Item
+          key={index}
+          component="a"
+          href={element.disabled ? undefined : element.path}
+          target="_blank"
+          disabled={!!element.disabled}
+        >
+          {element.title}
         </Menu.Item>
       ))}
     </>

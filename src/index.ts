@@ -21,7 +21,7 @@ export { default as UiJsonFormatter } from "./ui/basic/UiJsonFormatter"
 export { default as UiAlert } from "./ui/basic/UiAlert"
 export { default as UiAlertSimple } from "./ui/basic/UiAlertSimple"
 export { default as UiList } from "./ui/basic/UiList"
-export { default as UiTable, UiTableRecord } from "./ui/basic/UiTable"
+export { default as UiTable } from "./ui/basic/UiTable"
 export { default as UiTabs } from "./ui/basic/UiTabs"
 // Form
 export { default as UiButton } from "./ui/form/UiButton"
@@ -48,7 +48,7 @@ export { useMobile } from "./hooks"
 export type { IUiLayoutCardsItems } from "./ui/layout/UiLayoutCards"
 export type { IUiSocialLinksList } from "./ui/surfaces/UiSocialLinks"
 export type { IUiSelectItem } from "./ui/form/UiSelect"
-export type { IUiTableData, IUiTableRecordRow } from "./ui/basic/UiTable"
+export type { IUiTableData } from "./ui/basic/UiTable"
 export type { IUiTabsData } from "./ui/basic/UiTabs"
 export type {
   IStaticImageData,

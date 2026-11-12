@@ -1,11 +1,40 @@
 /***************************************************
 BUTTON
-Кнопка меню — UiButton (variant="text", size="small") на всю ширину контейнера.
-Правила кнопки с двумя классами (.button.<theme>), чтобы перекрывать
-вариант и размер из UiButton
+Кнопка меню — UiButton (variant="text", size="small", isMenuButton) на всю ширину
+контейнера, со своими размерами и шрифтом. Правила модуля не в слое,
+поэтому перекрывают стили Mantine Button
 /***************************************************/
 .button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
+  height: auto;
+  min-width: 64px;
+  padding: 4px 5px;
+  border: 0;
+  overflow: visible;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.75;
+  letter-spacing: 0.02857em;
+  transition: 0.4s;
+}
+
+/* Обёртки Mantine (inner, label) не участвуют в раскладке:
+   текст и иконка — прямые flex-элементы кнопки */
+.contents {
+  display: contents;
+  white-space: inherit;
+}
+
+/* Иконка справа (стрелка у UiMenuItemGroup).
+   Размер — через font-size: иконки Phosphor по умолчанию 1em */
+.section {
+  display: inline-flex;
+  margin-left: 8px;
+  margin-right: -2px;
+  font-size: 18px;
 }
 
 /* Прозрачный фон при наведении — вместо hover темы */
@@ -28,7 +57,7 @@ BUTTON
 
 /***************************************************
 THEME basic
-Вид кнопки text из UiButton, свои цвета не задаются
+Цвета кнопки text из UiButton, свои цвета не задаются
 /***************************************************/
 .basic {
 }
@@ -63,4 +92,16 @@ THEME light-blue
 }
 .light-blue .text-active {
   color: var(--nav-color-active);
+}
+
+/***************************************************
+DISABLED
+Без наведения; фон и цвет — как у неактивной UiButton
+/***************************************************/
+.button:disabled {
+  pointer-events: none;
+}
+.light-blue:disabled {
+  --nav-bg: var(--mantine-color-disabled);
+  --nav-color: var(--mantine-color-disabled-color);
 }

@@ -1,14 +1,11 @@
 import cn from "classnames"
 import { ActionIcon, Menu } from "@mantine/core"
 import { DotsThreeVertical } from "@phosphor-icons/react"
-import UiLink from "../../basic/UiLink"
-import { robotoLight } from "../../../fonts"
-import { menuProps } from "../../../styles/menu"
-import menuStyles from "../../../styles/menu.module.css"
 
 import styles from "./styles.module.css"
 
 // https://mantine.dev/core/menu/
+// https://mantine.dev/core/action-icon/
 
 // TODO: Interface
 interface IOptionsOptions {
@@ -39,18 +36,13 @@ const UiOptions: React.FC<IProps> = (props) => {
   } = props
 
   return (
+    // Круглая кнопка в правом верхнем углу карточки (у карточки position: relative)
     <div className={cn(styles.container, classes.container)}>
-      {/* Меню закрывается само: по клику на пункт, клику мимо и Esc */}
-      <Menu
-        {...menuProps}
-        classNames={{
-          dropdown: menuStyles.dropdown,
-          item: menuStyles.item,
-          itemLabel: menuStyles.itemLabel,
-        }}
-      >
+      {/* Меню в стандартном виде Mantine, по левому краю кнопки.
+          Закрывается само: по клику на пункт, клику мимо и Esc */}
+      <Menu shadow="md" position="bottom-start">
         <Menu.Target>
-          <ActionIcon className={styles.button}>
+          <ActionIcon className={styles.button} aria-label="Options">
             <DotsThreeVertical
               weight="bold"
               className={cn(styles.icon, classes.icon)}
@@ -60,15 +52,15 @@ const UiOptions: React.FC<IProps> = (props) => {
 
         <Menu.Dropdown>
           {options.map((element, index) => (
-            // Пункт — div: внутри уже есть ссылка
-            <Menu.Item key={index} component="div">
-              <UiLink
-                href={element.link}
-                theme="dark-underlined"
-                className={cn(styles.link, robotoLight.className, classes.link)}
-              >
-                {element.name}
-              </UiLink>
+            // Пункт — ссылка, открывается в новой вкладке
+            <Menu.Item
+              key={index}
+              component="a"
+              href={element.link}
+              target="_blank"
+              className={classes.link}
+            >
+              {element.name}
             </Menu.Item>
           ))}
         </Menu.Dropdown>

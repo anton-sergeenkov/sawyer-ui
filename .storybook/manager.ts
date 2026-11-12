@@ -1,35 +1,31 @@
 import { addons } from "storybook/manager-api"
 
-// Компоненты, которые используются на сайте anton-sergeenkov.github.io:
-// сайт импортирует их сам или они выводятся внутри этих компонентов
-// (отмечено комментарием). В сайдбаре перед их названием выводится ✅.
-// UiOptions не отмечен: UiLayoutCards выводит его только с isOptions,
-// а сайт этот проп не передаёт
-const USED_ON_SITE = new Set([
+// Компоненты, построенные на Mantine: используют его сами или через другие
+// компоненты ui-kit (отмечено комментарием). В сайдбаре перед названием — 😈
+const USES_MANTINE = new Set([
   // Basic
-  "UiChips",
-  "UiHeaderSection",
-  "UiLink",
+  "UiAlert",
+  "UiDetails",
   "UiModal",
-  "UiTextGradient",
-  "UiTypography",
+  "UiTable",
+  "UiTabs",
   // Form
-  "UiButton", // внутри UiMenuNavButton
+  "UiButton",
+  "UiInput",
+  "UiSelect",
   // Layout
-  "UiLayoutCards",
-  "UiLayoutHeader",
-  "UiLayoutPaper",
-  "UiLayoutSection",
+  "UiLayoutCards", // через UiOptions (isOptions)
   // Menu
   "UiMenuItemGroup",
-  "UiMenuItemRoutes",
-  "UiMenuNavButton", // внутри UiMenuItemGroup и UiMenuItemRoutes
+  "UiMenuItemHash", // через UiMenuNavButton
+  "UiMenuItemRoutes", // через UiMenuNavButton
+  "UiMenuNavButton", // через UiButton
   // Surfaces
-  "UiSocialLinks",
+  "UiOptions",
 ])
 
 // Новые компоненты (перенесены из черновиков src/@new).
-// В сайдбаре перед их названием выводится 📌
+// В сайдбаре перед названием — 📌
 const NEW_COMPONENTS = new Set([
   // Basic
   "UiTable",
@@ -41,18 +37,19 @@ const NEW_COMPONENTS = new Set([
 
 addons.setConfig({
   sidebar: {
-    // Меняется только подпись в сайдбаре: id и адреса историй остаются прежними
+    // Меняется только подпись в сайдбаре: id и адреса историй остаются прежними.
+    // Порядок значков: 😈, затем 📌
     renderLabel: (item) => {
       if (item.type !== "component" && item.type !== "group") {
         return item.name
       }
-      if (USED_ON_SITE.has(item.name)) {
-        return `✅ ${item.name}`
-      }
-      if (NEW_COMPONENTS.has(item.name)) {
-        return `📌 ${item.name}`
-      }
-      return item.name
+
+      const marks = [
+        USES_MANTINE.has(item.name) ? "😈" : "",
+        NEW_COMPONENTS.has(item.name) ? "📌" : "",
+      ].filter(Boolean)
+
+      return [...marks, item.name].join(" ")
     },
   },
 })

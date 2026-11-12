@@ -59,3 +59,17 @@ type Story = StoryObj<typeof meta>
 export const Basic: Story = {
   args: {},
 }
+
+// Текущая страница — /about: пункт About выделен в выпадающем меню
+export const ActiveRoute: Story = {
+  args: {
+    type: "routes",
+  },
+  parameters: {
+    nextjs: {
+      navigation: {
+        pathname: "/about",
+      },
+    },
+  },
+}

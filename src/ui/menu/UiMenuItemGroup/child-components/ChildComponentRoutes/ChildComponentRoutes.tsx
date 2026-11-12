@@ -1,23 +1,34 @@
-import { Menu } from "@mantine/core"
-import UiMenuItemRoutes from "../../../UiMenuItemRoutes"
+import Link from "next/link"
+import { usePathname } from "next/navigation"
+import { Menu, useMantineTheme } from "@mantine/core"
 
 import type { IChildComponentProps } from "../../types/types"
 
-import styles from "./styles.module.css"
-
+// Пункты — ссылки next/link (переход без перезагрузки страницы).
+// Текущая страница выделена основным цветом темы Mantine
 const ChildComponentRoutes: React.FC<IChildComponentProps> = (props) => {
-  const { theme, list } = props
+  const { list } = props
+
+  const pathname = usePathname()
+  const { primaryColor } = useMantineTheme()
 
   return (
     <>
-      {list.map((element, index) => (
-        <div className={styles.linkRoutes} key={index}>
-          {/* Пункт — div: внутри уже есть ссылка с кнопкой */}
-          <Menu.Item component="div">
-            <UiMenuItemRoutes theme={theme} item={element} isTextLeft={true} />
+      {list.map((element, index) => {
+        const isActive = pathname === element.path
+
+        return (
+          <Menu.Item
+            key={index}
+            component={Link}
+            href={element.path}
+            color={isActive ? primaryColor : undefined}
+            aria-current={isActive ? "page" : undefined}
+          >
+            {element.title}
           </Menu.Item>
-        </div>
-      ))}
+        )
+      })}
     </>
   )
 }

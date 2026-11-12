@@ -11,3 +11,28 @@ import { UiModal } from "sawyer-ui"
 ```ts
 import UiModal from "../../basic/UiModal"
 ```
+
+### Usage
+
+- Окно управляемое: открыто, пока `open` равен `true`
+- Закрывается кликом мимо окна и клавишей Esc (вызывается `onClose`), с `isContentClickClose` — и кликом по содержимому
+- `className` применяется к блоку с содержимым внутри окна
+
+```tsx
+import { useState } from "react"
+import { UiButton, UiModal } from "sawyer-ui"
+
+const SectionModal: React.FC = () => {
+  const [open, setOpen] = useState<boolean>(false)
+
+  return (
+    <>
+      <UiButton onClick={() => setOpen(true)}>Open modal</UiButton>
+
+      <UiModal open={open} onClose={() => setOpen(false)}>
+        <div>Content</div>
+      </UiModal>
+    </>
+  )
+}
+```

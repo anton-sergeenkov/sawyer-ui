@@ -72,6 +72,11 @@ const UiMenuNavButton: React.FC<IProps> = (props) => {
         isHoverTransparent ? styles.hoverTransparent : styles.hover,
         className,
       )}
+      classNames={{
+        inner: styles.contents,
+        label: styles.contents,
+        section: styles.section,
+      }}
       endIcon={endIcon}
       disabled={disabled}
       onClick={onClick}
