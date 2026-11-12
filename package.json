@@ -1,8 +1,8 @@
 {
   "name": "sawyer-ui",
   "private": false,
-  "version": "0.3.0",
-  "description": "Ui-Kit for Next.js: React components based on MUI",
+  "version": "0.4.0",
+  "description": "Ui-Kit for Next.js: React components based on Mantine",
   "type": "module",
   "repository": {
     "type": "git",
@@ -44,39 +44,38 @@
     "./styles.css": "./dist/styles.css"
   },
   "dependencies": {
-    "@emotion/react": "^11.14.0",
-    "@emotion/styled": "^11.14.0",
-    "@mui/icons-material": "^6.4.1",
-    "@mui/material": "^6.4.1",
+    "@mantine/core": "9.8.0",
+    "@mantine/hooks": "9.8.0",
+    "@phosphor-icons/react": "^2.1.10",
     "classnames": "^2.5.1"
   },
   "peerDependencies": {
-    "next": ">=15",
-    "react": ">=19",
-    "react-dom": ">=19"
+    "next": ">=16",
+    "react": ">=19.2",
+    "react-dom": ">=19.2"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
-    "@storybook/addon-a11y": "^10.4.6",
-    "@storybook/addon-docs": "^10.4.6",
-    "@storybook/nextjs-vite": "^10.4.6",
-    "@types/node": "^24.12.3",
+    "@storybook/addon-a11y": "^10.6.7",
+    "@storybook/addon-docs": "^10.6.7",
+    "@storybook/nextjs-vite": "^10.6.7",
+    "@types/node": "^26.6.6",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^6.0.1",
     "eslint": "^10.3.0",
     "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-react-refresh": "^0.5.2",
-    "eslint-plugin-storybook": "^10.4.6",
+    "eslint-plugin-storybook": "^10.6.7",
     "gh-pages": "^6.3.0",
     "globals": "^17.6.0",
-    "next": "^15.1.6",
-    "prettier": "^3.4.2",
+    "next": "^16.4.6",
+    "prettier": "^3.10.0",
     "react": "^19.2.6",
     "react-dom": "^19.2.6",
-    "storybook": "^10.4.6",
+    "storybook": "^10.6.7",
     "typescript": "~6.0.2",
     "typescript-eslint": "^8.59.2",
-    "vite": "^8.0.12"
+    "vite": "^8.3.8"
   }
 }

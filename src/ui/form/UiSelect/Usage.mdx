@@ -1,0 +1,44 @@
+# Usage
+
+### Public
+
+```ts
+import { UiSelect } from "sawyer-ui"
+import type { IUiSelectItem } from "sawyer-ui"
+```
+
+### Internal
+
+```ts
+import UiSelect from "../../form/UiSelect"
+```
+
+### Usage
+
+- Поле управляемое: значение хранит родитель (`value` + `setValue`)
+- `label` — подсказка, пока ничего не выбрано, `title` — подпись над полем
+
+```tsx
+import { useState } from "react"
+import { UiSelect } from "sawyer-ui"
+import type { IUiSelectItem } from "sawyer-ui"
+
+const PLATFORMS: IUiSelectItem[] = [
+  { value: "instagram", label: "Instagram" },
+  { value: "youtube", label: "YouTube" },
+]
+
+const SectionPlatform: React.FC = () => {
+  const [platformValue, setPlatformValue] = useState<string>("")
+
+  return (
+    <UiSelect
+      label="Select platform"
+      title="Platform"
+      items={PLATFORMS}
+      value={platformValue}
+      setValue={setPlatformValue}
+    />
+  )
+}
+```

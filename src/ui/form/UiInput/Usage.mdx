@@ -1,0 +1,39 @@
+# Usage
+
+### Public
+
+```ts
+import { UiInput } from "sawyer-ui"
+```
+
+### Internal
+
+```ts
+import UiInput from "../../form/UiInput"
+```
+
+### Usage
+
+- Поле управляемое: значение хранит родитель (`value` + `setValue`)
+- `label` — подсказка в пустом поле, `title` — подпись над полем
+- Кнопка очистки появляется, когда в поле есть текст (`isClearButton={false}` — без неё)
+- `multiline` — многострочное поле на 10 строк
+
+```tsx
+import { useState } from "react"
+import { UiInput } from "sawyer-ui"
+
+const SectionLink: React.FC = () => {
+  const [linkValue, setLinkValue] = useState<string>("")
+
+  return (
+    <UiInput
+      label="Insert your link here"
+      title="Link"
+      value={linkValue}
+      setValue={setLinkValue}
+      styleGrow
+    />
+  )
+}
+```

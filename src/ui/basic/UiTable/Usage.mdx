@@ -1,0 +1,42 @@
+# Usage
+
+### Public
+
+```ts
+import { UiTable, UiTableRecord } from "sawyer-ui"
+import type { IUiTableData, IUiTableRecordRow } from "sawyer-ui"
+```
+
+### Internal
+
+```ts
+import UiTable, { UiTableRecord } from "../../basic/UiTable"
+```
+
+### Usage
+
+- `headers` — заголовки колонок
+- `fields` — строки: значения объекта выводятся по порядку, по одному в колонку
+- Если строк нет, вместо таблицы выводится уведомление «No results», которое можно закрыть
+
+```tsx
+const users = [
+  { name: "Tony", age: 23 },
+  { name: "Jack", age: 27 },
+]
+
+<UiTable data={{ headers: ["Name", "Age"], fields: users }} />
+```
+
+### UiTableRecord
+
+Таблица-запись из этой же папки: в каждой строке название поля и значение
+
+```tsx
+<UiTableRecord
+  rows={[
+    { title: "Name", data: "Tony" },
+    { title: "Age", data: 23 },
+  ]}
+/>
+```

@@ -1,11 +1,24 @@
 import type { Preview } from "@storybook/nextjs-vite"
 
-// Глобальные стили и токены ui-kit. В приложении они подключаются
+import UiProvider from "../src/provider/UiProvider"
+
+// Глобальные стили, стили Mantine и токены ui-kit. В приложении они подключаются
 // одной строкой: import "sawyer-ui/styles.css"
+import "../src/styles/mantine.css"
 import "../src/styles/tokens.css"
 import "../src/styles/globals.css"
 
 const preview: Preview = {
+  // Компоненты построены на Mantine: каждая история — внутри провайдера,
+  // как приложение внутри UiProvider в app/layout.tsx
+  decorators: [
+    (Story) => (
+      <UiProvider>
+        <Story />
+      </UiProvider>
+    ),
+  ],
+
   parameters: {
     // Next.js App Router: next/navigation (usePathname) и next/link работают
     // в историях через моки Storybook

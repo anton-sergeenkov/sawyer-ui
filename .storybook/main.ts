@@ -3,7 +3,9 @@ import { mergeConfig } from "vite"
 
 const config: StorybookConfig = {
   stories: [
-    "../src/**/*.mdx",
+    // Документация компонентов (Usage.mdx). Заголовок строится от папки src/ui:
+    // basic/UiChips/Usage — и попадает в сайдбаре к историям компонента
+    { directory: "../src/ui", files: "**/*.mdx" },
     "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)",
     "../docs/**/*.mdx",
   ],

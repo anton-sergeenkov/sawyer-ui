@@ -1,0 +1,33 @@
+# Usage
+
+### Public
+
+```ts
+import { UiTabs } from "sawyer-ui"
+import type { IUiTabsData } from "sawyer-ui"
+```
+
+### Internal
+
+```ts
+import UiTabs from "../../basic/UiTabs"
+```
+
+### Usage
+
+- `data` — вкладки: название (`tab`) и компонент с содержимым (`content`)
+- Компоненты содержимого объявляются вне рендера, иначе при каждом рендере вкладка будет монтироваться заново
+
+```tsx
+import { UiTabs } from "sawyer-ui"
+
+const TabProfile: React.FC = () => <div>Profile</div>
+const TabProjects: React.FC = () => <div>Projects</div>
+
+<UiTabs
+  data={[
+    { tab: "Profile", content: TabProfile },
+    { tab: "Projects", content: TabProjects },
+  ]}
+/>
+```

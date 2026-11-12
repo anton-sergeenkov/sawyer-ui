@@ -1,0 +1,66 @@
+/***************************************************
+BUTTON
+Кнопка меню — UiButton (variant="text", size="small") на всю ширину контейнера.
+Правила кнопки с двумя классами (.button.<theme>), чтобы перекрывать
+вариант и размер из UiButton
+/***************************************************/
+.button {
+  width: 100%;
+}
+
+/* Прозрачный фон при наведении — вместо hover темы */
+.button.hoverTransparent:hover {
+  background: none;
+}
+
+.text {
+  width: 100%;
+  text-align: center;
+}
+.textLeft {
+  text-align: left;
+}
+
+/* Цвет текста при disabled — в любой теме */
+.text-disabled {
+  color: var(--color-gray-50);
+}
+
+/***************************************************
+THEME basic
+Вид кнопки text из UiButton, свои цвета не задаются
+/***************************************************/
+.basic {
+}
+
+/***************************************************
+THEME light-blue
+/***************************************************/
+.light-blue {
+  --nav-color: #2b2b2b; /* dark */
+  --nav-bg: transparent;
+  --nav-bg-hover: #ececec; /* gray */
+  --nav-color-active: #6673ff; /* blue */
+}
+.light-blue.accent {
+  --nav-color: #edeeef; /* light-gray */
+  --nav-bg: #6673ff; /* blue */
+  --nav-bg-hover: #2b2b2b; /* dark */
+}
+
+.button.light-blue {
+  padding: 4px 10px;
+  color: var(--nav-color);
+  background-color: var(--nav-bg);
+}
+.button.light-blue.hover:hover {
+  background-color: var(--nav-bg-hover);
+}
+
+.light-blue .text-default,
+.light-blue .text-accent {
+  color: var(--nav-color);
+}
+.light-blue .text-active {
+  color: var(--nav-color-active);
+}

@@ -1,0 +1,43 @@
+/*
+  Стили Mantine для компонентов sawyer-ui — только то, что нужно экспортируемым компонентам.
+
+  Подключаются layer-версии файлов: все правила Mantine лежат в @layer mantine,
+  а у слоя приоритет ниже, чем у стилей без слоя. Поэтому CSS-модули компонентов
+  и стили приложения переопределяют Mantine независимо от порядка подключения.
+
+  baseline.css не подключается: он задаёт body свой font-family, line-height и сглаживание
+  шрифта, и сайт на sawyer-ui выглядел бы иначе. Базовые стили задаёт globals.css.
+
+  Порядок важен: файл-зависимость идёт раньше файла, который его переопределяет
+  (UnstyledButton → Button и т.д.).
+  Список файлов: https://mantine.dev/styles/css-files-list/
+*/
+
+/* CSS-переменные темы по умолчанию и глобальные классы (фокус, .mantine-active и т.п.) */
+@import "@mantine/core/styles/default-css-variables.layer.css";
+@import "@mantine/core/styles/global.layer.css";
+
+/* Компоненты, на которых построены другие */
+@import "@mantine/core/styles/VisuallyHidden.layer.css";
+@import "@mantine/core/styles/UnstyledButton.layer.css";
+@import "@mantine/core/styles/CloseButton.layer.css";
+@import "@mantine/core/styles/Paper.layer.css";
+@import "@mantine/core/styles/Overlay.layer.css";
+@import "@mantine/core/styles/Popover.layer.css";
+@import "@mantine/core/styles/ModalBase.layer.css";
+
+/* Компоненты sawyer-ui:
+   Button — UiButton, ActionIcon — UiOptions, Menu — UiMenuItemGroup и UiOptions,
+   Modal — UiModal, Alert — UiAlert, Input — UiInput и UiSelect,
+   Combobox — UiSelect, Tabs и FloatingIndicator — UiTabs,
+   Table — UiTable и UiTableRecord */
+@import "@mantine/core/styles/Button.layer.css";
+@import "@mantine/core/styles/ActionIcon.layer.css";
+@import "@mantine/core/styles/Menu.layer.css";
+@import "@mantine/core/styles/Modal.layer.css";
+@import "@mantine/core/styles/Alert.layer.css";
+@import "@mantine/core/styles/Input.layer.css";
+@import "@mantine/core/styles/Combobox.layer.css";
+@import "@mantine/core/styles/Tabs.layer.css";
+@import "@mantine/core/styles/FloatingIndicator.layer.css";
+@import "@mantine/core/styles/Table.layer.css";

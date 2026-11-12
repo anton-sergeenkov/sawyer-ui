@@ -1,17 +1,20 @@
 # Storybook
 
-- Category: Basic | Layout | Menu | Sufaces
+- Category: Basic | Form | Layout | Menu | Surfaces
+- Компоненты лежат в `src/ui/<категория>/<Компонент>`: `src/ui/form/UiButton` и т.д.
 - Storybook для Next.js (`@storybook/nextjs-vite`): в историях работают `next/font`, `next/link`, `next/navigation` и импорт картинок, как в Next.js
-- Глобальные стили подключены в `.storybook/preview.tsx`, в историях их импортировать не нужно
+- Глобальные стили (вместе со стилями Mantine) подключены в `.storybook/preview.tsx`, в историях их импортировать не нужно
+- Все истории обёрнуты в `UiProvider` (провайдер Mantine) декоратором в `.storybook/preview.tsx`
 - Текущий путь для `usePathname()` задаётся параметром истории: `parameters: { nextjs: { navigation: { pathname: "/contacts" } } }`
 - ✅ перед названием компонента в сайдбаре — компонент используется на сайте anton-sergeenkov.github.io: напрямую или внутри других компонентов. Список задаётся в `.storybook/manager.ts`
+- 📌 перед названием компонента в сайдбаре — новый компонент (перенесён из черновиков `src/@new`). Список задаётся там же, в `.storybook/manager.ts`
 
 > story.stories.tsx
 
 ```tsx
 import type { Meta, StoryObj } from "@storybook/nextjs-vite"
 
-import { robotoRegular } from "../../fonts"
+import { robotoRegular } from "../../../fonts"
 
 import UiComponent, { options } from "./UiComponent"
 

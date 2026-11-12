@@ -1,0 +1,80 @@
+/*
+  Вид выпадающих меню Mantine (UiMenuItemGroup, UiOptions).
+  Классы передаются в Menu через classNames. Стили Mantine лежат в @layer mantine,
+  поэтому правила ниже перекрывают их
+*/
+
+/* Выпадающий список: белая карточка с тенью */
+.dropdown {
+  min-width: 16px;
+  min-height: 16px;
+  max-width: calc(100vw - 32px);
+  max-height: calc(100vh - 96px);
+  padding: 8px 0;
+  border: 0;
+  border-radius: 4px;
+  outline: 0;
+  overflow: hidden auto;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #fff;
+  box-shadow:
+    0px 5px 5px -3px rgba(0, 0, 0, 0.2),
+    0px 8px 10px 1px rgba(0, 0, 0, 0.14),
+    0px 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+/* Пункт меню. .item — обычный пункт (UiOptions),
+   .itemNav — пункт-обёртка для кнопки или ссылки меню (UiMenuItemGroup) */
+.item,
+.itemNav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  box-sizing: border-box;
+  min-height: auto;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  outline: 0;
+  color: inherit;
+  background-color: transparent;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0.00938em;
+  text-decoration: none;
+  white-space: nowrap;
+  user-select: none;
+}
+.item {
+  padding: 6px 16px;
+  cursor: pointer;
+}
+.itemNav {
+  padding: 0;
+  cursor: default;
+}
+
+.item:hover,
+.itemNav:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+@media (hover: none) {
+  .item:hover,
+  .itemNav:hover {
+    background-color: transparent;
+  }
+}
+/* Пункт, выбранный с клавиатуры (стрелками) */
+.item:focus-visible,
+.itemNav:focus-visible {
+  background-color: rgba(0, 0, 0, 0.12);
+}
+
+/* Обёртка Mantine вокруг содержимого пункта не участвует в раскладке:
+   содержимое — прямой flex-элемент пункта */
+.itemLabel {
+  display: contents;
+}

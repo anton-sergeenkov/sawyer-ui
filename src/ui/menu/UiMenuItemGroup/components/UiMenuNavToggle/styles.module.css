@@ -1,0 +1,5 @@
+/* Шеврон Phosphor крупнее прежнего (Material KeyboardArrowDown): рисунок
+   уменьшен, а место под иконку в кнопке прежнее — ширина кнопки не меняется */
+.chevron {
+  transform: scale(0.75);
+}

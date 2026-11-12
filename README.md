@@ -1,6 +1,6 @@
 # sawyer-ui
 
-Ui-Kit для Next.js на React и MUI. Документация и примеры компонентов — в Storybook: [anton-sergeenkov.github.io/sawyer-ui](https://anton-sergeenkov.github.io/sawyer-ui/)
+Ui-Kit для Next.js на React и [Mantine](https://mantine.dev/). Документация и примеры компонентов — в Storybook: [anton-sergeenkov.github.io/sawyer-ui](https://anton-sergeenkov.github.io/sawyer-ui/)
 
 ## Установка
 
@@ -8,25 +8,34 @@ Ui-Kit для Next.js на React и MUI. Документация и приме�
 npm install sawyer-ui
 ```
 
-В приложении должны быть установлены `next` версии 15 и выше, `react` и `react-dom` версии 19 и выше (peerDependencies). MUI (`@mui/material`, `@mui/icons-material`, `@emotion/*`) и `classnames` устанавливаются вместе с пакетом.
+В приложении должны быть установлены `next` версии 15 и выше, `react` и `react-dom` версии 19.2 и выше (peerDependencies). Mantine (`@mantine/core`, `@mantine/hooks`), иконки [Phosphor](https://phosphoricons.com/) (`@phosphor-icons/react`) и `classnames` устанавливаются вместе с пакетом.
+
+Версия Mantine в пакете закреплена точно: CSS Mantine собран в `sawyer-ui/styles.css`, и имена классов в нём должны совпадать с установленным JS Mantine.
 
 ## Подключение
 
-Шрифт и стили пакета (CSS-переменные, базовые глобальные стили и стили компонентов) подключаются один раз — в корневом layout приложения:
+Шрифт, стили пакета (CSS-переменные, базовые глобальные стили, стили Mantine и компонентов) и провайдер `UiProvider` подключаются один раз — в корневом layout приложения:
 
 ```tsx
 // app/layout.tsx (Next.js, App Router)
+import { UiProvider } from "sawyer-ui"
 import { robotoRegular } from "sawyer-ui/fonts"
 import "sawyer-ui/styles.css"
 
 const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => (
   <html lang="en" className={robotoRegular.className}>
-    <body>{children}</body>
+    <body>
+      <UiProvider>{children}</UiProvider>
+    </body>
   </html>
 )
 
 export default RootLayout
 ```
+
+`UiProvider` — провайдер Mantine (`MantineProvider`) с темой sawyer-ui: без него компоненты пакета не работают.
+
+Стили Mantine лежат в `@layer mantine`, поэтому любые стили приложения без слоя переопределяют их независимо от порядка подключения. Глобальный сброс Mantine (`baseline.css`, стили `body`) в пакет не входит — базовые стили задаёт sawyer-ui.
 
 Чтобы `className`, переданный компоненту со страницы, переопределял стили пакета, CSS должен подключаться в порядке импорта. По умолчанию Next.js объединяет CSS-файлы и может поставить стили пакета из layout после стилей страницы, поэтому в `next.config.js` включается строгий порядок:
 
@@ -61,6 +70,20 @@ import { robotoThin, robotoLight, robotoRegular } from "sawyer-ui/fonts" // 100,
 ```
 
 `sawyer-ui/fonts` собран без `"use client"`, поэтому шрифты можно использовать и в серверных компонентах, например в `app/layout.tsx`.
+
+## Иконки
+
+Компоненты используют иконки [Phosphor](https://phosphoricons.com/) (`@phosphor-icons/react`). Иконку можно передать и в проп компонента, например `endIcon` у `UiButton`: для этого приложению нужно установить `@phosphor-icons/react` (или другой набор иконок).
+
+```ts
+import { ArrowCircleDown } from "@phosphor-icons/react"
+```
+
+```tsx
+<UiButton endIcon={<ArrowCircleDown weight="bold" />} onClick={onClick}>
+  Download
+</UiButton>
+```
 
 ## Навигация
 

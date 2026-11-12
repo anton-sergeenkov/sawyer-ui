@@ -2,16 +2,24 @@
 
 ## Common
 
-Шрифт и стили пакета подключаются один раз, в корневом layout приложения:
+Шрифт, стили пакета и провайдер подключаются один раз, в корневом layout приложения:
 
 ```ts
+import { UiProvider } from "sawyer-ui"
 import { robotoRegular } from "sawyer-ui/fonts"
 import "sawyer-ui/styles.css"
 ```
 
 ```
 <html lang="en" className={robotoRegular.className}>
+  <body>
+    <UiProvider>{children}</UiProvider>
+  </body>
+</html>
 ```
+
+- `UiProvider` — провайдер Mantine с темой sawyer-ui, без него компоненты не работают
+- В Storybook истории оборачиваются в `UiProvider` декоратором в `.storybook/preview.tsx`
 
 ## Components
 
@@ -29,7 +37,7 @@ import type { IMenuItem, IStaticImageData } from "sawyer-ui"
 // Public
 import { robotoThin, robotoLight, robotoRegular } from "sawyer-ui/fonts"
 // Internal
-import { robotoLight } from "../../fonts"
+import { robotoLight } from "../../../fonts"
 ```
 
 ```
@@ -44,5 +52,5 @@ import { robotoLight } from "../../fonts"
 // Public
 import { useMobile } from "sawyer-ui"
 // Internal
-import { useMobile } from "../../hooks"
+import { useMobile } from "../../../hooks"
 ```
