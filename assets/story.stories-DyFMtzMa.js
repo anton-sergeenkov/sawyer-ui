@@ -1,7 +1,0 @@
-import{n as e}from"./rolldown-runtime-2s6bX4vc.js";import{t}from"./jsx-runtime-BxfXuubT.js";import{n,r,t as i}from"./UiAlert-B6MBjRVi.js";import{n as a,t as o}from"./_virtual_next-font_eyJwYXRoIjoic3JjL2ZvbnRzLnRzIiwiaW1wb3J0IjoiUm9ib3RvIiwiYXJndW1lbnRzIjpbeyJ3ZWlnaHQiOiI0MDAiLCJzdWJzZXRzIjpbImxhdGluIiwiY3lyaWxsaWMiXSwiZGlzcGxheSI6InN3YXAifV0sInZhcmlhYmxlTmFtZSI6InJvYm90b1JlZ3VsYXIifQ-mei3LifP.js";var s,c,l,u,d,f;function p(){return(p=e((()=>{s=t(),a(),n(),{fn:c}=__STORYBOOK_MODULE_TEST__,l={title:`Basic/UiAlert`,component:i,tags:[`autodocs`],argTypes:{type:{options:r.type,control:{type:`radio`}},variant:{options:r.variant,control:{type:`radio`}},noSpacing:{control:{type:`boolean`}},isShow:{control:{type:`boolean`}}},args:{children:`Text for Notification`,type:`success`,variant:`standard`,noSpacing:!0,isShow:!0},decorators:[e=>(0,s.jsx)(`div`,{className:o.className,style:{backgroundColor:`#fff`,padding:`10px`},children:(0,s.jsx)(e,{})})]},u={args:{}},d={args:{setIsShow:c()}},f=[`Basic`,`CloseButton`],u.parameters={...u.parameters,docs:{...u.parameters?.docs,source:{originalSource:`{
-  args: {}
-}`,...u.parameters?.docs?.source}}},d.parameters={...d.parameters,docs:{...d.parameters?.docs,source:{originalSource:`{
-  args: {
-    setIsShow: fn()
-  }
-}`,...d.parameters?.docs?.source}}}})))()}p();export{u as Basic,d as CloseButton,f as __namedExportsOrder,l as default};
