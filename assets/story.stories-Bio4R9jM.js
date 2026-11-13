@@ -1,7 +1,0 @@
-import{n as e}from"./rolldown-runtime-2s6bX4vc.js";import{t}from"./jsx-runtime-BxfXuubT.js";import{n,r,t as i}from"./UiButton-Cj4Ocsl7.js";import{n as a,t as o}from"./ArrowCircleDown.es-CtNxDyXq.js";import{n as s,r as c}from"./iframe-D4Llnz9U.js";var l,u,d,f,p,m;function h(){return(h=e((()=>{l=t(),o(),c(),n(),{fn:u}=__STORYBOOK_MODULE_TEST__,d={title:`Form/UiButton`,component:i,tags:[`autodocs`],argTypes:{theme:{options:r.theme,control:{type:`radio`}},variant:{options:r.variant,control:{type:`radio`}},color:{options:r.color,control:{type:`radio`}},size:{options:r.size,control:{type:`radio`}},disabled:{control:{type:`boolean`}},isMenuButton:{control:{type:`boolean`}}},args:{theme:`basic`,children:`Button Content`,variant:`contained`,color:`primary`,size:`small`,disabled:!1,isMenuButton:!1,onClick:u()},decorators:[e=>(0,l.jsx)(`div`,{className:s.className,style:{backgroundColor:`#fff`,padding:`10px`},children:(0,l.jsx)(e,{})})]},f={args:{}},p={args:{endIcon:(0,l.jsx)(a,{weight:`bold`})}},m=[`Basic`,`EndIcon`],f.parameters={...f.parameters,docs:{...f.parameters?.docs,source:{originalSource:`{
-  args: {}
-}`,...f.parameters?.docs?.source}}},p.parameters={...p.parameters,docs:{...p.parameters?.docs,source:{originalSource:`{
-  args: {
-    endIcon: <ArrowCircleDown weight="bold" />
-  }
-}`,...p.parameters?.docs?.source}}}})))()}h();export{f as Basic,p as EndIcon,m as __namedExportsOrder,d as default};
